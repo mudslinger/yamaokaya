@@ -1,0 +1,91 @@
+.container
+	.row
+		.page-header
+			%h2=tt :title
+	.row
+		.col-md-6
+			.panel.panel-default
+				.panel-heading
+					%h4.panel-title 
+						%span.glyphicon.glyphicon-building
+						会社概要
+				%table.table
+					%col{width: '20%'}
+					%col{width: '25%'}
+					%col{width: '*'}
+					%tbody
+						%tr
+							%th{rowspan:2}=tt 'name.t'
+							%td{colspan:2}=tt 'name.v'
+						%tr
+							%td{colspan:2}=tt 'global_name'
+						%tr
+							%th=tt 'establishment.t'
+							%td{colspan:2}=tt 'establishment.v'
+						- tt('offices.v').each_with_index do |v,idx|
+							%tr
+								-if idx == 0
+									%th{rowspan: tt('offices.v').length*3}
+										=tt 'offices.t'
+								%th{rowspan:3}
+									=v['title']
+								%td
+									〒
+									=v['zip']
+									%br
+									=v['address']
+									%br
+									%small
+										(
+										=link_to google_map_path(address: v['address']),target: '_blank' do
+											%span.glyphicon.glyphicon-google_maps
+											MAP
+										)
+							%tr
+								%td
+									%span.glyphicon.glyphicon-phone_alt 
+									=v['phone']
+							%tr
+								%td
+									%span.glyphicon.glyphicon-fax 
+									=v['fax']
+						%tr
+							%th=tt 'capital.t'
+							%td{colspan:2}=tt 'capital.v'
+						%tr
+							%th=tt 'employee_number.t'
+							%td{colspan:2}=tt 'employee_number.v'
+						- tt('officers.v').each_with_index do |v,idx|
+							%tr
+								-if idx == 0
+									%th{rowspan: tt('officers.v').length}
+										=tt 'officers.t'
+								%td
+									=v['title']
+								%td
+									=v['name']
+						- tt('bank.v').each_with_index do |v,idx|
+							%tr
+								-if idx == 0
+									%th{rowspan: tt('bank.v').length}
+										=tt 'bank.t'
+								%td{colspan:2}
+									=v
+						%tr
+							%th=tt 'sale.t'
+							%td{colspan:2}=tt 'sale.v'
+		.col-md-6
+			.panel.panel-default
+				.panel-heading
+					%h4.panel-title 
+						%span.glyphicon.glyphicon-charts
+						売上高
+				.panel-body
+					.chart#sales-chart
+			.panel.panel-default
+				.panel-heading
+					%h4.panel-title 
+						%span.glyphicon.glyphicon-charts
+						経常利益
+				.panel-body
+					.chart#op-chart

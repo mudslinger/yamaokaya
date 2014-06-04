@@ -1,0 +1,24 @@
+.container
+  .row
+    .page-header
+      %h2
+        =tt :title
+        %small= tt :subtitle
+  .row
+    .col-md-4
+      = image_tag 'top/yamaoka.jpg',class:['img-thumbnail']
+    .col-md-8
+      .row
+        %blockquote
+          %p.lead= tt :lead
+      .row
+        .col-md-6
+          - tt(:bodies).each_with_index do |v,i|
+            - if i < tt(:bodies).count/2
+              %p= v 
+        .col-md-6
+          - tt(:bodies).each_with_index do |v,i|
+            - if i >= tt(:bodies).count/2
+              %p= v 
+
+

@@ -1,0 +1,2 @@
+module Corporate::BaseHelper
+end

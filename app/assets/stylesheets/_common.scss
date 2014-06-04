@@ -1,0 +1,20 @@
+@import "font-awesome/font-awesome";
+body{
+	@include font-smoothing;
+
+	.facebook {
+		background: #1e78ae !important;
+	}
+	.twitter {
+		background: #1ba1e2 !important;
+	}
+	.google-plus {
+		background: #f22d0c !important;
+	}
+	.linkedin {
+		background: #2d93cf !important;
+	}
+	.pinterest {
+		background:	#dd1617 !important;
+	}	
+}

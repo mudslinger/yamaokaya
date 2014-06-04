@@ -1,0 +1,36 @@
+%table.table
+	%col{width:'20%'}
+	%col{width: '*'}
+	%thead
+	%tfoot
+	%tbody
+		- tt('v.jobs').each_with_index do |v,i|
+			%tr
+				-if i==0
+					%th{rowspan: tt('v.jobs').length}=tt 't.jobs'
+				%td=v
+		- tt('v.requirements').each_with_index do |v,i|
+			%tr
+				-if i==0
+					%th{rowspan: tt('v.requirements').length}=tt 't.requirements'
+				%td=v
+		- tt('v.payments').each_with_index do |v,i|
+			%tr
+				-if i==0
+					%th{rowspan: tt('v.payments').length}=tt 't.payments'
+				%td=v
+		- tt('v.working_hours').each_with_index do |v,i|
+			%tr
+				-if i==0
+					%th{rowspan: tt('v.working_hours').length}=tt 't.working_hours'
+				%td=v
+		- tt('v.welfares').each_with_index do |v,i|
+			%tr
+				-if i==0
+					%th{rowspan: tt('v.welfares').length}=tt 't.welfares'
+				%td=v
+		- tt('v.places').each_with_index do |v,i|
+			%tr
+				-if i==0
+					%th{rowspan: tt('v.places').length}=tt 't.places'
+				%td=v

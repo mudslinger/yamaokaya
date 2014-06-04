@@ -1,0 +1,10 @@
+=render partial: 'title',locals: {title: tt(:title),subtitle: tt(:subtitle)}
+.container
+	.row
+		.article-box.col-sm-10.col-sm-offset-1.col-xs-12.well-lg
+			- tt(:articles).each do |a|
+				%h3.message-title
+					%span.glyphicon.glyphicon-comments
+					=a["lead"]
+				-a["text"].each do |t|
+					%p=t

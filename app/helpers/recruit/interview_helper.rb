@@ -1,0 +1,2 @@
+module Recruit::InterviewHelper
+end

@@ -1,0 +1,29 @@
+%section
+	.container
+		.row.text-center.card-area
+			.col-xs-12.visible-xs.clearfix
+				%h3
+					新卒採用
+					%small 2016年卒の学生の皆様はこちら
+			=render partial: 'card_box',locals:{picture: 'recruit/top_01.jpg',text: tt(:message),path: :message_graduates}
+			=render partial: 'card_box',locals:{picture: 'recruit/top_02.jpg',text: tt(:interview),path: :interview_graduates}
+			=render partial: 'card_box',locals:{picture: 'recruit/top_03.jpg',text: tt(:requirements),path: :requirements_graduates}
+			=render partial: 'card_box',locals:{picture: 'recruit/top_04.jpg',text: tt(:entry_r),path: :rikunavi}
+			=render partial: 'card_box',locals:{picture: 'recruit/top_05.jpg',text: tt(:entry),path: entries_path(:graduates2)}
+
+			.col-xs-12.visible-xs.clearfix
+				%h3
+					キャリア採用
+					%small キャリア採用での入社を検討中の皆様はこちら
+			=render partial: 'card_box',locals:{picture: 'recruit/top_06.jpg',text: tt(:message),path: :message_career}
+			=render partial: 'card_box',locals:{picture: 'recruit/top_07.jpg',text: tt(:interview),path: :interview_career}
+			=render partial: 'card_box',locals:{picture: 'recruit/top_08.jpg',text: tt(:requirements),path: :requirements_career}
+			=render partial: 'card_box',locals:{picture: 'recruit/top_09.jpg',text: tt(:entry),path: entries_path(:career)}
+			.col-xs-12.visible-xs.clearfix
+				%h3
+					パートタイム・アルバイト
+					%small パートタイム・アルバイト勤務を検討されている方はこちら
+			=render partial: 'card_box',locals:{picture: 'recruit/top_10.jpg',text: tt(:message),path: :message_pa}
+			=render partial: 'card_box',locals:{picture: 'recruit/top_11.jpg',text: tt(:interview),path: :interview_pa}
+			=render partial: 'card_box',locals:{picture: 'recruit/top_12.jpg',text: tt(:requirements),path: :requirements_pa}
+			=render partial: 'card_box',locals:{picture: 'recruit/top_13.jpg',text: tt(:entry),path: entries_path(:pa)}

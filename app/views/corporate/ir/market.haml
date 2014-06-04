@@ -1,0 +1,78 @@
+.container
+  .row
+    .page-header
+      %h2
+        =tt :title
+        %small= tt :subtitle
+  .row
+    .col-md-7
+      .panel.panel-default
+        .panel-heading
+          %h3.panel-title 株式情報
+        %table.table
+          %col{width: '35%'}
+          %col{width: '*'}
+          %thead
+          %tfoot
+          %tbody
+            %tr
+              %th 証券取引所
+              %td
+                %a{href: 'http://jasdaq.tse.or.jp/jasdaq',target: '_blank'}
+                  東京証券取引所 ジャスダック市場
+            %tr
+              %th 証券コード
+              %td
+                %a{href: 'http://stocks.finance.yahoo.co.jp/stocks/detail/?code=3399',target: '_blank'}
+                  3399
+            %tr
+              %th 事業年度
+              %td 毎年2月1日から翌年1月31日まで
+            %tr
+              %th 定時株主総会
+              %td 毎年4月
+            %tr
+              %th 基準日
+              %td 
+                株主総会 1月31日
+                .small その他臨時に必要がある場合は、あらかじめ公告いたします。
+            %tr
+              %th 配当金受領株主確定日
+              %td 
+                1月31日
+                .small なお、中間配当を実施する場合の中間配当金受領株主確定日は、7月31日です。
+            %tr
+              %th 株主名簿管理人
+              %td 
+                東京都中央区八重洲1丁目2番1号 みずほ信託銀行株式会社
+            %tr
+              %th 同事務取扱場所
+              %td 
+                東京都中央区八重洲1丁目2番1号 みずほ信託銀行株式会社　本店証券代行部
+
+            %tr
+              %th 同取次所
+              %td 
+                みずほ信託銀行株式会社　全国各支店
+                みずほ証券株式会社　本店及び全国各支店
+            %tr
+              %th 公告方法
+              %td 
+                電子公告とし、 当社ホームページに掲載しております。
+                但し、電子広告によることができない事故その他やむを得ない事由が生じた時は、 日本経済新聞に掲載します。
+    .col-md-5
+      .panel.panel-default
+        .panel-heading
+          %h3.panel-title 電子公告
+        .panel-body
+          %a{href: 'http://kmasterplus.pronexus.co.jp/main/corp/3/3/3399/index.html',target: '_blank'}
+            法定公告
+          .small プロネクサス様提供のWebページへリンクしています
+      .panel.panel-default
+        .panel-heading
+          %h3.panel-title 株価情報
+        .panel-body
+          %a{href: 'http://quote.tse.or.jp/tse_n/quote.cgi?F=listing/JDetail1&MKTN=T&QCODE=3399',target: '_blank'}
+            株価情報
+          .small 東京証券取引所様提供のWebページへリンクしています
+

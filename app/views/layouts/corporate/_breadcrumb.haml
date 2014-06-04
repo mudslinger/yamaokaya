@@ -1,0 +1,6 @@
+.container
+	.row
+		%ol.breadcrumb
+			-@layers.each do |l|
+				%li
+					=link_to t(l,scope: :route_names),l

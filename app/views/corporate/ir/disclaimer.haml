@@ -1,0 +1,22 @@
+.container
+  .row
+    .page-header
+      %h2
+        =tt :title
+  .row
+    .col-md-12
+      .row
+        .col-md-6
+          - tt(:bodies).each_with_index do |v,i|
+            - if i < tt(:bodies).count/2
+              %h3=v['lead']
+              - v['subbodies'].each do |vv|
+                %p=vv
+        .col-md-6
+          - tt(:bodies).each_with_index do |v,i|
+            - if i >= tt(:bodies).count/2
+              %h3=v['lead']
+              - v['subbodies'].each do |vv|
+                %p=vv
+
+

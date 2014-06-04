@@ -1,0 +1,48 @@
+.container
+  .row
+    .page-header
+      %h2
+        =tt :title
+  .row
+    .col-md-4
+      - tt(:bodies).each_with_index do |v,i|
+        - if i < tt(:bodies).count/2
+          %p= v 
+    .col-md-4
+      - tt(:bodies).each_with_index do |v,i|
+        - if i >= tt(:bodies).count/2
+          %p= v 
+      .panel.panel-default
+        .panel-heading
+          %h3.panel-title=tt 'division.title'
+        %table.table
+          %thead
+          %tfoot
+          %tbody
+            %tr
+              %th=tt 'division.staff.t'
+              %td=tt 'division.staff.v'
+            %tr
+              %th=tt 'division.tel.t'
+              %td=tt 'division.tel.v'
+            %tr
+              %th=tt 'division.fax.t'
+              %td=tt 'division.fax.v'
+            %tr
+              %th=tt 'division.email.t'
+              %td
+                %a{href: "mailto:#{tt 'division.email.v'}"}
+                  =tt 'division.email.v'
+    .col-md-4
+      .panel.panel-default
+        .panel-heading
+          %h3.panel-title=tt 'term.title'
+        %dl.panel-body
+          %dt 地域
+          %dd=tt 'term.area'
+          %dt 契約形態
+          - tt('term.contract_type').each do |v|
+            %dd=v
+          %dt 条件
+          - tt('term.requirement').each do |v|
+            %dd=v

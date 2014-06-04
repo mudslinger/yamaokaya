@@ -1,0 +1,80 @@
+.container
+	.row
+		.page-header
+			%h2
+				=tt :title
+	.row
+		-@list = IrTopic.find_all
+		-cache @list do
+			.col-xs-12
+				%ul.nav.nav-tabs
+					%li.active 
+						%a{href:'#tanshin',data:{toggle: :tab}} 決算短信
+					%li 
+						%a{href:'#yuho',data:{toggle: :tab}} 有価証券報告書
+					%li.dropdown
+						%a.dropdown-toggle#presstab{href:'#',data:{toggle: :dropdown}} 
+							適時開示書類
+							%b.caret
+						%ul.dropdown-menu{role: :menu,aria:{labelledby: 'presstab'}}
+							-@list.press.each do |key,topics|
+								%li
+									%a{href:"#press_#{key}",tabindex:-1,data:{toggle: :tab}} #{key}年
+
+
+				.tab-content
+					.tab-pane.panel.panel-default.active#tanshin
+						.panel-heading
+							%h4.panel-title 決算短信
+						-@list.tanshin.each do |key,topics|
+							%table.table
+								%caption #{key}年1月期
+								%col{width:'15%'}
+								%col{width:'*'}
+								%tbody
+									- topics.each do |topic|
+										%tr
+											%th=l topic.released.to_date
+											%td
+												%a{href:topic.url,target: '_blank'}=topic.title
+												%i.fa.fa-file-pdf-o
+												(#{topic.size}KB)
+					.tab-pane.panel.panel-default#yuho
+						.panel-heading
+							%h4.panel-title 有価証券報告書
+						-@list.yuho.each do |key,topics|
+							%table.table
+								%caption #{key}年1月期
+								%col{width:'15%'}
+								%col{width:'*'}
+								%tbody
+									- topics.each do |topic|
+										%tr
+											%th=l topic.released.to_date
+											%td
+												%a{href:topic.url,target: '_blank'}=topic.title
+												%i.fa.fa-file-pdf-o
+												(#{topic.size}KB)
+						.panel-heading
+							%h4.panel-title 財務データ
+						.panel-body
+							%p 有価証券報告書の財務諸表に記載されている主要な帳票を、CSVデータ（Excel等で閲覧可能）にてご提供いたします。
+							%a.btn.btn-primary{href: 'http://navigator.eir-parts.net/EIRNavi/DocumentNavigator/EDownload.aspx?code=3399&dl_view=2',target:'_blank'} 財務データのダウンロード
+					-@list.press.each do |key,topics|
+						%div.tab-pane.panel.panel-default{id: "press_#{key}"}
+							.panel-heading
+								%h4.panel-title 適時開示書類
+							%table.table
+								%caption #{key}年度
+								%col{width:'15%'}
+								%col{width:'*'}
+								%tbody
+									- topics.each do |topic|
+										%tr
+											%th=l topic.released.to_date
+											%td
+												%a{href:topic.url,target: '_blank'}=topic.title
+												%i.fa.fa-file-pdf-o
+												(#{topic.size}KB)
+
+						

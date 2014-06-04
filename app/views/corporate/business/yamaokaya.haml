@@ -1,0 +1,37 @@
+.container
+  .row
+    .page-header
+      %h2
+        =tt :title
+        %small= tt :subtitle
+  .row
+    .col-md-4.hidden-sm.hidden-xs
+      .side-image
+        = image_tag 'corporate/business/yamaokaya.png',class: 'bottom'
+        = image_tag 'corporate/business/yamaokaya2.png',class: 'top'
+    .col-md-8
+      .row
+        .col-md-12
+          - tt(:bodies).each_with_index do |v,i|
+            %p= v 
+      .row
+        .col-md-6
+          .panel.panel-default
+            .panel-heading
+              %h3.panel-title=tt 'products.title'
+            %ul.list-group
+              - tt('products.bodies').each_with_index do |v,i|
+                %li.list-group-item=v
+            .panel-footer.text-right
+              =link_to :products do
+                →「商品の強み」を見る
+        .col-md-6
+          .panel.panel-default
+            .panel-heading
+              %h3.panel-title=tt 'shops.title'
+            %ul.list-group
+              - tt('shops.bodies').each_with_index do |v,i|
+                %li.list-group-item=v
+            .panel-footer.text-right
+              =link_to :development do
+                →「出店ポリシー」を見る

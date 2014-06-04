@@ -1,0 +1,2 @@
+module Recruit::BaseHelper
+end

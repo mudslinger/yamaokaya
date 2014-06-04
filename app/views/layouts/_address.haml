@@ -1,0 +1,44 @@
+.widget
+	%h4
+		%span.glyphicon.glyphicon-circle_ok
+		Access
+	.row
+		.col-md-6
+			%h5 
+				札幌本社
+				%small
+					(
+					=link_to google_map_path(address: "北海道札幌市東区東雁来7条1丁目4-19"),target: '_blank' do
+						%span.glyphicon.glyphicon-google_maps
+						MAP
+					)
+			%p 〒007-0827
+			%p
+				%span.glyphicon.glyphicon-address_book 
+				北海道札幌市東区東雁来7条1丁目4-19
+			%p
+				%span.glyphicon.glyphicon-phone_alt 
+				011-781-7170
+			%p
+				%span.glyphicon.glyphicon-fax 
+				011-781-7180
+		.col-md-6
+			%h5 
+				関東事務所
+				%small
+					(
+					=link_to google_map_path(address: "茨城県つくば市小野崎127-1"),target: '_blank' do
+						%span.glyphicon.glyphicon-google_maps
+						MAP
+					)
+			%p
+				〒305-0034 
+			%p
+				%span.glyphicon.glyphicon-address_book
+				茨城県つくば市小野崎127-1
+			%p
+				%span.glyphicon.glyphicon-phone_alt 
+				029-896-5800
+			%p
+				%span.glyphicon.glyphicon-fax 
+				029-896-5802

@@ -1,0 +1,2 @@
+module BrandYamaokaya::ShopsHelper
+end

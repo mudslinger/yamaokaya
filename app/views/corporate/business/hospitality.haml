@@ -1,0 +1,24 @@
+.container
+  .row
+    .page-header
+      %h2
+        =tt :title
+        %small= tt :subtitle
+  .row
+    .col-md-4.hidden-sm.hidden-xs
+      .side-image
+        = image_tag 'corporate/business/hospitality.png',class: 'bottom'
+        = image_tag 'corporate/business/hospitality2.png',class: 'top'
+    .col-md-8
+      .row
+        %blockquote
+          %p.lead= tt :lead
+      .row
+        .col-md-6
+          - tt(:bodies).each_with_index do |v,i|
+            - if i < tt(:bodies).count/2
+              %p= v 
+        .col-md-6
+          - tt(:bodies).each_with_index do |v,i|
+            - if i >= tt(:bodies).count/2
+              %p= v 

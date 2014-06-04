@@ -1,0 +1,2 @@
+module Recruit::MessageHelper
+end

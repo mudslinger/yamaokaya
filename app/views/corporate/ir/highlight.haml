@@ -1,0 +1,196 @@
+.container
+  .row
+    .page-header
+      %h2
+        =tt :title
+  .row
+    .col-xs-12
+      -@finfo = FinancialInfomation.last_5.reverse
+      %table.table.table-bordered
+        %col{width: '*'}
+        %colgroup{width: '13%',style:'text-align:right'}
+          %col{align: :right,style:'text-align:right;'}
+          %col
+          %col
+          %col
+          %col
+        %thead
+          %tr
+            %th
+            -@finfo.each do |v|
+              %th
+                =v.fiscal_period
+                %br
+                %small=v.fiscal_period_variant
+        %tfoot
+        %tbody
+          %tr
+            %th=FinancialInfomation.human_attribute_name :sales
+            -@finfo.each do |v|
+              %td=mf v.sales
+          %tr
+            %th=FinancialInfomation.human_attribute_name :op
+            -@finfo.each do |v|
+              %td=mf v.op
+          %tr
+            %th=FinancialInfomation.human_attribute_name :ni
+            -@finfo.each do |v|
+              %td=mf v.ni
+          %tr
+            %th=FinancialInfomation.human_attribute_name :ioa
+            -@finfo.each do |v|
+              %td=mf v.ioa
+          %tr
+            %th=FinancialInfomation.human_attribute_name :cap
+            -@finfo.each do |v|
+              %td=mf v.cap
+          %tr
+            %th
+              =FinancialInfomation.human_attribute_name :ais
+              %small (株)
+            -@finfo.each do |v|
+              %td=mf v.ais
+          %tr
+            %th
+              =FinancialInfomation.human_attribute_name :na
+            -@finfo.each do |v|
+              %td=mf v.na
+          %tr
+            %th
+              =FinancialInfomation.human_attribute_name :ta
+            -@finfo.each do |v|
+              %td=mf v.ta
+          %tr
+            %th
+              =FinancialInfomation.human_attribute_name :bps
+              %small (円)
+            -@finfo.each do |v|
+              %td=mf v.bps
+          %tr
+            %th
+              =FinancialInfomation.human_attribute_name :dps
+              %small (円)
+              %br
+              (うち
+              =FinancialInfomation.human_attribute_name :idps
+              %small (円)
+              )
+              
+            -@finfo.each do |v|
+              %td
+                =mf v.dps
+                %br
+                %small (#{mf v.idps})
+          %tr
+            %th
+              =FinancialInfomation.human_attribute_name :eps
+              %small (円)
+            -@finfo.each do |v|
+              %td=mf v.eps
+          %tr
+            %th
+              =FinancialInfomation.human_attribute_name :deps
+              %small (円)
+            -@finfo.each do |v|
+              %td=mf v.deps
+          %tr
+            %th
+              =FinancialInfomation.human_attribute_name :car
+              %small (%)
+            -@finfo.each do |v|
+              %td=mf v.car
+          %tr
+            %th
+              =FinancialInfomation.human_attribute_name :roe
+              %small (%)
+            -@finfo.each do |v|
+              %td=mf v.roe
+          %tr
+            %th
+              =FinancialInfomation.human_attribute_name :per
+              %small (倍)
+            -@finfo.each do |v|
+              %td=mf v.per
+          %tr
+            %th
+              =FinancialInfomation.human_attribute_name :dpr
+              %small (%)
+            -@finfo.each do |v|
+              %td=mf v.dpr
+          %tr
+            %th=FinancialInfomation.human_attribute_name :opeCF
+            -@finfo.each do |v|
+              %td=mf v.opeCF
+          %tr
+            %th=FinancialInfomation.human_attribute_name :invCF
+            -@finfo.each do |v|
+              %td=mf v.invCF
+          %tr
+            %th=FinancialInfomation.human_attribute_name :finCF
+            -@finfo.each do |v|
+              %td=mf v.finCF
+          %tr
+            %th=FinancialInfomation.human_attribute_name :cce
+            -@finfo.each do |v|
+              %td=mf v.cce
+          %tr
+            %th
+              =FinancialInfomation.human_attribute_name :employees
+              %br
+              (うち
+              =FinancialInfomation.human_attribute_name :parttime
+              )
+            -@finfo.each do |v|
+              %td
+                =v.employees
+                %br
+                %small (#{mf v.parttime})
+
+    .col-sm-6.col-xs-12
+      .panel.panel-default
+        .panel-heading
+          %h4.panel-title 
+            %span.glyphicon.glyphicon-charts
+            売上高
+        .panel-body
+          .chart#sales-chart
+    .col-sm-6.col-xs-12
+      .panel.panel-default
+        .panel-heading
+          %h4.panel-title
+            %span.glyphicon.glyphicon-charts
+            経常利益
+        .panel-body
+          .chart#op-chart
+    .col-sm-6.col-xs-12
+      .panel.panel-default
+        .panel-heading
+          %h4.panel-title
+            %span.glyphicon.glyphicon-charts
+            当期純利益額
+        .panel-body
+          .chart#ni-chart
+    .col-sm-6.col-xs-12
+      .panel.panel-default
+        .panel-heading
+          %h4.panel-title
+            %span.glyphicon.glyphicon-charts
+            総資産額/純資産額
+        .panel-body
+          .chart#na_ta-chart
+    .col-sm-6.col-xs-12
+      .panel.panel-default
+        .panel-heading
+          %h4.panel-title
+            %span.glyphicon.glyphicon-charts
+            一株あたり純資産額
+        .panel-body
+          .chart#bps-chart
+    .col-sm-6.col-xs-12
+      .panel.panel-default
+        .panel-heading
+          %h4.panel-title
+            %span.glyphicon.glyphicon-charts  
+            一株あたり当期純利益額
+        .panel-body
+          .chart#eps-chart

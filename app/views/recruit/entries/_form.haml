@@ -1,0 +1,174 @@
+.article-box.col-sm-10.col-sm-offset-1.col-xs-12.well-lg
+	=form_for @entry,html:{role: :form} do |f|
+		=f.hidden_field :lat ,id: :lat
+		=f.hidden_field :lng ,id: :lng
+		=f.hidden_field :work_type ,id: :work_type
+		.row
+			%fieldset
+				%legend 個人情報
+				%div.form-group.form-inline
+					=f.label :name,class: 'control-label'
+					=f.text_field :name,placeholder: '山岡 太郎',class: 'form-control'
+				.form-group.form-inline
+					=f.label :sex,class: 'control-label'
+					%span
+						-Entry.sexes.each do |k,v|
+							=f.radio_button :sex,k, {class: 'form-control'}
+							=f.label :sex,t(k,scope: [:enums,:sex]),value: k
+				.form-group.form-inline
+					=f.label :birthday
+					=f.date_select :birthday,{date_separator: '年',start_year:75.years.ago.year,end_year:15.years.ago.year,default:20.years.ago,discard_day: true}, {class: 'form-control'}
+		.row
+			%fieldset
+				%legend ご連絡先
+				.form-group.form-inline
+					=f.label :postal_code,class: 'control-label'
+					=f.text_field :postal_code,class: 'form-control',size: 8
+				.form-group.form-inline
+					=f.label :address,class: 'control-label'
+					=f.text_field :address,class: 'form-control',size: 50
+				.form-group.form-inline
+					=f.label :phone,class: 'control-label'
+					=f.text_field :phone,class: 'form-control',size: 40
+				.form-group.form-inline
+					=f.label :mail_addr,class: 'control-label'
+					=f.text_field :mail_addr,class: 'form-control',size: 50
+				.form-group.form-inline
+					=f.label :mail_addr_confirmation,class: 'control-label'
+					=f.text_field :mail_addr_confirmation,class: 'form-control',size: 50,placeholder:'上記と同じメールアドレスをご記入ください'
+
+				.form-group.form-inline
+					=f.label :contact_means,class: 'control-label'
+					%span
+						-Entry.contact_means.each do |k,v|
+							=f.radio_button :contact_means,k, {class: 'form-control'}
+							=f.label :contact_means,t(k,scope: [:enums,:contact_means]),value: k
+		.row
+			%fieldset
+				%legend お仕事内容について
+				-if @entry.career?
+					.form-group.form-inline
+						=f.label :area_restriction,class: 'control-label'
+						%span
+							-Entry.area_restrictions.each do |k,v|
+								=f.radio_button :area_restriction,k, {class: 'form-control'}
+								=f.label :area_restriction,t(k,scope: [:enums,:area_restriction]),value: k
+				-unless @entry.graduates2?
+					.form-group.form-horizontal
+						=f.label :wished_shops,class: 'control-label'
+						%br
+						=f.select :wished_shops,Shop.active.collect{ |s| [s.name,s.id]},{},{class: ['selectpicker','col-md-12'],multiple: :multiple,title: '店舗を選択してください（複数選択可）'}
+					.form-group.form-inline
+						=f.label :work_commencing_time,class: 'control-label'
+						%span
+							-Entry.work_commencing_times.each do |k,v|
+								=f.radio_button :work_commencing_time,k, {class: 'form-control'}
+								=f.label :work_commencing_times,t(k,scope: [:enums,:work_commencing_time]),value: k
+				-if @entry.graduates2?
+					=f.hidden_field :work_commencing_time ,id: :work_commencing_time
+				-if @entry.pa?
+					.form-group.form-inline
+						=f.label '勤務可能な時間帯',class: 'control-label'
+						%table.table.work-times
+							%thead
+								%tr
+									%th
+									- (I18n.t 'date.abbr_day_names').each do |t|
+										%th= t
+									%th 祝
+							%tfoot
+							%tbody
+								%tr
+									%th 午前中
+									- (0..7).each do |i|
+										%td=f.check_box "work_times_#{i}".to_sym,{},1,0
+								%tr
+									%th 午後
+									- (8..8+7).each do |i|
+										%td=f.check_box "work_times_#{i}".to_sym,{},1,0
+								%tr
+									%th 夜間
+									- (16..16+7).each do |i|
+										%td=f.check_box "work_times_#{i}".to_sym,{},1,0
+								%tr
+									%th 深夜
+									- (24..31).each do |i|
+										%td=f.check_box "work_times_#{i}".to_sym,{},1,0
+				.form-group.form-horizontal
+					=f.label :message,class: 'control-label'
+					=f.text_area :message,class: 'form-control',size: "56x8"
+		.row.text-center
+			=f.submit '送信', class: 'btn btn-primary'
+-if @entry.errors.any?
+	#error_explanation.modal.fade
+		.modal-dialog
+			.modal-content
+				.modal-header
+					%button.close{:type => "button",aria:{hidden: true},data:{dismiss: 'modal'}} &times;
+					%h4.modal-title 
+						%span.glyphicon.glyphicon-warning_sign
+						#{@entry.errors.count}件のエラーが発生しています。
+				.modal-body
+					%ul
+						- @entry.errors.full_messages.each do |message|
+							%li=message
+					.text-right
+						%button.btn.btn-default{type: :button,data:{dismiss: :modal}} 閉じる
+	:coffeescript
+		$  ->
+			$('#error_explanation').modal('show')
+-unless notice.nil?
+	-ent = Entry.find_by(id: notice)
+	#thanks.modal.fade
+		.modal-dialog
+			.modal-content
+				.modal-header
+					%button.close{:type => "button",aria:{hidden: true},data:{dismiss: 'modal'}} &times;
+					%h4.modal-title 
+						%span.glyphicon.glyphicon-message_out
+						ありがとうございます。
+				.modal-body
+					%p
+						エントリーありがとうございました。
+					%p
+						下記の内容でエントリーを受け付けました。
+					%p
+						3営業日以内に担当者よりご連絡させていただきます。
+					%table.table
+						%caption エントリー内容
+						%thead
+						%tfoot
+						%tbody
+							%tr
+								%th=Entry.human_attribute_name(:name)
+								%td=ent.name
+							%tr
+								%th=Entry.human_attribute_name(:address)
+								%td
+									=ent.postal_code
+									=ent.address
+							%tr
+								%th=Entry.human_attribute_name(:phone)
+								%td
+									=ent.phone
+							%tr
+								%th=Entry.human_attribute_name(:mail_addr)
+								%td
+									=ent.mail_addr
+							%tr
+								%th=Entry.human_attribute_name(:wished_shops)
+								%td
+									- ent.wished_shops.each do |s|
+										%span.glyphicon.glyphicon-shop
+										=s.shop.name
+							%tr
+								%th{colspan:2}
+									=Entry.human_attribute_name(:message)
+							%tr
+								%td{colspan:2}
+									=ent.message
+					.text-right
+						%button.btn.btn-default{type: :button,data:{dismiss: :modal}} 閉じる
+	:coffeescript
+		$  ->
+			$('#thanks').modal('show')

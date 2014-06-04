@@ -1,0 +1,257 @@
+@import "compass";
+@import "recruit/variables";
+@import "bootstrap";
+@import "bootstrap-select";
+@import "common";
+
+body.recruit{
+	@media (min-width: 992px) {
+		background:url(recruit/body_bk.jpg) no-repeat center center fixed #000;
+		@include background-size(cover);
+	}
+	@media (max-width: 991px) {
+		background:url(recruit/body_bk_xs.jpg) no-repeat top center fixed #000;
+		@include background-size(auto);
+	}
+	.modal{
+		color: $gray-darker;
+	}
+	form{
+
+		fieldset{
+			legend{
+				color:white;
+				background-color: $brand-primary;
+				@include opacity(0.9);
+			}
+			.form-group.form-inline{
+				label:first-child{
+					width:10em;
+				}
+				.field_with_errors{
+					display: inline-block;
+					@extend .has-error;
+					label{
+						color:red;
+					}
+				}
+			}
+
+		}
+		table.work-times{
+		}
+	}
+	.page-header {
+	  background-color: $brand-primary;
+	  @include opacity(0.9);
+	  margin: 0 0 20px 0;
+	}
+   .picture {
+		position: relative;
+		overflow: hidden;
+		margin-bottom: 8px;
+		margin-top: 8px;
+		padding:2px;
+	    .tags{
+			position: absolute;
+			right: 2px;
+			top: 2px;
+			direction: rtl;
+	    	.label{
+				display: table;
+				margin-bottom: 2px;
+				text-align: left;
+				direction: ltr;
+	    	}
+	    }
+	    img{
+	    	width:100%;
+	    	@include border-radius();
+	    }
+	    .actions{
+			width: 100%;
+			position: absolute;
+			padding:5px 15px 0px 15px;
+			background: rgba(0,0,0,0.6);
+			height: 80px;
+			left: 0;
+			bottom: 0px;
+			overflow: hidden;
+			*zoom: 1;
+		}
+	}
+
+	hr {
+		display: block;
+		height: 1px;
+		border: 0;
+		border-top: 1px solid #ccc;
+		margin: 1em 0;
+		padding: 0;
+	}
+	footer{
+		font-size: $font-size-small;
+		border-top: solid 0.5em $brand-primary;
+		margin-top: 4em;
+		padding-top: 1em;
+		background: url(corporate/fback.png);
+		background-color: $gray-darker;
+		color: white;
+		.footer-main{
+		}
+		.footer-copyright{
+			clear: both;
+			.row{
+				height: 24px;
+				line-height: 24px;
+				border-top:1px dotted $gray-light;
+			}
+		}
+		.widget{
+			padding:5px;
+			margin-bottom:5px;
+			font-size:$font-size-small;
+			a{
+				color:$gray-lighter;
+			}
+			ul{
+				list-style-type:none;
+				padding-left: 1.5em;
+			}
+			li:before{
+				content: '>';
+				color: $brand-primary;
+				font-weight: bold;
+			}
+			h4{
+				font-size:15px;
+				padding-bottom:5px;
+				border-bottom:1px dotted $gray-light;
+				margin-bottom:5px;
+				span{
+					color: $brand-primary;
+				}
+			}
+		}
+	}
+
+
+	.article-box{
+		background:url(recruit/news_bk.png);
+		padding:1em 2em;
+		@media (max-width: 767px) {
+			padding:1em 0.8em !important;
+		}
+	}
+	h4.message-title{
+		color:#FF4;
+		font-size:24px;
+		line-height:1.4em;
+		@media (max-width: 767px) {
+			font-size:16px;
+		}
+	}
+
+	.tilt {
+		@include transition-property(all);
+		@include transition-duration(0.5s);
+		@include transition-timing-function(ease);
+		background-color: white;
+	}
+	 
+	.tilt:hover {
+	    @include rotate(-10deg);
+	}
+	a{
+		word-wrap: break-word;
+		@include transition-property(color);
+		@include transition-duration(0.1s);
+		@include transition-timing-function(ease-in);
+		&:hover,&:focus{
+			color: $gray-lighter;
+			text-decoration: none;
+			outline: 0;
+		}
+		&:before,&:after{
+			@include transition-property(color);
+			@include transition-duration(0.1s);
+			@include transition-timing-function(ease-in);
+		}
+	}
+
+	hr{
+	    height: 1px;
+	    border: 0;
+	    border-top: 1px solid $gray-lighter;
+	    margin: 1em 0;
+	    padding: 0;
+	}
+	&.top{
+		.card-area{
+			.card-box{
+				margin-bottom:30px;
+				// position:relative;
+				img{
+					width:100%;
+				}
+				a{
+					color:black;
+				}
+				@media (max-width: 767px) {
+					margin-bottom:5px;
+					padding:0px 5px !important;
+				}
+				h4{
+					font-size:13px;
+					font-weight:normal;
+					padding:4px;
+					margin:0px;
+					background:#FFF;
+					background-image:url(recruit/card_pattern.png);
+
+				}
+				small{
+					color:$gray-light;
+				}
+			}
+		}
+
+
+		#headerwrap {
+			margin-top: -10px;
+			padding-top:0px;
+			background-attachment: relative;
+			background-position: center center;
+			min-height: 0px;		
+
+		    h1,h2{
+				font-family: $font-family-serif;
+		    }
+		    h1{
+				letter-spacing: 3px;
+				@media (max-width: 767px) {
+					margin-top: 50px;
+					font-size: 28px;
+				}
+				@media (min-width: 768px) {
+					margin-top: 80px;
+					font-size: 42px;
+				}
+		    }
+		    h2{
+				letter-spacing: 2px;
+				text-transform: uppercase;
+				@media (max-width: 767px) {
+					font-size: 16px;
+					font-weight: normal;
+				}
+				@media (min-width: 768px) {
+					font-size: 20px;
+					font-weight: bold;
+				}
+		    }
+		}
+	}
+
+
+}
