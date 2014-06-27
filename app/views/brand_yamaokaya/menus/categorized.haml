@@ -1,0 +1,34 @@
+.after-nav.container-full
+	.container
+		.row
+			%h2.col-xs-12
+				%span.glyphicon.glyphicon-pot
+				レギュラーメニュー
+.container
+	.row
+		%ol.breadcrumb.col-xs-8.pull-left
+			%li
+				=link_to :yamaokaya_top do
+					トップ
+			%li
+				メニュー
+			%li
+				レギュラーメニュー
+		-#SNSボタンの読み込み
+		=render partial: 'yamaokaya_sns'
+
+.container#main
+	.row
+		.col-xs-12
+			%ul.nav.nav-tabs.menu-tab
+				%li.active
+					%a{href:'./regular#menu-tab'} レギュラー
+				%li
+					%a{href:'./set#menu-tab'} セットメニュー
+				%li
+					%a{href:'./limited#menu-tab'} 期間限定
+				%li
+					%a{href:'./topping#menu-tab'} トッピング
+.container
+	=render partial: "yamaokaya_menu_#{params[:category]}"
+#modal

@@ -12,7 +12,8 @@
 minami2jo: 
   id: 1102
   old_code: 121002
-  prefecture: 1
+  start_shows: 11
+  area: sapporo
   name: 南2条店
   furigana: ミナミニジョウ
   gname: minami2jo
@@ -38,7 +39,8 @@ minami2jo:
 kotoni: 
   id: 1104
   old_code: 121004
-  prefecture: 1
+  start_shows: 11
+  area: sapporo
   name: 琴似店
   furigana: コトニ
   gname: kotoni
@@ -64,7 +66,8 @@ kotoni:
 teine: 
   id: 1105
   old_code: 121005
-  prefecture: 1
+  start_shows: 11
+  area: sapporo
   name: 手稲店
   furigana: テイネ
   gname: teine
@@ -90,7 +93,8 @@ teine:
 fujino: 
   id: 1107
   old_code: 121007
-  prefecture: 1
+  start_shows: 11
+  area: sapporo
   name: 藤野店
   furigana: フジノ
   gname: fujino
@@ -116,7 +120,8 @@ fujino:
 taihei: 
   id: 1108
   old_code: 121008
-  prefecture: 1
+  start_shows: 11
+  area: sapporo
   name: 太平店
   furigana: タイヘイ
   gname: taihei
@@ -142,7 +147,8 @@ taihei:
 kiyota: 
   id: 1109
   old_code: 121009
-  prefecture: 1
+  start_shows: 11
+  area: sapporo
   name: 清田店
   furigana: キヨタ
   gname: kiyota
@@ -168,7 +174,8 @@ kiyota:
 higashikariki: 
   id: 1111
   old_code: 121011
-  prefecture: 1
+  start_shows: 11
+  area: sapporo
   name: 東雁来店
   furigana: ヒガシカリキ
   gname: higashikariki
@@ -194,7 +201,8 @@ higashikariki:
 eniwa: 
   id: 1113
   old_code: 121013
-  prefecture: 1
+  start_shows: 9
+  area: douo
   name: 恵庭店
   furigana: エニワ
   gname: eniwa
@@ -220,7 +228,8 @@ eniwa:
 kitahiroshima: 
   id: 1114
   old_code: 121014
-  prefecture: 1
+  start_shows: 9
+  area: douo
   name: 北広島店
   furigana: キタヒロシマテン
   gname: kitahiroshima
@@ -246,7 +255,8 @@ kitahiroshima:
 yanagi: 
   id: 1115
   old_code: 121015
-  prefecture: 1
+  start_shows: 8
+  area: dounan
   name: 苫小牧柳店
   furigana: トマコマイヤナギ
   gname: yanagi
@@ -272,7 +282,8 @@ yanagi:
 iwamizawa: 
   id: 1117
   old_code: 121017
-  prefecture: 1
+  start_shows: 9
+  area: douo
   name: 岩見沢店
   furigana: イワミザワ
   gname: iwamizawa
@@ -298,7 +309,8 @@ iwamizawa:
 shindo: 
   id: 1118
   old_code: 121018
-  prefecture: 1
+  start_shows: 11
+  area: sapporo
   name: 新道店
   furigana: シンドウ
   gname: shindo
@@ -324,7 +336,8 @@ shindo:
 takasagodai: 
   id: 1119
   old_code: 121019
-  prefecture: 1
+  start_shows: 8
+  area: douhoku
   name: 旭川高砂台店
   furigana: アサヒカワタカサゴダイ
   gname: takasagodai
@@ -350,7 +363,8 @@ takasagodai:
 tarukawa: 
   id: 1120
   old_code: 121020
-  prefecture: 1
+  start_shows: 9
+  area: douo
   name: 樽川店
   furigana: タルカワ
   gname: tarukawa
@@ -376,7 +390,8 @@ tarukawa:
 kushiro: 
   id: 1121
   old_code: 121021
-  prefecture: 1
+  start_shows: 8
+  area: douto
   name: 釧路店
   furigana: クシロ
   gname: kushiro
@@ -402,7 +417,8 @@ kushiro:
 kitami: 
   id: 1122
   old_code: 121022
-  prefecture: 1
+  start_shows: 8
+  area: douto
   name: 北見店
   furigana: キタミ
   gname: kitami
@@ -428,7 +444,8 @@ kitami:
 nopporo: 
   id: 1123
   old_code: 121023
-  prefecture: 1
+  start_shows: 9
+  area: douo
   name: 野幌店
   furigana: ノッポロ
   gname: nopporo
@@ -454,7 +471,8 @@ nopporo:
 obihiro: 
   id: 1124
   old_code: 121024
-  prefecture: 1
+  start_shows: 8
+  area: douto
   name: 帯広店
   furigana: オビヒロ
   gname: obihiro
@@ -480,7 +498,8 @@ obihiro:
 nagayama: 
   id: 1125
   old_code: 121025
-  prefecture: 1
+  start_shows: 8
+  area: douhoku
   name: 旭川永山店
   furigana: アサヒカワナガヤマ
   gname: nagayama
@@ -506,7 +525,8 @@ nagayama:
 kamiiso: 
   id: 1126
   old_code: 121026
-  prefecture: 1
+  start_shows: 8
+  area: dounan
   name: 上磯店
   furigana: カミイソ
   gname: kamiiso
@@ -532,7 +552,8 @@ kamiiso:
 takikawa: 
   id: 1127
   old_code: 121027
-  prefecture: 1
+  start_shows: 9
+  area: douo
   name: 滝川店
   furigana: タキカワ
   gname: takikawa
@@ -558,7 +579,8 @@ takikawa:
 itoi: 
   id: 1128
   old_code: 121028
-  prefecture: 1
+  start_shows: 8
+  area: dounan
   name: 苫小牧糸井店
   furigana: トマコマイイトイ
   gname: itoi
@@ -584,7 +606,8 @@ itoi:
 muroran: 
   id: 1129
   old_code: 121029
-  prefecture: 1
+  start_shows: 8
+  area: dounan
   name: 室蘭店
   furigana: ムロラン
   gname: muroran
@@ -610,7 +633,8 @@ muroran:
 bihoro: 
   id: 1130
   old_code: 121030
-  prefecture: 1
+  start_shows: 8
+  area: douto
   name: 美幌店
   furigana: ビホロ
   gname: bihoro
@@ -636,7 +660,8 @@ bihoro:
 date: 
   id: 1131
   old_code: 121031
-  prefecture: 1
+  start_shows: 8
+  area: douto
   name: 伊達店
   furigana: ダテ
   gname: date
@@ -662,7 +687,8 @@ date:
 susukino: 
   id: 1132
   old_code: 121032
-  prefecture: 1
+  start_shows: 11
+  area: sapporo
   name: 新すすきの店
   furigana: シンススキノ
   gname: susukino
@@ -688,7 +714,8 @@ susukino:
 chitose: 
   id: 1133
   old_code: 121033
-  prefecture: 1
+  start_shows: 8
+  area: douo
   name: 千歳店
   furigana: チトセ
   gname: chitose
@@ -714,7 +741,8 @@ chitose:
 yakumo: 
   id: 1134
   old_code: 121034
-  prefecture: 1
+  start_shows: 8
+  area: dounan
   name: 八雲店
   furigana: ヤクモ
   gname: yakumo
@@ -740,7 +768,8 @@ yakumo:
 funami: 
   id: 1135
   old_code: 121035
-  prefecture: 1
+  start_shows: 8
+  area: dounan
   name: 苫小牧船見店
   furigana: トマコマイフナミ
   gname: funami
@@ -766,7 +795,8 @@ funami:
 tsukisamu: 
   id: 1137
   old_code: 121037
-  prefecture: 1
+  start_shows: 11
+  area: sapporo
   name: 月寒店
   furigana: ツキサム
   gname: tsukisamu
@@ -792,7 +822,8 @@ tsukisamu:
 ooyachi: 
   id: 1138
   old_code: 121038
-  prefecture: 1
+  start_shows: 11
+  area: sapporo
   name: 大谷地店
   furigana: オオヤチ
   gname: ooyachi
@@ -818,7 +849,8 @@ ooyachi:
 obihirominami: 
   id: 1139
   old_code: 121039
-  prefecture: 1
+  start_shows: 8
+  area: douto
   name: 帯広南店
   furigana: オビヒロミナミ
   gname: obihirominami
@@ -844,7 +876,8 @@ obihirominami:
 tanukikoji: 
   id: 1140
   old_code: 121040
-  prefecture: 1
+  start_shows: 11
+  area: sapporo
   name: 狸小路4丁目店
   furigana: タヌキコウジ4チョウメテン
   gname: tanukikoji
@@ -870,7 +903,8 @@ tanukikoji:
 asari: 
   id: 1141
   old_code: 121041
-  prefecture: 1
+  start_shows: 9
+  area: douo
   name: 朝里店
   furigana: アサリテン
   gname: asari
@@ -896,7 +930,8 @@ asari:
 kaji: 
   id: 1142
   old_code: 121042
-  prefecture: 1
+  start_shows: 8
+  area: dounan
   name: 函館鍛冶店
   furigana: ハコダテカジテン
   gname: kaji
@@ -922,7 +957,8 @@ kaji:
 kushirocho: 
   id: 1143
   old_code: 121043
-  prefecture: 1
+  start_shows: 8
+  area: douto
   name: 釧路町店
   furigana: クシロチョウテン
   gname: kushirocho
@@ -948,7 +984,8 @@ kushirocho:
 abashiri: 
   id: 1144
   old_code: 121044
-  prefecture: 1
+  start_shows: 8
+  area: douto
   name: 網走店
   furigana: アバシリテン
   gname: abashiri
@@ -974,7 +1011,8 @@ abashiri:
 wakkanai: 
   id: 1145
   old_code: 121045
-  prefecture: 1
+  start_shows: 8
+  area: douhoku
   name: 稚内店
   furigana: ワッカナイテン
   gname: wakkanai
@@ -1000,7 +1038,8 @@ wakkanai:
 ushiku: 
   id: 1201
   old_code: 122001
-  prefecture: 8
+  start_shows: 11
+  area: kennan
   name: 牛久店
   furigana: ウシクテン
   gname: ushiku
@@ -1026,7 +1065,8 @@ ushiku:
 tsukuba: 
   id: 1202
   old_code: 122002
-  prefecture: 8
+  start_shows: 11
+  area: kennan
   name: つくば店
   furigana: ツクバ
   gname: tsukuba
@@ -1052,7 +1092,8 @@ tsukuba:
 ami: 
   id: 1203
   old_code: 122003
-  prefecture: 8
+  start_shows: 11
+  area: kennan
   name: 阿見店
   furigana: アミ
   gname: ami
@@ -1078,7 +1119,8 @@ ami:
 ekiminami: 
   id: 1204
   old_code: 122004
-  prefecture: 9
+  start_shows: 9
+  area: tochigi
   name: 小山駅南町店
   furigana: オヤマエキミナミマチ
   gname: ekiminami
@@ -1104,7 +1146,8 @@ ekiminami:
 tama: 
   id: 1205
   old_code: 122005
-  prefecture: 9
+  start_shows: 9
+  area: tochigi
   name: 小山田間店
   furigana: オヤマタマ
   gname: tama
@@ -1130,7 +1173,8 @@ tama:
 tsuruta: 
   id: 1207
   old_code: 122007
-  prefecture: 9
+  start_shows: 9
+  area: tochigi
   name: 宇都宮鶴田店
   furigana: ウツノミヤツルタ
   gname: tsuruta
@@ -1156,7 +1200,8 @@ tsuruta:
 tsuchiura: 
   id: 1208
   old_code: 122008
-  prefecture: 8
+  start_shows: 11
+  area: kennan
   name: 土浦店
   furigana: ツチウラ
   gname: tsuchiura
@@ -1182,7 +1227,8 @@ tsuchiura:
 mibu: 
   id: 1209
   old_code: 122009
-  prefecture: 9
+  start_shows: 9
+  area: tochigi
   name: 壬生店
   furigana: ミブ
   gname: mibu
@@ -1208,7 +1254,8 @@ mibu:
 iwase: 
   id: 1210
   old_code: 122010
-  prefecture: 8
+  start_shows: 11
+  area: kennan
   name: 岩瀬店
   furigana: イワセ
   gname: iwase
@@ -1234,7 +1281,8 @@ iwase:
 yuuki: 
   id: 1211
   old_code: 122011
-  prefecture: 8
+  start_shows: 11
+  area: kennan
   name: 結城店
   furigana: ユウキ
   gname: yuuki
@@ -1260,7 +1308,8 @@ yuuki:
 kasukabe: 
   id: 1212
   old_code: 122012
-  prefecture: 11
+  start_shows: 9
+  area: saitama
   name: 春日部店
   furigana: カスカベ
   gname: kasukabe
@@ -1286,7 +1335,8 @@ kasukabe:
 nagaoka: 
   id: 1213
   old_code: 122013
-  prefecture: 9
+  start_shows: 9
+  area: tochigi
   name: 宇都宮長岡店
   furigana: ウツノミヤナガオカ
   gname: nagaoka
@@ -1312,7 +1362,8 @@ nagaoka:
 yatabe: 
   id: 1214
   old_code: 122014
-  prefecture: 8
+  start_shows: 11
+  area: kennan
   name: 谷田部店
   furigana: ヤタベ
   gname: yatabe
@@ -1338,7 +1389,8 @@ yatabe:
 kashiwa: 
   id: 1215
   old_code: 122015
-  prefecture: 12
+  start_shows: 11
+  area: tokatsu
   name: 柏店
   furigana: カシワ
   gname: kashiwa
@@ -1364,7 +1416,8 @@ kashiwa:
 mitominami: 
   id: 1216
   old_code: 122016
-  prefecture: 8
+  start_shows: 11
+  area: mito
   name: 水戸南店
   furigana: ミトミナミ
   gname: mitominami
@@ -1390,7 +1443,8 @@ mitominami:
 ota: 
   id: 1217
   old_code: 122017
-  prefecture: 10
+  start_shows: 9
+  area: gunma
   name: 太田店
   furigana: オオタ
   gname: ota
@@ -1416,7 +1470,8 @@ ota:
 hitachinaka: 
   id: 1218
   old_code: 122018
-  prefecture: 8
+  start_shows: 11
+  area: mito
   name: ひたちなか店
   furigana: ヒタチナカ
   gname: hitachinaka
@@ -1442,7 +1497,8 @@ hitachinaka:
 narita: 
   id: 1219
   old_code: 122019
-  prefecture: 12
+  start_shows: 10
+  area: narita
   name: 成田店
   furigana: ナリタ
   gname: narita
@@ -1468,7 +1524,8 @@ narita:
 ashikaga: 
   id: 1220
   old_code: 122020
-  prefecture: 9
+  start_shows: 9
+  area: tochigi
   name: 足利店
   furigana: アシカガ
   gname: ashikaga
@@ -1494,7 +1551,8 @@ ashikaga:
 chibachuo: 
   id: 1221
   old_code: 122021
-  prefecture: 12
+  start_shows: 9
+  area: wangan
   name: 千葉中央区店
   furigana: チバチュウオウク
   gname: chibachuo
@@ -1520,7 +1578,8 @@ chibachuo:
 kisaradu: 
   id: 1222
   old_code: 122022
-  prefecture: 12
+  start_shows: 9
+  area: wangan
   name: 木更津店
   furigana: キサラヅ
   gname: kisaradu
@@ -1546,7 +1605,8 @@ kisaradu:
 takasakinishi: 
   id: 1223
   old_code: 122023
-  prefecture: 10
+  start_shows: 9
+  area: gunma
   name: 高崎西店
   furigana: タカサキニシ
   gname: takasakinishi
@@ -1572,7 +1632,8 @@ takasakinishi:
 miyako: 
   id: 1225
   old_code: 122025
-  prefecture: 10
+  start_shows: 9
+  area: gunma
   name: 伊勢崎宮子店
   furigana: イセサキミヤコ
   gname: miyako
@@ -1598,7 +1659,8 @@ miyako:
 mizuho: 
   id: 1226
   old_code: 122026
-  prefecture: 13
+  start_shows: 9
+  area: tama
   name: 瑞穂店
   furigana: ミズホ
   gname: mizuho
@@ -1624,7 +1686,8 @@ mizuho:
 kimitsu: 
   id: 1227
   old_code: 122027
-  prefecture: 12
+  start_shows: 9
+  area: wangan
   name: 君津店
   furigana: キミツ
   gname: kimitsu
@@ -1650,7 +1713,8 @@ kimitsu:
 fukiage: 
   id: 1228
   old_code: 122028
-  prefecture: 11
+  start_shows: 9
+  area: saitama
   name: 吹上店
   furigana: フキアゲ
   gname: fukiage
@@ -1676,7 +1740,8 @@ fukiage:
 sayama: 
   id: 1229
   old_code: 122029
-  prefecture: 11
+  start_shows: 9
+  area: saitama
   name: 狭山店
   furigana: サヤマ
   gname: sayama
@@ -1702,7 +1767,8 @@ sayama:
 kuragano: 
   id: 1230
   old_code: 122030
-  prefecture: 10
+  start_shows: 9
+  area: gunma
   name: 高崎倉賀野店
   furigana: タカサキクラガノ
   gname: kuragano
@@ -1728,7 +1794,8 @@ kuragano:
 kamesato: 
   id: 1231
   old_code: 122031
-  prefecture: 10
+  start_shows: 9
+  area: gunma
   name: 前橋亀里店
   furigana: マエバシカメサト
   gname: kamesato
@@ -1754,7 +1821,8 @@ kamesato:
 natori: 
   id: 1232
   old_code: 122032
-  prefecture: 4
+  start_shows: 9
+  area: miyagi
   name: 名取店
   furigana: ナトリ
   gname: natori
@@ -1780,7 +1848,8 @@ natori:
 nakao: 
   id: 1233
   old_code: 122033
-  prefecture: 10
+  start_shows: 9
+  area: gunma
   name: 高崎中尾店
   furigana: タカサキナカオ
   gname: nakao
@@ -1806,7 +1875,8 @@ nakao:
 fuji: 
   id: 1234
   old_code: 122034
-  prefecture: 22
+  start_shows: 9
+  area: shizuoka
   name: 富士店
   furigana: フジノ
   gname: fuji
@@ -1832,7 +1902,8 @@ fuji:
 kumagaya: 
   id: 1235
   old_code: 122035
-  prefecture: 11
+  start_shows: 9
+  area: saitama
   name: 熊谷店
   furigana: クマガヤ
   gname: kumagaya
@@ -1858,7 +1929,8 @@ kumagaya:
 izumiku: 
   id: 1236
   old_code: 122036
-  prefecture: 4
+  start_shows: 9
+  area: miyagi
   name: 仙台泉区店
   furigana: センダイイズミク
   gname: izumiku
@@ -1884,7 +1956,8 @@ izumiku:
 iwaki: 
   id: 1237
   old_code: 122037
-  prefecture: 7
+  start_shows: 9
+  area: fukushima
   name: いわき店
   furigana: イワキ
   gname: iwaki
@@ -1910,7 +1983,8 @@ iwaki:
 ageo: 
   id: 1238
   old_code: 122038
-  prefecture: 11
+  start_shows: 9
+  area: saitama
   name: 上尾店
   furigana: アゲオ
   gname: ageo
@@ -1936,7 +2010,8 @@ ageo:
 atsugi: 
   id: 1239
   old_code: 122039
-  prefecture: 14
+  start_shows: 9
+  area: kanagawa
   name: 厚木店
   furigana: アツギ
   gname: atsugi
@@ -1962,7 +2037,8 @@ atsugi:
 ishinomaki: 
   id: 1240
   old_code: 122040
-  prefecture: 4
+  start_shows: 9
+  area: miyagi
   name: 石巻店
   furigana: イシノマキ
   gname: ishinomaki
@@ -1988,7 +2064,8 @@ ishinomaki:
 washimiya: 
   id: 1241
   old_code: 122041
-  prefecture: 11
+  start_shows: 9
+  area: saitama
   name: 鷲宮店
   furigana: ワシミヤ
   gname: washimiya
@@ -2014,7 +2091,8 @@ washimiya:
 gifumizuho: 
   id: 1242
   old_code: 122042
-  prefecture: 21
+  start_shows: 9
+  area: gifu
   name: 岐阜瑞穂店
   furigana: ギフミズホ
   gname: gifumizuho
@@ -2040,7 +2118,8 @@ gifumizuho:
 ogaki: 
   id: 1243
   old_code: 122043
-  prefecture: 21
+  start_shows: 9
+  area: gifu
   name: 大垣店
   furigana: オオガキ
   gname: ogaki
@@ -2066,7 +2145,8 @@ ogaki:
 sano: 
   id: 1244
   old_code: 122044
-  prefecture: 9
+  start_shows: 9
+  area: tochigi
   name: 佐野店
   furigana: サノ
   gname: sano
@@ -2092,7 +2172,8 @@ sano:
 noda: 
   id: 1245
   old_code: 122045
-  prefecture: 12
+  start_shows: 11
+  area: tokatsu
   name: 野田店
   furigana: ノダ
   gname: noda
@@ -2118,7 +2199,8 @@ noda:
 fuefuki: 
   id: 1246
   old_code: 122046
-  prefecture: 19
+  start_shows: 9
+  area: yamanashi
   name: 笛吹店
   furigana: フエフキ
   gname: fuefuki
@@ -2144,7 +2226,8 @@ fuefuki:
 miyamae: 
   id: 1247
   old_code: 122047
-  prefecture: 11
+  start_shows: 9
+  area: saitama
   name: さいたま宮前店
   furigana: サイタマミヤマエ
   gname: miyamae
@@ -2170,7 +2253,8 @@ miyamae:
 aritama: 
   id: 1248
   old_code: 122048
-  prefecture: 22
+  start_shows: 9
+  area: hamamatsu
   name: 浜松有玉店
   furigana: ハママツアリタマ
   gname: aritama
@@ -2196,7 +2280,8 @@ aritama:
 yanome: 
   id: 1249
   old_code: 122049
-  prefecture: 7
+  start_shows: 9
+  area: fukushima
   name: 福島矢野目店
   furigana: フクシマヤノメ
   gname: yanome
@@ -2222,7 +2307,8 @@ yanome:
 irino: 
   id: 1250
   old_code: 122050
-  prefecture: 22
+  start_shows: 9
+  area: hamamatsu
   name: 浜松入野店
   furigana: ハママツイリノ
   gname: irino
@@ -2248,7 +2334,8 @@ irino:
 moriya: 
   id: 1251
   old_code: 122051
-  prefecture: 8
+  start_shows: 11
+  area: kennan
   name: 守谷店
   furigana: モリヤ
   gname: moriya
@@ -2274,7 +2361,8 @@ moriya:
 aota: 
   id: 1252
   old_code: 122052
-  prefecture: 6
+  start_shows: 9
+  area: yamagata
   name: 山形青田店
   furigana: ヤマガタアオタ
   gname: aota
@@ -2300,7 +2388,8 @@ aota:
 uchihara: 
   id: 1253
   old_code: 122053
-  prefecture: 8
+  start_shows: 11
+  area: mito
   name: 水戸内原店
   furigana: ミトウチハラ
   gname: uchihara
@@ -2326,7 +2415,8 @@ uchihara:
 sagamihara: 
   id: 1254
   old_code: 122054
-  prefecture: 14
+  start_shows: 9
+  area: kanagawa
   name: 相模原店
   furigana: サガミハラ
   gname: sagamihara
@@ -2352,7 +2442,8 @@ sagamihara:
 shimoji: 
   id: 1255
   old_code: 122055
-  prefecture: 23
+  start_shows: 9
+  area: aichi
   name: 豊橋下地店
   furigana: トヨハシシモジ
   gname: shimoji
@@ -2378,7 +2469,8 @@ shimoji:
 oguchi: 
   id: 1256
   old_code: 122056
-  prefecture: 23
+  start_shows: 9
+  area: aichi
   name: 大口店
   furigana: オオグチ
   gname: oguchi
@@ -2404,7 +2496,8 @@ oguchi:
 kuwana: 
   id: 1257
   old_code: 122057
-  prefecture: 24
+  start_shows: 9
+  area: mie
   name: 桑名店
   furigana: クワナ
   gname: kuwana
@@ -2430,7 +2523,8 @@ kuwana:
 marugasaki: 
   id: 1258
   old_code: 122058
-  prefecture: 11
+  start_shows: 9
+  area: saitama
   name: さいたま丸ヶ崎店
   furigana: サイタママルガサキ
   gname: marugasaki
@@ -2456,7 +2550,8 @@ marugasaki:
 suzuka: 
   id: 1259
   old_code: 122059
-  prefecture: 24
+  start_shows: 9
+  area: mie
   name: 鈴鹿店
   furigana: スズカ
   gname: suzuka
@@ -2482,7 +2577,8 @@ suzuka:
 hiratsuka: 
   id: 1260
   old_code: 122060
-  prefecture: 14
+  start_shows: 9
+  area: kanagawa
   name: 平塚店
   furigana: ヒラツカテン
   gname: hiratsuka
@@ -2508,7 +2604,8 @@ hiratsuka:
 yachiyo: 
   id: 1261
   old_code: 122061
-  prefecture: 12
+  start_shows: 9
+  area: wangan
   name: 八千代店
   furigana: ヤチヨテン
   gname: yachiyo
@@ -2534,7 +2631,8 @@ yachiyo:
 higashichiba: 
   id: 1262
   old_code: 122062
-  prefecture: 12
+  start_shows: 9
+  area: wangan
   name: 東千葉店
   furigana: ヒガシチバテン
   gname: higashichiba
@@ -2560,7 +2658,8 @@ higashichiba:
 tsukubachuo: 
   id: 1263
   old_code: 122063
-  prefecture: 8
+  start_shows: 11
+  area: kennan
   name: つくば中央店
   furigana: ツクバチュウオウテン
   gname: tsukubachuo
@@ -2586,7 +2685,8 @@ tsukubachuo:
 yakushi: 
   id: 1264
   old_code: 122064
-  prefecture: 22
+  start_shows: 9
+  area: hamamatsu
   name: 浜松薬師店
   furigana: ハママツヤクシテン
   gname: yakushi
@@ -2612,7 +2712,8 @@ yakushi:
 baba: 
   id: 1265
   old_code: 122065
-  prefecture: 13
+  start_shows: 9
+  area: tokyo
   name: 高田馬場店
   furigana: タカダノババテン
   gname: baba
@@ -2638,7 +2739,8 @@ baba:
 inamachi: 
   id: 1266
   old_code: 122066
-  prefecture: 11
+  start_shows: 9
+  area: saitama
   name: 伊奈町店
   furigana: イナマチテン
   gname: inamachi
@@ -2664,7 +2766,8 @@ inamachi:
 iinaka: 
   id: 1267
   old_code: 122067
-  prefecture: 12
+  start_shows: 10
+  area: narita
   name: 成田飯仲店
   furigana: ナリタイイナカテン
   gname: iinaka
@@ -2690,7 +2793,8 @@ iinaka:
 kakitagawa: 
   id: 1268
   old_code: 122068
-  prefecture: 22
+  start_shows: 9
+  area: shizuoka
   name: 沼津柿田川店
   furigana: カキタガワテン
   gname: kakitagawa
@@ -2716,7 +2820,8 @@ kakitagawa:
 kasumigaura: 
   id: 1269
   old_code: 122069
-  prefecture: 8
+  start_shows: 11
+  area: kennan
   name: かすみがうら店
   furigana: カスミガウラテン
   gname: kasumigaura
@@ -2742,7 +2847,8 @@ kasumigaura:
 gamagori: 
   id: 1270
   old_code: 122070
-  prefecture: 23
+  start_shows: 9
+  area: aichi
   name: 音羽蒲郡店
   furigana: オトワガマゴオリテン
   gname: gamagori
@@ -2768,7 +2874,8 @@ gamagori:
 jonan: 
   id: 1271
   old_code: 122071
-  prefecture: 8
+  start_shows: 11
+  area: mito
   name: 水戸城南店
   furigana: ミトジョウナンテン
   gname: jonan
@@ -2794,7 +2901,8 @@ jonan:
 kabukicho: 
   id: 1272
   old_code: 122072
-  prefecture: 13
+  start_shows: 9
+  area: tokyo
   name: 新宿歌舞伎町店
   furigana: シンジュクカブキチョウテン
   gname: kabukicho
@@ -2820,7 +2928,8 @@ kabukicho:
 ikebukuro: 
   id: 1273
   old_code: 122073
-  prefecture: 13
+  start_shows: 9
+  area: tokyo
   name: 池袋西口店
   furigana: イケブクロニシグチテン
   gname: ikebukuro
@@ -2846,7 +2955,8 @@ ikebukuro:
 namekawa: 
   id: 1274
   old_code: 122074
-  prefecture: 8
+  start_shows: 11
+  area: mito
   name: 日立滑川店
   furigana: ヒタチナメカワテン
   gname: namekawa
@@ -2872,7 +2982,8 @@ namekawa:
 laketown: 
   id: 1275
   old_code: 122075
-  prefecture: 11
+  start_shows: 9
+  area: saitama
   name: 越谷レイクタウン店
   furigana: コシガヤレイクタウンテン
   gname: laketown
@@ -2898,7 +3009,8 @@ laketown:
 minaminagaike: 
   id: 1276
   old_code: 122076
-  prefecture: 20
+  start_shows: 9
+  area: nagano
   name: 長野南長池店
   furigana: ナガノミナミナガイケテン
   gname: minaminagaike
@@ -2924,7 +3036,8 @@ minaminagaike:
 higashimatsuyama: 
   id: 1277
   old_code: 122077
-  prefecture: 11
+  start_shows: 9
+  area: saitama
   name: 東松山店
   furigana: ヒガシマツヤマテン
   gname: higashimatsuyama
@@ -2950,7 +3063,8 @@ higashimatsuyama:
 kai: 
   id: 1278
   old_code: 122078
-  prefecture: 19
+  start_shows: 9
+  area: yamanashi
   name: 山梨甲斐店
   furigana: ヤマナシカイテン
   gname: kai
@@ -2976,7 +3090,8 @@ kai:
 shinonoi: 
   id: 1279
   old_code: 122079
-  prefecture: 20
+  start_shows: 9
+  area: nagano
   name: 長野篠ノ井店
   furigana: ナガノシノノイテン
   gname: shinonoi
@@ -3002,7 +3117,8 @@ shinonoi:
 togane: 
   id: 1280
   old_code: 122080
-  prefecture: 12
+  start_shows: 10
+  area: narita
   name: 東金店
   furigana: トウガネテン
   gname: togane
@@ -3028,7 +3144,8 @@ togane:
 higashikanesawa: 
   id: 1281
   old_code: 122081
-  prefecture: 8
+  start_shows: 11
+  area: mito
   name: 日立東金沢店
   furigana: ヒタチヒガシカネサワワテン
   gname: higashikanesawa
@@ -3054,7 +3171,8 @@ higashikanesawa:
 hojin: 
   id: 1282
   old_code: 122082
-  prefecture: 23
+  start_shows: 9
+  area: nagoya
   name: 名古屋宝神店
   furigana: ナゴヤホウジンテン
   gname: hojin
@@ -3080,7 +3198,8 @@ hojin:
 wakabaku: 
   id: 1283
   old_code: 122083
-  prefecture: 12
+  start_shows: 9
+  area: wangan
   name: 千葉若葉区店
   furigana: チバワカバクテン
   gname: wakabaku
@@ -3106,7 +3225,8 @@ wakabaku:
 kamagaya: 
   id: 1284
   old_code: 122084
-  prefecture: 12
+  start_shows: 9
+  area: wangan
   name: 千葉鎌ヶ谷店
   furigana: チバカマガヤテン
   gname: kamagaya
@@ -3132,7 +3252,8 @@ kamagaya:
 mobara: 
   id: 1285
   old_code: 122085
-  prefecture: 12
+  start_shows: 10
+  area: narita
   name: 千葉茂原店
   furigana: チバモバラテン
   gname: mobara
@@ -3158,7 +3279,8 @@ mobara:
 morioka: 
   id: 1286
   old_code: 122086
-  prefecture: 3
+  start_shows: 9
+  area: iwate
   name: 岩手盛岡店
   furigana: イワテモリオカテン
   gname: morioka
@@ -3184,7 +3306,8 @@ morioka:
 sakura: 
   id: 1287
   old_code: 122087
-  prefecture: 12
+  start_shows: 10
+  area: narita
   name: 千葉佐倉店
   furigana: チバサクラテン
   gname: sakura
@@ -3210,7 +3333,8 @@ sakura:
 niida: 
   id: 1288
   old_code: 122088
-  prefecture: 5
+  start_shows: 9
+  area: akita
   name: 秋田仁井田店
   furigana: アキタニイダテン
   gname: niida
@@ -3236,7 +3360,8 @@ niida:
 matsumoto: 
   id: 1289
   old_code: 122089
-  prefecture: 20
+  start_shows: 9
+  area: matsumoto
   name: 松本店
   furigana: マツモトテン
   gname: matsumoto
@@ -3262,7 +3387,8 @@ matsumoto:
 kariya: 
   id: 1290
   old_code: 122090
-  prefecture: 23
+  start_shows: 9
+  area: aichi
   name: 愛知刈谷店
   furigana: アイチカリヤテン
   gname: kariya
@@ -3288,7 +3414,8 @@ kariya:
 miyagino: 
   id: 1291
   old_code: 122091
-  prefecture: 4
+  start_shows: 9
+  area: miyagi
   name: 宮城野店
   furigana: ミヤギノテン
   gname: miyagino
@@ -3314,7 +3441,8 @@ miyagino:
 forest: 
   id: 1292
   old_code: 122092
-  prefecture: 19
+  start_shows: 9
+  area: yamanashi
   name: フォレスト河口湖店
   furigana: フォレストカワグチコテン
   gname: forest
@@ -3340,7 +3468,8 @@ forest:
 nakaogino: 
   id: 1293
   old_code: 122093
-  prefecture: 14
+  start_shows: 9
+  area: kanagawa
   name: 中荻野店
   furigana: ナカオギノテン
   gname: nakaogino
@@ -3366,7 +3495,8 @@ nakaogino:
 koriyama: 
   id: 1294
   old_code: 122094
-  prefecture: 7
+  start_shows: 9
+  area: fukushima
   name: 郡山店
   furigana: コオリヤマテン
   gname: koriyama
@@ -3392,7 +3522,8 @@ koriyama:
 fujinomiya: 
   id: 1295
   old_code: 122095
-  prefecture: 22
+  start_shows: 9
+  area: shizuoka
   name: 富士宮店
   furigana: フジノミヤテン
   gname: fujinomiya
@@ -3418,7 +3549,8 @@ fujinomiya:
 hamamatuminami: 
   id: 1296
   old_code: 122096
-  prefecture: 22
+  start_shows: 9
+  area: hamamatsu
   name: 浜松南区店
   furigana: ハママツミナミクテン
   gname: hamamatuminami
@@ -3444,7 +3576,8 @@ hamamatuminami:
 hirosaki: 
   id: 1297
   old_code: 122097
-  prefecture: 2
+  start_shows: 9
+  area: aomori
   name: 弘前店
   furigana: ヒロサキテン
   gname: hirosaki
@@ -3470,7 +3603,8 @@ hirosaki:
 takaoka: 
   id: 1298
   old_code: 122098
-  prefecture: 16
+  start_shows: 9
+  area: toyama
   name: 高岡店
   furigana: タカオカテン
   gname: takaoka
@@ -3496,7 +3630,8 @@ takaoka:
 techno: 
   id: 1299
   old_code: 122099
-  prefecture: 9
+  start_shows: 9
+  area: tochigi
   name: テクノポリスセンター店
   furigana: テクノポリスセンターテン
   gname: techno
@@ -3522,7 +3657,8 @@ techno:
 morito: 
   id: 1300
   old_code: 122100
-  prefecture: 17
+  start_shows: 9
+  area: ishikawa
   name: 金沢森戸店
   furigana: カナザワモリトテン
   gname: morito
@@ -3548,7 +3684,8 @@ morito:
 akashi: 
   id: 1301
   old_code: 122101
-  prefecture: 28
+  start_shows: 9
+  area: hyogo
   name: 明石店
   furigana: アカシテン
   gname: akashi
@@ -3574,7 +3711,8 @@ akashi:
 kishiwada: 
   id: 1302
   old_code: 122102
-  prefecture: 27
+  start_shows: 9
+  area: osaka
   name: 岸和田店
   furigana: キシワダテン
   gname: kishiwada
@@ -3600,7 +3738,8 @@ kishiwada:
 yawata: 
   id: 1303
   old_code: 122103
-  prefecture: 26
+  start_shows: 9
+  area: kyoto
   name: 京都八幡店
   furigana: キョウトヤワタテン
   gname: yawata
@@ -3626,7 +3765,8 @@ yawata:
 kitakyushu: 
   id: 1304
   old_code: 122104
-  prefecture: 40
+  start_shows: 9
+  area: fukuoka
   name: 北九州店
   furigana: キタキュウシュウテン
   gname: kitakyushu
@@ -3652,7 +3792,8 @@ kitakyushu:
 kumamoto: 
   id: 1305
   old_code: 122105
-  prefecture: 43
+  start_shows: 9
+  area: kumamoto
   name: 熊本店
   furigana: クマモトテン
   gname: kumamoto
@@ -3678,7 +3819,8 @@ kumamoto:
 hanamigawa: 
   id: 4224
   old_code: 122024
-  prefecture: 12
+  start_shows: 9
+  area: wangan
   name: 千葉花見川区店
   furigana: チバハナミカワク
   gname: hanamigawa

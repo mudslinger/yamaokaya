@@ -1,0 +1,26 @@
+body.yamaokaya.shops{
+	#index-map{
+		width:100%;
+		height:400px;
+	}
+	.jumbotron{
+		background: asset-url('shop/bg03.jpg') no-repeat center;
+	}
+	.imagemap-wrap{
+		z-index: 200;
+	}
+	.shop-image{
+		width:100%;
+	}
+	.table caption{
+		font-size: $font-size-large;
+	}
+	.fixed {
+		position: fixed;
+		top: 0;
+		z-index: 200;
+	}
+	#map a{
+		color:blue;
+	}
+}

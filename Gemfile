@@ -3,8 +3,10 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.1'
-# Use sqlite3 as the database for Active Record
 gem 'mysql2'
+gem 'tiny_tds'
+gem 'activerecord-sqlserver-adapter'
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
 # Use Uglifier as compressor for JavaScript assets
@@ -49,3 +51,5 @@ gem 'redis'
 gem 'polyglot'
 gem 'quiet_assets', :group => :development
 gem 'geocoder'
+gem 'redis-rails'
+#gem 'cloudinary'

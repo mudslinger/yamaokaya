@@ -1,3 +1,6 @@
 class BrandYamaokaya::TopController < BrandYamaokaya::BaseController
-	def index;end
+	def index
+		@headlines = Release.headline
+	end
+
 end

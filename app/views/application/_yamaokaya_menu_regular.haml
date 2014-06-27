@@ -1,0 +1,28 @@
+.row
+	.col-xs-12
+		%h3 レギュラーメニュー
+	.col-md-7.col-xs-12.menu-intro
+		%p
+			レギュラーメニューは全29種類。
+		%p
+			バリエーションの豊富さは、山岡家のささやかな自慢の一つです。
+		%p
+			お気に入りの一杯が、きっと見つかるはず。 
+.row
+	- @menus.tastes.each do |t|
+		- menus = @menus.send(t[0])
+		- if menus.size > 0
+			.panel.panel-default.panel-menu
+				.panel-heading
+					%h4.panel-title
+						=t[0]
+						%small soy source
+				.panel-body
+					- menus.each do |m|
+						.col-md-2.col-sm-4.col-xs-12
+							.picture.well
+								.tags
+								.actions
+									=link_to m.name, menu_details_path(m.id), {class:"btn btn-link modal-link", title: m.name,remote: request.variant != :phone}
+								=link_to menu_details_path(m.id),{remote: request.variant != :phone} do
+									%img{src:"//assets.yamaokaya.com/images/menus/photos/#{m.id}.png"}

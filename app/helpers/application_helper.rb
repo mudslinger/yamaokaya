@@ -1,5 +1,6 @@
 module ApplicationHelper
 	def tt(key)
+		puts "#{controller_name}--------------------------------#{action_name}"
 		ret = t key,scope: [controller_name,action_name]
 		return ret
 	end
@@ -31,5 +32,18 @@ module ApplicationHelper
 				[I18n.t(s[0],scope: [:enums,key]), s[0]]
 			end,
 			selected: selected)
+	end
+
+	def static_map_for_shop(shop,options = {})
+	    params = {
+	      :center => shop.center.join(","),
+	      :zoom => shop.zoom,
+	      :size => "400x300",
+	      :markers => shop.center.join(","),
+	      :sensor => true
+	      }.merge(options)
+	 
+	    query_string =  params.map{|k,v| "#{k}=#{v}"}.join("&")
+	    image_tag "http://maps.googleapis.com/maps/api/staticmap?#{query_string}", :alt => shop.name,class: 'img-rounded'
 	end
 end

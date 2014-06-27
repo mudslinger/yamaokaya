@@ -1,0 +1,2 @@
+module BrandYamaokaya::AboutsHelper
+end

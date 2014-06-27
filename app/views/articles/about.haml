@@ -1,0 +1,32 @@
+.after-nav.container-full
+  .container
+    .row
+      -#.page-header
+      %h2
+        =tt :title
+        %small= tt :subtitle
+.container
+  .row
+    =Page.sitemap(request.host).current_node(request.fullpath)
+  .row
+    - tt(:bodies).each_with_index do |v,i|
+      %h3=v['lead']
+      -v['bodies'].each do |b|
+        %p=b
+  .row
+    %h3
+      =tt 'environment.title'
+      %small= tt('environment.lead')
+  .row
+    -tt('environment.env').each do |e|
+      .col-xs-6.col-sm-6.col-md-4
+        .panel.panel-default
+          .panel-heading
+            %h4.panel-title=e['os']
+          - unless e['browsers'].nil?
+            %ul.list-group
+              - e['browsers'].each do |b|
+                %li.list-group-item=b
+  .row
+    -tt('environment.remarks').each do |e|
+      %p=e

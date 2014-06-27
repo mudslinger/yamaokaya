@@ -3,9 +3,9 @@ class Recruit::BaseController < ApplicationController
 	before_filter :header_haml
 	def header_haml
 		@header_haml = if self.kind_of?(Recruit::TopController)
-			'layouts/recruit/header_top' 
+			'recruit_header_top' 
 		else
-			'layouts/recruit/header'
+			'recruit_header'
 		end
 	end
 end

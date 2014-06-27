@@ -1,66 +1,167 @@
 class Shop < ActiveRecord::Base
 	geocoded_by :address, :latitude  => :lat, :longitude => :lng
+
+	default_scope -> {
+		order(:id)
+	}
+
 	scope :active, -> {
-	where("(current_timestamp between inauguration and close) or (abs(datediff(current_timestamp,inauguration)) < 30)").
-	order(:id)
+		where("(current_timestamp between [inauguration] and [close]) or (abs(datediff(d,current_timestamp,inauguration)) < 30)")
 	}
 
-	enum prefecture: {
-		hokkai: 1,#北海道
-		aomori: 2,#青森県
-		iwate: 3,#岩手県
-		miyagi: 4,#宮城県
-		akita: 5,#秋田県
-		yamagata: 6,#山形県
-		fukushima: 7,#福島県
-		ibaraki: 8,#茨城県
-		tochigi: 9,#栃木県
-		gunma: 10,#群馬県
-		saitama: 11,#埼玉県
-		chiba: 12,#千葉県
-		tokyo: 13,#東京都
-		kanagawa: 14,#神奈川県
-		niigata: 15,#新潟県
-		toyama: 16,#富山県
-		ishikawa: 17,#石川県
-		fukui: 18,#福井県
-		yamanashi: 19,#山梨県
-		nagano: 20,#長野県
-		gifu: 21,#岐阜県
-		shizuoka: 22,#静岡県
-		aichi: 23,#愛知県
-		mie: 24,#三重県
-		shiga: 25,#滋賀県
-		kyoto: 26,#京都府
-		osaka: 27,#大阪府
-		hyogo: 28,#兵庫県
-		nara: 29,#奈良県
-		wakayama: 30,#和歌山県
-		tottori: 31,#鳥取県
-		shimane: 32,#島根県
-		okayama: 33,#岡山県
-		hiroshima: 34,#広島県
-		yamaguchi: 35,#山口県
-		tokushima: 36,#徳島県
-		kagawa: 37,#香川県
-		ehime: 38,#愛媛県
-		kochi: 39,#高知県
-		fukuoka: 40,#福岡県
-		saga: 41,#佐賀県
-		nagasaki: 42,#長崎県
-		kumamoto: 43,#熊本県
-		oita: 44,#大分県
-		miyazaki: 45,#宮崎県
-		kagoshima: 46,#鹿児島県
-		okinawa: 47#沖縄県
+	scope :by_zoom, ->(zoom) {
+		where("#{zoom} >= shops.start_shows")
+	}
+	scope :with_higher, ->{
+		includes(:area => {:prefecture => :region})
 	}
 
-	def region
-		case prefecture.to_sym
-		when :hokkai then :hokkaido
-		when :aomori,:akita,:iwate,:miyagi,:yamagata,:fukushima then :tohoku
-		else :unknown
+	scope :nearby, ->(lat,lng) {
+		where(
+			"SQRT(power(lat - #{lat},2)+power(lng - #{lng},2)) <> 0" 
+		).where(
+			"SQRT(power(lat - #{lat},2)+power(lng - #{lng},2)) < 1" 
+		).order(
+			"SQRT(power(lat - #{lat},2)+power(lng - #{lng},2))"
+		).limit(4)
+	}
+
+	scope :older_shops, ->(id) {
+		where("id < #{id}")
+	}
+	belongs_to :area
+	belongs_to :release
+	delegate :prefecture, to: :area, allow_nil: false
+	delegate :region, to: :prefecture, allow_nil: false
+
+	def marker_type
+		self.class.name
+	end
+
+	def nearby
+		Shop.nearby(lat,lng).active
+	end
+
+	def seq
+		Shop.older_shops(id).count + 1
+	end
+
+	def sprite_x
+		(seq-1) % 10 * 24
+	end
+
+	def sprite_y
+		(seq-1).div(10) * 56
+	end
+
+	def center
+		[lat,lng]
+	end
+
+	def end_shows
+		100
+	end
+
+	def shop_hours
+		if allnight?
+			encode_shop_hour(0)
+		elsif alldayssame?
+			encode_shop_hour(sunday)
+		else 
+			Hash[
+				{
+					'日' => sunday,
+					'月' => monday,
+					'火' => tuesday,
+					'水' => wednesday,
+					'木' => thursday,
+					'金' => friday,
+					'土' => saturday
+				}.group_by do |k,v|
+					v
+				end.map do |k,v|
+					[v.map do |k,v|
+						k
+					end ,encode_shop_hour(k)]
+			end
+			]
 		end
 	end
+
+	def shop_hours_human
+		sh = shop_hours
+		fmt = '%p%I:%M'
+		if sh.is_a?(Array)
+			return sh.map do |h|
+				if h.max - h.min == 1
+					"24時間営業"
+				else
+					"#{h.min.strftime(fmt)} 〜 #{h.max.strftime(fmt)}"
+				end
+			end
+		else
+			sh.sort do |a,b|
+				b[0].size <=> a[0].size
+			end.map do |k,v|
+				if k.size > 4 
+					""
+				else
+					"#{k.join(',')}:"
+				end + v.map do |h|
+					if h.max - h.min == 1
+							"24時間営業"
+					else
+						"#{h.min.strftime(fmt)} 〜 #{h.max.strftime(fmt)}"
+					end
+				end.join(',')
+			end
+		end
+	end
+
+	def allnight?
+		sunday + monday + tuesday + wednesday + thursday + friday + saturday == 0
+	end
+
+	def alldayssame?
+		[monday,tuesday,wednesday,thursday,friday,saturday].all? do |o|
+			o == sunday
+		end
+	end
+	def now_open?
+		return true if allnight?
+		today = DateTime.now
+		dow =  
+		if today.sunday? then sunday
+		elsif today.monday? then monday
+		elsif today.tuesday? then tuesday
+		elsif today.wednesday? then wednesday
+		elsif today.thursday? then thursday
+		elsif today.friday? then friday
+		elsif today.saturday? then saturday			
+		end
+		#TODO 日付の関係で間違った判断をするので修正
+		encode_shop_hour(dow).any? do |h|
+			h.include?(today)
+		end
+	end
+	private
+	def encode_shop_hour(hour)
+		t = DateTime.now.change hour:6
+		return [(t..t+1.days)] if hour == 0
+		h = hour | 1<<48
+		48.times.map do |n|
+			[n,h & 1 << n ==0, h & 1 << n+1 == 0]
+		end.select do |i|
+			i[1] != i[2] || i[0] == 0
+		end.each_cons(2).map do | i,j|
+			puts "#{i} -- #{j}"
+			{range: t + (i[0]*30 + (i[0] == 0 ? 0 : 30)).minutes..t + (j[0]*30+30).minutes,on: i[2]}
+		end.select do |o|
+			o[:on]
+		end.map do |o|
+			o[:range]
+		end
+	end
+
 
 end

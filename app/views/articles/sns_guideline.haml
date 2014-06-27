@@ -1,0 +1,13 @@
+.after-nav.container-full
+  .container
+    .row
+      -#.page-header
+      %h2
+        =tt :title
+        %small= tt :subtitle
+.container
+  .row
+    - tt(:bodies).each_with_index do |v,i|
+      %h3=v['lead']
+      -v['bodies'].each do |b|
+        %p=b

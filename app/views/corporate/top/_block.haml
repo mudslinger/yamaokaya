@@ -5,7 +5,7 @@
 			=t :title,scope: [ctrl,act]
 			.label.label-info=t :title,scope: [ctrl]
 	.panel-body
-		=image_tag t(:image,scope: [ctrl,act]),class: 'img-rounded',width: '45%',align: :left
+		=image_tag 'corporate/business/safety.png' ,class: 'img-rounded',:height => 100, :crop => :fill,align: :left
 		%p.truncate=t(:bodies,scope: [ctrl,act])[0]
 	.panel-footer.text-right
 		=link_to '続きを読む',{controller: ctrl,action: act},class: "btn btn-primary"

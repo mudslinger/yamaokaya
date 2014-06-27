@@ -21,6 +21,9 @@ GEM
       activemodel (= 4.1.1)
       activesupport (= 4.1.1)
       arel (~> 5.0.0)
+    activerecord-sqlserver-adapter (4.1.0)
+      activerecord (~> 4.1.0)
+      arel
     activesupport (4.1.1)
       i18n (~> 0.6, >= 0.6.9)
       json (~> 1.7, >= 1.7.7)
@@ -51,14 +54,14 @@ GEM
       sprockets (<= 2.11.0)
     dalli (2.7.2)
     erubis (2.7.0)
-    execjs (2.1.0)
+    execjs (2.2.0)
     fssm (0.2.10)
     geocoder (1.2.1)
     haml (4.0.5)
       tilt
     hike (1.2.3)
     i18n (0.6.9)
-    jbuilder (2.0.7)
+    jbuilder (2.1.0)
       activesupport (>= 3.0.0, < 5)
       multi_json (~> 1.2)
     jquery-rails (3.1.0)
@@ -66,6 +69,7 @@ GEM
       thor (>= 0.14, < 2.0)
     json (1.8.1)
     kgio (2.9.2)
+    libv8 (3.16.14.3)
     mail (2.5.4)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
@@ -102,7 +106,24 @@ GEM
     rdoc (4.1.1)
       json (~> 1.4)
     redcarpet (3.1.2)
-    redis (3.0.7)
+    redis (3.1.0)
+    redis-actionpack (4.0.0)
+      actionpack (~> 4)
+      redis-rack (~> 1.5.0)
+      redis-store (~> 1.1.0)
+    redis-activesupport (4.0.0)
+      activesupport (~> 4)
+      redis-store (~> 1.1.0)
+    redis-rack (1.5.0)
+      rack (~> 1.5)
+      redis-store (~> 1.1.0)
+    redis-rails (4.0.0)
+      redis-actionpack (~> 4)
+      redis-activesupport (~> 4)
+      redis-store (~> 1.1.0)
+    redis-store (1.1.4)
+      redis (>= 2.2)
+    ref (1.0.5)
     rest-client (1.6.7)
       mime-types (>= 1.16)
     sass (3.2.19)
@@ -124,9 +145,13 @@ GEM
       actionpack (>= 3.0)
       activesupport (>= 3.0)
       sprockets (~> 2.8)
+    therubyracer (0.12.1)
+      libv8 (~> 3.16.14.0)
+      ref
     thor (0.19.1)
     thread_safe (0.3.4)
     tilt (1.4.1)
+    tiny_tds (0.6.2)
     treetop (1.4.15)
       polyglot
       polyglot (>= 0.3.1)
@@ -147,6 +172,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  activerecord-sqlserver-adapter
   aws-ses
   coffee-rails (~> 4.0.0)
   compass-rails
@@ -162,10 +188,13 @@ DEPENDENCIES
   rails (= 4.1.1)
   redcarpet
   redis
+  redis-rails
   rest-client
   sass-rails (~> 4.0.3)
   sdoc (~> 0.4.0)
   spring
+  therubyracer
+  tiny_tds
   turbolinks
   uglifier (>= 1.3.0)
   unicorn

@@ -1,0 +1,17 @@
+.panel.panel-default.panel-menu
+	.panel-heading
+		%h4.panel-title
+			=@menu.name
+	.panel-body
+		%p.text-left= @menu.comment
+		.picture.well
+			%img{src:"//assets.yamaokaya.com/images/menus/photos/#{@menu.id}.png"}
+		.caption
+			%p.text-right
+				%strong.text-danger#price=@menu.price
+				%span.yen 円
+				%span.zeikomi (税込み)
+				%span.zeinuki 税抜本体価格
+				%strong.text-danger#wotax=(@menu.price.to_i / 1.08).ceil
+				%span.yen 円
+

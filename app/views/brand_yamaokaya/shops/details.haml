@@ -1,0 +1,67 @@
+.after-nav.container-full
+	.container
+		.row
+			%h2.col-xs-12
+				%span.glyphicon.glyphicon-shop_window
+				=@shop.name
+.container
+	.row
+		%ol.breadcrumb.col-xs-8.pull-left
+			%li
+				=link_to :yamaokaya_top do
+					トップ
+			%li
+				=link_to :shop_root do
+					店舗情報
+			%li
+				=@shop.name
+		-#SNSボタンの読み込み
+		=render partial: 'yamaokaya_sns'
+.container#main
+	.row
+		.col-md-5
+			#lat.hidden=@shop.lat
+			#lng.hidden=@shop.lng
+			#sprite_x.hidden=@shop.sprite_x
+			#sprite_y.hidden=@shop.sprite_y
+			#zoom.hidden=@shop.zoom
+			%img.shop-image.img-rounded{src:"//assets.yamaokaya.com/images/shops/photos/#{@shop.id}.jpg"}
+			%hr
+			.panel.panel-default
+				%table.table
+					%caption 店舗情報
+					%tr
+						%th 住所
+						%td
+							="〒#{@shop.postal_code}"
+							%br
+							= @shop.address
+					%tr
+						%th 電話番号
+						%td= @shop.phone
+					%tr
+						%th 営業時間
+						%td
+							- @shop.shop_hours_human.each do |h|
+								=h
+					%tr
+						%th 目印・その他
+						%td= @shop.landmarks
+		.col-md-7
+			=render partial: 'yamaokaya_map' 
+	.row
+		%h3.col-xs-12 近くのお店
+		- @shop.nearby.each do |n|
+			.col-md-3
+				.thumbnail
+					.caption
+						%h4=n.name
+					%img.shop-image.img-rounded{src:"//assets.yamaokaya.com/images/shops/photos/#{n.id}.jpg"}
+					.caption
+						%p
+							%span.glyphicon.glyphicon-road
+							=n.address
+						%p
+							%span.glyphicon.glyphicon-phone_alt
+							=n.phone
+						%p=link_to "店舗情報",shop_details_path(n.id), :class => "btn btn-primary"

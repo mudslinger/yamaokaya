@@ -11,17 +11,18 @@ $bootstrap-sass-asset-helper: (twbs-font-path("") != unquote('twbs-font-path("")
 //
 //## Gray and brand colors for use across Bootstrap.
 
-$gray-darker:            lighten(#000, 13.5%) !default; // #222
+$gray-darker:            #111 !default; // #222
 $gray-dark:              lighten(#000, 20%) !default;   // #333
 $gray:                   lighten(#000, 33.5%) !default; // #555
 $gray-light:             lighten(#000, 60%) !default;   // #999
 $gray-lighter:           lighten(#000, 93.5%) !default; // #eee
+$almost-white:           #fff !default;
 
-$brand-primary:         #428bca !default;
+$brand-primary:         #B30404 !default;
 $brand-success:         #5cb85c !default;
-$brand-info:            #5bc0de !default;
 $brand-warning:         #f0ad4e !default;
 $brand-danger:          #d9534f !default;
+$brand-info:            #5bc0de !default;
 
 
 //== Scaffolding
@@ -29,14 +30,13 @@ $brand-danger:          #d9534f !default;
 // ## Settings for some of the most global styles.
 
 //** Background color for `<body>`.
-$body-bg:               #fff !default;
+$body-bg:               $gray-darker !default;
 //** Global text color on `<body>`.
-$text-color:            $gray-dark !default;
+$text-color:            $almost-white !default;
 
 //** Global textual link color.
-$link-color:            $brand-primary !default;
-//** Link hover color set via `darken()` function.
-$link-hover-color:      darken($link-color, 15%) !default;
+$link-color:            $almost-white !default;
+$link-hover-color:      $brand-primary !default;
 
 
 //== Typography
@@ -49,7 +49,7 @@ $font-family-serif:       "ヒラギノ明朝 ProN W6",	"HiraMinProN-W6","HG明�
 $font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace !default;
 $font-family-base:        $font-family-sans-serif !default;
 
-$font-size-base:          14px !default;
+$font-size-base:          10px !default;
 $font-size-large:         ceil(($font-size-base * 1.25)) !default; // ~18px
 $font-size-small:         ceil(($font-size-base * 0.85)) !default; // ~12px
 
@@ -76,7 +76,7 @@ $headings-color:          inherit !default;
 //
 //## Specify custom locations of the include Glyphicons icon font. Useful for those including Bootstrap via Bower.
 
-$icon-font-path: "/assets/" !default;
+$icon-font-path: "/fonts/" !default;
 $icon-font-name:          "glyphicons-halflings-regular" !default;
 $icon-font-svg-id:        "glyphicons_halflingsregular" !default;
 
@@ -461,7 +461,7 @@ $pager-disabled-color:                 $pagination-disabled-color !default;
 
 $jumbotron-padding:              30px !default;
 $jumbotron-color:                inherit !default;
-$jumbotron-bg:                   $gray-lighter !default;
+$jumbotron-bg:                   transparent !default;
 $jumbotron-heading-color:        inherit !default;
 $jumbotron-font-size:            ceil(($font-size-base * 1.5)) !default;
 
@@ -661,21 +661,19 @@ $list-group-link-color:         #555 !default;
 $list-group-link-heading-color: #333 !default;
 
 
-//== Panels
-//
-//##
 
-$panel-bg:                    #fff !default;
+
+$panel-bg:                    transparent !default;
 $panel-body-padding:          15px !default;
 $panel-border-radius:         $border-radius-base !default;
 
 //** Border color for elements within panels
-$panel-inner-border:          #ddd !default;
+$panel-inner-border:          $gray !default;
 $panel-footer-bg:             #f5f5f5 !default;
 
-$panel-default-text:          $gray-dark !default;
+$panel-default-text:          $almost-white !default;
 $panel-default-border:        #ddd !default;
-$panel-default-heading-bg:    #f5f5f5 !default;
+$panel-default-heading-bg:    $gray-dark !default;
 
 $panel-primary-text:          #fff !default;
 $panel-primary-border:        $brand-primary !default;
@@ -751,9 +749,9 @@ $badge-border-radius:         10px !default;
 $breadcrumb-padding-vertical:   8px !default;
 $breadcrumb-padding-horizontal: 15px !default;
 //** Breadcrumb background color
-$breadcrumb-bg:                 #f5f5f5 !default;
+$breadcrumb-bg:               $gray-darker !default;
 //** Breadcrumb text color
-$breadcrumb-color:              #ccc !default;
+$breadcrumb-color:            $almost-white !default;
 //** Text color of current page in the breadcrumb
 $breadcrumb-active-color:       $gray-light !default;
 //** Textual separator for between breadcrumb elements

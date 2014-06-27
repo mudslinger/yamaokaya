@@ -23,3 +23,12 @@
     @content;
   } 
 }
+
+@mixin bg($url){
+    html.datauri_na > &{
+        background-image:image-url($url);
+    }
+    html.datauri_avlbl > &{
+        background-image:asset-data-url($url);
+    }
+}

@@ -11,7 +11,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140604075553) do
+ActiveRecord::Schema.define(version: 20140626030811) do
+
+  create_table "areas", force: true do |t|
+    t.boolean  "whole_prefecture",            default: false
+    t.integer  "prefecture_id"
+    t.string   "name",             limit: 62,                 null: false
+    t.integer  "start_shows"
+    t.integer  "end_shows"
+    t.float    "lat",              limit: 24
+    t.float    "lng",              limit: 24
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "seq"
+  end
 
   create_table "entries", force: true do |t|
     t.string   "name",                 limit: 126, null: false
@@ -29,9 +42,66 @@ ActiveRecord::Schema.define(version: 20140604075553) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "remote_ip",            limit: 15
-    t.float    "lat"
-    t.float    "lng"
+    t.float    "lat",                  limit: 24
+    t.float    "lng",                  limit: 24
     t.integer  "area_restriction"
+  end
+
+  create_table "menus", force: true do |t|
+    t.string   "name",            limit: 126, null: false
+    t.integer  "category",                    null: false
+    t.integer  "subcategory",                 null: false
+    t.integer  "taste"
+    t.integer  "ingredients"
+    t.boolean  "has_large_sizes"
+    t.boolean  "is_hot"
+    t.date     "start_sells",                 null: false
+    t.date     "end_sells",                   null: false
+    t.date     "start_promote"
+    t.date     "end_promote"
+    t.integer  "price",                       null: false
+    t.text     "comment"
+    t.integer  "push_priority"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "prefectures", force: true do |t|
+    t.boolean  "whole_region"
+    t.integer  "region_id"
+    t.string   "name",         limit: 62, null: false
+    t.integer  "start_shows"
+    t.integer  "end_shows"
+    t.float    "lat",          limit: 24
+    t.float    "lng",          limit: 24
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "seq"
+  end
+
+  create_table "regions", force: true do |t|
+    t.string   "name",        limit: 62, null: false
+    t.integer  "start_shows"
+    t.integer  "end_shows"
+    t.float    "lat",         limit: 24
+    t.float    "lng",         limit: 24
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "seq"
+  end
+
+  create_table "releases", force: true do |t|
+    t.datetime "start_shows",               null: false
+    t.datetime "end_shows",                 null: false
+    t.datetime "target_date",               null: false
+    t.string   "title",         limit: 254, null: false
+    t.string   "url",           limit: 254, null: false
+    t.text     "body"
+    t.integer  "shop_id"
+    t.integer  "menu_group_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "release_type"
   end
 
   create_table "shops", force: true do |t|
@@ -40,7 +110,6 @@ ActiveRecord::Schema.define(version: 20140604075553) do
     t.string   "furigana",     limit: 62
     t.string   "gname",        limit: 62
     t.string   "postal_code",  limit: 7
-    t.integer  "prefecture",                                                    null: false
     t.string   "address",      limit: 127
     t.string   "phone",        limit: 15
     t.decimal  "lat",                      precision: 11, scale: 8
@@ -58,6 +127,8 @@ ActiveRecord::Schema.define(version: 20140604075553) do
     t.string   "landmarks",    limit: 127
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "area_id"
+    t.integer  "start_shows"
   end
 
   create_table "wished_shops", force: true do |t|

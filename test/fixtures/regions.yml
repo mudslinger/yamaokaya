@@ -1,0 +1,70 @@
+hokkaido:
+  name: 北海道地方
+  lat: 42.7826551
+  lng: 142.5316813
+  seq: 1
+  start_shows: 1
+  end_shows: 5
+tohoku:
+  name: 東北地方
+  lat: 39.147633
+  lng: 141.0100749
+  seq: 2
+  start_shows: 1
+  end_shows: 6
+kanto:
+  name: 関東地方
+  lat: 35.6927749
+  lng: 139.7320361
+  seq: 3
+  start_shows: 1
+  end_shows: 6
+koshinetsu:
+  name: 甲信越地方
+  lat: 37.1949319
+  lng: 138.5262866
+  seq: 4
+  start_shows: 1
+  end_shows: 6
+hokuriku:
+  name: 北陸地方
+  lat: 36.6642964
+  lng: 136.8604218
+  seq: 5
+  start_shows: 1
+  end_shows: 6
+tokai:
+  name: 東海地方
+  lat: 35.1730472
+  lng: 136.8468608
+  seq: 6
+  start_shows: 1
+  end_shows: 6
+kinki:
+  name: 近畿地方
+  lat: 34.6784
+  lng: 135.49515
+  seq: 7
+  start_shows: 1
+  end_shows: 6
+chugoku:
+  name: 中国地方
+  lat: 34.8543187
+  lng: 133.0040001
+  seq: 8
+  start_shows: 1
+  end_shows: 6
+shikoku:
+  name: 四国地方
+  lat: 33.7088536
+  lng: 133.3967613
+  seq: 9
+  start_shows: 1
+  end_shows: 6
+kyushu:
+  name: 九州地方
+  lat: 32.985817
+  lng: 131.7937618
+  seq: 10
+  start_shows: 1
+  end_shows: 6

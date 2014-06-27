@@ -1,0 +1,25 @@
+.after-nav.container-full
+  .container
+    .row
+      -#.page-header
+      %h2
+        =tt :title
+        %small= tt :subtitle
+.container
+  .row
+    %ul
+      %li
+        =link_to @site.url do
+          =@site.title
+        -unless @site.children.nil?
+          %ul
+            -@site.children.each do |p|
+              %li
+                =link_to p.url do
+                  =p.title
+                  -unless p.children.nil?
+                    %ul
+                      -p.children.each do |p2|
+                        %li
+                          =link_to p2.url do
+                            =p2.title

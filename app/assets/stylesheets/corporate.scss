@@ -20,7 +20,7 @@ body.corporate{
 		border-top: solid 0.5em $brand-primary;
 		margin-top: 4em;
 		padding-top: 1em;
-		background: url(corporate/fback.png);
+		background: image-url('corporate/fback.png');
 		background-color: $gray-darker;
 		color: white;
 		.footer-main{
@@ -114,7 +114,7 @@ body.corporate{
 		}
 	}
 
-	background:url('corporate/bg.jpg') repeat;
+	background:image-url('corporate/bg.jpg') repeat;
 	&.ir{
 		table{
 
@@ -165,13 +165,13 @@ body.corporate{
 
 	&.top{
 		#catch{
-			background:#000 url('corporate/top/catch.jpg') 50% 0 no-repeat;
+			background:#000 image-url('corporate/top/catch.jpg') 50% 0 no-repeat;
 		}		
 	}
 	header{
 		padding:25px 0px 0px 0px;
 		border-bottom:1px solid #ddd;
-		background:url('corporate/header-back.png') repeat;
+		background:image-url('corporate/header-back.png') repeat;
 	}
 
 	.time{

@@ -1,0 +1,41 @@
+<%
+  tastes = {
+    '醤油' => [0,610],
+    '味噌'=> [1,610],
+    '塩'=> [2,610],
+    '特製味噌'=> [3,710],
+    '辛味噌'=> [4,710]
+  }
+  ingredients = {
+    'ラーメン'=> [0,0],
+    'ネギラーメン' => [1,100],
+    'チャーシュー麺' => [2,230],
+    'ネギチャーシューメン' => [3,340],
+    'ピリ辛ネギラーメン'=> [4,100],
+    'つけ麺'=> [5,120]
+  }
+tastes.each do |tk,tv|
+ingredients.each do |ik,iv|
+if not(tk == '辛味噌' && ik == 'ピリ辛ネギラーメン') &&
+   not(tk == '特製味噌' && ik == 'ピリ辛ネギラーメン') &&
+   not(tk == '塩' && ik == 'つけ麺') &&
+   not(tk == '特製味噌' && ik == 'つけ麺')
+  then
+%>
+<%="#{tk}#{ik}"%>:
+  id: <%=tv[0]*10 + iv[0]+1%>
+  name: <%="#{tk}#{ik}"%>
+  category: 0
+  subcategory: 0
+  taste: <%=tv[0]%>
+  ingredients: <%=iv[0]%>
+  has_large_sizes: true
+  start_sells: 1970/1/1
+  end_sells: 2099/12/31
+  is_hot: <%=tv[0] == 4 || iv[0] == 4%>
+  price: <%=tv[1] + iv[1]%> 
+<%
+end
+end
+end
+%>
