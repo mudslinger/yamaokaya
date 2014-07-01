@@ -6,4 +6,5 @@
 			%p 特製のタレで煮炊いた本格チャーシュー、白髪ネギ山盛りのネギラーメン・・・
 			%p 無性に食べたくなる山岡家のラーメンはこちらから！
 			%p
-				%a.btn.btn-primary.btn-lg{role: :button,href:'menus/categories/regular'} メニューを見る
+				=link_to menu_categorized_path(:regular),{role: 'button',class: %w(btn btn-primary btn-lg)} do
+					メニューを見る

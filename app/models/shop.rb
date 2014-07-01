@@ -26,8 +26,8 @@ class Shop < ActiveRecord::Base
 		).limit(4)
 	}
 
-	scope :older_shops, ->(id) {
-		where("id < #{id}")
+	scope :older_shops, ->(inauguration) {
+		where("inauguration < '#{inauguration}'").order('inauguration desc,id desc')
 	}
 	belongs_to :area
 	belongs_to :release
@@ -43,15 +43,15 @@ class Shop < ActiveRecord::Base
 	end
 
 	def seq
-		Shop.older_shops(id).count + 1
+		Shop.older_shops(inauguration).count + 1
 	end
 
 	def sprite_x
-		(seq-1) % 10 * 24
+		(seq-1) % 10 * 49
 	end
 
 	def sprite_y
-		(seq-1).div(10) * 56
+		(seq-1).div(10) * 57
 	end
 
 	def center

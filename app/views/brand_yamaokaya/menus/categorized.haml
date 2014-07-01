@@ -3,7 +3,7 @@
 		.row
 			%h2.col-xs-12
 				%span.glyphicon.glyphicon-pot
-				レギュラーメニュー
+				=tt(params[:category])
 .container
 	.row
 		%ol.breadcrumb.col-xs-8.pull-left
@@ -13,7 +13,8 @@
 			%li
 				メニュー
 			%li
-				レギュラーメニュー
+				=link_to menu_categorized_path(params[:category]) do
+					=tt(params[:category])
 		-#SNSボタンの読み込み
 		=render partial: 'yamaokaya_sns'
 
@@ -21,14 +22,11 @@
 	.row
 		.col-xs-12
 			%ul.nav.nav-tabs.menu-tab
-				%li.active
-					%a{href:'./regular#menu-tab'} レギュラー
-				%li
-					%a{href:'./set#menu-tab'} セットメニュー
-				%li
-					%a{href:'./limited#menu-tab'} 期間限定
-				%li
-					%a{href:'./topping#menu-tab'} トッピング
+				- Menu.categories.each do |c|
+					%li{class: c[0] == params[:category] ? 'active': ''}
+						=link_to menu_categorized_path(c[0]) do
+							=tt c[0]
+
 .container
 	=render partial: "yamaokaya_menu_#{params[:category]}"
 #modal

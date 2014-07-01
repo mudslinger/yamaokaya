@@ -18,7 +18,7 @@
 						%span.glyphicon.glyphicon-shop_window
 						店舗
 				%li{class:  controller_name == 'menus' ? 'active' : '' }
-					%a{href:'/menus/categories/regular'} 
+					=link_to menu_categorized_path(:regular) do
 						%span.glyphicon.glyphicon-pot
 						メニュー
 				%li{class:  controller_name == 'etc' ? 'active' : '' }

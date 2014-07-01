@@ -10,7 +10,7 @@
     'ラーメン'=> [0,0],
     'ネギラーメン' => [1,100],
     'チャーシュー麺' => [2,230],
-    'ネギチャーシューメン' => [3,340],
+    'ネギチャーシュー麺' => [3,340],
     'ピリ辛ネギラーメン'=> [4,100],
     'つけ麺'=> [5,120]
   }
@@ -39,3 +39,327 @@ end
 end
 end
 %>
+サービスセットA:
+  id: 101
+  name: サービスセットA
+  category: 3
+  subcategory: 4
+  taste: 6
+  ingredients: 6
+  has_large_sizes: true
+  start_sells: 1970/1/1
+  end_sells: 2099/12/31
+  is_hot: false
+  price: 690
+サービスセットB:
+  id: 102
+  name: サービスセットB
+  category: 3
+  subcategory: 4
+  taste: 6
+  ingredients: 6
+  has_large_sizes: true
+  start_sells: 1970/1/1
+  end_sells: 2099/12/31
+  is_hot: false
+  price: 790
+
+サービスセットC:
+  id: 103
+  name: サービスセットC
+  category: 3
+  subcategory: 4
+  taste: 6
+  ingredients: 6
+  has_large_sizes: true
+  start_sells: 1970/1/1
+  end_sells: 2099/12/31
+  is_hot: false
+  price: 890
+
+
+サンデーセット:
+  id: 2001
+  name: サンデーセット
+  category: 3
+  subcategory: 1
+  taste: 6
+  ingredients: 6
+  has_large_sizes: false
+  start_sells: 2010-07-25 00:00:00
+  end_sells: 2099-12-31 00:00:00
+  is_hot: false
+  price: 400
+
+朝ラーメン:
+  id: 2002
+  name: 朝ラーメン
+  category: 0
+  subcategory: 0
+  taste: 2
+  ingredients: 6
+  has_large_sizes: false
+  start_sells: 2010-09-01 00:00:00
+  end_sells: 2099-12-31 00:00:00
+  is_hot: false
+  price: 400
+
+ミニチャーシュー丼:
+  id: 201
+  name: ミニチャーシュー丼
+  category: 1
+  subcategory: 1
+  taste: 6
+  ingredients: 6
+  has_large_sizes: false
+  start_sells: 1985-01-01 00:00:00
+  end_sells: 2099-12-31 00:00:00
+  is_hot: false
+  price: 320
+
+半ライス:
+  id: 203
+  name: 半ライス
+  category: 1
+  subcategory: 1
+  taste: 6
+  ingredients: 6
+  has_large_sizes: false
+  start_sells: 1985-01-01 00:00:00
+  end_sells: 2099-12-31 00:00:00
+  is_hot: false
+  price: 110
+
+ライス:
+  id: 204
+  name: ライス
+  category: 1
+  subcategory: 1
+  taste: 6
+  ingredients: 6
+  has_large_sizes: false
+  start_sells: 1985-01-01 00:00:00
+  end_sells: 2099-12-31 00:00:00
+  is_hot: false
+  price: 160
+
+ネギマヨチャーシュー丼:
+  id: 205
+  name: ネギマヨチャーシュー丼
+  category: 1
+  subcategory: 1
+  taste: 6
+  ingredients: 6
+  has_large_sizes: false
+  start_sells: 2011-07-15 00:00:00
+  end_sells: 2099-12-31 00:00:00
+  is_hot: false
+  price: 320
+
+玉子かけご飯:
+  id: 1653
+  name: 玉子かけご飯
+  category: 1
+  subcategory: 1
+  taste: 6
+  ingredients: 6
+  has_large_sizes: false
+  start_sells: 2010-09-07 00:00:00
+  end_sells: 2099-12-31 00:00:00
+  is_hot: false
+  price: 220
+
+特製ギョーザ:
+  id: 211
+  name: 特製ギョーザ
+  category: 1
+  subcategory: 1
+  taste: 6
+  ingredients: 6
+  has_large_sizes: false
+  start_sells: 1985-01-01 00:00:00
+  end_sells: 2099-12-31 00:00:00
+  is_hot: false
+  price: 290
+
+中盛:
+  id: 221
+  name: 中盛
+  category: 1
+  subcategory: 2
+  taste: 6
+  ingredients: 6
+  has_large_sizes: false
+  start_sells: 1985-01-01 00:00:00
+  end_sells: 2099-12-31 00:00:00
+  is_hot: false
+  price: 110
+
+大盛:
+  id: 222
+  name: 大盛
+  category: 1
+  subcategory: 2
+  taste: 6
+  ingredients: 6
+  has_large_sizes: false
+  start_sells: 1985-01-01 00:00:00
+  end_sells: 2099-12-31 00:00:00
+  is_hot: false
+  price: 170
+
+海苔:
+  id: 303
+  name: 海苔
+  category: 1
+  subcategory: 2
+  taste: 6
+  ingredients: 6
+  has_large_sizes: false
+  start_sells: 1985-01-01 00:00:00
+  end_sells: 2099-12-31 00:00:00
+  is_hot: false
+  price: 60
+
+ネギ:
+  id: 304
+  name: ネギ
+  category: 1
+  subcategory: 2
+  taste: 6
+  ingredients: 6
+  has_large_sizes: false
+  start_sells: 1985-01-01 00:00:00
+  end_sells: 2099-12-31 00:00:00
+  is_hot: false
+  price: 160
+
+黒ばら海苔:
+  id: 305
+  name: 黒ばら海苔
+  category: 1
+  subcategory: 2
+  taste: 6
+  ingredients: 6
+  has_large_sizes: false
+  start_sells: 1985-01-01 00:00:00
+  end_sells: 2099-12-31 00:00:00
+  is_hot: false
+  price: 110
+
+味付けたまご:
+  id: 306
+  name: 味付けたまご
+  category: 1
+  subcategory: 2
+  taste: 6
+  ingredients: 6
+  has_large_sizes: false
+  start_sells: 1985-01-01 00:00:00
+  end_sells: 2099-12-31 00:00:00
+  is_hot: false
+  price: 90
+
+メンマ:
+  id: 307
+  name: メンマ
+  category: 1
+  subcategory: 2
+  taste: 6
+  ingredients: 6
+  has_large_sizes: false
+  start_sells: 1985-01-01 00:00:00
+  end_sells: 2099-12-31 00:00:00
+  is_hot: false
+  price: 110
+
+チャーシュー:
+  id: 308
+  name: チャーシュー
+  category: 1
+  subcategory: 2
+  taste: 6
+  ingredients: 6
+  has_large_sizes: false
+  start_sells: 1985-01-01 00:00:00
+  end_sells: 2099-12-31 00:00:00
+  is_hot: false
+  price: 310
+
+バター:
+  id: 309
+  name: バター
+  category: 1
+  subcategory: 2
+  taste: 6
+  ingredients: 6
+  has_large_sizes: false
+  start_sells: 1985-01-01 00:00:00
+  end_sells: 2099-12-31 00:00:00
+  is_hot: false
+  price: 60
+
+コーン:
+  id: 310
+  name: コーン
+  category: 1
+  subcategory: 2
+  taste: 6
+  ingredients: 6
+  has_large_sizes: false
+  start_sells: 1985-01-01 00:00:00
+  end_sells: 2099-12-31 00:00:00
+  is_hot: false
+  price: 60
+
+プレミアム塩とんこつ 大判炙りチャーシュー編:
+  id: 845
+  name: プレミアム塩とんこつ 大判炙りチャーシュー編
+  category: 2
+  subcategory: 0
+  taste: 4
+  ingredients: 6
+  has_large_sizes: false
+  start_sells: 2014-01-10 00:00:00
+  end_sells: 2099-12-31 00:00:00
+  is_hot: false
+  price: 790
+
+やみつき！トンコツトマトラーメン:
+  id: 846
+  name: やみつき！トンコツトマトラーメン
+  category: 2
+  subcategory: 0
+  taste: 6
+  ingredients: 6
+  has_large_sizes: false
+  start_sells: 2014-04-21 00:00:00
+  end_sells: 2014-05-25 00:00:00
+  is_hot: false
+  price: 820
+
+チーズ増量 やみつき！トンコツトマトラーメン:
+  id: 847
+  name: チーズ増量 やみつき！トンコツトマトラーメン
+  category: 2
+  subcategory: 0
+  taste: 6
+  ingredients: 6
+  has_large_sizes: false
+  start_sells: 2014-04-21 00:00:00
+  end_sells: 2014-05-25 00:00:00
+  is_hot: false
+  price: 930
+
+やみつき！とんこつトマトつけ麺:
+  id: 848
+  name: やみつき！とんこつトマトつけ麺
+  category: 2
+  subcategory: 0
+  taste: 6
+  ingredients: 6
+  has_large_sizes: false
+  start_sells: 2014-05-26 00:00:00
+  end_sells: 2014-06-30 00:00:00
+  is_hot: false
+  price: 820

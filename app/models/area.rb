@@ -17,4 +17,11 @@ class Area < ActiveRecord::Base
 			[p.lat,p.lng]
 		end
 	end
+	def sprite_x
+		(seq-1) % 10 * 21
+	end
+
+	def sprite_y
+		(seq-1).div(10) * 80
+	end
 end

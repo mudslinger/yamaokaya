@@ -32,4 +32,12 @@ class Region < ActiveRecord::Base
 			p != [nil,nil] && p != [0.0]
 		end
 	end
+
+	def sprite_x
+		(seq-1) % 10 * 53
+	end
+
+	def sprite_y
+		(seq-1).div(10) * 32
+	end
 end

@@ -88,7 +88,7 @@ $ ->
 		getIcon: ->
 			new google.maps.MarkerImage(
 				"http://assets.yamaokaya.com/images/shops/flags/regions.png"
-				 new google.maps.Size(24, 56)
+				 new google.maps.Size(53, 32)
 				 new google.maps.Point(@sprite_x, @sprite_y)
 			)
 
@@ -97,7 +97,7 @@ $ ->
 		getIcon: ->
 			new google.maps.MarkerImage(
 				"http://assets.yamaokaya.com/images/shops/flags/prefectures.png"
-				 new google.maps.Size(24, 56)
+				 new google.maps.Size(21, 53)
 				 new google.maps.Point(@sprite_x, @sprite_y)
 			)
 
@@ -106,7 +106,7 @@ $ ->
 		getIcon: ->
 			new google.maps.MarkerImage(
 				"http://assets.yamaokaya.com/images/shops/flags/areas.png"
-				 new google.maps.Size(24, 56)
+				 new google.maps.Size(21, 80)
 				 new google.maps.Point(@sprite_x, @sprite_y)
 			)
 
@@ -115,7 +115,7 @@ $ ->
 		getIcon: ->
 			new google.maps.MarkerImage(
 				"http://assets.yamaokaya.com/images/shops/flags/shops.png"
-				 new google.maps.Size(24, 56)
+				 new google.maps.Size(49, 57)
 				 new google.maps.Point(@sprite_x, @sprite_y)
 			)
 		breakdown: ->

@@ -1,6 +1,6 @@
 .carousel.slide#top{data:{ride: :carousel}}
 	.carousel-inner
-		-@headlines.carousel.each_with_index do |c,idx|
+		-@carousels.each_with_index do |c,idx|
 			.item{class: if idx == 0 then 'active' else 'inactive' end}
 				.carousel-caption= raw c.body
 				%img{src:c.url,alt:c.title}

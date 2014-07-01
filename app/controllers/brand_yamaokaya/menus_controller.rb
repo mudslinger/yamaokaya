@@ -1,10 +1,9 @@
 class BrandYamaokaya::MenusController < BrandYamaokaya::BaseController
 	def categorized
 		category = params[:category] if  params[:category].present?
-		category = :regular || category.to_sym
+		category = category.to_sym || :regular
 		if Menu.respond_to?(category)
 			@menus = Menu.send(category)
-			puts @menus
 		end
 	end
 

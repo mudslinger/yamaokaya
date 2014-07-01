@@ -59,12 +59,11 @@ Rails.application.routes.draw do
   get '/sns_guideline' => 'articles#sns_guideline',as: :sns_guideline
   get '/sitemap' => 'articles#sitemap',as: :sitemap
 
-  get '/regions(/:key)' => 'brand_yamaokaya/shops#regions',as: :regions
-  get '/prefs/:key' => 'brand_yamaokaya/shops#prefectures',as: :prefs
-  get '/children' => 'brand_yamaokaya/shops#children', as: :children
+  #地図用json
   get '/markers' => 'brand_yamaokaya/shops#markers', as: :markers
   #todo 正常化
-  get '/feedbacks' => 'articles#feedbacks',as: :feedbacks
+  get '/feedbacks' => 'feedbacks#new',as: :feedbacks
+  get '/feedbacks/send_message' => 'feedbacks#send',as: :feedbacks_send
   constraints host: DOMAINS[:corporate] do
     scope module: :corporate do
 

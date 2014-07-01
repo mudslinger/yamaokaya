@@ -27,4 +27,11 @@ class Prefecture < ActiveRecord::Base
 		end
 	end
 
+	def sprite_x
+		(seq-1) % 10 * 21
+	end
+
+	def sprite_y
+		(seq-1).div(10) * 53
+	end
 end

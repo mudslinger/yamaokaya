@@ -6,14 +6,6 @@ module ShopArea
 		self.class.name
 	end
 
-	def sprite_x
-		(seq-1) % 10 * 24
-	end
-
-	def sprite_y
-		(seq-1).div(10) * 56
-	end
-
 	def lat
 		# if self[:lat].nil?
 		# 	self[:lat] = center[0]
