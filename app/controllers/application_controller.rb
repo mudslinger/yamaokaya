@@ -22,7 +22,9 @@ class ApplicationController < ActionController::Base
 
 	def domain_layout
 		DOMAINS.select do |k,v|
-			v == request.subdomain + '.' + request.domain
+			dmn = (request.subdomain.empty? ? '' : request.subdomain + '.') + request.domain
+			puts dmn
+			v == dmn
 		end.keys.first.to_s
 	end
 end
