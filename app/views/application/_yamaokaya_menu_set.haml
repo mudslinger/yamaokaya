@@ -21,4 +21,4 @@
 								.actions
 									=link_to m.name, menu_details_path(m.id), {class:"btn btn-link modal-link", title: m.name,remote: request.variant != :phone}
 								=link_to menu_details_path(m.id),{remote: request.variant != :phone} do
-									%img{src:"//assets.yamaokaya.com/images/menus/photos/#{m.id}.png"}
+									=ymage_tag "images/menus/photos/#{@menu.id}.png",size: :origin

@@ -25,7 +25,7 @@
 			#sprite_x.hidden=@shop.sprite_x
 			#sprite_y.hidden=@shop.sprite_y
 			#zoom.hidden=@shop.zoom
-			%img.shop-image.img-rounded{src:"//assets.yamaokaya.com/images/shops/photos/#{@shop.id}.jpg"}
+			=ymage_tag "images/shops/photos/#{@shop.id}.jpg",size: '300x300',cls: ['shop-image', 'img-rounded']
 			%hr
 			.panel.panel-default
 				%table.table
@@ -56,7 +56,7 @@
 				.thumbnail
 					.caption
 						%h4=n.name
-					%img.shop-image.img-rounded{src:"//assets.yamaokaya.com/images/shops/photos/#{n.id}.jpg"}
+					=ymage_tag "images/shops/photos/#{n.id}.jpg",size: '180x300',cls: ['shop-image', 'img-rounded']
 					.caption
 						%p
 							%span.glyphicon.glyphicon-road
