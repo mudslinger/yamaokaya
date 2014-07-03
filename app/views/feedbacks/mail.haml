@@ -1,0 +1,105 @@
+%body
+  :scss
+    ul{
+      li{
+        color:#E33;
+        font-size:13px;
+      }
+
+    }
+    .layout{
+      width:100%;
+      border:solid 1px #CCC;
+      empty-cells:show;
+      border-collapse:collapse;
+      table-layout:fixed;
+      font-size:13px;
+      th,td{
+        border: solid 1px #CCC;
+        img{
+          width:100%;
+        }
+      }
+      th{
+        background-color:#CCA;
+      }
+    }
+    .yamaokaya{
+      color:red;
+    }
+    .employee{
+      color:blue;
+    }
+    span.val{
+      font-size:20px;
+      font-weight:bold;
+    }
+
+  %table.layout
+    %col{width: '100px'}
+    %col{width: '*'}
+    %thead
+    %tfoot
+    %tbody
+      %tr
+        %th 氏名
+        %td= body.name
+      -unless body.age.nil?
+        %tr
+          %th 年齢
+          %td=Feedback.human_attribute_name body.age
+      -unless body.male.nil?
+        %tr
+          %th 性別
+          %td=body.male ? '男性' : '女性'
+      %tr
+        %th 住所
+        %td=body.address
+      %tr
+        %th 電話
+        %td=body.phone
+      %tr
+        %th メール
+        %td=body.mail_addr
+      -unless body.shop.nil?
+        %tr
+          %th 店舗
+          %td=body.shop.name
+      -unless body.visit_date.nil?
+        %tr
+          %th 来店日
+          %td=l body.visit_date
+      -unless body.visit_time.nil?
+        %tr
+          %th 時間帯
+          %td=Feedback.human_attribute_name body.visit_time
+      -unless body.repetition.nil?
+        %tr
+          %th 頻度
+          %td=Feedback.human_attribute_name body.repetition
+      -unless body.menu.nil?
+        %tr
+          %th メニュー
+          %td #{body.menu.name}(#{body.menu.price}円)
+      %tr
+        %th 評価
+        %td
+          -unless body.quality.nil?
+            %span.q.val{class: "v#{body.quality}"}
+              Q:
+              = Feedback.human_attribute_name body.quality
+          -unless body.service.nil?
+            %span.s.val{class: "v#{body.service}"}
+              S:
+              = Feedback.human_attribute_name body.service
+          -unless body.cleanliness.nil?
+            %span.c.val{class: "v#{body.cleanliness}"}
+              C:
+              = Feedback.human_attribute_name body.cleanliness
+          -unless body.atomosphere.nil?
+            %span.a.val{class: "v#{body.atomosphere}"}
+              A:
+              = Feedback.human_attribute_name body.atomosphere
+      %tr
+        %th メッセージ
+        %td= body.message

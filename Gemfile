@@ -41,6 +41,8 @@ gem 'unicorn'
 # gem 'debugger', group: [:development, :test]
 
 gem 'redcarpet'
+gem 'aws-sdk-core', '~> 2.0.0.rc10'
+gem 'aws-sdk'
 gem 'aws-ses'
 gem 'rest-client'
 gem 'nokogiri'
@@ -52,4 +54,6 @@ gem 'polyglot'
 gem 'quiet_assets', :group => :development
 gem 'geocoder'
 gem 'redis-rails'
+gem 'igo-ruby'
+gem 'mini_magick'
 #gem 'cloudinary'

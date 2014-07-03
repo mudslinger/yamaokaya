@@ -61,9 +61,14 @@ Rails.application.routes.draw do
 
   #地図用json
   get '/markers' => 'brand_yamaokaya/shops#markers', as: :markers
-  #todo 正常化
+
+
+  constraints width: /[0-9]{0,4}/,height: /[0-9]{0,4}/,file: /.*/ do
+    get '/i/:width/:height/:file' => 'images#show' , as: :img
+  end
+
   get '/feedbacks' => 'feedbacks#new',as: :feedbacks
-  get '/feedbacks/send_message' => 'feedbacks#send',as: :feedbacks_send
+  post '/feedbacks' => 'feedbacks#create',as: :feedbacks_post
   constraints host: DOMAINS[:corporate] do
     scope module: :corporate do
 
@@ -108,7 +113,7 @@ Rails.application.routes.draw do
 
   constraints host: DOMAINS[:recruit] do
     scope module: :recruit do
-      get '/' => 'top#index',as: :recruit_top
+      get '/(index(.:format))' => 'top#index',as: :recruit_top
       #message
       get '/graduates/message' => 'message#graduates',as: :message_graduates
       get '/career/message' => 'message#career',as: :message_career

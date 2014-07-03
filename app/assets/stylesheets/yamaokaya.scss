@@ -7,6 +7,9 @@
 @import "yamaokaya/menus";
 
 body.yamaokaya{
+	.modal{
+		color: $gray-darker;
+	}
 	a.logo{
 		img{
 			width:250px;
@@ -110,12 +113,32 @@ body.yamaokaya{
 		}
 	}
 	form{
-		hr{
-			border: dotted 1px $gray-light;
-		}
 		.mini{
 			// 日付用
 			width:20%;
+		}
+		fieldset{
+			legend{
+				color:white;
+				background-color: $brand-primary;
+				@include opacity(0.9);
+			}
+			.form-group.form-inline{
+				label.control-label:first-child{
+					width:10.5em;
+				}
+				label.required:before{
+					content: '※';
+					color: $brand-primary;
+				}
+				.field_with_errors{
+					display: inline-block;
+					@extend .has-error;
+					label{
+						background-color:red;
+					}
+				}
+			}
 		}
 	}
 	.container-full{

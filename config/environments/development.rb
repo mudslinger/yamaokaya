@@ -36,6 +36,6 @@ Rails.application.configure do
   # config.action_view.raise_on_missing_translations = true
   config.cache_store =
     :redis_store,
-    "redis://yamapp-redis.gneihq.0001.apne1.cache.amazonaws.com/yamaokaya/production/cache",
+    "redis://yamapp-redis.gneihq.0001.apne1.cache.amazonaws.com/yamaokaya/development/cache",
     { expires_in: 158.minutes }
 end

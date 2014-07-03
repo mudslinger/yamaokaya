@@ -1,35 +1,5 @@
-$ ->
-	if $('#lat').get(0) && $('#lng').get(0) && $('#zoom').get(0)
-		zoom = parseInt $('#zoom').text()
-		lat =  parseFloat $('#lat').text()
-		lng =  parseFloat $('#lng').text()
-		x = parseInt $('#sprite_x').text()
-		y = parseInt $('#sprite_y').text()
-		latlng = new google.maps.LatLng(lat, lng)
-		mapOptions = {
-			zoom: parseInt(zoom)
-			center: latlng
-			mapTypeId: google.maps.MapTypeId.ROADMAP
-			scaleControl: true
-		}
-		mapObj = new google.maps.Map(document.getElementById('maps'), mapOptions)
-		marker = new google.maps.Marker(
-			position: latlng
-			map: mapObj
-			icon: new google.maps.MarkerImage(
-				'http://assets.yamaokaya.com/images/shops/flags/shops.png',
-				 new google.maps.Size(24, 56)
-				 new google.maps.Point(x, y)
-			)
-		)
-
 #地図クラス
 $ ->
-
-	window.requestAnimFrame = ->
-		func = (callback)->
-			window.setTimeout(callback, 1000 / 60)
-		return window.requestAnimationFrame || window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame    || window.oRequestAnimationFrame || window.msRequestAnimationFrame || func 
 	markers = {}
 	loaded = {}
 	class AbstractMarker extends google.maps.Marker
@@ -66,8 +36,9 @@ $ ->
 			@sprite_x = json.sprite_x
 			@sprite_y = json.sprite_y
 			@swne = json.bounds
-			@start_shows = json.start_shows
-			@end_shows = json.end_shows
+			@start_shows = json.start_shows || 0
+			@end_shows = json.end_shows || 20
+			@zoom = json.zoom if json.zoom?
 			super(
 				position: @getPosition()
 				map: @map
@@ -76,10 +47,6 @@ $ ->
 			)
 			@changeVisible(map.getZoom())
 			google.maps.event.addListener(@,'click',=> @breakdown())
-			
-		# getChildrenAjax: (callback)->
-		# 	opts = {key: @local_id,type: @markerType()}
-		# 	$.getJSON "/children.json",opts, callback
 		changeVisible: (zoom)->
 			@setVisible(@start_shows <= zoom <= @end_shows)
 
@@ -120,6 +87,16 @@ $ ->
 			)
 		breakdown: ->
 			location.href = "/shops/#{@local_id}.html"
+		focus: ->
+			@map.setCenter @position
+			@map.setZoom @zoom
+	class ShopDetailsMarker extends ShopMarker
+		breakdown: ->
+		focus: ->
+			@map.setCenter @position
+			@map.setZoom @zoom
+		changeVisible: (zoom)->
+			@setVisible true
 
 	createMarker = (json,map)->
 		#console.log json
@@ -139,20 +116,9 @@ $ ->
 	loadMarkers = (map)->
 		zoom = map.getZoom()
 		unless loaded[zoom]?
-			pb.start(100)
 			$.getJSON "/markers.json",{zoom: zoom}, (json)->
-				animate(json,0)
-				loaded[zoom] = true
-				console.log loaded
-	animationFrame = window.requestAnimationFrame || window.webkitRequestAnimationFrame	|| window.mozRequestAnimationFrame || window.setTimeout
-	animate = (json,idx)->		
-		console.log idx
-		createMarker json[idx],map
-		pb.updateBar 100 / json.length-1
-		if json.length-1 > idx
-			window.requestAnimFrame(animate(json,idx+1))
-		else
-			pb.hide()
+				for obj in json
+					createMarker obj,map
 
 
 	if $('#index-map').get(0)
@@ -165,13 +131,24 @@ $ ->
 				noClear : true
 			}
 		)
-		pb = progressBar()
-		map.controls[google.maps.ControlPosition.RIGHT].push(pb.getDiv())
 
 		loadMarkers map
 		google.maps.event.addListener map,'zoom_changed',->
 			loadMarkers map
 			for k,v of markers
 				v.changeVisible(map.getZoom())
-	
-
+	#個別店舗ページ
+	if $('#detail-map').get(0) && $('#marker-data').get(0)
+		json = $.parseJSON($('#marker-data').text())
+		console.log json
+		json.start_shows = 0
+		json.end_shows = 100
+		mapOptions = {
+			zoom:5
+			center: new google.maps.LatLng(39.7868944,137.7877029)
+			mapTypeId: google.maps.MapTypeId.ROADMAP,
+			noClear : true
+		}
+		map = new google.maps.Map($('#detail-map').get(0), mapOptions)
+		m = new ShopDetailsMarker json,map
+		m.focus()

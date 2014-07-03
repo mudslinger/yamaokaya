@@ -33,7 +33,6 @@ class Recruit::EntriesController < Recruit::BaseController
   # POST /recruit/entries.json
   def create
     @entry = Entry.new(entry_params)
-    puts @entry.wished_shops
     respond_to do |format|
       if @entry.save
         format.html { redirect_to :entries, notice: @entry.id }

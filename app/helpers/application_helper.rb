@@ -1,8 +1,6 @@
 module ApplicationHelper
 	def tt(key)
-		puts "#{controller_name}--------------------------------#{action_name}"
-		ret = t key,scope: [controller_name,action_name]
-		return ret
+		t key,scope: [controller_name,action_name]
 	end
 
 	def ln(str)

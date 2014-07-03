@@ -19,4 +19,10 @@ class ApplicationController < ActionController::Base
 			request.variant = :phone
 		end
 	end
+
+	def domain_layout
+		DOMAINS.select do |k,v|
+			v == request.domain
+		end.keys.first.to_s
+	end
 end

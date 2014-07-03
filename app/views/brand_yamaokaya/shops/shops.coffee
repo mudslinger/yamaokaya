@@ -7,7 +7,7 @@ $ ->
 				title: @name
 				visible: false
 				icon: new google.maps.MarkerImage(
-					"http://assets.yamaokaya.com/images/shops/flags/shops.png"
+					"//assets.yamaokaya.com/images/shops/flags/shops.png"
 					 new google.maps.Size(24, 56)
 					 new google.maps.Point(x, y)
 				)
@@ -52,7 +52,7 @@ $ ->
 				title: @name
 				visible: false
 				icon: new google.maps.MarkerImage(
-					"http://assets.yamaokaya.com/images/shops/flags/prefectures.png"
+					"//assets.yamaokaya.com/images/shops/flags/prefectures.png"
 					 new google.maps.Size(24, 56)
 					 new google.maps.Point(x, y)
 				)
@@ -70,7 +70,7 @@ $ ->
 				map: @map
 				title: @name
 				icon: new google.maps.MarkerImage(
-					"http://assets.yamaokaya.com/images/shops/flags/regions.png"
+					"//assets.yamaokaya.com/images/shops/flags/regions.png"
 					 new google.maps.Size(24, 56)
 					 new google.maps.Point(x, y)
 				)

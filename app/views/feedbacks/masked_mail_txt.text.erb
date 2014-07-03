@@ -1,0 +1,34 @@
+<% unless body.age.nil? %>
+年齢: <%=Feedback.human_attribute_name body.age %>
+<% end %>
+
+<% unless body.male.nil? %>
+性別: <%=body.male ? '男性' : '女性'%>
+<% end %>
+
+<% unless body.shop.nil? %>
+店舗: <%=body.shop.name%>
+<% end %>
+
+<% unless body.visit_date.nil? %>
+来店日: <%=l body.visit_date%>
+<% end %>
+
+<% unless body.visit_time.nil? %>
+時間帯: <%=Feedback.human_attribute_name body.visit_time %>
+<% end %>
+
+<% unless body.repetition.nil? %>
+頻度: <%=Feedback.human_attribute_name body.repetition %>
+<% end %>
+
+<% unless body.menu.nil? %>
+メニュー: <%=body.menu.name%>
+<% end %>
+
+評価_Q: <%=Feedback.human_attribute_name body.quality%>
+評価_S: <%=Feedback.human_attribute_name body.service%>
+評価_C: <%=Feedback.human_attribute_name body.cleanliness%>
+評価_A: <%=Feedback.human_attribute_name body.atomosphere%>
+メッセージ: -
+<%=body.message_i%>

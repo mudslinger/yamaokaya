@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140630122852) do
+ActiveRecord::Schema.define(version: 20140701091555) do
 
   create_table "areas", force: true do |t|
     t.boolean  "whole_prefecture",            default: false
@@ -48,16 +48,15 @@ ActiveRecord::Schema.define(version: 20140630122852) do
   end
 
   create_table "feedbacks", force: true do |t|
-    t.string   "mail_addr",  limit: 126, null: false
-    t.string   "name",       limit: 62,  null: false
+    t.string   "mail_addr",   limit: 126, null: false
+    t.string   "name",        limit: 62,  null: false
     t.integer  "age"
     t.boolean  "male"
-    t.string   "address",    limit: 254
-    t.string   "phone",      limit: 30,  null: false
-    t.string   "ip_addr",    limit: 15
-    t.float    "lat",        limit: 24
-    t.float    "lng",        limit: 24
-    t.string   "region",     limit: 254
+    t.string   "address",     limit: 254
+    t.string   "phone",       limit: 30,  null: false
+    t.float    "lat",         limit: 24
+    t.float    "lng",         limit: 24
+    t.string   "region",      limit: 254
     t.integer  "shop_id"
     t.integer  "menu_id"
     t.date     "visit_date"
@@ -65,13 +64,14 @@ ActiveRecord::Schema.define(version: 20140630122852) do
     t.integer  "repetition"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.integer  "q"
-    t.integer  "s"
-    t.integer  "c"
-    t.integer  "a"
+    t.integer  "quality"
+    t.integer  "service"
+    t.integer  "cleanliness"
+    t.integer  "atomosphere"
     t.boolean  "reply"
     t.text     "message"
     t.boolean  "mail_sent"
+    t.string   "remote_ip",   limit: 15,  null: false
   end
 
   create_table "menus", force: true do |t|

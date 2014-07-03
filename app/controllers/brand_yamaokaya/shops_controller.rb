@@ -24,8 +24,8 @@ class BrandYamaokaya::ShopsController < BrandYamaokaya::BaseController
 		@areas = Area.has_shops.by_zoom(zoom)
 		@shops = Shop.active.by_zoom(zoom)
 		@ret = ((@regions + @prefectures + @areas).map do |v|
-			ret = v.shops.size == 1 ? v.shops.first : v
-			ret.start_shows = v.start_shows #unless v == ret
+			ret = !v.kind_of?(Region) && v.shops.size == 1 ? v.shops.first : v
+			ret.start_shows = v.start_shows unless v == ret
 			ret
 		end  + @shops)
 		additional_attr = [:marker_type,:sprite_x,:sprite_y,:bounds,:start_shows,:end_shows]

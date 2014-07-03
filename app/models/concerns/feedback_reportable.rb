@@ -1,30 +1,56 @@
 module FeedbackReportable extend ActiveSupport::Concern
-
   def reported?
     self.mail_sent
   end
-  def report
-    ses = AWS::SES::Base.new(access_key_id: SES_ID,secret_access_key: SES_KEY)
-    sub = "お客様よりメール #{self.shop.name}(No.#{self.id})" if self.shop
-    sub = "お客様よりメール (No.#{self.id})" unless self.shop
+
+  def report_title
+    sub = "お客様よりメール #{shop.name}(No.#{id})" if self.shop
+    sub = "お客様よりメール (No.#{id})" unless self.shop
     sub += '【要返信】' if self.reply
+    sub
+  end
+
+  def render_mail(var)
+    action_view = ActionView::Base.new(Rails.configuration.paths["app/views"])
+    action_view.class_eval do 
+        include Rails.application.routes.url_helpers
+        include ApplicationHelper
+        def protect_against_forgery?
+          false
+        end
+    end
+    action_view.render var
+  end
+  def report
+    ses_id = AWS_CREDENTIALS[:access_key_id]
+    ses_secret = AWS_CREDENTIALS[:secret_access_key]
+    ses = AWS::SES::Base.new(access_key_id: ses_id,secret_access_key: ses_secret)
+
     ses.send_email(
-      to: 'info@yamaokaya.com',
+      #to: 'info@yamaokaya.com',
+      to: 'tanaka@yamaokaya.com',
       source: 'info@yamaokaya.com',
-      subject: sub,
-      html_body: yield({type: :haml, locals: {body: self}, template: 'feedbacks/mail',layout: 'blank'})
+      subject: report_title,
+      html_body: render_mail(template: 'feedbacks/mail',type: :haml, locals: {body: self},layout: false)
     )
 
     ses.send_email(
-      to: 'customer_message@yamaokaya.co.jp',
-      #to: 'tanaka@yamaokaya.com',
+      #to: 'customer_message@yamaokaya.co.jp',
+      to: 'hisato.tanaka@gmail.com',
       source: 'info@yamaokaya.com',
-      subject: sub + '(個人情報削除済み)',
-      html_body: yield({type: :haml, locals: {body: self}, template: 'feedbacks/mask_mail',layout: 'blank'}),
-      text_body: yield({type: :erb, locals: {body: self},formats: :text, template: 'feedbacks/mask_mail_txt',layout: 'blank'})
+      subject: report_title + '(個人情報削除済み)',
+      html_body: render_mail({template: 'feedbacks/masked_mail',type: :haml, locals: {body: self},layout: false}),
+      text_body: render_mail({template: 'feedbacks/masked_mail_txt',type: :erb, locals: {body: self},formats: :text, layout: false})
     )
     self.mail_sent = true
     self.save(validate: false)
+  end
+
+  def message_i
+    tagger = Igo::Tagger.new(Rails.root.join('lib','dic').to_s)
+    tagger.parse(self.message).map{|m|
+      m.feature.include?('固有') ? '●●●' : m.surface
+    }.join if self.message.present?
   end
 
   def static_map

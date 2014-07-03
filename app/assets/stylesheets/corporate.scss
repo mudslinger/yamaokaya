@@ -12,6 +12,30 @@
   } 
 }
 body.corporate{
+	form{
+		.mini{
+			// 日付用
+			width:20%;
+		}
+		fieldset{
+			legend{
+			}
+			.form-group.form-inline{
+				label.control-label:first-child{
+					width:10.5em;
+				}
+				.field_with_errors{
+					display: inline-block;
+					@extend .has-error;
+					label{
+						color:red;
+					}
+				}
+			}
+		}
+	}
+
+
 	.chart{
 		height:350px;
 	}

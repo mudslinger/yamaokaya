@@ -48,7 +48,7 @@
 						%th 目印・その他
 						%td= @shop.landmarks
 		.col-md-7
-			=render partial: 'yamaokaya_map' 
+			=render partial: 'yamaokaya_map',locals:{shop: @shop}
 	.row
 		%h3.col-xs-12 近くのお店
 		- @shop.nearby.each do |n|

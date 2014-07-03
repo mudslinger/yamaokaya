@@ -260,20 +260,100 @@ ja:
         area_restriction: ご希望の勤務地域
       wished_shop:
       feedback:
-        mail: 'メールアドレス'
-        confirm_mail: 'メールアドレス(確認)'
+        mail_addr: 'メールアドレス'
+        mail_addr_confirmation: 'メールアドレス:確認'
         name: 'お名前'
         age: '年齢'
         male: '性別'
-        menu: 'お召し上がりのメニュー'
+        menu_id: 'お召し上がりのメニュー'
         address: 'ご住所'
         phone: 'お電話番号'
-        shop: 'ご利用のお店'
-        visited_date: 'ご来店日'
-        visited_time: 'ご来店時間帯'
-        q: 'ご提供した商品のお味・品質はいかがでしたか？'
-        s: '店員のご対応・態度はいかがでしたか？'
-        c: 'お店や駐車場は清潔でしたか？'
-        a: 'お店の雰囲気・活気はいかがでしたか？'
-        reply_needed: '返信を希望する'
+        shop_id: 'ご利用のお店'
+        visit_date: 'ご来店日'
+        visit_time: 'ご来店時間帯'
+        quality: 'ご提供した商品のお味・品質はいかがでしたか？'
+        service: '店員のご対応・態度はいかがでしたか？'
+        cleanliness: 'お店や駐車場は清潔でしたか？'
+        atomosphere: 'お店の雰囲気・活気はいかがでしたか？'
+        q_terrible: 非常に悪い
+        q_bad: 悪い
+        q_moderate: 普通
+        q_good: 良い
+        q_excellent: 非常に良い
+        s_terrible: 非常に悪い
+        s_bad: 悪い
+        s_moderate: 普通
+        s_good: 良い
+        s_excellent: 非常に良い
+        c_terrible: 非常に悪い
+        c_bad: 悪い
+        c_moderate: 普通
+        c_good: 良い
+        c_excellent: 非常に良い
+        a_terrible: 非常に悪い
+        a_bad: 悪い
+        a_moderate: 普通
+        a_good: 良い
+        a_excellent: 非常に良い
+        ageunder12: 12歳以下
+        age13to15: 13～15歳
+        age16to19: 16～19歳
+        age20to24: 20～24歳
+        age25to29: 25～29歳
+        age30to34: 30～34歳
+        age35to39: 35～39歳
+        age40to44: 40～44歳
+        age45to49: 45～49歳
+        age50to54: 50～54歳
+        age55to59: 55～59歳
+        age60to64: 60～64歳
+        age65to69: 65～69歳
+        age70over: 70歳以上
+        time9to10: 9:00～10:00
+        time10to11: 10:00～10:00
+        time11to12: 11:00～12:00
+        time12to13: 12:00～13:00
+        time13to14: 13:00～14:00
+        time14to15: 14:00～15:00
+        time15to16: 15:00～16:00
+        time16to17: 16:00～17:00
+        time17to18: 17:00～18:00
+        time18to19: 18:00～19:00
+        time19to20: 19:00～20:00
+        time20to21: 20:00～21:00
+        time21to22: 21:00～22:00
+        time22to23: 22:00～23:00
+        time23to0: 23:00～0:00
+        time0to1: 0:00～1:00
+        time1to2: 1:00～2:00
+        time2to3: 2:00～3:00
+        time3to4: 3:00～4:00
+        time4to5: 4:00～5:00
+        time5to6: 5:00～6:00
+        time6to7: 6:00～7:00
+        time7to8: 7:00～8:00
+        time8to9: 8:00～9:00
+        first_time: はじめて
+        once_par_year: 年に1回程度
+        once_par_half: 半年に1回程度
+        once_par_quater: 3ヶ月に1回程度
+        once_par_month: 月に1回程度
+        twice_par_month: 月に2回程度
+        once_par_week: 週に1回程度
+        twice_par_week: 週に2回程度
+        holic: 週に3回以上
+        reply: '弊社からご返信させていただいてよろしいでしょうか？'
+        reply_true: '返信を希望します。'
+        reply_false: '返信は必要ありません。'
         repetition: 'ご来店の頻度'
+        message: 'ご意見・ご感想がありましたらご記入ください'
+      ir_message:
+        name: 'お名前'
+        name_f: 'お名前(フリガナ)'
+        company_name: '会社名'
+        company_name_f: '会社名(フリガナ)'
+        phone: '電話番号'
+        address: 'ご住所'
+        mail_addr: 'メールアドレス'
+        message: 'お問い合わせ内容'
+
