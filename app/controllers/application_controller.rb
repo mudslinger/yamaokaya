@@ -6,6 +6,8 @@ class ApplicationController < ActionController::Base
 
 	private
 	def detect_device_format
+		puts '--------------d--o--m---a--i--n------------'
+		puts request.domain
 		case request.user_agent
 		when /iPad/i
 			request.variant = :tablet
