@@ -22,6 +22,8 @@ class ApplicationController < ActionController::Base
 
 	def domain_layout
 		DOMAINS.select do |k,v|
+			puts '-------------------------------------'
+			puts v
 			v == request.domain
 		end.keys.first.to_s
 	end
