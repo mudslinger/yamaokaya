@@ -5,7 +5,7 @@
 	.panel-body
 		%p.text-left= @menu.comment
 		.picture.well
-			%img{src:"//assets.yamaokaya.com/images/menus/photos/#{@menu.id}.png"}
+			=ymage_tag "images/menus/photos/#{@menu.id}.png",size: :origin
 		.caption
 			%p.text-right
 				%strong.text-danger#price=@menu.price

@@ -63,8 +63,8 @@ Rails.application.routes.draw do
   get '/markers' => 'brand_yamaokaya/shops#markers', as: :markers
 
 
-  constraints width: /[0-9]{0,4}/,height: /[0-9]{0,4}/,file: /.*/ do
-    get '/i/:width/:height/:file' => 'images#show' , as: :img
+  constraints size: /[0-9]{0,4}x[0-9]{0,4}|origin/,file: /.*/ do
+    get '/i/:size/:file' => 'images#show' , as: :img
   end
 
   get '/feedbacks' => 'feedbacks#new',as: :feedbacks

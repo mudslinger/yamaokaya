@@ -1,23 +1,47 @@
 require 'fileutils'
 class ImagesController < ApplicationController
+	include MiniMagick
 	def show
-		width = params[:width] || 0
-		height = params[:height] || 0
+		size = params[:size] || 'origin'
 		file = params[:file] if params[:file].present?
-		AWS.config(AWS_CREDENTIALS)
 		s3 = AWS::S3.new
 		bucket = s3.buckets['assets.yamaokaya.com']
 		o = bucket.objects[file]
-		path = Rails.root.join('public','i',width,height,file)
+		begin
+			blob = o.read
+		rescue
+			#ファイルが見つからない場合の処理。noimageを表示
+			bg = bucket.objects['images/transparent.png']
+			noimg = bucket.objects['images/noimage.png']
+			bg_img = Image.read bg.read
+			bg_img.resize size == 'origin' ? '200x100' : size
+			result = bg_img.composite(Image.read noimg.read) do |c|
+			  c.gravity "center"
+			end
+			blob = result.to_blob
+		end
+		path = Rails.root.join('public','i',size,file)
 		FileUtils.mkpath(File::dirname path)
-		image = MiniMagick::Image.read(o.read)
-		image.resize "#{width}x#{height}"
+
+
+		image = MiniMagick::Image.read(blob)
+		#originじゃ無いときはリサイズ
+		image.resize size unless size == 'origin'
+		#クオリティ調整
+		image.quality 80
+		#メタデータ削除
+		image.strip
 		blob = image.to_blob
-		
+
+		#TODO PNG以外に対応
+		send_data blob, :disposition => "inline", :type => image.mime_type
+		#吐き出してからファイルに書きたい
 		File.open(path,'wb') do |f|
 			f << blob
 		end
-		send_data blob, :disposition => "inline", :type => "image/png"
+	end
+
+	def clean
 
 	end
 end

@@ -17,4 +17,4 @@
 							%span.zeinuki 税抜本体価格
 							%strong.text-danger#wotax=(@menu.price.to_i / 1.08).ceil
 							%span.yen 円
-					%img.photo{src:"//assets.yamaokaya.com/images/menus/photos/#{@menu.id}.png"}
+					=ymage_tag "images/menus/photos/#{@menu.id}.png",size: :origin,cls: :photo

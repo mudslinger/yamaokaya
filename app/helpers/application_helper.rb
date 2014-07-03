@@ -1,6 +1,21 @@
 module ApplicationHelper
+
+	#コンテキストに合わせたI18n.t
 	def tt(key)
-		t key,scope: [controller_name,action_name]
+		I18n.t key,scope: [controller_name,action_name]
+	end
+
+	#山岡家専用img_tag
+	def ymage_tag(path ,size: :origin,alt: '', title: '',cls: '')
+		url = img_path(size: size.to_s,file: path)
+		params = {src: url,alt: alt,title: title, class: cls}
+		# unless size == :origin
+		# 	width = size.split('x').first
+		# 	height = size.split('x').last
+		# end
+		render type: :haml,locals: {:params => params},:inline => <<-HAML
+%img{params}
+		HAML
 	end
 
 	def ln(str)
