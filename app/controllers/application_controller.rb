@@ -6,8 +6,6 @@ class ApplicationController < ActionController::Base
 
 	private
 	def detect_device_format
-		puts '--------------d--o--m---a--i--n------------'
-		puts request.domain
 		case request.user_agent
 		when /iPad/i
 			request.variant = :tablet
@@ -24,9 +22,7 @@ class ApplicationController < ActionController::Base
 
 	def domain_layout
 		DOMAINS.select do |k,v|
-			puts '-------------------------------------'
-			puts v
-			v == request.domain
+			v == request.subdomain + '.' + request.domain
 		end.keys.first.to_s
 	end
 end
