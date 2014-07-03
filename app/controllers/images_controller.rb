@@ -5,6 +5,7 @@ class ImagesController < ApplicationController
 		height = params[:height] || 0
 		file = params[:file] if params[:file].present?
 		AWS.config(AWS_CREDENTIALS)
+		puts AWS_CREDENTIALS
 		s3 = AWS::S3.new
 		bucket = s3.buckets['assets.yamaokaya.com']
 		o = bucket.objects[file]
