@@ -1,11 +1,3 @@
-/*!
- * bootstrap-select v1.5.4
- * http://silviomoreto.github.io/bootstrap-select/
- *
- * Copyright 2013 bootstrap-select
- * Licensed under the MIT license
- */
-
 !function($) {
 
     'use strict';

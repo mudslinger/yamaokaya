@@ -6,8 +6,6 @@
 #= require flot/excanvas
 #= require flot/jquery.flot
 #= require flot/jquery.flot.resize
-#= require gmaps
-#= require progressbar
 
 #価格の書き換え
 #= require digits
