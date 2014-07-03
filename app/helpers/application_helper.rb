@@ -1,18 +1,31 @@
 module ApplicationHelper
-
+	@@asset_cache = {}
 	#コンテキストに合わせたI18n.t
 	def tt(key)
 		I18n.t key,scope: [controller_name,action_name]
 	end
 
+	def self.get_cache(url)
+		@@asset_cache[url]
+	end
+
+	def self.set_cache(url,assets_url)
+		@@asset_cache[url] = assets_url
+	end
+
 	#山岡家専用img_tag
 	def ymage_tag(path ,size: :origin,alt: '', title: '',cls: '')
+
 		url = img_path(size: size.to_s,file: path)
-		params = {src: url,alt: alt,title: title, class: cls}
-		# unless size == :origin
-		# 	width = size.split('x').first
-		# 	height = size.split('x').last
-		# end
+		assets_url = ApplicationHelper.get_cache url
+		unless assets_url
+			digest = Digest::MD5.hexdigest(url).hex % 8
+			assets_url = "//assets#{digest}.yamaokaya.com#{url}"
+			ApplicationHelper.set_cache(url,assets_url)
+		else
+			puts 'hit assets url cache!'
+		end
+		params = {src: assets_url,alt: alt,title: title, class: cls}
 		render type: :haml,locals: {:params => params},:inline => <<-HAML
 %img{params}
 		HAML
