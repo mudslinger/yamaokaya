@@ -22,9 +22,8 @@ module FeedbackReportable extend ActiveSupport::Concern
     action_view.render var
   end
   def report
-    ses_id = AWS_CREDENTIALS[:access_key_id]
-    ses_secret = AWS_CREDENTIALS[:secret_access_key]
-    ses = AWS::SES::Base.new(access_key_id: ses_id,secret_access_key: ses_secret)
+
+    ses = AWS::SES::Base.new(AWS_CREDENTIALS)
 
     ses.send_email(
       #to: 'info@yamaokaya.com',
