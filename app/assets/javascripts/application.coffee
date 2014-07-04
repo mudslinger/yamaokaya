@@ -18,6 +18,9 @@
 #Notification slide
 #= require noty
 
+#トップ画面 店舗 feeling lucky
+#=require shop_feel_lucky
+
 #トップ画面 ticker
 #=require ticker
 

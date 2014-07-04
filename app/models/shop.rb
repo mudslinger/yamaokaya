@@ -1,5 +1,4 @@
 class Shop < ActiveRecord::Base
-	geocoded_by :address, :latitude  => :lat, :longitude => :lng
 
 	default_scope -> {
 		order(:id)
@@ -12,6 +11,7 @@ class Shop < ActiveRecord::Base
 	scope :by_zoom, ->(zoom) {
 		where("#{zoom} >= shops.start_shows")
 	}
+	
 	scope :with_higher, ->{
 		includes(:area => {:prefecture => :region})
 	}

@@ -126,7 +126,7 @@ $ ->
 			$('#index-map').get(0)
 			{
 				zoom:5
-				center: new google.maps.LatLng(39.7868944,137.7877029)
+				center: new google.maps.LatLng(38.7868944,137.7877029)
 				mapTypeId: google.maps.MapTypeId.ROADMAP,
 				noClear : true
 			}
@@ -134,9 +134,19 @@ $ ->
 
 		loadMarkers map
 		google.maps.event.addListener map,'zoom_changed',->
+			map.setZoom(4) if map.getZoom() < 4
 			loadMarkers map
 			for k,v of markers
 				v.changeVisible(map.getZoom())
+
+	#現在位置に合わせて地図の表示を変更
+	if $('#user-latlng').get(0)
+		console.log 'user-latlng'
+		$('#user-latlng').bind 'DOMSubtreeModified', ->
+			latlng = $('#user-latlng').text().split(',')
+			console.log latlng
+			map.setCenter new google.maps.LatLng(latlng[0],latlng[1])
+			map.setZoom(11)
 	#個別店舗ページ
 	if $('#detail-map').get(0) && $('#marker-data').get(0)
 		json = $.parseJSON($('#marker-data').text())

@@ -1,12 +1,29 @@
-%section.col-xs-12#shop
-	.container
-		.jumbotron.col-md-12.text-center
-			%h2 すべてのお客様に、「本当に旨いラーメン」をご提供したい。
+.col-xs-12#shop
+	.jumbotron.col-md-12.text-center
+		.col-md-5.col-md-offset-1
+			%h2 「本物」のラーメンだけを
+			%h2 どのお店でも。
 			%p
-				「手作りのおいしいラーメン」と、
-				「心のこもったサービス」を一人でも多くのお客様に・・・
+				山岡家の全てのお店で、スープから手作りで仕上げた
+				本当に旨いラーメンだけをご提供しています。
 			%p
-				全国各地に広がる、ラーメン山岡家。お店の検索はこちらから！
+				全国各地に広がるラーメン山岡家。お店の検索はこちらから！
 			%p
 				=link_to :shop_root,role: :button,class:'btn btn-primary btn-lg' do
-					店舗情報を見る
+					店舗一覧へ
+				:ruby
+					button_attr = {
+						role: :button,
+						type: :button,
+						title: '位置情報を利用してお近くの店舗を検索します。',
+						data:{
+							href: nerby_shops_path(format: :js),
+						}
+					}
+				%button.btn.btn-primary.btn-lg#search_shop{button_attr}
+					お近くの店舗を探す
+				#user-latlng.invisible
+		.col-md-6
+			#index-map.well{style: 'min-height:400px;'}
+#modal
+

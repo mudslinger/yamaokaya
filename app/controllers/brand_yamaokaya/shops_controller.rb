@@ -39,6 +39,22 @@ class BrandYamaokaya::ShopsController < BrandYamaokaya::BaseController
 		end
 	end
 
+	def nerby_shops
+		lat = params[:lat] if params[:lat].present?
+		lng = params[:lng] if params[:lng].present?
+		@shops = lat && lng ? Shop.nearby(lat,lng)	 : []
+		additional_attr = [:marker_type,:sprite_x,:sprite_y,:bounds,:start_shows,:end_shows]
+		respond_to do |format|
+			format.json{
+				render(
+					json: @shops,
+					methods: additional_attr
+				)
+			}
+			format.js{render 'nerby_shops.coffee',layout: false}
+		end
+	end
+
 	def children
 
 		current_key = params[:key] if params[:key].present?

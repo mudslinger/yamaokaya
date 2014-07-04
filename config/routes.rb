@@ -62,6 +62,8 @@ Rails.application.routes.draw do
   #地図用json
   get '/markers' => 'brand_yamaokaya/shops#markers', as: :markers
 
+  #近隣検索用json
+  get '/nerby_shops' => 'brand_yamaokaya/shops#nerby_shops',as: :nerby_shops
 
   constraints size: /[0-9]{0,4}x[0-9]{0,4}|origin/,file: /.*/ do
     get '/i/:size/:file' => 'images#show' , as: :img
@@ -72,7 +74,8 @@ Rails.application.routes.draw do
   constraints host: DOMAINS[:corporate] do
     scope module: :corporate do
 
-      get '/' => 'top#index',as: :corp_top,host: DOMAINS[:corporate]
+      get '/' => 'top#index',as: :corp_top
+      get '/index(.:format)' => 'top#index',as: :corp_top_variant
       get '/greetings' => 'top#greetings',as: :greetings
       get '/company/history' => 'company#history',as: :history
       get '/company/overview' => 'company#overview',as: :overview
@@ -100,6 +103,8 @@ Rails.application.routes.draw do
   constraints host: DOMAINS[:yamaokaya] do
     scope module: :brand_yamaokaya do
       get '/' => 'top#index',as: :yamaokaya_top
+      get '/index(.:format)' => 'top#index',as: :yamaokaya_top_variant
+      
       get '/shops/:key' => 'shops#details', as: :shop_details
       get 'shops' => 'shops#shops', as: :shop_root
 
@@ -113,7 +118,8 @@ Rails.application.routes.draw do
 
   constraints host: DOMAINS[:recruit] do
     scope module: :recruit do
-      get '/(index(.:format))' => 'top#index',as: :recruit_top
+      get '/' => 'top#index',as: :recruit_top
+      get '/index(.:format)' => 'top#index',as: :recruit_top_variant
       #message
       get '/graduates/message' => 'message#graduates',as: :message_graduates
       get '/career/message' => 'message#career',as: :message_career

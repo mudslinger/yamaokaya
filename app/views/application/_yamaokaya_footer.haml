@@ -70,14 +70,17 @@
 	.container
 		.row
 			.col-xs-6.col-sm-1.col-sm-offset-4
-				%a.btn.btn-link{href:'/index.html'} ホーム
+				=link_to :yamaokaya_top,class: %w(btn btn-link) do
+					ホーム
 			.col-xs-6.col-sm-1
-				%a.btn.btn-link{href:'/shops/index.html'} 店舗
+				=link_to :shop_root,class: %w(btn btn-link) do
+					店舗
 			.col-xs-6.col-sm-1
-				%a.btn.btn-link{href:'/menus/categories/regular'} メニュー
+				=link_to menu_categorized_path(:regular),class: %w(btn btn-link) do
+					メニュー
 			.col-xs-6.col-sm-1
-				%a.btn.btn-link{href:'/feedbacks.html'} ご意見・ご感想
-			
+				=link_to :feedbacks,class: %w(btn btn-link) do
+					ご意見・ご感想
 	.col-md-3.hidden-xs
 		%a.smoothScroll.top_btn#page-top{href:'#header'}
 			=ymage_tag "images/btn_topback.png", size:"67x67"
