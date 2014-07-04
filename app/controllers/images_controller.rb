@@ -37,7 +37,7 @@ class ImagesController < ApplicationController
 		#キャッシュに書き込み
 		meta = Rails.cache.fetch(image_url: request.path_info) do
 			{
-				assets_url: "//assets#{Digest::MD5.hexdigest(url).hex % 8}.yamaokaya.com#{url}",
+				assets_url: "//assets#{Digest::MD5.hexdigest(request.path_info).hex % 8}.yamaokaya.com#{request.path_info}",
 				width: image[:width],
 				height: image[:height]
 			}
