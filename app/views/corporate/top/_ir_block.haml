@@ -3,7 +3,7 @@
 		%h3.panel-title
 			%span.glyphicon.glyphicon-pin
 			最新情報
-			.badge=t :title,scope: :ir
+			.label.label-info=t :title,scope: :ir
 	%table.table
 		%thead
 		%tfoot
@@ -14,10 +14,7 @@
 					%tr
 						%th
 							=l topic.released.to_date ,format: :short
-							-if topic.type == '短信'
-								.label.label-success=topic.type
-							-else
-								.label.label-info=topic.type	
+							.badge=IrTopic.human_attribute_name topic.type	
 						%td
 							%a{href:topic.url,target: '_blank'}
 								=topic.title

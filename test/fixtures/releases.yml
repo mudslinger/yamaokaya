@@ -919,7 +919,7 @@
   target_date: 1970-01-01
   title: 今年も冷やし中華、始めました。
   body: なんだこれ
-  url: http://assets.yamaokaya.com/images/top/carousel01.jpg
+  url: images/top/carousel01.jpg
 502:
   release_type: 1
   start_shows: 1970-01-01
@@ -927,7 +927,7 @@
   target_date: 1970-01-01
   title: 今年も冷やし中華、始めました。
   body: なんだこれ
-  url: http://assets.yamaokaya.com/images/top/carousel02.jpg
+  url: images/top/carousel02.jpg
 503:
   release_type: 1
   start_shows: 1970-01-01
@@ -935,4 +935,4 @@
   target_date: 1970-01-01
   title: 今年も冷やし中華、始めました。
   body: なんだこれ
-  url: http://assets.yamaokaya.com/images/top/carousel03.jpg
+  url: images/top/carousel03.jpg

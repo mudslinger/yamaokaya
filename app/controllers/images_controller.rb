@@ -1,9 +1,12 @@
 require 'fileutils'
 class ImagesController < ApplicationController
 	include MiniMagick
+
+
 	def show
 		size = params[:size] || 'origin'
 		file = params[:file] if params[:file].present?
+
 		s3 = AWS::S3.new
 		bucket = s3.buckets['assets.yamaokaya.com']
 		o = bucket.objects[file]
@@ -23,7 +26,6 @@ class ImagesController < ApplicationController
 		path = Rails.root.join('public','i',size,file)
 		FileUtils.mkpath(File::dirname path)
 
-
 		image = MiniMagick::Image.read(blob)
 		#originじゃ無いときはリサイズ
 		image.resize size unless size == 'origin'
@@ -31,6 +33,16 @@ class ImagesController < ApplicationController
 		image.quality 80
 		#メタデータ削除
 		image.strip
+
+		#キャッシュに書き込み
+		meta = Rails.cache.fetch(image_url: request.path_info) do
+			{
+				assets_url: "//assets#{Digest::MD5.hexdigest(url).hex % 8}.yamaokaya.com#{url}",
+				width: image[:width],
+				height: image[:height]
+			}
+		end
+
 		blob = image.to_blob
 
 		#TODO PNG以外に対応

@@ -5,7 +5,7 @@
 				=link_to 'corporate::top#index' do
 					=ymage_tag 'images/corporate/logo3.png',size: :origin,alt: '株式会社丸千代山岡家'
 				%h1 
-					=link_to :yamaokaya_top,host: DOMAINS[:host] do
+					=link_to yamaokaya_top_url do
 						ラーメン山岡家
 					を経営する株式会社丸千代山岡家
 			.col-xs-2.col-sm-2
@@ -99,5 +99,5 @@
 					=link_to :property do
 						物件募集
 				%li
-					=link_to :recruit_top,target: '_blank' do
+					=link_to recruit_top_url(),target: '_blank' do
 						採用スペシャルサイト

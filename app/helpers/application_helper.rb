@@ -1,33 +1,28 @@
 module ApplicationHelper
-	@@asset_cache = {}
 	#コンテキストに合わせたI18n.t
 	def tt(key)
 		I18n.t key,scope: [controller_name,action_name]
-	end
-
-	def self.get_cache(url)
-		@@asset_cache[url]
-	end
-
-	def self.set_cache(url,assets_url)
-		@@asset_cache[url] = assets_url
 	end
 
 	#山岡家専用img_tag
 	def ymage_tag(path ,size: :origin,alt: '', title: '',cls: '',width:nil,height:nil,align: nil,crop: nil)
 
 		url = img_path(size: size.to_s,file: path)
-		assets_url = ApplicationHelper.get_cache url
-		unless assets_url
-			digest = Digest::MD5.hexdigest(url).hex % 8
-			assets_url = "//assets#{digest}.yamaokaya.com#{url}"
-			ApplicationHelper.set_cache(url,assets_url)
-		else
-			puts 'hit assets url cache!'
+		meta = Rails.cache.fetch(image_url: url) do
+			{
+				assets_url: "//assets#{Digest::MD5.hexdigest(url).hex % 8}.yamaokaya.com#{url}"
+			}
 		end
-		params = {src: assets_url,alt: alt,title: title, class: cls}
+		params = {src: meta[:assets_url],alt: alt,title: title, class: cls}
+
+		#画像のサイズがゲット出来ている場合
+		params[:width] = meta[:width] if meta[:width]
+		params[:height] = meta[:height] if meta[:height]
+
+		#指定されたサイズがある場合
 		params[:width] = width unless width.nil?
 		params[:height] = height unless height.nil?
+
 		params[:align] = align unless align.nil?
 		params[:crop] = crop unless crop.nil?
 		

@@ -214,6 +214,10 @@ ja:
     errors:
       <<: *errors
     attributes:
+      ir_topic:
+        yuho: 有報
+        press: PRESS
+        tanshin: 決算短信
       financial_infomation:
         year: 年度
         sales: 売上高

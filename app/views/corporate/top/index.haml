@@ -1,24 +1,20 @@
 .container
-	/ .row
-	/ 	.jumbotron#catch
-	/ 		ラーメンでお客さんに喜んでもらう
-	/ 		=t 'foo'
 	.row
 		.col-md-4.col-xs-12
 			=render partial: 'ir_block'
 		.col-md-8.col-xs-12
 			.row
 				.col-md-6.col-xs-12
+					=render partial: 'block',locals:{ctrl: :top,act: :greetings,image: 'images/top/yamaoka.jpg'}
+				.col-md-6.col-xs-12
+					=render partial: 'block',locals:{ctrl: :business,act: :safety,image: 'images/corporate/business/safety.png'}
+				.col-md-6.col-xs-12
+					=render partial: 'block',locals:{ctrl: :business,act: :development,image: 'images/corporate/business/development.png'}
+				.col-md-6.col-xs-12
+					=render partial: 'block',locals:{ctrl: :business,act: :products,image: 'images/corporate/business/products.png'}
+				.col-md-6.col-xs-12
+					=render partial: 'block',locals:{ctrl: :business,act: :hospitality,image: 'images/corporate/business/hospitality.png'}
+				.col-md-6.col-xs-12
 					=render partial: 'yam_block'
-				.col-md-6.col-xs-12
-					=render partial: 'block',locals:{ctrl: :top,act: :greetings}
-				.col-md-6.col-xs-12
-					=render partial: 'block',locals:{ctrl: :business,act: :safety}
-				.col-md-6.col-xs-12
-					=render partial: 'block',locals:{ctrl: :business,act: :development}
-				.col-md-6.col-xs-12
-					=render partial: 'block',locals:{ctrl: :business,act: :products}
-				.col-md-6.col-xs-12
-					=render partial: 'block',locals:{ctrl: :business,act: :hospitality}
 
 
