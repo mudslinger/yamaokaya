@@ -42,7 +42,7 @@ class ImagesController < ApplicationController
 				height: image[:height]
 			}
 		end
-
+		puts meta
 		blob = image.to_blob
 
 		#TODO PNG以外に対応
