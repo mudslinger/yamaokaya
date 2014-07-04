@@ -8,11 +8,11 @@ module ApplicationHelper
 	def ymage_tag(path ,size: :origin,alt: '', title: '',cls: '',width:nil,height:nil,align: nil,crop: nil)
 
 		url = img_path(size: size.to_s,file: path)
-		meta = Rails.cache.get(image_url: url)
+		meta = Rails.cache.read(image_url: url)
 		meta = {
 			assets_url: "//assets#{Digest::MD5.hexdigest(url).hex % 8}.yamaokaya.com#{url}"
 		} unless meta
-		
+
 		params = {src: meta[:assets_url],alt: alt,title: title, class: cls}
 
 		#画像のサイズがゲット出来ている場合
