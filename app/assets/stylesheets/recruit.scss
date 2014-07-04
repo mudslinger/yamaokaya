@@ -6,11 +6,11 @@
 
 body.recruit{
 	@media (min-width: 992px) {
-		background:url(recruit/body_bk.jpg) no-repeat center center fixed #000;
+		background:url(/i/origin/images/recruit/body_bk.jpg) no-repeat center center fixed #000;
 		@include background-size(cover);
 	}
 	@media (max-width: 991px) {
-		background:url(recruit/body_bk_xs.jpg) no-repeat top center fixed #000;
+		background:url(/i/origin/images/recruit/body_bk_xs.jpg) no-repeat top center fixed #000;
 		@include background-size(auto);
 	}
 	.modal{
@@ -94,7 +94,7 @@ body.recruit{
 		border-top: solid 0.5em $brand-primary;
 		margin-top: 4em;
 		padding-top: 1em;
-		background: url(corporate/fback.png);
+		background: url(/i/origin/images/corporate/fback.png);
 		background-color: $gray-darker;
 		color: white;
 		.footer-main{
@@ -137,7 +137,7 @@ body.recruit{
 
 
 	.article-box{
-		background:url(recruit/news_bk.png);
+		background:url(/i/origin/images/recruit/news_bk.png);
 		padding:1em 2em;
 		@media (max-width: 767px) {
 			padding:1em 0.8em !important;
@@ -207,7 +207,7 @@ body.recruit{
 					padding:4px;
 					margin:0px;
 					background:#FFF;
-					background-image:url(recruit/card_pattern.png);
+					background-image:url(/i/origin/images/recruit/card_pattern.png);
 
 				}
 				small{

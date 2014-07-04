@@ -30,10 +30,10 @@ body.yamaokaya.top{
 		}
 	}
 	#menu{
-		@include bg('bg_menu.jpg');
+		@include bg('/i/origin/images/bg_menu.jpg');
 	}
 	#shop{
-		@include bg('bg_shop.jpg');
+		@include bg('/i/origin/images/bg_shop.jpg');
 	}
 	.carousel-inner{
 		width:100%;

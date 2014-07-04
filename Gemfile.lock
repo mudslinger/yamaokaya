@@ -154,6 +154,8 @@ GEM
       multi_json (~> 1.0)
       rack (~> 1.0)
       tilt (~> 1.1, != 1.3.0)
+    sprockets-image_compressor (0.2.4)
+      sprockets
     sprockets-rails (2.1.3)
       actionpack (>= 3.0)
       activesupport (>= 3.0)
@@ -211,6 +213,7 @@ DEPENDENCIES
   sass-rails (~> 4.0.3)
   sdoc (~> 0.4.0)
   spring
+  sprockets-image_compressor
   therubyracer
   tiny_tds
   turbolinks

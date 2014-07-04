@@ -39,6 +39,7 @@ end
 end
 end
 %>
+
 サービスセットA:
   id: 101
   name: サービスセットA
@@ -51,6 +52,7 @@ end
   end_sells: 2099/12/31
   is_hot: false
   price: 690
+
 サービスセットB:
   id: 102
   name: サービスセットB
@@ -79,7 +81,7 @@ end
 
 
 サンデーセット:
-  id: 2001
+  id: 151
   name: サンデーセット
   category: 3
   subcategory: 1
@@ -92,7 +94,7 @@ end
   price: 400
 
 朝ラーメン:
-  id: 2002
+  id: 29
   name: 朝ラーメン
   category: 0
   subcategory: 0
@@ -157,7 +159,7 @@ end
   price: 320
 
 玉子かけご飯:
-  id: 1653
+  id: 206
   name: 玉子かけご飯
   category: 1
   subcategory: 1
@@ -168,6 +170,20 @@ end
   end_sells: 2099-12-31 00:00:00
   is_hot: false
   price: 220
+
+チャーハン:
+  id: 207
+  name: チャーハン
+  category: 1
+  subcategory: 1
+  taste: 6
+  ingredients: 6
+  has_large_sizes: false
+  start_sells: 2010-09-07 00:00:00
+  end_sells: 2099-12-31 00:00:00
+  is_hot: false
+  price: 280
+
 
 特製ギョーザ:
   id: 211

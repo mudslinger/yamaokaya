@@ -27,7 +27,7 @@ body.yamaokaya{
 		}
 	}
 	.footer{
-		background: url('/assets/bg_footer.png') darken($brand-primary,8%) top right no-repeat;
+		background: url('/i/origin/images/bg_footer.png') darken($brand-primary,8%) top right no-repeat;
 		#footer{
 			padding-top:10px;
 			p{
@@ -64,7 +64,7 @@ body.yamaokaya{
 	}
 
 	.container#main{
-		@include bg('shop/bg.jpg');
+		@include bg('/i/origin/images/shops/bg.jpg');
 		padding-top:30px;
 		padding-bottom:30px;
 		@include border-radius();

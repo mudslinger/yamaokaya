@@ -14,7 +14,7 @@ module ApplicationHelper
 	end
 
 	#山岡家専用img_tag
-	def ymage_tag(path ,size: :origin,alt: '', title: '',cls: '')
+	def ymage_tag(path ,size: :origin,alt: '', title: '',cls: '',width:nil,height:nil,align: nil,crop: nil)
 
 		url = img_path(size: size.to_s,file: path)
 		assets_url = ApplicationHelper.get_cache url
@@ -26,6 +26,11 @@ module ApplicationHelper
 			puts 'hit assets url cache!'
 		end
 		params = {src: assets_url,alt: alt,title: title, class: cls}
+		params[:width] = width unless width.nil?
+		params[:height] = height unless height.nil?
+		params[:align] = align unless align.nil?
+		params[:crop] = crop unless crop.nil?
+		
 		render type: :haml,locals: {:params => params},:inline => <<-HAML
 %img{params}
 		HAML

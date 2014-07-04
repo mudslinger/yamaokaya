@@ -3,7 +3,7 @@
 		-@carousels.each_with_index do |c,idx|
 			.item{class: if idx == 0 then 'active' else 'inactive' end}
 				.carousel-caption= raw c.body
-				%img{src:c.url,alt:c.title}
+				=ymage_tag c.url,alt:c.title
 	%a.left.carousel-control{href:'#top',data:{slide: :prev}}
 		%span.glyphicon.glyphicon-chevron-left
 	%a.right.carousel-control{href:'#top',data:{slide: :next}}
