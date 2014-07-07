@@ -49,11 +49,20 @@ body.yamaokaya.top{
 		max-width: 80%;
 		padding: 0 20px;
 		margin:0 auto;
-		top:45%;
+		top:35%;
 		bottom:auto;
 		text-align:center;
 		h1{
-			font-size:300%;
+			font-size:400%;
+		}
+		p{
+			font-size: $font-size-large;
+		}
+		.gray-bg{
+			padding:10px;
+			width: 800px;
+			background: url('/i/800x800/images/carousel-back.png');
+			background-repeat: repeat-y;
 		}
 	}
 	/* Notification slide box */

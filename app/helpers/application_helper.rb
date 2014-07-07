@@ -4,18 +4,22 @@ module ApplicationHelper
 		I18n.t key,scope: [controller_name,action_name]
 	end
 
-	  def static_map_for(location, options = {})
-	    params = {
+	def carousel_body(txt)
+		raw render type: :haml,inline: txt
+	end
+
+	def static_map_for(location, options = {})
+		params = {
 			:center => [location.lat, location.lng].join(","),
 			:zoom => location.zoom,
 			:size => "240x180",
 			:markers => [location.lat, location.lng].join(","),
 			:sensor => true
-	    }.merge(options)
-	 
-	    query_string =  params.map{|k,v| "#{k}=#{v}"}.join("&")
-	    image_tag "http://maps.googleapis.com/maps/api/staticmap?#{query_string}", alt: location.name,class: 'img-rounded',style:'width:95%'
-	  end
+		}.merge(options)
+
+		query_string =  params.map{|k,v| "#{k}=#{v}"}.join("&")
+		image_tag "http://maps.googleapis.com/maps/api/staticmap?#{query_string}", alt: location.name,class: 'img-rounded',style:'width:95%'
+	end
 
 	#山岡家専用img_tag
 	def ymage_tag(path ,size: :origin,alt: '', title: '',cls: '',width:nil,height:nil,align: nil,crop: nil)
