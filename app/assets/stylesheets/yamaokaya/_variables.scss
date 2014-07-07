@@ -401,12 +401,12 @@ $nav-disabled-link-hover-color:             $gray-light !default;
 $nav-open-link-hover-color:                 #fff !default;
 
 //== Tabs
-$nav-tabs-border-color:                     #ddd !default;
+$nav-tabs-border-color:                     $body-bg !default;
 
 $nav-tabs-link-hover-border-color:          $gray-lighter !default;
 
-$nav-tabs-active-link-hover-bg:             $body-bg !default;
-$nav-tabs-active-link-hover-color:          $gray !default;
+$nav-tabs-active-link-hover-bg:             $brand-primary !default;
+$nav-tabs-active-link-hover-color:          white !default;
 $nav-tabs-active-link-hover-border-color:   #ddd !default;
 
 $nav-tabs-justified-link-border-color:            #ddd !default;
@@ -570,7 +570,7 @@ $modal-title-padding:         15px !default;
 $modal-title-line-height:     $line-height-base !default;
 
 //** Background color of modal content area
-$modal-content-bg:                             #fff !default;
+$modal-content-bg:                             lighten($body-bg,15%) !default;
 //** Modal content border color
 $modal-content-border-color:                   rgba(0,0,0,.2) !default;
 //** Modal content border color **for IE8**

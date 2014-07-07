@@ -1,0 +1,20 @@
+.panel.panel-default
+	%table.table
+		%caption 店舗情報
+		%tr
+			%th 住所
+			%td
+				="〒#{shop.postal_code}"
+				%br
+				= shop.address
+		%tr
+			%th 電話番号
+			%td= shop.phone
+		%tr
+			%th 営業時間
+			%td
+				- shop.shop_hours_human.each do |h|
+					=h
+		%tr
+			%th 目印・その他
+			%td= shop.landmarks

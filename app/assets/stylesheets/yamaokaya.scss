@@ -7,8 +7,11 @@
 @import "yamaokaya/menus";
 
 body.yamaokaya{
-	.modal{
-		color: $gray-darker;
+	.nerby{
+		h2{
+			background-color: $brand-primary;
+			padding:3px;
+		}
 	}
 	a.logo{
 		img{
@@ -112,7 +115,8 @@ body.yamaokaya{
 			color:white;
 		}
 	}
-	form{
+
+	form.inquiry{
 		.mini{
 			// 日付用
 			width:20%;
@@ -141,6 +145,18 @@ body.yamaokaya{
 			}
 		}
 	}
+
+	.footer{
+		fieldset{
+			legend{
+				color:white;
+				background-color: none;
+				@include opacity(1);
+				font-size: $font-size-h4;
+			}
+		}
+	}
+
 	.container-full{
 		margin: 0 auto;
 		width: 100%;

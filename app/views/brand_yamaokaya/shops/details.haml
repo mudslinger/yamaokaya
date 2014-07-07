@@ -27,26 +27,7 @@
 			#zoom.hidden=@shop.zoom
 			=ymage_tag "images/shops/photos/#{@shop.id}.jpg",size: '300x300',cls: ['shop-image', 'img-rounded']
 			%hr
-			.panel.panel-default
-				%table.table
-					%caption 店舗情報
-					%tr
-						%th 住所
-						%td
-							="〒#{@shop.postal_code}"
-							%br
-							= @shop.address
-					%tr
-						%th 電話番号
-						%td= @shop.phone
-					%tr
-						%th 営業時間
-						%td
-							- @shop.shop_hours_human.each do |h|
-								=h
-					%tr
-						%th 目印・その他
-						%td= @shop.landmarks
+			=render partial: 'yamaokaya_shop_details',locals: {shop: @shop}
 		.col-md-7
 			=render partial: 'yamaokaya_map',locals:{shop: @shop}
 	.row

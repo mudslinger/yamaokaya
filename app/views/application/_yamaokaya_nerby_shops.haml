@@ -2,7 +2,6 @@
 	.modal-dialog
 		.modal-content
 			.modal-header
-
 				%button.close{type: :button,data:{dismiss: :modal},aria:{hidden:true}} &times;
 				%h4.modal-title お近くの店舗
 			.modal-body
@@ -11,10 +10,15 @@
 						%li{class: idx == 0 ? :active : nil}
 							%a{href:"#shops#{shop.id}",data:{toggle: :tab}}
 								%span.glyphicon.glyphicon-shop
-								=shop.name		
+								=shop.name
 				.tab-content
 					-@shops.each_with_index do |shop,idx|
-						.tab-pane.panel.panel-default{id: "shops#{shop.id}",class: idx == 0 ? :active : nil}
-							%h2=shop.name
-							=ymage_tag "images/shops/photos/#{shop.id}.jpg",size: '300x200',cls: ['shop-image', 'img-rounded']
-
+						.tab-pane.panel.panel-default.nerby{id: "shops#{shop.id}",class: idx == 0 ? :active : nil}
+							.row
+								.col-xs-12
+									%h2=shop.name
+							.row
+								.col-xs-6.text-center
+									=static_map_for shop
+								.col-xs-6.text-center
+									=render partial: 'yamaokaya_shop_details',locals: {shop: shop}

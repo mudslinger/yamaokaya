@@ -20,7 +20,7 @@
 
 .container#main
 	.row
-		.col-xs-12
+		.col-xs-12#menu_tab
 			%ul.nav.nav-tabs.menu-tab
 				- Menu.categories.each do |c|
 					%li{class: c[0] == params[:category] ? 'active': ''}

@@ -1,14 +1,13 @@
 .col-xs-12#shop
-	.jumbotron.col-md-12.text-center
-		.col-md-5.col-md-offset-1
-			%h2 「本物」のラーメンだけを
-			%h2 どのお店でも。
+	.jumbotron.col-md-12
+		.col-md-6.col-md-offset-1
+			%h2 「本物」のラーメンだけをどのお店でも。
 			%p
 				山岡家の全てのお店で、スープから手作りで仕上げた
 				本当に旨いラーメンだけをご提供しています。
 			%p
 				全国各地に広がるラーメン山岡家。お店の検索はこちらから！
-			%p
+			%p.text-center
 				=link_to :shop_root,role: :button,class:'btn btn-primary btn-lg' do
 					店舗一覧へ
 				:ruby
@@ -20,10 +19,11 @@
 							href: nerby_shops_path(format: :js),
 						}
 					}
-				%button.btn.btn-primary.btn-lg#search_shop{button_attr}
-					お近くの店舗を探す
+				-# &nbsp;
+				-#%button.btn.btn-primary.btn-lg#search_shop{button_attr}
+				-#	お近くの店舗を探す
 				#user-latlng.invisible
-		.col-md-6
+		.col-md-5
 			#index-map.well{style: 'min-height:400px;'}
 #modal
 
