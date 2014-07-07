@@ -23,15 +23,18 @@ class ApplicationController < ActionController::Base
 	def domain_layout
 		DOMAINS.select do |k,v|
 			dmn = (request.subdomain.empty? ? '' : request.subdomain + '.') + request.domain
-			puts dmn
 			v == dmn
 		end.keys.first.to_s
 	end
 
 	private
 	def auth
-		authenticate_or_request_with_http_basic do |user,pass|
-			user == 'men' && pass == 'katame'
+		dmn = (request.subdomain.empty? ? '' : request.subdomain + '.') + request.domain
+
+		if dmn == 'www2014.yamaokaya.com' || dmn == 'maruchiyo2014.yamaokaya.com' || dmn == 'recruit2014.yamaokaya.com'
+			authenticate_or_request_with_http_basic do |user,pass|
+				user == 'men' && pass == 'katame'
+			end
 		end
 	end
 end
