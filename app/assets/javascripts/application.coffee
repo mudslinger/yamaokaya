@@ -42,7 +42,6 @@ $ ->
 		$('div.progress-bar').each (idx,o)->
 			shops = o.getAttribute('aria-valuenow')
 			max = 140
-			console.log shops / max
 			$(o).css(width:"#{shops/max*100}%")
 
 #リクルートのエントリーフォーム

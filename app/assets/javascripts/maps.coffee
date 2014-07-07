@@ -111,7 +111,6 @@ $ ->
 					m = new AreaMarker json,map
 				when 'Shop'
 					m = new ShopMarker json,map
-					console.log m
 			markers[m.local_id] = m
 	loadMarkers = (map)->
 		zoom = map.getZoom()
@@ -141,16 +140,13 @@ $ ->
 
 	#現在位置に合わせて地図の表示を変更
 	if $('#user-latlng').get(0)
-		console.log 'user-latlng'
 		$('#user-latlng').bind 'DOMSubtreeModified', ->
 			latlng = $('#user-latlng').text().split(',')
-			console.log latlng
 			map.setCenter new google.maps.LatLng(latlng[0],latlng[1])
 			map.setZoom(11	)
 	#個別店舗ページ
 	if $('#detail-map').get(0) && $('#marker-data').get(0)
 		json = $.parseJSON($('#marker-data').text())
-		console.log json
 		json.start_shows = 0
 		json.end_shows = 100
 		mapOptions = {

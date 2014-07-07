@@ -5,7 +5,6 @@ $ ->
 			box.animate left:0,300
 			btn.animate left:280,300
 			$('.noty-content .panel-collapse').each ->
-				console.log $(@).attr('id')
 				if $(@).attr('id') == id && !$(@).hasClass('in')
 					$(@).collapse('toggle')
 				if $(@).hasClass('in')
