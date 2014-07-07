@@ -146,7 +146,7 @@ $ ->
 			latlng = $('#user-latlng').text().split(',')
 			console.log latlng
 			map.setCenter new google.maps.LatLng(latlng[0],latlng[1])
-			map.setZoom(11)
+			map.setZoom(11	)
 	#個別店舗ページ
 	if $('#detail-map').get(0) && $('#marker-data').get(0)
 		json = $.parseJSON($('#marker-data').text())

@@ -8,7 +8,7 @@ $ ->
             lng: pos.coords.longitude
           $.get $(@).data('href'),ll, (data)->
             #eval(data)
-          $('#user-latlng').text "#{pos.coords.latitude},#{pos.coords.longitude}"
+            $('#user-latlng').text "#{pos.coords.latitude},#{pos.coords.longitude}"
         ,(err)->
           alert '申し訳ありません。現在位置の取得に失敗しました。'
 

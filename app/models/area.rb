@@ -1,6 +1,6 @@
 class Area < ActiveRecord::Base
 	include ShopArea
-	has_many :shops,->(record) {where("(current_timestamp between [inauguration] and [close]) or (abs(datediff(d,current_timestamp,inauguration)) < 30)").order(:id)},inverse_of: :area
+	has_many :shops,->(record) {where("(current_timestamp between inauguration and close)").order(:id)},inverse_of: :area
 	belongs_to :prefecture
 	default_scope ->{order(:seq)}
 	scope :by_zoom, ->(zoom) {

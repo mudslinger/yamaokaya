@@ -8,6 +8,7 @@ module ApplicationHelper
 	def ymage_tag(path ,size: :origin,alt: '', title: '',cls: '',width:nil,height:nil,align: nil,crop: nil)
 
 		url = img_path(size: size.to_s,file: path)
+
 		meta = Rails.cache.read(image_url: url)
 		meta = {
 			assets_url: "//assets#{Digest::MD5.hexdigest(url).hex % 8}.yamaokaya.com#{url}"
@@ -22,7 +23,7 @@ module ApplicationHelper
 		#指定されたサイズがある場合
 		params[:width] = width unless width.nil?
 		params[:height] = height unless height.nil?
-
+		
 		params[:align] = align unless align.nil?
 		params[:crop] = crop unless crop.nil?
 		

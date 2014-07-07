@@ -1,11 +1,12 @@
 source 'https://rubygems.org'
 
-
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.1'
-gem 'mysql2'
-gem 'tiny_tds'
-gem 'activerecord-sqlserver-adapter'
+# gem 'mysql2'
+# gem 'tiny_tds'
+# gem 'activerecord-sqlserver-adapter'
+gem 'pg'
+gem 'activerecord-postgresql-adapter'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
@@ -56,5 +57,4 @@ gem 'geocoder'
 gem 'redis-rails'
 gem 'igo-ruby'
 gem 'mini_magick'
-gem 'sprockets-image_compressor'
-#gem 'act-fluent-logger-rails'
+gem 'act-fluent-logger-rails'

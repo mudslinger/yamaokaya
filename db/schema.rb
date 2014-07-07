@@ -13,14 +13,17 @@
 
 ActiveRecord::Schema.define(version: 20140701091555) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "areas", force: true do |t|
     t.boolean  "whole_prefecture",            default: false
     t.integer  "prefecture_id"
     t.string   "name",             limit: 62,                 null: false
     t.integer  "start_shows"
     t.integer  "end_shows"
-    t.float    "lat",              limit: 24
-    t.float    "lng",              limit: 24
+    t.float    "lat"
+    t.float    "lng"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "seq"
@@ -42,8 +45,8 @@ ActiveRecord::Schema.define(version: 20140701091555) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "remote_ip",            limit: 15
-    t.float    "lat",                  limit: 24
-    t.float    "lng",                  limit: 24
+    t.float    "lat"
+    t.float    "lng"
     t.integer  "area_restriction"
   end
 
@@ -54,8 +57,8 @@ ActiveRecord::Schema.define(version: 20140701091555) do
     t.boolean  "male"
     t.string   "address",     limit: 254
     t.string   "phone",       limit: 30,  null: false
-    t.float    "lat",         limit: 24
-    t.float    "lng",         limit: 24
+    t.float    "lat"
+    t.float    "lng"
     t.string   "region",      limit: 254
     t.integer  "shop_id"
     t.integer  "menu_id"
@@ -99,8 +102,8 @@ ActiveRecord::Schema.define(version: 20140701091555) do
     t.string   "name",         limit: 62, null: false
     t.integer  "start_shows"
     t.integer  "end_shows"
-    t.float    "lat",          limit: 24
-    t.float    "lng",          limit: 24
+    t.float    "lat"
+    t.float    "lng"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "seq"
@@ -110,8 +113,8 @@ ActiveRecord::Schema.define(version: 20140701091555) do
     t.string   "name",        limit: 62, null: false
     t.integer  "start_shows"
     t.integer  "end_shows"
-    t.float    "lat",         limit: 24
-    t.float    "lng",         limit: 24
+    t.float    "lat"
+    t.float    "lng"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "seq"

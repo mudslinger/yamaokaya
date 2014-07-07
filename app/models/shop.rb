@@ -5,7 +5,7 @@ class Shop < ActiveRecord::Base
 	}
 
 	scope :active, -> {
-		where("(current_timestamp between [inauguration] and [close]) or (abs(datediff(d,current_timestamp,inauguration)) < 30)")
+		where("(current_timestamp between inauguration and close)")
 	}
 
 	scope :by_zoom, ->(zoom) {
