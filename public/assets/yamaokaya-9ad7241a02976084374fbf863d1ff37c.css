@@ -565,7 +565,7 @@ html {
 /* line 27, /mnt/hgfs/yamaokaya_rc/yamaokaya/vendor/assets/stylesheets/bootstrap/_scaffolding.scss */
 body {
   font-family: "Lucida Grande", "Hiragino Kaku Gothic ProN", Meiryo, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 10px;
+  font-size: 11px;
   line-height: 1.42857;
   color: white;
   background-color: #111111;
@@ -641,8 +641,8 @@ img {
 
 /* line 113, /mnt/hgfs/yamaokaya_rc/yamaokaya/vendor/assets/stylesheets/bootstrap/_scaffolding.scss */
 hr {
-  margin-top: 14px;
-  margin-bottom: 14px;
+  margin-top: 15px;
+  margin-bottom: 15px;
   border: 0;
   border-top: 1px solid #eeeeee;
 }
@@ -691,8 +691,8 @@ h6 .small,
 h1, .h1,
 h2, .h2,
 h3, .h3 {
-  margin-top: 14px;
-  margin-bottom: 7px;
+  margin-top: 15px;
+  margin-bottom: 7.5px;
 }
 /* line 31, /mnt/hgfs/yamaokaya_rc/yamaokaya/vendor/assets/stylesheets/bootstrap/_type.scss */
 h1 small,
@@ -711,8 +711,8 @@ h3 .small, .h3 small,
 h4, .h4,
 h5, .h5,
 h6, .h6 {
-  margin-top: 7px;
-  margin-bottom: 7px;
+  margin-top: 7.5px;
+  margin-bottom: 7.5px;
 }
 /* line 42, /mnt/hgfs/yamaokaya_rc/yamaokaya/vendor/assets/stylesheets/bootstrap/_type.scss */
 h4 small,
@@ -729,50 +729,50 @@ h6 .small, .h6 small,
 
 /* line 47, /mnt/hgfs/yamaokaya_rc/yamaokaya/vendor/assets/stylesheets/bootstrap/_type.scss */
 h1, .h1 {
-  font-size: 26px;
+  font-size: 28px;
 }
 
 /* line 48, /mnt/hgfs/yamaokaya_rc/yamaokaya/vendor/assets/stylesheets/bootstrap/_type.scss */
 h2, .h2 {
-  font-size: 21px;
+  font-size: 23px;
 }
 
 /* line 49, /mnt/hgfs/yamaokaya_rc/yamaokaya/vendor/assets/stylesheets/bootstrap/_type.scss */
 h3, .h3 {
-  font-size: 17px;
+  font-size: 19px;
 }
 
 /* line 50, /mnt/hgfs/yamaokaya_rc/yamaokaya/vendor/assets/stylesheets/bootstrap/_type.scss */
 h4, .h4 {
-  font-size: 13px;
+  font-size: 14px;
 }
 
 /* line 51, /mnt/hgfs/yamaokaya_rc/yamaokaya/vendor/assets/stylesheets/bootstrap/_type.scss */
 h5, .h5 {
-  font-size: 10px;
+  font-size: 11px;
 }
 
 /* line 52, /mnt/hgfs/yamaokaya_rc/yamaokaya/vendor/assets/stylesheets/bootstrap/_type.scss */
 h6, .h6 {
-  font-size: 9px;
+  font-size: 10px;
 }
 
 /* line 58, /mnt/hgfs/yamaokaya_rc/yamaokaya/vendor/assets/stylesheets/bootstrap/_type.scss */
 p {
-  margin: 0 0 7px;
+  margin: 0 0 7.5px;
 }
 
 /* line 62, /mnt/hgfs/yamaokaya_rc/yamaokaya/vendor/assets/stylesheets/bootstrap/_type.scss */
 .lead {
-  margin-bottom: 14px;
-  font-size: 11px;
+  margin-bottom: 15px;
+  font-size: 12px;
   font-weight: 200;
   line-height: 1.4;
 }
 @media (min-width: 768px) {
   /* line 62, /mnt/hgfs/yamaokaya_rc/yamaokaya/vendor/assets/stylesheets/bootstrap/_type.scss */
   .lead {
-    font-size: 15px;
+    font-size: 16.5px;
   }
 }
 
@@ -919,8 +919,8 @@ a.bg-danger:hover {
 
 /* line 127, /mnt/hgfs/yamaokaya_rc/yamaokaya/vendor/assets/stylesheets/bootstrap/_type.scss */
 .page-header {
-  padding-bottom: 6px;
-  margin: 28px 0 14px;
+  padding-bottom: 6.5px;
+  margin: 30px 0 15px;
   border-bottom: 1px solid #eeeeee;
 }
 
@@ -928,7 +928,7 @@ a.bg-danger:hover {
 ul,
 ol {
   margin-top: 0;
-  margin-bottom: 7px;
+  margin-bottom: 7.5px;
 }
 /* line 143, /mnt/hgfs/yamaokaya_rc/yamaokaya/vendor/assets/stylesheets/bootstrap/_type.scss */
 ul ul,
@@ -958,7 +958,7 @@ ol ol {
 /* line 169, /mnt/hgfs/yamaokaya_rc/yamaokaya/vendor/assets/stylesheets/bootstrap/_type.scss */
 dl {
   margin-top: 0;
-  margin-bottom: 14px;
+  margin-bottom: 15px;
 }
 
 /* line 174, /mnt/hgfs/yamaokaya_rc/yamaokaya/vendor/assets/stylesheets/bootstrap/_type.scss */
@@ -1017,9 +1017,9 @@ abbr[data-original-title] {
 
 /* line 221, /mnt/hgfs/yamaokaya_rc/yamaokaya/vendor/assets/stylesheets/bootstrap/_type.scss */
 blockquote {
-  padding: 7px 14px;
-  margin: 0 0 14px;
-  font-size: 12.5px;
+  padding: 7.5px 15px;
+  margin: 0 0 15px;
+  font-size: 13.75px;
   border-left: 5px solid #eeeeee;
 }
 /* line 230, /mnt/hgfs/yamaokaya_rc/yamaokaya/vendor/assets/stylesheets/bootstrap/_type.scss */
@@ -1080,7 +1080,7 @@ blockquote:after {
 
 /* line 280, /mnt/hgfs/yamaokaya_rc/yamaokaya/vendor/assets/stylesheets/bootstrap/_type.scss */
 address {
-  margin-bottom: 14px;
+  margin-bottom: 15px;
   font-style: normal;
   line-height: 1.42857;
 }
@@ -1116,9 +1116,9 @@ kbd {
 /* line 35, /mnt/hgfs/yamaokaya_rc/yamaokaya/vendor/assets/stylesheets/bootstrap/_code.scss */
 pre {
   display: block;
-  padding: 6.5px;
-  margin: 0 0 7px;
-  font-size: 9px;
+  padding: 7px;
+  margin: 0 0 7.5px;
+  font-size: 10px;
   line-height: 1.42857;
   word-break: break-all;
   word-wrap: break-word;
@@ -2275,7 +2275,7 @@ th {
 /* line 17, /mnt/hgfs/yamaokaya_rc/yamaokaya/vendor/assets/stylesheets/bootstrap/_tables.scss */
 .table {
   width: 100%;
-  margin-bottom: 14px;
+  margin-bottom: 15px;
 }
 /* line 26, /mnt/hgfs/yamaokaya_rc/yamaokaya/vendor/assets/stylesheets/bootstrap/_tables.scss */
 .table > thead > tr > th,
@@ -2472,7 +2472,7 @@ table th[class*="col-"] {
   /* line 172, /mnt/hgfs/yamaokaya_rc/yamaokaya/vendor/assets/stylesheets/bootstrap/_tables.scss */
   .table-responsive {
     width: 100%;
-    margin-bottom: 10.5px;
+    margin-bottom: 11.25px;
     overflow-y: hidden;
     overflow-x: scroll;
     -ms-overflow-style: -ms-autohiding-scrollbar;
@@ -2535,8 +2535,8 @@ legend {
   display: block;
   width: 100%;
   padding: 0;
-  margin-bottom: 14px;
-  font-size: 15px;
+  margin-bottom: 15px;
+  font-size: 16.5px;
   line-height: inherit;
   color: #333333;
   border: 0;
@@ -2596,7 +2596,7 @@ input[type="checkbox"]:focus {
 output {
   display: block;
   padding-top: 7px;
-  font-size: 10px;
+  font-size: 11px;
   line-height: 1.42857;
   color: #555555;
 }
@@ -2605,9 +2605,9 @@ output {
 .form-control {
   display: block;
   width: 100%;
-  height: 28px;
+  height: 29px;
   padding: 6px 12px;
-  font-size: 10px;
+  font-size: 11px;
   line-height: 1.42857;
   color: #555555;
   background-color: white;
@@ -2658,7 +2658,7 @@ input[type="search"] {
 
 /* line 174, /mnt/hgfs/yamaokaya_rc/yamaokaya/vendor/assets/stylesheets/bootstrap/_forms.scss */
 input[type="date"] {
-  line-height: 28px;
+  line-height: 29px;
 }
 
 /* line 184, /mnt/hgfs/yamaokaya_rc/yamaokaya/vendor/assets/stylesheets/bootstrap/_forms.scss */
@@ -2670,7 +2670,7 @@ input[type="date"] {
 .radio,
 .checkbox {
   display: block;
-  min-height: 14px;
+  min-height: 15px;
   margin-top: 10px;
   margin-bottom: 10px;
   padding-left: 20px;
@@ -2735,9 +2735,9 @@ input[type="checkbox"],
 .input-sm, .input-group-sm > .form-control,
 .input-group-sm > .input-group-addon,
 .input-group-sm > .input-group-btn > .btn {
-  height: 25px;
+  height: 27px;
   padding: 5px 10px;
-  font-size: 9px;
+  font-size: 10px;
   line-height: 1.5;
   border-radius: 3px;
 }
@@ -2746,8 +2746,8 @@ input[type="checkbox"],
 select.input-sm, .input-group-sm > select.form-control,
 .input-group-sm > select.input-group-addon,
 .input-group-sm > .input-group-btn > select.btn {
-  height: 25px;
-  line-height: 25px;
+  height: 27px;
+  line-height: 27px;
 }
 
 /* line 944, /mnt/hgfs/yamaokaya_rc/yamaokaya/vendor/assets/stylesheets/bootstrap/_mixins.scss */
@@ -2765,9 +2765,9 @@ select[multiple].input-sm,
 .input-lg, .input-group-lg > .form-control,
 .input-group-lg > .input-group-addon,
 .input-group-lg > .input-group-btn > .btn {
-  height: 40px;
+  height: 41px;
   padding: 10px 16px;
-  font-size: 13px;
+  font-size: 14px;
   line-height: 1.33;
   border-radius: 6px;
 }
@@ -2776,8 +2776,8 @@ select[multiple].input-sm,
 select.input-lg, .input-group-lg > select.form-control,
 .input-group-lg > select.input-group-addon,
 .input-group-lg > .input-group-btn > select.btn {
-  height: 40px;
-  line-height: 40px;
+  height: 41px;
+  line-height: 41px;
 }
 
 /* line 944, /mnt/hgfs/yamaokaya_rc/yamaokaya/vendor/assets/stylesheets/bootstrap/_mixins.scss */
@@ -2797,17 +2797,17 @@ select[multiple].input-lg,
 }
 /* line 269, /mnt/hgfs/yamaokaya_rc/yamaokaya/vendor/assets/stylesheets/bootstrap/_forms.scss */
 .has-feedback .form-control {
-  padding-right: 35px;
+  padding-right: 36.25px;
 }
 /* line 274, /mnt/hgfs/yamaokaya_rc/yamaokaya/vendor/assets/stylesheets/bootstrap/_forms.scss */
 .has-feedback .form-control-feedback {
   position: absolute;
-  top: 19px;
+  top: 20px;
   right: 0;
   display: block;
-  width: 28px;
-  height: 28px;
-  line-height: 28px;
+  width: 29px;
+  height: 29px;
+  line-height: 29px;
   text-align: center;
 }
 
@@ -2988,7 +2988,7 @@ body.yamaokaya form.inquiry fieldset .form-group.navbar-form .field_with_errors 
 /* line 408, /mnt/hgfs/yamaokaya_rc/yamaokaya/vendor/assets/stylesheets/bootstrap/_forms.scss */
 .form-horizontal .radio,
 .form-horizontal .checkbox {
-  min-height: 21px;
+  min-height: 22px;
 }
 /* line 413, /mnt/hgfs/yamaokaya_rc/yamaokaya/vendor/assets/stylesheets/bootstrap/_forms.scss */
 .form-horizontal .form-group {
@@ -3032,7 +3032,7 @@ body.yamaokaya form.inquiry fieldset .form-group.navbar-form .field_with_errors 
   border: 1px solid transparent;
   white-space: nowrap;
   padding: 6px 12px;
-  font-size: 10px;
+  font-size: 11px;
   line-height: 1.42857;
   border-radius: 4px;
   -webkit-user-select: none;
@@ -3322,7 +3322,7 @@ body.yamaokaya form.inquiry fieldset .form-group.navbar-form .field_with_errors 
 /* line 124, /mnt/hgfs/yamaokaya_rc/yamaokaya/vendor/assets/stylesheets/bootstrap/_buttons.scss */
 .btn-lg, .btn-group-lg > .btn {
   padding: 10px 16px;
-  font-size: 13px;
+  font-size: 14px;
   line-height: 1.33;
   border-radius: 6px;
 }
@@ -3330,7 +3330,7 @@ body.yamaokaya form.inquiry fieldset .form-group.navbar-form .field_with_errors 
 /* line 128, /mnt/hgfs/yamaokaya_rc/yamaokaya/vendor/assets/stylesheets/bootstrap/_buttons.scss */
 .btn-sm, .btn-group-sm > .btn {
   padding: 5px 10px;
-  font-size: 9px;
+  font-size: 10px;
   line-height: 1.5;
   border-radius: 3px;
 }
@@ -3338,7 +3338,7 @@ body.yamaokaya form.inquiry fieldset .form-group.navbar-form .field_with_errors 
 /* line 132, /mnt/hgfs/yamaokaya_rc/yamaokaya/vendor/assets/stylesheets/bootstrap/_buttons.scss */
 .btn-xs, .btn-group-xs > .btn {
   padding: 1px 5px;
-  font-size: 9px;
+  font-size: 10px;
   line-height: 1.5;
   border-radius: 3px;
 }
@@ -6931,7 +6931,7 @@ input[type="button"].btn-block {
   padding: 5px 0;
   margin: 2px 0 0;
   list-style: none;
-  font-size: 10px;
+  font-size: 11px;
   background-color: white;
   border: 1px solid #cccccc;
   border: 1px solid rgba(0, 0, 0, 0.15);
@@ -6948,7 +6948,7 @@ input[type="button"].btn-block {
 /* line 57, /mnt/hgfs/yamaokaya_rc/yamaokaya/vendor/assets/stylesheets/bootstrap/_dropdowns.scss */
 .dropdown-menu .divider {
   height: 1px;
-  margin: 6px 0;
+  margin: 6.5px 0;
   overflow: hidden;
   background-color: #e5e5e5;
 }
@@ -7017,7 +7017,7 @@ input[type="button"].btn-block {
 .dropdown-header {
   display: block;
   padding: 3px 20px;
-  font-size: 9px;
+  font-size: 10px;
   line-height: 1.42857;
   color: #999999;
 }
@@ -7351,7 +7351,7 @@ input[type="button"].btn-block {
 /* line 69, /mnt/hgfs/yamaokaya_rc/yamaokaya/vendor/assets/stylesheets/bootstrap/_input-groups.scss */
 .input-group-addon {
   padding: 6px 12px;
-  font-size: 10px;
+  font-size: 11px;
   font-weight: normal;
   line-height: 1;
   color: #555555;
@@ -7365,7 +7365,7 @@ input[type="button"].btn-block {
 .input-group-sm > .input-group-addon,
 .input-group-sm > .input-group-btn > .input-group-addon.btn {
   padding: 5px 10px;
-  font-size: 9px;
+  font-size: 10px;
   border-radius: 3px;
 }
 /* line 86, /mnt/hgfs/yamaokaya_rc/yamaokaya/vendor/assets/stylesheets/bootstrap/_input-groups.scss */
@@ -7373,7 +7373,7 @@ input[type="button"].btn-block {
 .input-group-lg > .input-group-addon,
 .input-group-lg > .input-group-btn > .input-group-addon.btn {
   padding: 10px 16px;
-  font-size: 13px;
+  font-size: 14px;
   border-radius: 6px;
 }
 /* line 94, /mnt/hgfs/yamaokaya_rc/yamaokaya/vendor/assets/stylesheets/bootstrap/_input-groups.scss */
@@ -7495,7 +7495,7 @@ input[type="button"].btn-block {
 /* line 59, /mnt/hgfs/yamaokaya_rc/yamaokaya/vendor/assets/stylesheets/bootstrap/_navs.scss */
 .nav .nav-divider {
   height: 1px;
-  margin: 6px 0;
+  margin: 6.5px 0;
   overflow: hidden;
   background-color: #e5e5e5;
 }
@@ -7644,7 +7644,7 @@ input[type="button"].btn-block {
 .navbar {
   position: relative;
   min-height: 50px;
-  margin-bottom: 14px;
+  margin-bottom: 15px;
   border: 1px solid transparent;
 }
 /* line 21, /mnt/hgfs/yamaokaya_rc/yamaokaya/vendor/assets/stylesheets/bootstrap/_mixins.scss */
@@ -7790,9 +7790,9 @@ input[type="button"].btn-block {
 /* line 153, /mnt/hgfs/yamaokaya_rc/yamaokaya/vendor/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-brand {
   float: left;
-  padding: 18px 15px;
-  font-size: 13px;
-  line-height: 14px;
+  padding: 17.5px 15px;
+  font-size: 14px;
+  line-height: 15px;
   height: 50px;
 }
 /* line 161, /mnt/hgfs/yamaokaya_rc/yamaokaya/vendor/assets/stylesheets/bootstrap/_navbar.scss */
@@ -7843,13 +7843,13 @@ input[type="button"].btn-block {
 
 /* line 218, /mnt/hgfs/yamaokaya_rc/yamaokaya/vendor/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-nav {
-  margin: 9px -15px;
+  margin: 8.75px -15px;
 }
 /* line 221, /mnt/hgfs/yamaokaya_rc/yamaokaya/vendor/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-nav > li > a {
   padding-top: 10px;
   padding-bottom: 10px;
-  line-height: 14px;
+  line-height: 15px;
 }
 @media (max-width: 767px) {
   /* line 229, /mnt/hgfs/yamaokaya_rc/yamaokaya/vendor/assets/stylesheets/bootstrap/_navbar.scss */
@@ -7869,7 +7869,7 @@ input[type="button"].btn-block {
   }
   /* line 241, /mnt/hgfs/yamaokaya_rc/yamaokaya/vendor/assets/stylesheets/bootstrap/_navbar.scss */
   .navbar-nav .open .dropdown-menu > li > a {
-    line-height: 14px;
+    line-height: 15px;
   }
   /* line 244, /mnt/hgfs/yamaokaya_rc/yamaokaya/vendor/assets/stylesheets/bootstrap/_navbar.scss */
   .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-nav .open .dropdown-menu > li > a:focus {
@@ -7888,8 +7888,8 @@ input[type="button"].btn-block {
   }
   /* line 258, /mnt/hgfs/yamaokaya_rc/yamaokaya/vendor/assets/stylesheets/bootstrap/_navbar.scss */
   .navbar-nav > li > a {
-    padding-top: 18px;
-    padding-bottom: 18px;
+    padding-top: 17.5px;
+    padding-bottom: 17.5px;
   }
   /* line 264, /mnt/hgfs/yamaokaya_rc/yamaokaya/vendor/assets/stylesheets/bootstrap/_navbar.scss */
   .navbar-nav.navbar-right:last-child {
@@ -7917,8 +7917,8 @@ input[type="button"].btn-block {
   border-bottom: 1px solid transparent;
   -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
-  margin-top: 11px;
-  margin-bottom: 11px;
+  margin-top: 10.5px;
+  margin-bottom: 10.5px;
 }
 @media (max-width: 767px) {
   /* line 304, /mnt/hgfs/yamaokaya_rc/yamaokaya/vendor/assets/stylesheets/bootstrap/_navbar.scss */
@@ -7959,13 +7959,13 @@ input[type="button"].btn-block {
 
 /* line 348, /mnt/hgfs/yamaokaya_rc/yamaokaya/vendor/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-btn {
-  margin-top: 11px;
-  margin-bottom: 11px;
+  margin-top: 10.5px;
+  margin-bottom: 10.5px;
 }
 /* line 351, /mnt/hgfs/yamaokaya_rc/yamaokaya/vendor/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-btn.btn-sm, .btn-group-sm > .navbar-btn.btn {
-  margin-top: 12.5px;
-  margin-bottom: 12.5px;
+  margin-top: 11.5px;
+  margin-bottom: 11.5px;
 }
 /* line 354, /mnt/hgfs/yamaokaya_rc/yamaokaya/vendor/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-btn.btn-xs, .btn-group-xs > .navbar-btn.btn {
@@ -7975,8 +7975,8 @@ input[type="button"].btn-block {
 
 /* line 364, /mnt/hgfs/yamaokaya_rc/yamaokaya/vendor/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-text {
-  margin-top: 18px;
-  margin-bottom: 18px;
+  margin-top: 17.5px;
+  margin-bottom: 17.5px;
 }
 @media (min-width: 768px) {
   /* line 364, /mnt/hgfs/yamaokaya_rc/yamaokaya/vendor/assets/stylesheets/bootstrap/_navbar.scss */
@@ -8180,7 +8180,7 @@ input[type="button"].btn-block {
 /* line 6, /mnt/hgfs/yamaokaya_rc/yamaokaya/vendor/assets/stylesheets/bootstrap/_breadcrumbs.scss */
 .breadcrumb {
   padding: 8px 15px;
-  margin-bottom: 14px;
+  margin-bottom: 15px;
   list-style: none;
   background-color: #111111;
   border-radius: 4px;
@@ -8204,7 +8204,7 @@ input[type="button"].btn-block {
 .pagination {
   display: inline-block;
   padding-left: 0;
-  margin: 14px 0;
+  margin: 15px 0;
   border-radius: 4px;
 }
 /* line 10, /mnt/hgfs/yamaokaya_rc/yamaokaya/vendor/assets/stylesheets/bootstrap/_pagination.scss */
@@ -8273,7 +8273,7 @@ input[type="button"].btn-block {
 .pagination-lg > li > a,
 .pagination-lg > li > span {
   padding: 10px 16px;
-  font-size: 13px;
+  font-size: 14px;
 }
 /* line 564, /mnt/hgfs/yamaokaya_rc/yamaokaya/vendor/assets/stylesheets/bootstrap/_mixins.scss */
 .pagination-lg > li:first-child > a,
@@ -8292,7 +8292,7 @@ input[type="button"].btn-block {
 .pagination-sm > li > a,
 .pagination-sm > li > span {
   padding: 5px 10px;
-  font-size: 9px;
+  font-size: 10px;
 }
 /* line 564, /mnt/hgfs/yamaokaya_rc/yamaokaya/vendor/assets/stylesheets/bootstrap/_mixins.scss */
 .pagination-sm > li:first-child > a,
@@ -8310,7 +8310,7 @@ input[type="button"].btn-block {
 /* line 6, /mnt/hgfs/yamaokaya_rc/yamaokaya/vendor/assets/stylesheets/bootstrap/_pager.scss */
 .pager {
   padding-left: 0;
-  margin: 14px 0;
+  margin: 15px 0;
   list-style: none;
   text-align: center;
 }
@@ -8450,7 +8450,7 @@ input[type="button"].btn-block {
   display: inline-block;
   min-width: 10px;
   padding: 3px 7px;
-  font-size: 9px;
+  font-size: 10px;
   font-weight: bold;
   color: white;
   line-height: 1;
@@ -8509,7 +8509,7 @@ a.list-group-item.active > .badge,
 /* line 16, /mnt/hgfs/yamaokaya_rc/yamaokaya/vendor/assets/stylesheets/bootstrap/_jumbotron.scss */
 .jumbotron p {
   margin-bottom: 15px;
-  font-size: 15px;
+  font-size: 17px;
   font-weight: 200;
 }
 /* line 22, /mnt/hgfs/yamaokaya_rc/yamaokaya/vendor/assets/stylesheets/bootstrap/_jumbotron.scss */
@@ -8534,7 +8534,7 @@ a.list-group-item.active > .badge,
   /* line 40, /mnt/hgfs/yamaokaya_rc/yamaokaya/vendor/assets/stylesheets/bootstrap/_jumbotron.scss */
   .jumbotron h1,
   .jumbotron .h1 {
-    font-size: 45px;
+    font-size: 49.5px;
   }
 }
 
@@ -8542,7 +8542,7 @@ a.list-group-item.active > .badge,
 .thumbnail {
   display: block;
   padding: 4px;
-  margin-bottom: 14px;
+  margin-bottom: 15px;
   line-height: 1.42857;
   background-color: #111111;
   border: 1px solid #dddddd;
@@ -8575,7 +8575,7 @@ a.thumbnail.active {
 /* line 9, /mnt/hgfs/yamaokaya_rc/yamaokaya/vendor/assets/stylesheets/bootstrap/_alerts.scss */
 .alert {
   padding: 15px;
-  margin-bottom: 14px;
+  margin-bottom: 15px;
   border: 1px solid transparent;
   border-radius: 4px;
 }
@@ -8697,8 +8697,8 @@ a.thumbnail.active {
 /* line 27, /mnt/hgfs/yamaokaya_rc/yamaokaya/vendor/assets/stylesheets/bootstrap/_progress-bars.scss */
 .progress {
   overflow: hidden;
-  height: 14px;
-  margin-bottom: 14px;
+  height: 15px;
+  margin-bottom: 15px;
   background-color: whitesmoke;
   border-radius: 4px;
   -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
@@ -8710,8 +8710,8 @@ a.thumbnail.active {
   float: left;
   width: 0%;
   height: 100%;
-  font-size: 9px;
-  line-height: 14px;
+  font-size: 10px;
+  line-height: 15px;
   color: white;
   text-align: center;
   background-color: #b30404;
@@ -8829,7 +8829,7 @@ a.thumbnail.active {
   display: block;
   padding: 10px 15px;
   margin-bottom: -1px;
-  background-color: white;
+  background-color: #555555;
   border: 1px solid #dddddd;
 }
 /* line 31, /mnt/hgfs/yamaokaya_rc/yamaokaya/vendor/assets/stylesheets/bootstrap/_list-group.scss */
@@ -8878,7 +8878,7 @@ a.list-group-item.active .list-group-item-heading, a.list-group-item.active:hove
 }
 /* line 81, /mnt/hgfs/yamaokaya_rc/yamaokaya/vendor/assets/stylesheets/bootstrap/_list-group.scss */
 a.list-group-item.active .list-group-item-text, a.list-group-item.active:hover .list-group-item-text, a.list-group-item.active:focus .list-group-item-text {
-  color: #fc8787;
+  color: white;
 }
 
 /* line 469, /mnt/hgfs/yamaokaya_rc/yamaokaya/vendor/assets/stylesheets/bootstrap/_mixins.scss */
@@ -8999,7 +8999,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 
 /* line 7, /mnt/hgfs/yamaokaya_rc/yamaokaya/vendor/assets/stylesheets/bootstrap/_panels.scss */
 .panel {
-  margin-bottom: 14px;
+  margin-bottom: 15px;
   background-color: transparent;
   border: 1px solid transparent;
   border-radius: 4px;
@@ -9037,7 +9037,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel-title {
   margin-top: 0;
   margin-bottom: 0;
-  font-size: 12px;
+  font-size: 13px;
   color: inherit;
 }
 /* line 39, /mnt/hgfs/yamaokaya_rc/yamaokaya/vendor/assets/stylesheets/bootstrap/_panels.scss */
@@ -9217,7 +9217,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 
 /* line 195, /mnt/hgfs/yamaokaya_rc/yamaokaya/vendor/assets/stylesheets/bootstrap/_panels.scss */
 .panel-group {
-  margin-bottom: 14px;
+  margin-bottom: 15px;
 }
 /* line 199, /mnt/hgfs/yamaokaya_rc/yamaokaya/vendor/assets/stylesheets/bootstrap/_panels.scss */
 .panel-group .panel {
@@ -9392,7 +9392,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 /* line 6, /mnt/hgfs/yamaokaya_rc/yamaokaya/vendor/assets/stylesheets/bootstrap/_close.scss */
 .close {
   float: right;
-  font-size: 15px;
+  font-size: 16.5px;
   font-weight: bold;
   line-height: 1;
   color: black;
@@ -9464,7 +9464,7 @@ button.close {
 /* line 48, /mnt/hgfs/yamaokaya_rc/yamaokaya/vendor/assets/stylesheets/bootstrap/_modals.scss */
 .modal-content {
   position: relative;
-  background-color: #373737;
+  background-color: white;
   border: 1px solid #999999;
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 6px;
@@ -9579,7 +9579,7 @@ button.close {
   z-index: 1030;
   display: block;
   visibility: visible;
-  font-size: 9px;
+  font-size: 10px;
   line-height: 1.4;
   opacity: 0;
   filter: alpha(opacity=0);
@@ -9731,7 +9731,7 @@ button.close {
 .popover-title {
   margin: 0;
   padding: 8px 14px;
-  font-size: 10px;
+  font-size: 11px;
   font-weight: normal;
   line-height: 18px;
   background-color: #f7f7f7;
@@ -12825,7 +12825,7 @@ body.yamaokaya.top .ticker {
 }
 /* line 16, /mnt/hgfs/yamaokaya_rc/yamaokaya/app/assets/stylesheets/yamaokaya/_top.scss */
 body.yamaokaya.top .ticker h1 {
-  font-size: 10px;
+  font-size: 11px;
   padding: 0;
   margin: 0;
 }
@@ -12878,22 +12878,33 @@ body.yamaokaya.top .carousel-caption {
   max-width: 80%;
   padding: 0 20px;
   margin: 0 auto;
-  top: 45%;
+  top: 35%;
   bottom: auto;
   text-align: center;
 }
 /* line 55, /mnt/hgfs/yamaokaya_rc/yamaokaya/app/assets/stylesheets/yamaokaya/_top.scss */
 body.yamaokaya.top .carousel-caption h1 {
-  font-size: 300%;
+  font-size: 400%;
 }
-/* line 60, /mnt/hgfs/yamaokaya_rc/yamaokaya/app/assets/stylesheets/yamaokaya/_top.scss */
+/* line 58, /mnt/hgfs/yamaokaya_rc/yamaokaya/app/assets/stylesheets/yamaokaya/_top.scss */
+body.yamaokaya.top .carousel-caption p {
+  font-size: 14px;
+}
+/* line 61, /mnt/hgfs/yamaokaya_rc/yamaokaya/app/assets/stylesheets/yamaokaya/_top.scss */
+body.yamaokaya.top .carousel-caption .gray-bg {
+  padding: 10px;
+  width: 800px;
+  background: url("/i/800x800/images/carousel-back.png");
+  background-repeat: repeat-y;
+}
+/* line 69, /mnt/hgfs/yamaokaya_rc/yamaokaya/app/assets/stylesheets/yamaokaya/_top.scss */
 body.yamaokaya.top .noty-slide {
   position: fixed;
   top: 90px;
   left: -282px;
   z-index: 100000;
 }
-/* line 65, /mnt/hgfs/yamaokaya_rc/yamaokaya/app/assets/stylesheets/yamaokaya/_top.scss */
+/* line 74, /mnt/hgfs/yamaokaya_rc/yamaokaya/app/assets/stylesheets/yamaokaya/_top.scss */
 body.yamaokaya.top .noty-slide .noty-content {
   opacity: 0.9;
   filter: alpha(opacity=90);
@@ -12906,58 +12917,58 @@ body.yamaokaya.top .noty-slide .noty-content {
   border-top-right-radius: 7px;
   border-bottom-right-radius: 7px;
 }
-/* line 75, /mnt/hgfs/yamaokaya_rc/yamaokaya/app/assets/stylesheets/yamaokaya/_top.scss */
+/* line 84, /mnt/hgfs/yamaokaya_rc/yamaokaya/app/assets/stylesheets/yamaokaya/_top.scss */
 body.yamaokaya.top .noty-slide .noty-content .panel {
   margin-bottom: 7px;
 }
-/* line 78, /mnt/hgfs/yamaokaya_rc/yamaokaya/app/assets/stylesheets/yamaokaya/_top.scss */
+/* line 87, /mnt/hgfs/yamaokaya_rc/yamaokaya/app/assets/stylesheets/yamaokaya/_top.scss */
 body.yamaokaya.top .noty-slide .noty-content .panel-heading {
   padding-top: 2px;
   padding-bottom: 2px;
 }
-/* line 81, /mnt/hgfs/yamaokaya_rc/yamaokaya/app/assets/stylesheets/yamaokaya/_top.scss */
+/* line 90, /mnt/hgfs/yamaokaya_rc/yamaokaya/app/assets/stylesheets/yamaokaya/_top.scss */
 body.yamaokaya.top .noty-slide .noty-content .panel-heading h4 {
   color: white;
   font-size: 14px;
   font-weight: 600;
   vertical-align: middle;
 }
-/* line 87, /mnt/hgfs/yamaokaya_rc/yamaokaya/app/assets/stylesheets/yamaokaya/_top.scss */
+/* line 96, /mnt/hgfs/yamaokaya_rc/yamaokaya/app/assets/stylesheets/yamaokaya/_top.scss */
 body.yamaokaya.top .noty-slide .noty-content .panel-heading a h4:before {
   white-space: nowrap;
 }
-/* line 90, /mnt/hgfs/yamaokaya_rc/yamaokaya/app/assets/stylesheets/yamaokaya/_top.scss */
+/* line 99, /mnt/hgfs/yamaokaya_rc/yamaokaya/app/assets/stylesheets/yamaokaya/_top.scss */
 body.yamaokaya.top .noty-slide .noty-content .panel-heading.original-news {
   background: #b30404;
 }
-/* line 93, /mnt/hgfs/yamaokaya_rc/yamaokaya/app/assets/stylesheets/yamaokaya/_top.scss */
+/* line 102, /mnt/hgfs/yamaokaya_rc/yamaokaya/app/assets/stylesheets/yamaokaya/_top.scss */
 body.yamaokaya.top .noty-slide .noty-content .panel-heading.facebook {
   background-color: #3B5998;
 }
-/* line 96, /mnt/hgfs/yamaokaya_rc/yamaokaya/app/assets/stylesheets/yamaokaya/_top.scss */
+/* line 105, /mnt/hgfs/yamaokaya_rc/yamaokaya/app/assets/stylesheets/yamaokaya/_top.scss */
 body.yamaokaya.top .noty-slide .noty-content .panel-heading.twitter {
   background-color: #55ACEE;
 }
-/* line 100, /mnt/hgfs/yamaokaya_rc/yamaokaya/app/assets/stylesheets/yamaokaya/_top.scss */
+/* line 109, /mnt/hgfs/yamaokaya_rc/yamaokaya/app/assets/stylesheets/yamaokaya/_top.scss */
 body.yamaokaya.top .noty-slide .noty-content .panel-body {
   padding: 0px;
   background: white;
 }
-/* line 103, /mnt/hgfs/yamaokaya_rc/yamaokaya/app/assets/stylesheets/yamaokaya/_top.scss */
+/* line 112, /mnt/hgfs/yamaokaya_rc/yamaokaya/app/assets/stylesheets/yamaokaya/_top.scss */
 body.yamaokaya.top .noty-slide .noty-content .panel-body a {
   color: #111111;
 }
-/* line 105, /mnt/hgfs/yamaokaya_rc/yamaokaya/app/assets/stylesheets/yamaokaya/_top.scss */
+/* line 114, /mnt/hgfs/yamaokaya_rc/yamaokaya/app/assets/stylesheets/yamaokaya/_top.scss */
 body.yamaokaya.top .noty-slide .noty-content .panel-body a:hover {
   color: #b30404;
 }
-/* line 111, /mnt/hgfs/yamaokaya_rc/yamaokaya/app/assets/stylesheets/yamaokaya/_top.scss */
+/* line 120, /mnt/hgfs/yamaokaya_rc/yamaokaya/app/assets/stylesheets/yamaokaya/_top.scss */
 body.yamaokaya.top .noty-slide .noty-content .panel-footer {
   padding: 10px 10px;
   border-top: 1px solid #ddd;
   background: #f8f8f8;
 }
-/* line 118, /mnt/hgfs/yamaokaya_rc/yamaokaya/app/assets/stylesheets/yamaokaya/_top.scss */
+/* line 127, /mnt/hgfs/yamaokaya_rc/yamaokaya/app/assets/stylesheets/yamaokaya/_top.scss */
 body.yamaokaya.top .noty-slide .noty-button {
   opacity: 0.9;
   filter: alpha(opacity=90);
@@ -12975,7 +12986,7 @@ body.yamaokaya.top .noty-slide .noty-button {
   border-top-right-radius: 3px;
   border-bottom-right-radius: 3px;
 }
-/* line 133, /mnt/hgfs/yamaokaya_rc/yamaokaya/app/assets/stylesheets/yamaokaya/_top.scss */
+/* line 142, /mnt/hgfs/yamaokaya_rc/yamaokaya/app/assets/stylesheets/yamaokaya/_top.scss */
 body.yamaokaya.top .noty-slide .noty-button span {
   font-size: 16px;
   display: block;
@@ -12985,53 +12996,57 @@ body.yamaokaya.top .noty-slide .noty-button span {
   line-height: 55px;
   position: relative;
 }
-/* line 141, /mnt/hgfs/yamaokaya_rc/yamaokaya/app/assets/stylesheets/yamaokaya/_top.scss */
+/* line 150, /mnt/hgfs/yamaokaya_rc/yamaokaya/app/assets/stylesheets/yamaokaya/_top.scss */
 body.yamaokaya.top .noty-slide .noty-button span:last-child {
   border-bottom: 0px;
 }
-/* line 144, /mnt/hgfs/yamaokaya_rc/yamaokaya/app/assets/stylesheets/yamaokaya/_top.scss */
+/* line 153, /mnt/hgfs/yamaokaya_rc/yamaokaya/app/assets/stylesheets/yamaokaya/_top.scss */
 body.yamaokaya.top .noty-slide .noty-button span.original-news {
   background: #b30404;
 }
-/* line 147, /mnt/hgfs/yamaokaya_rc/yamaokaya/app/assets/stylesheets/yamaokaya/_top.scss */
+/* line 156, /mnt/hgfs/yamaokaya_rc/yamaokaya/app/assets/stylesheets/yamaokaya/_top.scss */
 body.yamaokaya.top .noty-slide .noty-button span.facebook {
   background-color: #3B5998;
 }
-/* line 150, /mnt/hgfs/yamaokaya_rc/yamaokaya/app/assets/stylesheets/yamaokaya/_top.scss */
+/* line 159, /mnt/hgfs/yamaokaya_rc/yamaokaya/app/assets/stylesheets/yamaokaya/_top.scss */
 body.yamaokaya.top .noty-slide .noty-button span.twitter {
   background-color: #55ACEE;
 }
 
 /* line 2, /mnt/hgfs/yamaokaya_rc/yamaokaya/app/assets/stylesheets/yamaokaya/_shops.scss */
 body.yamaokaya.shops #index-map {
-  width: 100%;
-  height: 400px;
+  width: 95%;
+  height: 350px;
 }
 /* line 6, /mnt/hgfs/yamaokaya_rc/yamaokaya/app/assets/stylesheets/yamaokaya/_shops.scss */
 body.yamaokaya.shops .jumbotron {
   background: url("/i/origin/images/shops/bg03.jpg") no-repeat center;
 }
 /* line 9, /mnt/hgfs/yamaokaya_rc/yamaokaya/app/assets/stylesheets/yamaokaya/_shops.scss */
-body.yamaokaya.shops .imagemap-wrap {
-  z-index: 200;
-}
-/* line 12, /mnt/hgfs/yamaokaya_rc/yamaokaya/app/assets/stylesheets/yamaokaya/_shops.scss */
 body.yamaokaya.shops .shop-image {
   width: 100%;
 }
-/* line 15, /mnt/hgfs/yamaokaya_rc/yamaokaya/app/assets/stylesheets/yamaokaya/_shops.scss */
+/* line 12, /mnt/hgfs/yamaokaya_rc/yamaokaya/app/assets/stylesheets/yamaokaya/_shops.scss */
 body.yamaokaya.shops .table caption {
-  font-size: 13px;
+  font-size: 14px;
 }
-/* line 18, /mnt/hgfs/yamaokaya_rc/yamaokaya/app/assets/stylesheets/yamaokaya/_shops.scss */
+/* line 15, /mnt/hgfs/yamaokaya_rc/yamaokaya/app/assets/stylesheets/yamaokaya/_shops.scss */
 body.yamaokaya.shops .fixed {
   position: fixed;
-  top: 0;
   z-index: 200;
 }
-/* line 23, /mnt/hgfs/yamaokaya_rc/yamaokaya/app/assets/stylesheets/yamaokaya/_shops.scss */
+/* line 20, /mnt/hgfs/yamaokaya_rc/yamaokaya/app/assets/stylesheets/yamaokaya/_shops.scss */
 body.yamaokaya.shops #map a {
   color: blue;
+}
+/* line 23, /mnt/hgfs/yamaokaya_rc/yamaokaya/app/assets/stylesheets/yamaokaya/_shops.scss */
+body.yamaokaya.shops a.list-group-item {
+  color: white;
+  background-color: gray;
+}
+/* line 26, /mnt/hgfs/yamaokaya_rc/yamaokaya/app/assets/stylesheets/yamaokaya/_shops.scss */
+body.yamaokaya.shops a.list-group-item:hover {
+  background-color: #b30404;
 }
 
 /* line 2, /mnt/hgfs/yamaokaya_rc/yamaokaya/app/assets/stylesheets/yamaokaya/_menus.scss */
@@ -13051,7 +13066,7 @@ body.menus .panel-menu .panel-heading {
 /* line 11, /mnt/hgfs/yamaokaya_rc/yamaokaya/app/assets/stylesheets/yamaokaya/_menus.scss */
 body.menus .panel-menu .panel-heading h4.panel-title {
   padding: 8px;
-  font-size: 13px;
+  font-size: 14px;
 }
 /* line 16, /mnt/hgfs/yamaokaya_rc/yamaokaya/app/assets/stylesheets/yamaokaya/_menus.scss */
 body.menus .panel-menu .panel-body {
@@ -13164,6 +13179,11 @@ body.menus #modal .picture:hover .actions {
 /* line 107, /mnt/hgfs/yamaokaya_rc/yamaokaya/app/assets/stylesheets/yamaokaya/_menus.scss */
 body.menus .carousel-inner > .item > img {
   margin: 0 auto;
+}
+
+/* line 1, /mnt/hgfs/yamaokaya_rc/yamaokaya/app/assets/stylesheets/yamaokaya/_feedbacks.scss */
+.modal {
+  color: black;
 }
 
 /* line 11, /mnt/hgfs/yamaokaya_rc/yamaokaya/app/assets/stylesheets/yamaokaya.scss */
@@ -13327,7 +13347,7 @@ body.yamaokaya .footer fieldset legend {
   background-color: none;
   opacity: 1;
   filter: alpha(opacity=100);
-  font-size: 13px;
+  font-size: 14px;
 }
 /* line 160, /mnt/hgfs/yamaokaya_rc/yamaokaya/app/assets/stylesheets/yamaokaya.scss */
 body.yamaokaya .container-full {
