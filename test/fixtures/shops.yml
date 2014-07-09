@@ -1,13 +1,3 @@
-# このテストデータの情報
-#   ・テスト種別     : Desktop
-#   ・テスト対象機能 : fixture生成
-#   ・テストDB状態   : normal
-#   ・投入テーブル   : shops
-#   ・生成元         : C:\Users\h.tanaka\Desktop\fixture生成\normal.xls
-# 
-# ※ 手動で編集しないでください。
-
-
 # 南2条店
 minami2jo: 
   id: 1102
@@ -3747,7 +3737,7 @@ yawata:
   address: 京都府八幡市八幡水珀13-1
   phone: 075-925-8558
   inauguration: 2011/12/01
-  close: 2099/12/31
+  close: 2014/06/22
   sunday: 0
   monday: 0
   tuesday: 0
@@ -3801,7 +3791,7 @@ kumamoto:
   address: 熊本県熊本市南区平田1-1-11
   phone: 096-273-7267
   inauguration: 2012/10/04
-  close: 2099/12/31
+  close: 2014/06/22
   sunday: 0
   monday: 0
   tuesday: 0
