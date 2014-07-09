@@ -9,9 +9,9 @@ class Prefecture < ActiveRecord::Base
 	has_many :areas,->{order(:seq)},inverse_of: :prefecture
 	belongs_to :region
 	scope :has_shops, -> {includes(:areas => :shops).where.not(shops: {id: nil})}
-	scope :with_higher, ->{
-		includes(:region)
-	}
+	# scope :with_higher, ->{
+	# 	includes(:region)
+	# }
 	scope :by_region, ->(id) {where(region_id: id)}
 
 	def shops

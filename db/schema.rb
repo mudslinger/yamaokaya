@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140701091555) do
+ActiveRecord::Schema.define(version: 20140709113316) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -136,29 +136,32 @@ ActiveRecord::Schema.define(version: 20140701091555) do
 
   create_table "shops", force: true do |t|
     t.integer  "old_code"
-    t.string   "name",         limit: 62,                                       null: false
-    t.string   "furigana",     limit: 62
-    t.string   "gname",        limit: 62
-    t.string   "postal_code",  limit: 7
-    t.string   "address",      limit: 127
-    t.string   "phone",        limit: 15
-    t.decimal  "lat",                      precision: 11, scale: 8
-    t.decimal  "lng",                      precision: 11, scale: 8
+    t.string   "name",             limit: 62,                                       null: false
+    t.string   "furigana",         limit: 62
+    t.string   "gname",            limit: 62
+    t.string   "postal_code",      limit: 7
+    t.string   "address",          limit: 127
+    t.string   "phone",            limit: 15
+    t.decimal  "lat",                          precision: 11, scale: 8
+    t.decimal  "lng",                          precision: 11, scale: 8
     t.integer  "zoom"
-    t.integer  "sunday",       limit: 8,                            default: 0, null: false
-    t.integer  "monday",       limit: 8,                            default: 0, null: false
-    t.integer  "tuesday",      limit: 8,                            default: 0, null: false
-    t.integer  "wednesday",    limit: 8,                            default: 0, null: false
-    t.integer  "thursday",     limit: 8,                            default: 0, null: false
-    t.integer  "friday",       limit: 8,                            default: 0, null: false
-    t.integer  "saturday",     limit: 8,                            default: 0, null: false
+    t.integer  "sunday",           limit: 8,                            default: 0, null: false
+    t.integer  "monday",           limit: 8,                            default: 0, null: false
+    t.integer  "tuesday",          limit: 8,                            default: 0, null: false
+    t.integer  "wednesday",        limit: 8,                            default: 0, null: false
+    t.integer  "thursday",         limit: 8,                            default: 0, null: false
+    t.integer  "friday",           limit: 8,                            default: 0, null: false
+    t.integer  "saturday",         limit: 8,                            default: 0, null: false
     t.date     "inauguration"
     t.date     "close"
-    t.string   "landmarks",    limit: 127
+    t.string   "landmarks",        limit: 127
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "area_id"
     t.integer  "start_shows"
+    t.integer  "seats_at_counter"
+    t.integer  "booths"
+    t.integer  "seq"
   end
 
   create_table "wished_shops", force: true do |t|

@@ -26,9 +26,7 @@ class Shop < ActiveRecord::Base
 		).limit(4)
 	}
 
-	scope :older_shops, ->(inauguration) {
-		where("inauguration < '#{inauguration}'").order('inauguration desc,id desc')
-	}
+
 	belongs_to :area
 	belongs_to :release
 	delegate :prefecture, to: :area, allow_nil: false
@@ -44,10 +42,6 @@ class Shop < ActiveRecord::Base
 
 	def nearby
 		Shop.nearby(lat,lng).active
-	end
-
-	def seq
-		Shop.older_shops(inauguration).count + 1
 	end
 
 	def sprite_x

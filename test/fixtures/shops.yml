@@ -1,16 +1,15 @@
-# 南2条店
-minami2jo: 
-  id: 1102
-  old_code: 121002
+ushiku:
+  area: kennan
+  id: 1201
+  old_code: 122001
   start_shows: 11
-  area: sapporo
-  name: 南2条店
-  furigana: ミナミニジョウ
-  gname: minami2jo
-  postal_code: 600062
-  address: 札幌市中央区南2条西１丁目6-1
-  phone: 011-242-4636
-  inauguration: 1992/12/14
+  name: 牛久店
+  furigana: ウシクテン
+  gname: ushiku
+  postal_code: 3001202
+  address: 茨城県牛久市中根町270-3
+  phone: 029-873-9793
+  inauguration: 1988-09-14
   close: 2099/12/31
   sunday: 0
   monday: 0
@@ -19,25 +18,52 @@ minami2jo:
   thursday: 0
   friday: 0
   saturday: 0
-  lat: 43.057967
-  lng: 141.35621
+  lat: 35.99932200
+  lng: 140.15328900
+  zoom: 14
+  landmarks: 
+  seats_at_counter: 14
+  booths: 3
+  seq: 1
+minami2jo:
+  area: sapporo
+  id: 1102
+  old_code: 121002
+  start_shows: 11
+  name: 南2条店
+  furigana: ミナミニジョウ
+  gname: minami2jo
+  postal_code: 600062
+  address: 札幌市中央区南2条西１丁目6-1
+  phone: 011-242-4636
+  inauguration: 1992-12-14
+  close: 2099/12/31
+  sunday: 0
+  monday: 0
+  tuesday: 0
+  wednesday: 0
+  thursday: 0
+  friday: 0
+  saturday: 0
+  lat: 43.05796700
+  lng: 141.35621000
   zoom: 16
   landmarks: ラルズさん向かい/サンクスさん隣
-
-
-# 琴似店
-kotoni: 
+  seats_at_counter: 13
+  booths: 0
+  seq: 2
+kotoni:
+  area: sapporo
   id: 1104
   old_code: 121004
   start_shows: 11
-  area: sapporo
   name: 琴似店
   furigana: コトニ
   gname: kotoni
   postal_code: 600062
   address: 札幌市西区琴似2条2丁目20琴似新宿会館１Ｆ
   phone: 011-631-5966
-  inauguration: 1993/08/25
+  inauguration: 1993-08-25
   close: 2006/10/29
   sunday: 0
   monday: 0
@@ -46,25 +72,25 @@ kotoni:
   thursday: 0
   friday: 0
   saturday: 0
-  lat: 0
-  lng: 0
+  lat: 0.00000000
+  lng: 0.00000000
   zoom: 15
   landmarks: 
-
-
-# 手稲店
-teine: 
+  seats_at_counter: 
+  booths: 
+  seq: 3
+teine:
+  area: sapporo
   id: 1105
   old_code: 121005
   start_shows: 11
-  area: sapporo
   name: 手稲店
   furigana: テイネ
   gname: teine
   postal_code: 60041
   address: 札幌市手稲区金山１条１丁目2-27
   phone: 011-694-2212
-  inauguration: 1993/12/15
+  inauguration: 1993-12-15
   close: 2099/12/31
   sunday: 0
   monday: 0
@@ -73,25 +99,25 @@ teine:
   thursday: 0
   friday: 0
   saturday: 0
-  lat: 43.129596
-  lng: 141.210969
+  lat: 43.12959600
+  lng: 141.21096900
   zoom: 15
   landmarks: 北海道立子供総合医療寮育センターさん近く
-
-
-# 藤野店
-fujino: 
+  seats_at_counter: 13
+  booths: 6
+  seq: 4
+fujino:
+  area: sapporo
   id: 1107
   old_code: 121007
   start_shows: 11
-  area: sapporo
   name: 藤野店
   furigana: フジノ
   gname: fujino
   postal_code: 612282
   address: 札幌市南区藤野2条13丁目231
   phone: 011-596-3980
-  inauguration: 1994/08/22
+  inauguration: 1994-08-22
   close: 2099/12/31
   sunday: 0
   monday: 0
@@ -100,25 +126,25 @@ fujino:
   thursday: 0
   friday: 0
   saturday: 0
-  lat: 42.961548
-  lng: 141.274245
+  lat: 42.96154800
+  lng: 141.27424500
   zoom: 13
   landmarks: セブンイレブンさん斜め向かい
-
-
-# 太平店
-taihei: 
+  seats_at_counter: 15
+  booths: 4
+  seq: 5
+taihei:
+  area: sapporo
   id: 1108
   old_code: 121008
   start_shows: 11
-  area: sapporo
   name: 太平店
   furigana: タイヘイ
   gname: taihei
   postal_code: 28005
   address: 札幌市北区太平5条１丁目1-8
   phone: 011-774-0074
-  inauguration: 1995/02/28
+  inauguration: 1995-02-28
   close: 2099/12/31
   sunday: 0
   monday: 0
@@ -127,25 +153,25 @@ taihei:
   thursday: 0
   friday: 0
   saturday: 0
-  lat: 43.131467
-  lng: 141.347034
+  lat: 43.13146700
+  lng: 141.34703400
   zoom: 14
   landmarks: ビックハウスさん隣
-
-
-# 清田店
-kiyota: 
+  seats_at_counter: 19
+  booths: 3
+  seq: 6
+kiyota:
+  area: sapporo
   id: 1109
   old_code: 121009
   start_shows: 11
-  area: sapporo
   name: 清田店
   furigana: キヨタ
   gname: kiyota
   postal_code: 40831
   address: 札幌市清田区真栄１条2丁目24-5
   phone: 011-886-3033
-  inauguration: 1995/03/28
+  inauguration: 1995-03-28
   close: 2006/10/31
   sunday: 0
   monday: 0
@@ -154,25 +180,25 @@ kiyota:
   thursday: 0
   friday: 0
   saturday: 0
-  lat: 0
-  lng: 0
+  lat: 0.00000000
+  lng: 0.00000000
   zoom: 14
   landmarks: 
-
-
-# 東雁来店
-higashikariki: 
+  seats_at_counter: 
+  booths: 
+  seq: 7
+higashikariki:
+  area: sapporo
   id: 1111
   old_code: 121011
   start_shows: 11
-  area: sapporo
   name: 東雁来店
   furigana: ヒガシカリキ
   gname: higashikariki
   postal_code: 70827
   address: 札幌市東区東雁来7条１丁目4番19号
   phone: 011-784-3788
-  inauguration: 1995/07/15
+  inauguration: 1995-07-15
   close: 2099/12/31
   sunday: 0
   monday: 0
@@ -182,24 +208,24 @@ higashikariki:
   friday: 0
   saturday: 0
   lat: 43.09158937
-  lng: 141.4185073
+  lng: 141.41850730
   zoom: 14
   landmarks: 宇佐美GSさん横
-
-
-# 恵庭店
-eniwa: 
+  seats_at_counter: 20
+  booths: 4
+  seq: 8
+eniwa:
+  area: douo
   id: 1113
   old_code: 121013
   start_shows: 9
-  area: douo
   name: 恵庭店
   furigana: エニワ
   gname: eniwa
   postal_code: 611441
   address: 恵庭市住吉町１丁目8番6号
   phone: 0123-33-3313
-  inauguration: 1996/02/22
+  inauguration: 1996-02-22
   close: 2099/12/31
   sunday: 0
   monday: 0
@@ -208,25 +234,25 @@ eniwa:
   thursday: 0
   friday: 0
   saturday: 0
-  lat: 42.874185
-  lng: 141.58404
+  lat: 42.87418500
+  lng: 141.58404000
   zoom: 14
   landmarks: サッポロドラッグストアさん向かい
-
-
-# 北広島店
-kitahiroshima: 
+  seats_at_counter: 17
+  booths: 5
+  seq: 9
+kitahiroshima:
+  area: douo
   id: 1114
   old_code: 121014
   start_shows: 9
-  area: douo
   name: 北広島店
   furigana: キタヒロシマテン
   gname: kitahiroshima
   postal_code: 611127
   address: 北広島市新富町西１丁目１番地27
   phone: 011-372-2426
-  inauguration: 1996/04/20
+  inauguration: 1996-04-20
   close: 2099/12/31
   sunday: 0
   monday: 0
@@ -236,24 +262,24 @@ kitahiroshima:
   friday: 0
   saturday: 0
   lat: 42.97346375
-  lng: 141.56775
+  lng: 141.56775000
   zoom: 14
   landmarks: マツダショウルームさん斜め向かい
-
-
-# 苫小牧柳店
-yanagi: 
+  seats_at_counter: 23
+  booths: 4
+  seq: 10
+yanagi:
+  area: dounan
   id: 1115
   old_code: 121015
   start_shows: 8
-  area: dounan
   name: 苫小牧柳店
   furigana: トマコマイヤナギ
   gname: yanagi
   postal_code: 530053
   address: 苫小牧市柳町4丁目19-32
   phone: 0144-57-6622
-  inauguration: 1996/09/28
+  inauguration: 1996-09-28
   close: 2006/05/22
   sunday: 0
   monday: 0
@@ -262,808 +288,25 @@ yanagi:
   thursday: 0
   friday: 0
   saturday: 0
-  lat: 0
-  lng: 0
+  lat: 0.00000000
+  lng: 0.00000000
   zoom: 14
   landmarks: エネオスGSさん隣
-
-
-# 岩見沢店
-iwamizawa: 
-  id: 1117
-  old_code: 121017
-  start_shows: 9
-  area: douo
-  name: 岩見沢店
-  furigana: イワミザワ
-  gname: iwamizawa
-  postal_code: 680005
-  address: 岩見沢市5条東15丁目30-2
-  phone: 0126-24-8865
-  inauguration: 1996/10/26
-  close: 2099/12/31
-  sunday: 0
-  monday: 0
-  tuesday: 0
-  wednesday: 0
-  thursday: 0
-  friday: 0
-  saturday: 0
-  lat: 43.211573
-  lng: 141.783987
-  zoom: 14
-  landmarks: 
-
-
-# 新道店
-shindo: 
-  id: 1118
-  old_code: 121018
-  start_shows: 11
-  area: sapporo
-  name: 新道店
-  furigana: シンドウ
-  gname: shindo
-  postal_code: 70834
-  address: 札幌市東区北34条東21丁目1-3
-  phone: 011-787-7170
-  inauguration: 1997/05/21
-  close: 2099/12/31
-  sunday: 0
-  monday: 0
-  tuesday: 0
-  wednesday: 0
-  thursday: 0
-  friday: 0
-  saturday: 0
-  lat: 43.104051
-  lng: 141.378059
-  zoom: 14
-  landmarks: 紳士服ダイマンさん隣
-
-
-# 旭川高砂台店
-takasagodai: 
-  id: 1119
-  old_code: 121019
-  start_shows: 8
-  area: douhoku
-  name: 旭川高砂台店
-  furigana: アサヒカワタカサゴダイ
-  gname: takasagodai
-  postal_code: 708061
-  address: 旭川市高砂台2丁目1-2
-  phone: 0166-62-5299
-  inauguration: 1998/01/29
-  close: 2099/12/31
-  sunday: 0
-  monday: 0
-  tuesday: 0
-  wednesday: 0
-  thursday: 0
-  friday: 0
-  saturday: 0
-  lat: 43.76994843
-  lng: 142.3120308
-  zoom: 14
-  landmarks: 高砂台温泉さん近く
-
-
-# 樽川店
-tarukawa: 
-  id: 1120
-  old_code: 121020
-  start_shows: 9
-  area: douo
-  name: 樽川店
-  furigana: タルカワ
-  gname: tarukawa
-  postal_code: 613251
-  address: 石狩市樽川9条１丁目
-  phone: 0133-75-1505
-  inauguration: 1998/09/30
-  close: 2099/12/31
-  sunday: 0
-  monday: 0
-  tuesday: 0
-  wednesday: 0
-  thursday: 0
-  friday: 0
-  saturday: 0
-  lat: 43.143939
-  lng: 141.27656
-  zoom: 14
-  landmarks: 集合店舗（ビクトリアさん・ダイソーさん・100万ボルトさん他）
-
-
-# 釧路店
-kushiro: 
-  id: 1121
-  old_code: 121021
-  start_shows: 8
-  area: douto
-  name: 釧路店
-  furigana: クシロ
-  gname: kushiro
-  postal_code: 880600
-  address: 釧路市星が浦大通2丁目5-28
-  phone: 0154-53-7170
-  inauguration: 1999/04/30
-  close: 2099/12/31
-  sunday: 0
-  monday: 0
-  tuesday: 0
-  wednesday: 0
-  thursday: 0
-  friday: 0
-  saturday: 0
-  lat: 43.01435229
-  lng: 144.3193365
-  zoom: 14
-  landmarks: パチンコマルハンさん斜め向かい/セガワールドさん隣
-
-
-# 北見店
-kitami: 
-  id: 1122
-  old_code: 121022
-  start_shows: 8
-  area: douto
-  name: 北見店
-  furigana: キタミ
-  gname: kitami
-  postal_code: 900835
-  address: 北見市光西町165
-  phone: 0157-61-1150
-  inauguration: 1999/12/08
-  close: 2099/12/31
-  sunday: 0
-  monday: 0
-  tuesday: 0
-  wednesday: 0
-  thursday: 0
-  friday: 0
-  saturday: 0
-  lat: 43.79809339
-  lng: 143.8643184
-  zoom: 14
-  landmarks: 北見信金さん隣
-
-
-# 野幌店
-nopporo: 
-  id: 1123
-  old_code: 121023
-  start_shows: 9
-  area: douo
-  name: 野幌店
-  furigana: ノッポロ
-  gname: nopporo
-  postal_code: 690831
-  address: 江別市野幌町48-5
-  phone: 011-381-7170
-  inauguration: 2000/06/02
-  close: 2099/12/31
-  sunday: 0
-  monday: 0
-  tuesday: 0
-  wednesday: 0
-  thursday: 0
-  friday: 0
-  saturday: 0
-  lat: 43.09410768
-  lng: 141.5255146
-  zoom: 14
-  landmarks: マックスバリューさん斜め向かい
-
-
-# 帯広店
-obihiro: 
-  id: 1124
-  old_code: 121024
-  start_shows: 8
-  area: douto
-  name: 帯広店
-  furigana: オビヒロ
-  gname: obihiro
-  postal_code: 800037
-  address: 帯広市西7条北１丁目14番地
-  phone: 0155-22-8870
-  inauguration: 2000/07/28
-  close: 2099/12/31
-  sunday: 0
-  monday: 0
-  tuesday: 0
-  wednesday: 0
-  thursday: 0
-  friday: 0
-  saturday: 0
-  lat: 42.93148202
-  lng: 143.1931838
-  zoom: 14
-  landmarks: オートバックスさん隣/セイコーマートさん斜め向かい
-
-
-# 旭川永山店
-nagayama: 
-  id: 1125
-  old_code: 121025
-  start_shows: 8
-  area: douhoku
-  name: 旭川永山店
-  furigana: アサヒカワナガヤマ
-  gname: nagayama
-  postal_code: 798412
-  address: 旭川市永山2条15丁目44-3
-  phone: 0166-46-3626
-  inauguration: 2001/08/01
-  close: 2099/12/31
-  sunday: 0
-  monday: 0
-  tuesday: 0
-  wednesday: 0
-  thursday: 0
-  friday: 0
-  saturday: 0
-  lat: 43.805559
-  lng: 142.425675
-  zoom: 14
-  landmarks: 栗林GSさん斜め向かい・パチンコマルハンさん隣
-
-
-# 上磯店
-kamiiso: 
-  id: 1126
-  old_code: 121026
-  start_shows: 8
-  area: dounan
-  name: 上磯店
-  furigana: カミイソ
-  gname: kamiiso
-  postal_code: 490111
-  address: 北斗市七重浜5丁目15-5
-  phone: 0138-48-5855
-  inauguration: 2001/12/10
-  close: 2099/12/31
-  sunday: 0
-  monday: 0
-  tuesday: 0
-  wednesday: 0
-  thursday: 0
-  friday: 0
-  saturday: 0
-  lat: 41.82362873
-  lng: 140.7100686
-  zoom: 14
-  landmarks: ハイパーマートさん向かい
-
-
-# 滝川店
-takikawa: 
-  id: 1127
-  old_code: 121027
-  start_shows: 9
-  area: douo
-  name: 滝川店
-  furigana: タキカワ
-  gname: takikawa
-  postal_code: 730101
-  address: 砂川市空知太東１条7丁目１番3号
-  phone: 0125-53-5155
-  inauguration: 2002/07/15
-  close: 2099/12/31
-  sunday: 0
-  monday: 0
-  tuesday: 0
-  wednesday: 0
-  thursday: 0
-  friday: 0
-  saturday: 0
-  lat: 43.54109868
-  lng: 141.9229711
-  zoom: 14
-  landmarks: 
-
-
-# 苫小牧糸井店
-itoi: 
-  id: 1128
-  old_code: 121028
-  start_shows: 8
-  area: dounan
-  name: 苫小牧糸井店
-  furigana: トマコマイイトイ
-  gname: itoi
-  postal_code: 530814
-  address: 苫小牧市字糸井69-5
-  phone: 0144-71-7272
-  inauguration: 2002/08/25
-  close: 2099/12/31
-  sunday: 0
-  monday: 0
-  tuesday: 0
-  wednesday: 0
-  thursday: 0
-  friday: 0
-  saturday: 0
-  lat: 42.61673017
-  lng: 141.5413049
-  zoom: 14
-  landmarks: ガソリン本舗GSさん向かい
-
-
-# 室蘭店
-muroran: 
-  id: 1129
-  old_code: 121029
-  start_shows: 8
-  area: dounan
-  name: 室蘭店
-  furigana: ムロラン
-  gname: muroran
-  postal_code: 590034
-  address: 登別市鷲別町6丁目37-2
-  phone: 0143-87-0120
-  inauguration: 2002/11/12
-  close: 2099/12/31
-  sunday: 0
-  monday: 0
-  tuesday: 0
-  wednesday: 0
-  thursday: 0
-  friday: 0
-  saturday: 0
-  lat: 42.36341301
-  lng: 141.057306
-  zoom: 14
-  landmarks: 
-
-
-# 美幌店
-bihoro: 
-  id: 1130
-  old_code: 121030
-  start_shows: 8
-  area: douto
-  name: 美幌店
-  furigana: ビホロ
-  gname: bihoro
-  postal_code: 920027
-  address: 網走郡美幌町稲美68-101
-  phone: 01527-3-6558
-  inauguration: 2002/12/22
-  close: 2099/12/31
-  sunday: 0
-  monday: 0
-  tuesday: 0
-  wednesday: 0
-  thursday: 0
-  friday: 0
-  saturday: 0
-  lat: 43.81894599
-  lng: 144.116233
-  zoom: 14
-  landmarks: ホーマックさん斜め向かい
-
-
-# 伊達店
-date: 
-  id: 1131
-  old_code: 121031
-  start_shows: 8
-  area: douto
-  name: 伊達店
-  furigana: ダテ
-  gname: date
-  postal_code: 520014
-  address: 伊達市舟岡町176-1
-  phone: 0142-25-0150
-  inauguration: 2003/04/28
-  close: 2099/12/31
-  sunday: 0
-  monday: 0
-  tuesday: 0
-  wednesday: 0
-  thursday: 0
-  friday: 0
-  saturday: 0
-  lat: 42.469462
-  lng: 140.875411
-  zoom: 14
-  landmarks: 道の駅向かいパチンコビクトリアさん隣
-
-
-# 新すすきの店
-susukino: 
-  id: 1132
-  old_code: 121032
-  start_shows: 11
-  area: sapporo
-  name: 新すすきの店
-  furigana: シンススキノ
-  gname: susukino
-  postal_code: 640806
-  address: 札幌市中央区南6条西4丁目5番地G4ビル1F
-  phone: 011-533-7785
-  inauguration: 2003/08/02
-  close: 2099/12/31
-  sunday: 0
-  monday: 0
-  tuesday: 0
-  wednesday: 0
-  thursday: 0
-  friday: 0
-  saturday: 0
-  lat: 43.05360397
-  lng: 141.353169
-  zoom: 14
-  landmarks: 旧駅前通G4ビル１F（すすきの新宿通り付近）
-
-
-# 千歳店
-chitose: 
-  id: 1133
-  old_code: 121033
-  start_shows: 8
-  area: douo
-  name: 千歳店
-  furigana: チトセ
-  gname: chitose
-  postal_code: 660043
-  address: 千歳市朝日町7丁目1-26
-  phone: 0123-26-7377
-  inauguration: 2003/12/12
-  close: 2099/12/31
-  sunday: 0
-  monday: 0
-  tuesday: 0
-  wednesday: 0
-  thursday: 0
-  friday: 0
-  saturday: 0
-  lat: 42.82102422
-  lng: 141.6569727
-  zoom: 14
-  landmarks: コスモGSさんより徒歩5分/パチンコハッピーさんより徒歩5分
-
-
-# 八雲店
-yakumo: 
-  id: 1134
-  old_code: 121034
-  start_shows: 8
-  area: dounan
-  name: 八雲店
-  furigana: ヤクモ
-  gname: yakumo
-  postal_code: 493105
-  address: 二海郡八雲町東雲町3-7
-  phone: 01376-3-2500
-  inauguration: 2003/12/24
-  close: 2099/12/31
-  sunday: 0
-  monday: 0
-  tuesday: 0
-  wednesday: 0
-  thursday: 0
-  friday: 0
-  saturday: 0
-  lat: 42.256735
-  lng: 140.280664
-  zoom: 14
-  landmarks: セイコーマートさんとなり
-
-
-# 苫小牧船見店
-funami: 
-  id: 1135
-  old_code: 121035
-  start_shows: 8
-  area: dounan
-  name: 苫小牧船見店
-  furigana: トマコマイフナミ
-  gname: funami
-  postal_code: 530007
-  address: 苫小牧市船見町1丁目3番3号
-  phone: 0144-36-8111
-  inauguration: 2004/06/30
-  close: 2099/12/31
-  sunday: 0
-  monday: 0
-  tuesday: 0
-  wednesday: 0
-  thursday: 0
-  friday: 0
-  saturday: 0
-  lat: 42.64723763
-  lng: 141.6268687
-  zoom: 14
-  landmarks: フェリーターミナル入り口看板より徒歩10分/エネオスGSさん斜め向かい
-
-
-# 月寒店
-tsukisamu: 
-  id: 1137
-  old_code: 121037
-  start_shows: 11
-  area: sapporo
-  name: 月寒店
-  furigana: ツキサム
-  gname: tsukisamu
-  postal_code: 620051
-  address: 札幌市豊平区月寒東１条15丁目9-25
-  phone: 011-856-0600
-  inauguration: 2005/10/05
-  close: 2099/12/31
-  sunday: 0
-  monday: 0
-  tuesday: 0
-  wednesday: 0
-  thursday: 0
-  friday: 0
-  saturday: 0
-  lat: 43.01856597
-  lng: 141.40778
-  zoom: 15
-  landmarks: 札幌ドーム斜め向かい/ヤナセ札幌支店さん隣
-
-
-# 大谷地店
-ooyachi: 
-  id: 1138
-  old_code: 121038
-  start_shows: 11
-  area: sapporo
-  name: 大谷地店
-  furigana: オオヤチ
-  gname: ooyachi
-  postal_code: 40041
-  address: 札幌市厚別区大谷地東2丁目1-1
-  phone: 011-895-3788
-  inauguration: 2007/12/19
-  close: 2099/12/31
-  sunday: 0
-  monday: 0
-  tuesday: 0
-  wednesday: 0
-  thursday: 0
-  friday: 0
-  saturday: 0
-  lat: 43.028084
-  lng: 141.448481
-  zoom: 15
-  landmarks: 
-
-
-# 帯広南店
-obihirominami: 
-  id: 1139
-  old_code: 121039
-  start_shows: 8
-  area: douto
-  name: 帯広南店
-  furigana: オビヒロミナミ
-  gname: obihirominami
-  postal_code: 800016
-  address: 北海道帯広市西六条南41丁目5-18
-  phone: 0155-47-6766
-  inauguration: 2008/10/30
-  close: 2099/12/31
-  sunday: 0
-  monday: 0
-  tuesday: 0
-  wednesday: 0
-  thursday: 0
-  friday: 0
-  saturday: 0
-  lat: 42.882326
-  lng: 143.200698
-  zoom: 15
-  landmarks: 
-
-
-# 狸小路4丁目店
-tanukikoji: 
-  id: 1140
-  old_code: 121040
-  start_shows: 11
-  area: sapporo
-  name: 狸小路4丁目店
-  furigana: タヌキコウジ4チョウメテン
-  gname: tanukikoji
-  postal_code: 600063
-  address: 北海道札幌市中央区南三条西4丁目
-  phone: 011-233-1633
-  inauguration: 2008/12/22
-  close: 2099/12/31
-  sunday: 0
-  monday: 0
-  tuesday: 0
-  wednesday: 0
-  thursday: 0
-  friday: 0
-  saturday: 0
-  lat: 43.057028
-  lng: 141.351696
-  zoom: 16
-  landmarks: 中川ライター店さんとなり
-
-
-# 朝里店
-asari: 
-  id: 1141
-  old_code: 121041
-  start_shows: 9
-  area: douo
-  name: 朝里店
-  furigana: アサリテン
-  gname: asari
-  postal_code: 470152
-  address: 北海道小樽市新光2丁目2-5
-  phone: 0134-54-0718
-  inauguration: 2009/06/17
-  close: 2099/12/31
-  sunday: 0
-  monday: 0
-  tuesday: 0
-  wednesday: 0
-  thursday: 0
-  friday: 0
-  saturday: 0
-  lat: 43.1747
-  lng: 141.060097
-  zoom: 14
-  landmarks: 
-
-
-# 函館鍛冶店
-kaji: 
-  id: 1142
-  old_code: 121042
-  start_shows: 8
-  area: dounan
-  name: 函館鍛冶店
-  furigana: ハコダテカジテン
-  gname: kaji
-  postal_code: 410852
-  address: 北海道函館市鍛冶2丁目36-9
-  phone: 0138-84-1751
-  inauguration: 2010/08/17
-  close: 2099/12/31
-  sunday: 0
-  monday: 0
-  tuesday: 0
-  wednesday: 0
-  thursday: 0
-  friday: 0
-  saturday: 0
-  lat: 41.810454
-  lng: 140.769147
-  zoom: 16
-  landmarks: パチンコゴリラさん向い
-
-
-# 釧路町店
-kushirocho: 
-  id: 1143
-  old_code: 121043
-  start_shows: 8
-  area: douto
-  name: 釧路町店
-  furigana: クシロチョウテン
-  gname: kushirocho
-  postal_code: 850061
-  address: 北海道釧路市芦野３丁目1-22
-  phone: 0154-64-1632
-  inauguration: 2010/12/08
-  close: 2099/12/31
-  sunday: 0
-  monday: 0
-  tuesday: 0
-  wednesday: 0
-  thursday: 0
-  friday: 0
-  saturday: 0
-  lat: 43.013426
-  lng: 144.403739
-  zoom: 13
-  landmarks: 
-
-
-# 網走店
-abashiri: 
-  id: 1144
-  old_code: 121044
-  start_shows: 8
-  area: douto
-  name: 網走店
-  furigana: アバシリテン
-  gname: abashiri
-  postal_code: 930035
-  address: 北海道網走市駒場南７丁目２番２号
-  phone: 0152-67-6037
-  inauguration: 2013/08/29
-  close: 2099/12/31
-  sunday: 0
-  monday: 0
-  tuesday: 0
-  wednesday: 0
-  thursday: 0
-  friday: 0
-  saturday: 0
-  lat: 43.999815
-  lng: 144.284241
-  zoom: 13
-  landmarks: ABCマートさんとなり
-
-
-# 稚内店
-wakkanai: 
-  id: 1145
-  old_code: 121045
-  start_shows: 8
-  area: douhoku
-  name: 稚内店
-  furigana: ワッカナイテン
-  gname: wakkanai
-  postal_code: 970015
-  address: 北海道稚内市朝日1-3-10
-  phone: 0162-73-1716
-  inauguration: 2014/07/02
-  close: 2099/12/31
-  sunday: 0
-  monday: 0
-  tuesday: 0
-  wednesday: 0
-  thursday: 0
-  friday: 0
-  saturday: 0
-  lat: 45.3849047
-  lng: 141.7063113
-  zoom: 13
-  landmarks: 
-
-
-# 牛久店
-ushiku: 
-  id: 1201
-  old_code: 122001
-  start_shows: 11
+  seats_at_counter: 
+  booths: 
+  seq: 11
+tsukuba:
   area: kennan
-  name: 牛久店
-  furigana: ウシクテン
-  gname: ushiku
-  postal_code: 3001202
-  address: 茨城県牛久市中根町270-3
-  phone: 029-873-9793
-  inauguration: 1988/09/14
-  close: 2099/12/31
-  sunday: 0
-  monday: 0
-  tuesday: 0
-  wednesday: 0
-  thursday: 0
-  friday: 0
-  saturday: 0
-  lat: 35.999322
-  lng: 140.153289
-  zoom: 14
-  landmarks: 
-
-
-# つくば店
-tsukuba: 
   id: 1202
   old_code: 122002
   start_shows: 11
-  area: kennan
   name: つくば店
   furigana: ツクバ
   gname: tsukuba
   postal_code: 3050021
   address: 茨城県つくば市古来541-5
   phone: 029-857-8308
-  inauguration: 1996/10/01
+  inauguration: 1996-10-01
   close: 2099/12/31
   sunday: 0
   monday: 0
@@ -1073,24 +316,105 @@ tsukuba:
   friday: 0
   saturday: 0
   lat: 36.09063092
-  lng: 140.1445758
+  lng: 140.14457580
   zoom: 14
   landmarks: 
-
-
-# 阿見店
-ami: 
+  seats_at_counter: 19
+  booths: 5
+  seq: 12
+iwamizawa:
+  area: douo
+  id: 1117
+  old_code: 121017
+  start_shows: 9
+  name: 岩見沢店
+  furigana: イワミザワ
+  gname: iwamizawa
+  postal_code: 680005
+  address: 岩見沢市5条東15丁目30-2
+  phone: 0126-24-8865
+  inauguration: 1996-10-26
+  close: 2099/12/31
+  sunday: 0
+  monday: 0
+  tuesday: 0
+  wednesday: 0
+  thursday: 0
+  friday: 0
+  saturday: 0
+  lat: 43.21157300
+  lng: 141.78398700
+  zoom: 14
+  landmarks: 
+  seats_at_counter: 15
+  booths: 5
+  seq: 13
+shindo:
+  area: sapporo
+  id: 1118
+  old_code: 121018
+  start_shows: 11
+  name: 新道店
+  furigana: シンドウ
+  gname: shindo
+  postal_code: 70834
+  address: 札幌市東区北34条東21丁目1-3
+  phone: 011-787-7170
+  inauguration: 1997-05-21
+  close: 2099/12/31
+  sunday: 0
+  monday: 0
+  tuesday: 0
+  wednesday: 0
+  thursday: 0
+  friday: 0
+  saturday: 0
+  lat: 43.10405100
+  lng: 141.37805900
+  zoom: 14
+  landmarks: 紳士服ダイマンさん隣
+  seats_at_counter: 15
+  booths: 6
+  seq: 14
+takasagodai:
+  area: douhoku
+  id: 1119
+  old_code: 121019
+  start_shows: 8
+  name: 旭川高砂台店
+  furigana: アサヒカワタカサゴダイ
+  gname: takasagodai
+  postal_code: 708061
+  address: 旭川市高砂台2丁目1-2
+  phone: 0166-62-5299
+  inauguration: 1998-01-29
+  close: 2099/12/31
+  sunday: 0
+  monday: 0
+  tuesday: 0
+  wednesday: 0
+  thursday: 0
+  friday: 0
+  saturday: 0
+  lat: 43.76994843
+  lng: 142.31203080
+  zoom: 14
+  landmarks: 高砂台温泉さん近く
+  seats_at_counter: 20
+  booths: 6
+  seq: 15
+ami:
+  area: kennan
   id: 1203
   old_code: 122003
   start_shows: 11
-  area: kennan
   name: 阿見店
   furigana: アミ
   gname: ami
   postal_code: 3000336
   address: 茨城県稲敷郡阿見町西郷3-1-7
   phone: 029-887-2783
-  inauguration: 1998/07/01
+  inauguration: 1998-07-01
   close: 2099/12/31
   sunday: 0
   monday: 0
@@ -1100,24 +424,24 @@ ami:
   friday: 0
   saturday: 0
   lat: 36.04081458
-  lng: 140.20921
+  lng: 140.20921000
   zoom: 14
   landmarks: マクドナルドさん向かい
-
-
-# 小山駅南町店
-ekiminami: 
-  id: 1204
-  old_code: 122004
+  seats_at_counter: 15
+  booths: 4
+  seq: 16
+tarukawa:
+  area: douo
+  id: 1120
+  old_code: 121020
   start_shows: 9
-  area: tochigi
-  name: 小山駅南町店
-  furigana: オヤマエキミナミマチ
-  gname: ekiminami
-  postal_code: 3230822
-  address: 栃木県小山市駅南町6-26-8
-  phone: 0285-28-1628
-  inauguration: 2000/12/01
+  name: 樽川店
+  furigana: タルカワ
+  gname: tarukawa
+  postal_code: 613251
+  address: 石狩市樽川9条１丁目
+  phone: 0133-75-1505
+  inauguration: 1998-09-30
   close: 2099/12/31
   sunday: 0
   monday: 0
@@ -1126,25 +450,25 @@ ekiminami:
   thursday: 0
   friday: 0
   saturday: 0
-  lat: 36.29910954
-  lng: 139.8166786
+  lat: 43.14393900
+  lng: 141.27656000
   zoom: 14
-  landmarks: 山田うどんさん隣
-
-
-# 小山田間店
-tama: 
+  landmarks: 集合店舗（ビクトリアさん・ダイソーさん・100万ボルトさん他）
+  seats_at_counter: 12
+  booths: 4
+  seq: 17
+tama:
+  area: tochigi
   id: 1205
   old_code: 122005
   start_shows: 9
-  area: tochigi
   name: 小山田間店
   furigana: オヤマタマ
   gname: tama
   postal_code: 3230814
   address: 栃木県小山市田間687-1
   phone: 0285-28-7844
-  inauguration: 1999/04/01
+  inauguration: 1999-04-01
   close: 2099/12/31
   sunday: 0
   monday: 0
@@ -1154,24 +478,186 @@ tama:
   friday: 0
   saturday: 0
   lat: 36.26708271
-  lng: 139.8270762
+  lng: 139.82707620
   zoom: 14
   landmarks: サンクスさん隣（同敷地内）
-
-
-# 宇都宮鶴田店
-tsuruta: 
+  seats_at_counter: 15
+  booths: 10
+  seq: 18
+kushiro:
+  area: douto
+  id: 1121
+  old_code: 121021
+  start_shows: 8
+  name: 釧路店
+  furigana: クシロ
+  gname: kushiro
+  postal_code: 880600
+  address: 釧路市星が浦大通2丁目5-28
+  phone: 0154-53-7170
+  inauguration: 1999-04-30
+  close: 2099/12/31
+  sunday: 0
+  monday: 0
+  tuesday: 0
+  wednesday: 0
+  thursday: 0
+  friday: 0
+  saturday: 0
+  lat: 43.01435229
+  lng: 144.31933650
+  zoom: 14
+  landmarks: パチンコマルハンさん斜め向かい/セガワールドさん隣
+  seats_at_counter: 10
+  booths: 6
+  seq: 19
+kitami:
+  area: douto
+  id: 1122
+  old_code: 121022
+  start_shows: 8
+  name: 北見店
+  furigana: キタミ
+  gname: kitami
+  postal_code: 900835
+  address: 北見市光西町165
+  phone: 0157-61-1150
+  inauguration: 1999-12-08
+  close: 2099/12/31
+  sunday: 0
+  monday: 0
+  tuesday: 0
+  wednesday: 0
+  thursday: 0
+  friday: 0
+  saturday: 0
+  lat: 43.79809339
+  lng: 143.86431840
+  zoom: 14
+  landmarks: 北見信金さん隣
+  seats_at_counter: 13
+  booths: 8
+  seq: 20
+nopporo:
+  area: douo
+  id: 1123
+  old_code: 121023
+  start_shows: 9
+  name: 野幌店
+  furigana: ノッポロ
+  gname: nopporo
+  postal_code: 690831
+  address: 江別市野幌町48-5
+  phone: 011-381-7170
+  inauguration: 2000-06-02
+  close: 2099/12/31
+  sunday: 0
+  monday: 0
+  tuesday: 0
+  wednesday: 0
+  thursday: 0
+  friday: 0
+  saturday: 0
+  lat: 43.09410768
+  lng: 141.52551460
+  zoom: 14
+  landmarks: マックスバリューさん斜め向かい
+  seats_at_counter: 10
+  booths: 7
+  seq: 21
+obihiro:
+  area: douto
+  id: 1124
+  old_code: 121024
+  start_shows: 8
+  name: 帯広店
+  furigana: オビヒロ
+  gname: obihiro
+  postal_code: 800037
+  address: 帯広市西7条北１丁目14番地
+  phone: 0155-22-8870
+  inauguration: 2000-07-28
+  close: 2099/12/31
+  sunday: 0
+  monday: 0
+  tuesday: 0
+  wednesday: 0
+  thursday: 0
+  friday: 0
+  saturday: 0
+  lat: 42.93148202
+  lng: 143.19318380
+  zoom: 14
+  landmarks: オートバックスさん隣/セイコーマートさん斜め向かい
+  seats_at_counter: 14
+  booths: 10
+  seq: 22
+ekiminami:
+  area: tochigi
+  id: 1204
+  old_code: 122004
+  start_shows: 9
+  name: 小山駅南町店
+  furigana: オヤマエキミナミマチ
+  gname: ekiminami
+  postal_code: 3230822
+  address: 栃木県小山市駅南町6-26-8
+  phone: 0285-28-1628
+  inauguration: 2000-12-01
+  close: 2099/12/31
+  sunday: 0
+  monday: 0
+  tuesday: 0
+  wednesday: 0
+  thursday: 0
+  friday: 0
+  saturday: 0
+  lat: 36.29910954
+  lng: 139.81667860
+  zoom: 14
+  landmarks: 山田うどんさん隣
+  seats_at_counter: 14
+  booths: 8
+  seq: 23
+nagayama:
+  area: douhoku
+  id: 1125
+  old_code: 121025
+  start_shows: 8
+  name: 旭川永山店
+  furigana: アサヒカワナガヤマ
+  gname: nagayama
+  postal_code: 798412
+  address: 旭川市永山2条15丁目44-3
+  phone: 0166-46-3626
+  inauguration: 2001-08-01
+  close: 2099/12/31
+  sunday: 0
+  monday: 0
+  tuesday: 0
+  wednesday: 0
+  thursday: 0
+  friday: 0
+  saturday: 0
+  lat: 43.80555900
+  lng: 142.42567500
+  zoom: 14
+  landmarks: 栗林GSさん斜め向かい・パチンコマルハンさん隣
+  seats_at_counter: 14
+  booths: 4
+  seq: 24
+tsuruta:
+  area: tochigi
   id: 1207
   old_code: 122007
   start_shows: 9
-  area: tochigi
   name: 宇都宮鶴田店
   furigana: ウツノミヤツルタ
   gname: tsuruta
   postal_code: 3200851
   address: 栃木県宇都宮市鶴田町西原3492-11
   phone: 028-649-0678
-  inauguration: 2001/12/01
+  inauguration: 2001-12-01
   close: 2099/12/31
   sunday: 0
   monday: 0
@@ -1181,24 +667,78 @@ tsuruta:
   friday: 0
   saturday: 0
   lat: 36.54263805
-  lng: 139.8503183
+  lng: 139.85031830
   zoom: 14
   landmarks: バイク王さん向かい
-
-
-# 土浦店
-tsuchiura: 
+  seats_at_counter: 14
+  booths: 8
+  seq: 25
+kamiiso:
+  area: dounan
+  id: 1126
+  old_code: 121026
+  start_shows: 8
+  name: 上磯店
+  furigana: カミイソ
+  gname: kamiiso
+  postal_code: 490111
+  address: 北斗市七重浜5丁目15-5
+  phone: 0138-48-5855
+  inauguration: 2001-12-10
+  close: 2099/12/31
+  sunday: 0
+  monday: 0
+  tuesday: 0
+  wednesday: 0
+  thursday: 0
+  friday: 0
+  saturday: 0
+  lat: 41.82362873
+  lng: 140.71006860
+  zoom: 14
+  landmarks: ハイパーマートさん向かい
+  seats_at_counter: 14
+  booths: 8
+  seq: 26
+takikawa:
+  area: douo
+  id: 1127
+  old_code: 121027
+  start_shows: 9
+  name: 滝川店
+  furigana: タキカワ
+  gname: takikawa
+  postal_code: 730101
+  address: 砂川市空知太東１条7丁目１番3号
+  phone: 0125-53-5155
+  inauguration: 2002-07-15
+  close: 2099/12/31
+  sunday: 0
+  monday: 0
+  tuesday: 0
+  wednesday: 0
+  thursday: 0
+  friday: 0
+  saturday: 0
+  lat: 43.54109868
+  lng: 141.92297110
+  zoom: 14
+  landmarks: 
+  seats_at_counter: 16
+  booths: 8
+  seq: 27
+tsuchiura:
+  area: kennan
   id: 1208
   old_code: 122008
   start_shows: 11
-  area: kennan
   name: 土浦店
   furigana: ツチウラ
   gname: tsuchiura
   postal_code: 3000031
   address: 茨城県土浦市東崎町12-3
   phone: 029-835-7766
-  inauguration: 2002/08/13
+  inauguration: 2002-08-13
   close: 2099/12/31
   sunday: 0
   monday: 0
@@ -1208,24 +748,24 @@ tsuchiura:
   friday: 0
   saturday: 0
   lat: 36.08558438
-  lng: 140.2060371
+  lng: 140.20603710
   zoom: 14
   landmarks: メンズプラザアオキさん向かい
-
-
-# 壬生店
-mibu: 
-  id: 1209
-  old_code: 122009
-  start_shows: 9
-  area: tochigi
-  name: 壬生店
-  furigana: ミブ
-  gname: mibu
-  postal_code: 3210201
-  address: 栃木県下都賀郡壬生町安塚2024-8
-  phone: 0282-86-2001
-  inauguration: 2003/03/01
+  seats_at_counter: 16
+  booths: 8
+  seq: 28
+itoi:
+  area: dounan
+  id: 1128
+  old_code: 121028
+  start_shows: 8
+  name: 苫小牧糸井店
+  furigana: トマコマイイトイ
+  gname: itoi
+  postal_code: 530814
+  address: 苫小牧市字糸井69-5
+  phone: 0144-71-7272
+  inauguration: 2002-08-25
   close: 2099/12/31
   sunday: 0
   monday: 0
@@ -1234,25 +774,106 @@ mibu:
   thursday: 0
   friday: 0
   saturday: 0
-  lat: 36.488974
-  lng: 139.827348
+  lat: 42.61673017
+  lng: 141.54130490
+  zoom: 14
+  landmarks: ガソリン本舗GSさん向かい
+  seats_at_counter: 18
+  booths: 5
+  seq: 29
+muroran:
+  area: dounan
+  id: 1129
+  old_code: 121029
+  start_shows: 8
+  name: 室蘭店
+  furigana: ムロラン
+  gname: muroran
+  postal_code: 590034
+  address: 登別市鷲別町6丁目37-2
+  phone: 0143-87-0120
+  inauguration: 2002-11-12
+  close: 2099/12/31
+  sunday: 0
+  monday: 0
+  tuesday: 0
+  wednesday: 0
+  thursday: 0
+  friday: 0
+  saturday: 0
+  lat: 42.36341301
+  lng: 141.05730600
   zoom: 14
   landmarks: 
-
-
-# 岩瀬店
-iwase: 
+  seats_at_counter: 12
+  booths: 12
+  seq: 30
+bihoro:
+  area: douto
+  id: 1130
+  old_code: 121030
+  start_shows: 8
+  name: 美幌店
+  furigana: ビホロ
+  gname: bihoro
+  postal_code: 920027
+  address: 網走郡美幌町稲美68-101
+  phone: 01527-3-6558
+  inauguration: 2002-12-22
+  close: 2099/12/31
+  sunday: 0
+  monday: 0
+  tuesday: 0
+  wednesday: 0
+  thursday: 0
+  friday: 0
+  saturday: 0
+  lat: 43.81894599
+  lng: 144.11623300
+  zoom: 14
+  landmarks: ホーマックさん斜め向かい
+  seats_at_counter: 13
+  booths: 6
+  seq: 31
+mibu:
+  area: tochigi
+  id: 1209
+  old_code: 122009
+  start_shows: 9
+  name: 壬生店
+  furigana: ミブ
+  gname: mibu
+  postal_code: 3210201
+  address: 栃木県下都賀郡壬生町安塚2024-8
+  phone: 0282-86-2001
+  inauguration: 2003-03-01
+  close: 2099/12/31
+  sunday: 0
+  monday: 0
+  tuesday: 0
+  wednesday: 0
+  thursday: 0
+  friday: 0
+  saturday: 0
+  lat: 36.48897400
+  lng: 139.82734800
+  zoom: 14
+  landmarks: 
+  seats_at_counter: 13
+  booths: 8
+  seq: 32
+iwase:
+  area: kennan
   id: 1210
   old_code: 122010
   start_shows: 11
-  area: kennan
   name: 岩瀬店
   furigana: イワセ
   gname: iwase
   postal_code: 3091226
   address: 茨城県桜川市上野原241
   phone: 0296-76-2188
-  inauguration: 2003/04/10
+  inauguration: 2003-04-10
   close: 2099/12/31
   sunday: 0
   monday: 0
@@ -1262,24 +883,24 @@ iwase:
   friday: 0
   saturday: 0
   lat: 36.34831505
-  lng: 140.0530909
+  lng: 140.05309090
   zoom: 14
   landmarks: ハイテクランドセガさん向かい
-
-
-# 結城店
-yuuki: 
-  id: 1211
-  old_code: 122011
-  start_shows: 11
-  area: kennan
-  name: 結城店
-  furigana: ユウキ
-  gname: yuuki
-  postal_code: 3070001
-  address: 茨城県結城市結城6256
-  phone: 0296-33-3777
-  inauguration: 2003/07/05
+  seats_at_counter: 16
+  booths: 10
+  seq: 33
+date:
+  area: douto
+  id: 1131
+  old_code: 121031
+  start_shows: 8
+  name: 伊達店
+  furigana: ダテ
+  gname: date
+  postal_code: 520014
+  address: 伊達市舟岡町176-1
+  phone: 0142-25-0150
+  inauguration: 2003-04-28
   close: 2099/12/31
   sunday: 0
   monday: 0
@@ -1288,25 +909,52 @@ yuuki:
   thursday: 0
   friday: 0
   saturday: 0
-  lat: 36.28788
-  lng: 139.884887
+  lat: 42.46946200
+  lng: 140.87541100
+  zoom: 14
+  landmarks: 道の駅向かいパチンコビクトリアさん隣
+  seats_at_counter: 14
+  booths: 8
+  seq: 34
+yuuki:
+  area: kennan
+  id: 1211
+  old_code: 122011
+  start_shows: 11
+  name: 結城店
+  furigana: ユウキ
+  gname: yuuki
+  postal_code: 3070001
+  address: 茨城県結城市結城6256
+  phone: 0296-33-3777
+  inauguration: 2003-07-05
+  close: 2099/12/31
+  sunday: 0
+  monday: 0
+  tuesday: 0
+  wednesday: 0
+  thursday: 0
+  friday: 0
+  saturday: 0
+  lat: 36.28788000
+  lng: 139.88488700
   zoom: 14
   landmarks: JP結城局さん向かい
-
-
-# 春日部店
-kasukabe: 
+  seats_at_counter: 15
+  booths: 8
+  seq: 35
+kasukabe:
+  area: saitama
   id: 1212
   old_code: 122012
   start_shows: 9
-  area: saitama
   name: 春日部店
   furigana: カスカベ
   gname: kasukabe
   postal_code: 3440042
   address: 埼玉県春日部市増戸746-1
   phone: 048-755-7657
-  inauguration: 2003/07/11
+  inauguration: 2003-07-11
   close: 2099/12/31
   sunday: 0
   monday: 0
@@ -1316,24 +964,24 @@ kasukabe:
   friday: 0
   saturday: 0
   lat: 35.95499724
-  lng: 139.7263575
+  lng: 139.72635750
   zoom: 14
   landmarks: 
-
-
-# 宇都宮長岡店
-nagaoka: 
+  seats_at_counter: 19
+  booths: 12
+  seq: 36
+nagaoka:
+  area: tochigi
   id: 1213
   old_code: 122013
   start_shows: 9
-  area: tochigi
   name: 宇都宮長岡店
   furigana: ウツノミヤナガオカ
   gname: nagaoka
   postal_code: 3200004
   address: 栃木県宇都宮市長岡94-1
   phone: 028-643-6361
-  inauguration: 2003/07/23
+  inauguration: 2003-07-23
   close: 2099/12/31
   sunday: 0
   monday: 0
@@ -1343,24 +991,51 @@ nagaoka:
   friday: 0
   saturday: 0
   lat: 36.59735486
-  lng: 139.884955
+  lng: 139.88495500
   zoom: 14
   landmarks: へんこつさん隣（同敷地内）
-
-
-# 谷田部店
-yatabe: 
+  seats_at_counter: 15
+  booths: 8
+  seq: 37
+susukino:
+  area: sapporo
+  id: 1132
+  old_code: 121032
+  start_shows: 11
+  name: 新すすきの店
+  furigana: シンススキノ
+  gname: susukino
+  postal_code: 640806
+  address: 札幌市中央区南6条西4丁目5番地G4ビル1F
+  phone: 011-533-7785
+  inauguration: 2003-08-02
+  close: 2099/12/31
+  sunday: 0
+  monday: 0
+  tuesday: 0
+  wednesday: 0
+  thursday: 0
+  friday: 0
+  saturday: 0
+  lat: 43.05360397
+  lng: 141.35316900
+  zoom: 14
+  landmarks: 旧駅前通G4ビル１F（すすきの新宿通り付近）
+  seats_at_counter: 11
+  booths: 3
+  seq: 38
+yatabe:
+  area: kennan
   id: 1214
   old_code: 122014
   start_shows: 11
-  area: kennan
   name: 谷田部店
   furigana: ヤタベ
   gname: yatabe
   postal_code: 3050854
   address: 茨城県つくば市上横場275-5
   phone: 029-836-6888
-  inauguration: 2003/08/02
+  inauguration: 2003-08-02
   close: 2099/12/31
   sunday: 0
   monday: 0
@@ -1370,24 +1045,24 @@ yatabe:
   friday: 0
   saturday: 0
   lat: 36.04918138
-  lng: 140.08496
+  lng: 140.08496000
   zoom: 14
   landmarks: 
-
-
-# 柏店
-kashiwa: 
+  seats_at_counter: 14
+  booths: 12
+  seq: 39
+kashiwa:
+  area: tokatsu
   id: 1215
   old_code: 122015
   start_shows: 11
-  area: tokatsu
   name: 柏店
   furigana: カシワ
   gname: kashiwa
   postal_code: 2770871
   address: 千葉県柏市若柴143-1
   phone: 04-7135-2515
-  inauguration: 2003/08/08
+  inauguration: 2003-08-08
   close: 2099/12/31
   sunday: 0
   monday: 0
@@ -1396,25 +1071,25 @@ kashiwa:
   thursday: 0
   friday: 0
   saturday: 0
-  lat: 35.893786
-  lng: 139.958737
+  lat: 35.89378600
+  lng: 139.95873700
   zoom: 14
   landmarks: 
-
-
-# 水戸南店
-mitominami: 
+  seats_at_counter: 13
+  booths: 8
+  seq: 40
+mitominami:
+  area: mito
   id: 1216
   old_code: 122016
   start_shows: 11
-  area: mito
   name: 水戸南店
   furigana: ミトミナミ
   gname: mitominami
   postal_code: 3113116
   address: 茨城県東茨城郡茨城町長岡4294-1
   phone: 029-292-6168
-  inauguration: 2003/11/24
+  inauguration: 2003-11-24
   close: 2099/12/31
   sunday: 0
   monday: 0
@@ -1424,24 +1099,78 @@ mitominami:
   friday: 0
   saturday: 0
   lat: 36.31240383
-  lng: 140.4497608
+  lng: 140.44976080
   zoom: 14
   landmarks: 
-
-
-# 太田店
-ota: 
+  seats_at_counter: 14
+  booths: 12
+  seq: 41
+chitose:
+  area: douo
+  id: 1133
+  old_code: 121033
+  start_shows: 8
+  name: 千歳店
+  furigana: チトセ
+  gname: chitose
+  postal_code: 660043
+  address: 千歳市朝日町7丁目1-26
+  phone: 0123-26-7377
+  inauguration: 2003-12-12
+  close: 2099/12/31
+  sunday: 0
+  monday: 0
+  tuesday: 0
+  wednesday: 0
+  thursday: 0
+  friday: 0
+  saturday: 0
+  lat: 42.82102422
+  lng: 141.65697270
+  zoom: 14
+  landmarks: コスモGSさんより徒歩5分/パチンコハッピーさんより徒歩5分
+  seats_at_counter: 13
+  booths: 8
+  seq: 42
+yakumo:
+  area: dounan
+  id: 1134
+  old_code: 121034
+  start_shows: 8
+  name: 八雲店
+  furigana: ヤクモ
+  gname: yakumo
+  postal_code: 493105
+  address: 二海郡八雲町東雲町3-7
+  phone: 01376-3-2500
+  inauguration: 2003-12-24
+  close: 2099/12/31
+  sunday: 0
+  monday: 0
+  tuesday: 0
+  wednesday: 0
+  thursday: 0
+  friday: 0
+  saturday: 0
+  lat: 42.25673500
+  lng: 140.28066400
+  zoom: 14
+  landmarks: セイコーマートさんとなり
+  seats_at_counter: 13
+  booths: 6
+  seq: 43
+ota:
+  area: gunma
   id: 1217
   old_code: 122017
   start_shows: 9
-  area: gunma
   name: 太田店
   furigana: オオタ
   gname: ota
   postal_code: 3730018
   address: 群馬県太田市丸山町1275-1
   phone: 0276-37-7772
-  inauguration: 2003/12/25
+  inauguration: 2003-12-25
   close: 2099/12/31
   sunday: 0
   monday: 0
@@ -1451,24 +1180,24 @@ ota:
   friday: 0
   saturday: 0
   lat: 36.34358296
-  lng: 139.3831464
+  lng: 139.38314640
   zoom: 14
   landmarks: 吉野家さん隣
-
-
-# ひたちなか店
-hitachinaka: 
+  seats_at_counter: 14
+  booths: 10
+  seq: 44
+hitachinaka:
+  area: mito
   id: 1218
   old_code: 122018
   start_shows: 11
-  area: mito
   name: ひたちなか店
   furigana: ヒタチナカ
   gname: hitachinaka
   postal_code: 3120033
   address: 茨城県ひたちなか市市毛1083
   phone: 029-272-7730
-  inauguration: 2004/02/19
+  inauguration: 2004-02-19
   close: 2099/12/31
   sunday: 0
   monday: 0
@@ -1477,25 +1206,25 @@ hitachinaka:
   thursday: 0
   friday: 0
   saturday: 0
-  lat: 36.39767
-  lng: 140.50526
+  lat: 36.39767000
+  lng: 140.50526000
   zoom: 14
   landmarks: ケンタッキーフライドチキンさん隣
-
-
-# 成田店
-narita: 
+  seats_at_counter: 14
+  booths: 8
+  seq: 45
+narita:
+  area: narita
   id: 1219
   old_code: 122019
   start_shows: 10
-  area: narita
   name: 成田店
   furigana: ナリタ
   gname: narita
   postal_code: 2860021
   address: 千葉県成田市ウィング土屋68
   phone: 0476-22-5501
-  inauguration: 2004/03/24
+  inauguration: 2004-03-24
   close: 2099/12/31
   sunday: 0
   monday: 0
@@ -1505,24 +1234,24 @@ narita:
   friday: 0
   saturday: 0
   lat: 35.79445322
-  lng: 140.3191661
+  lng: 140.31916610
   zoom: 14
   landmarks: イオン成田ショッピングセンター隣
-
-
-# 足利店
-ashikaga: 
+  seats_at_counter: 12
+  booths: 8
+  seq: 46
+ashikaga:
+  area: tochigi
   id: 1220
   old_code: 122020
   start_shows: 9
-  area: tochigi
   name: 足利店
   furigana: アシカガ
   gname: ashikaga
   postal_code: 3260338
   address: 栃木県足利市福居町1595-1
   phone: 0284-72-7373
-  inauguration: 2004/04/21
+  inauguration: 2004-04-21
   close: 2099/12/31
   sunday: 0
   monday: 0
@@ -1532,24 +1261,24 @@ ashikaga:
   friday: 0
   saturday: 0
   lat: 36.30791896
-  lng: 139.4632151
+  lng: 139.46321510
   zoom: 14
   landmarks: まるまつさん隣（同敷地内）
-
-
-# 千葉中央区店
-chibachuo: 
+  seats_at_counter: 13
+  booths: 8
+  seq: 47
+chibachuo:
+  area: wangan
   id: 1221
   old_code: 122021
   start_shows: 9
-  area: wangan
   name: 千葉中央区店
   furigana: チバチュウオウク
   gname: chibachuo
   postal_code: 2600825
   address: 千葉市中央区村田町893-210-1
   phone: 043-261-8873
-  inauguration: 2004/06/13
+  inauguration: 2004-06-13
   close: 2099/12/31
   sunday: 0
   monday: 0
@@ -1558,25 +1287,52 @@ chibachuo:
   thursday: 0
   friday: 0
   saturday: 0
-  lat: 35.551812
-  lng: 140.12526
+  lat: 35.55181200
+  lng: 140.12526000
   zoom: 14
   landmarks: ドン・キホーテ向かい
-
-
-# 木更津店
-kisaradu: 
+  seats_at_counter: 13
+  booths: 8
+  seq: 48
+funami:
+  area: dounan
+  id: 1135
+  old_code: 121035
+  start_shows: 8
+  name: 苫小牧船見店
+  furigana: トマコマイフナミ
+  gname: funami
+  postal_code: 530007
+  address: 苫小牧市船見町1丁目3番3号
+  phone: 0144-36-8111
+  inauguration: 2004-06-30
+  close: 2099/12/31
+  sunday: 0
+  monday: 0
+  tuesday: 0
+  wednesday: 0
+  thursday: 0
+  friday: 0
+  saturday: 0
+  lat: 42.64723763
+  lng: 141.62686870
+  zoom: 14
+  landmarks: フェリーターミナル入り口看板より徒歩10分/エネオスGSさん斜め向かい
+  seats_at_counter: 13
+  booths: 8
+  seq: 49
+kisaradu:
+  area: wangan
   id: 1222
   old_code: 122022
   start_shows: 9
-  area: wangan
   name: 木更津店
   furigana: キサラヅ
   gname: kisaradu
   postal_code: 2920054
   address: 千葉県木更津市長須賀1892
   phone: 0438-25-2555
-  inauguration: 2004/07/06
+  inauguration: 2004-07-06
   close: 2099/12/31
   sunday: 0
   monday: 0
@@ -1585,25 +1341,25 @@ kisaradu:
   thursday: 0
   friday: 0
   saturday: 0
-  lat: 35.395269
-  lng: 139.941884
+  lat: 35.39526900
+  lng: 139.94188400
   zoom: 14
   landmarks: 
-
-
-# 高崎西店
-takasakinishi: 
+  seats_at_counter: 13
+  booths: 8
+  seq: 50
+takasakinishi:
+  area: gunma
   id: 1223
   old_code: 122023
   start_shows: 9
-  area: gunma
   name: 高崎西店
   furigana: タカサキニシ
   gname: takasakinishi
   postal_code: 3790111
   address: 群馬県安中市板鼻80-1
   phone: 027-381-4575
-  inauguration: 2004/10/06
+  inauguration: 2004-10-06
   close: 2099/12/31
   sunday: 0
   monday: 0
@@ -1613,24 +1369,51 @@ takasakinishi:
   friday: 0
   saturday: 0
   lat: 36.33416332
-  lng: 138.9466527
+  lng: 138.94665270
   zoom: 14
   landmarks: 西濃運輸さん斜め向かい、セブンイレブンさん隣
-
-
-# 伊勢崎宮子店
-miyako: 
+  seats_at_counter: 12
+  booths: 6
+  seq: 51
+hanamigawa:
+  area: wangan
+  id: 4224
+  old_code: 122024
+  start_shows: 9
+  name: 千葉花見川区店
+  furigana: チバハナミカワク
+  gname: hanamigawa
+  postal_code: 2620007
+  address: 千葉県千葉市花見川区大日町1379-2
+  phone: 043-286-2660
+  inauguration: 2004-12-01
+  close: 2099/12/31
+  sunday: 0
+  monday: 0
+  tuesday: 0
+  wednesday: 0
+  thursday: 0
+  friday: 0
+  saturday: 0
+  lat: 35.68405100
+  lng: 140.12822200
+  zoom: 14
+  landmarks: 
+  seats_at_counter: 12
+  booths: 8
+  seq: 52
+miyako:
+  area: gunma
   id: 1225
   old_code: 122025
   start_shows: 9
-  area: gunma
   name: 伊勢崎宮子店
   furigana: イセサキミヤコ
   gname: miyako
   postal_code: 1901213
   address: 群馬県伊勢崎市宮子町2921-1
   phone: 0270-21-5083
-  inauguration: 2005/02/19
+  inauguration: 2005-02-19
   close: 2099/12/31
   sunday: 0
   monday: 0
@@ -1639,25 +1422,25 @@ miyako:
   thursday: 0
   friday: 0
   saturday: 0
-  lat: 36.329068
-  lng: 139.167193
+  lat: 36.32906800
+  lng: 139.16719300
   zoom: 14
   landmarks: 吉野家さん、喜多方ラーメンさん並び
-
-
-# 瑞穂店
-mizuho: 
+  seats_at_counter: 10
+  booths: 8
+  seq: 53
+mizuho:
+  area: tama
   id: 1226
   old_code: 122026
   start_shows: 9
-  area: tama
   name: 瑞穂店
   furigana: ミズホ
   gname: mizuho
   postal_code: 3720801
   address: 東京都西多摩郡瑞穂町武蔵205-1
   phone: 042-556-3382
-  inauguration: 2005/02/19
+  inauguration: 2005-02-19
   close: 2099/12/31
   sunday: 0
   monday: 0
@@ -1666,25 +1449,25 @@ mizuho:
   thursday: 0
   friday: 0
   saturday: 0
-  lat: 35.765144
-  lng: 139.354159
+  lat: 35.76514400
+  lng: 139.35415900
   zoom: 14
   landmarks: 
-
-
-# 君津店
-kimitsu: 
+  seats_at_counter: 16
+  booths: 10
+  seq: 54
+kimitsu:
+  area: wangan
   id: 1227
   old_code: 122027
   start_shows: 9
-  area: wangan
   name: 君津店
   furigana: キミツ
   gname: kimitsu
   postal_code: 2991162
   address: 千葉県君津市南子安6-24-5
   phone: 0439-52-1633
-  inauguration: 2005/03/25
+  inauguration: 2005-03-25
   close: 2099/12/31
   sunday: 0
   monday: 0
@@ -1693,25 +1476,25 @@ kimitsu:
   thursday: 0
   friday: 0
   saturday: 0
-  lat: 35.325492
-  lng: 139.924326
+  lat: 35.32549200
+  lng: 139.92432600
   zoom: 14
   landmarks: 
-
-
-# 吹上店
-fukiage: 
+  seats_at_counter: 13
+  booths: 8
+  seq: 55
+fukiage:
+  area: saitama
   id: 1228
   old_code: 122028
   start_shows: 9
-  area: saitama
   name: 吹上店
   furigana: フキアゲ
   gname: fukiage
   postal_code: 3690113
   address: 埼玉県鴻巣市下忍3828-1
   phone: 048-548-1511
-  inauguration: 2005/04/17
+  inauguration: 2005-04-17
   close: 2099/12/31
   sunday: 0
   monday: 0
@@ -1721,24 +1504,24 @@ fukiage:
   friday: 0
   saturday: 0
   lat: 36.10068042
-  lng: 139.4650467
+  lng: 139.46504670
   zoom: 14
   landmarks: ファミリーマートさん斜め向かい
-
-
-# 狭山店
-sayama: 
+  seats_at_counter: 14
+  booths: 8
+  seq: 56
+sayama:
+  area: saitama
   id: 1229
   old_code: 122029
   start_shows: 9
-  area: saitama
   name: 狭山店
   furigana: サヤマ
   gname: sayama
   postal_code: 3501323
   address: 埼玉県狭山市鵜の木22-31
   phone: 04-2955-9123
-  inauguration: 2005/04/23
+  inauguration: 2005-04-23
   close: 2099/12/31
   sunday: 0
   monday: 0
@@ -1748,24 +1531,24 @@ sayama:
   friday: 0
   saturday: 0
   lat: 35.84781635
-  lng: 139.3925235
+  lng: 139.39252350
   zoom: 14
   landmarks: さやまジョンソン基地跡地公園近く
-
-
-# 高崎倉賀野店
-kuragano: 
+  seats_at_counter: 13
+  booths: 8
+  seq: 57
+kuragano:
+  area: gunma
   id: 1230
   old_code: 122030
   start_shows: 9
-  area: gunma
   name: 高崎倉賀野店
   furigana: タカサキクラガノ
   gname: kuragano
   postal_code: 3701201
   address: 群馬県高崎市倉賀野町2915-1
   phone: 027-347-8221
-  inauguration: 2005/06/13
+  inauguration: 2005-06-13
   close: 2099/12/31
   sunday: 0
   monday: 0
@@ -1775,24 +1558,24 @@ kuragano:
   friday: 0
   saturday: 0
   lat: 36.29476338
-  lng: 139.0695367
+  lng: 139.06953670
   zoom: 14
   landmarks: モービルさん隣り
-
-
-# 前橋亀里店
-kamesato: 
+  seats_at_counter: 14
+  booths: 8
+  seq: 58
+kamesato:
+  area: gunma
   id: 1231
   old_code: 122031
   start_shows: 9
-  area: gunma
   name: 前橋亀里店
   furigana: マエバシカメサト
   gname: kamesato
   postal_code: 3792147
   address: 群馬県前橋市亀里町336-2
   phone: 027-265-6881
-  inauguration: 2005/06/25
+  inauguration: 2005-06-25
   close: 2099/12/31
   sunday: 0
   monday: 0
@@ -1801,25 +1584,25 @@ kamesato:
   thursday: 0
   friday: 0
   saturday: 0
-  lat: 36.344258
-  lng: 139.089974
+  lat: 36.34425800
+  lng: 139.08997400
   zoom: 14
   landmarks: 朝鮮飯店さん並び
-
-
-# 名取店
-natori: 
+  seats_at_counter: 14
+  booths: 8
+  seq: 59
+natori:
+  area: miyagi
   id: 1232
   old_code: 122032
   start_shows: 9
-  area: miyagi
   name: 名取店
   furigana: ナトリ
   gname: natori
   postal_code: 9892412
   address: 宮城県名取市堀内町南竹75-3
   phone: 0223-23-4170
-  inauguration: 2005/07/11
+  inauguration: 2005-07-11
   close: 2099/12/31
   sunday: 0
   monday: 0
@@ -1828,25 +1611,25 @@ natori:
   thursday: 0
   friday: 0
   saturday: 0
-  lat: 38.120094
-  lng: 140.874987
+  lat: 38.12009400
+  lng: 140.87498700
   zoom: 14
   landmarks: 
-
-
-# 高崎中尾店
-nakao: 
+  seats_at_counter: 11
+  booths: 6
+  seq: 60
+nakao:
+  area: gunma
   id: 1233
   old_code: 122033
   start_shows: 9
-  area: gunma
   name: 高崎中尾店
   furigana: タカサキナカオ
   gname: nakao
   postal_code: 3700001
   address: 群馬県高崎市中尾町440-1
   phone: 027-364-8814
-  inauguration: 2005/07/29
+  inauguration: 2005-07-29
   close: 2099/12/31
   sunday: 0
   monday: 0
@@ -1855,25 +1638,25 @@ nakao:
   thursday: 0
   friday: 0
   saturday: 0
-  lat: 36.370072
-  lng: 139.023349
+  lat: 36.37007200
+  lng: 139.02334900
   zoom: 14
   landmarks: JP高崎中尾局向かい/サンクスさん隣
-
-
-# 富士店
-fuji: 
+  seats_at_counter: 13
+  booths: 10
+  seq: 61
+fuji:
+  area: shizuoka
   id: 1234
   old_code: 122034
   start_shows: 9
-  area: shizuoka
   name: 富士店
   furigana: フジノ
   gname: fuji
   postal_code: 4160945
   address: 静岡県富士市宮島1420-1
   phone: 0545-64-7010
-  inauguration: 2005/08/09
+  inauguration: 2005-08-09
   close: 2099/12/31
   sunday: 0
   monday: 0
@@ -1882,25 +1665,25 @@ fuji:
   thursday: 0
   friday: 0
   saturday: 0
-  lat: 35.135111
-  lng: 138.652831
+  lat: 35.13511100
+  lng: 138.65283100
   zoom: 14
   landmarks: エネオスさん隣
-
-
-# 熊谷店
-kumagaya: 
+  seats_at_counter: 13
+  booths: 10
+  seq: 62
+kumagaya:
+  area: saitama
   id: 1235
   old_code: 122035
   start_shows: 9
-  area: saitama
   name: 熊谷店
   furigana: クマガヤ
   gname: kumagaya
   postal_code: 3600841
   address: 埼玉県熊谷市新堀1029-2
   phone: 048-533-5933
-  inauguration: 2005/09/13
+  inauguration: 2005-09-13
   close: 2099/12/31
   sunday: 0
   monday: 0
@@ -1909,25 +1692,52 @@ kumagaya:
   thursday: 0
   friday: 0
   saturday: 0
-  lat: 36.180499
-  lng: 139.325466
+  lat: 36.18049900
+  lng: 139.32546600
   zoom: 14
   landmarks: まるまつさん隣（同敷地内）
-
-
-# 仙台泉区店
-izumiku: 
+  seats_at_counter: 14
+  booths: 8
+  seq: 63
+tsukisamu:
+  area: sapporo
+  id: 1137
+  old_code: 121037
+  start_shows: 11
+  name: 月寒店
+  furigana: ツキサム
+  gname: tsukisamu
+  postal_code: 620051
+  address: 札幌市豊平区月寒東１条15丁目9-25
+  phone: 011-856-0600
+  inauguration: 2005-10-05
+  close: 2099/12/31
+  sunday: 0
+  monday: 0
+  tuesday: 0
+  wednesday: 0
+  thursday: 0
+  friday: 0
+  saturday: 0
+  lat: 43.01856597
+  lng: 141.40778000
+  zoom: 15
+  landmarks: 札幌ドーム斜め向かい/ヤナセ札幌支店さん隣
+  seats_at_counter: 13
+  booths: 8
+  seq: 64
+izumiku:
+  area: miyagi
   id: 1236
   old_code: 122036
   start_shows: 9
-  area: miyagi
   name: 仙台泉区店
   furigana: センダイイズミク
   gname: izumiku
   postal_code: 9813131
   address: 仙台市泉区七北田字大沢木戸114-1
   phone: 022-773-8125
-  inauguration: 2005/10/05
+  inauguration: 2005-10-05
   close: 2099/12/31
   sunday: 0
   monday: 0
@@ -1936,25 +1746,25 @@ izumiku:
   thursday: 0
   friday: 0
   saturday: 0
-  lat: 38.3504
-  lng: 140.875056
+  lat: 38.35040000
+  lng: 140.87505600
   zoom: 14
   landmarks: 
-
-
-# いわき店
-iwaki: 
+  seats_at_counter: 13
+  booths: 8
+  seq: 65
+iwaki:
+  area: fukushima
   id: 1237
   old_code: 122037
   start_shows: 9
-  area: fukushima
   name: いわき店
   furigana: イワキ
   gname: iwaki
   postal_code: 9718145
   address: 福島県いわき市鹿島町船戸字京塚15-2
   phone: 0246-58-8840
-  inauguration: 2005/11/03
+  inauguration: 2005-11-03
   close: 2099/12/31
   sunday: 0
   monday: 0
@@ -1963,25 +1773,25 @@ iwaki:
   thursday: 0
   friday: 0
   saturday: 0
-  lat: 36.986515
-  lng: 140.902507
+  lat: 36.98651500
+  lng: 140.90250700
   zoom: 14
   landmarks: 
-
-
-# 上尾店
-ageo: 
+  seats_at_counter: 17
+  booths: 6
+  seq: 66
+ageo:
+  area: saitama
   id: 1238
   old_code: 122038
   start_shows: 9
-  area: saitama
   name: 上尾店
   furigana: アゲオ
   gname: ageo
   postal_code: 3620001
   address: 埼玉県上尾市上字堤下291-1
   phone: 048-771-3122
-  inauguration: 2005/12/02
+  inauguration: 2005-12-02
   close: 2099/12/31
   sunday: 0
   monday: 0
@@ -1990,25 +1800,25 @@ ageo:
   thursday: 0
   friday: 0
   saturday: 0
-  lat: 35.994249
-  lng: 139.576449
+  lat: 35.99424900
+  lng: 139.57644900
   zoom: 14
   landmarks: ファミリーマートさん隣り
-
-
-# 厚木店
-atsugi: 
+  seats_at_counter: 13
+  booths: 10
+  seq: 67
+atsugi:
+  area: kanagawa
   id: 1239
   old_code: 122039
   start_shows: 9
-  area: kanagawa
   name: 厚木店
   furigana: アツギ
   gname: atsugi
   postal_code: 2430804
   address: 神奈川県厚木市関口408-4
   phone: 046-245-5755
-  inauguration: 2006/02/20
+  inauguration: 2006-02-20
   close: 2099/12/31
   sunday: 0
   monday: 0
@@ -2018,24 +1828,24 @@ atsugi:
   friday: 0
   saturday: 0
   lat: 35.48839022
-  lng: 139.3648881
+  lng: 139.36488810
   zoom: 14
   landmarks: オートバックス斜め向かい
-
-
-# 石巻店
-ishinomaki: 
+  seats_at_counter: 13
+  booths: 8
+  seq: 68
+ishinomaki:
+  area: miyagi
   id: 1240
   old_code: 122040
   start_shows: 9
-  area: miyagi
   name: 石巻店
   furigana: イシノマキ
   gname: ishinomaki
   postal_code: 9860815
   address: 宮城県石巻市中里3-2-2
   phone: 0225-23-0555
-  inauguration: 2006/03/21
+  inauguration: 2006-03-21
   close: 2007/07/31
   sunday: 0
   monday: 0
@@ -2044,25 +1854,25 @@ ishinomaki:
   thursday: 0
   friday: 0
   saturday: 0
-  lat: 38.440975
-  lng: 141.297998
+  lat: 38.44097500
+  lng: 141.29799800
   zoom: 14
   landmarks: 
-
-
-# 鷲宮店
-washimiya: 
+  seats_at_counter: 
+  booths: 
+  seq: 69
+washimiya:
+  area: saitama
   id: 1241
   old_code: 122041
   start_shows: 9
-  area: saitama
   name: 鷲宮店
   furigana: ワシミヤ
   gname: washimiya
   postal_code: 3400206
   address: 埼玉県久喜市西大輪206-5
   phone: 0480-59-5855
-  inauguration: 2006/04/24
+  inauguration: 2006-04-24
   close: 2099/12/31
   sunday: 0
   monday: 0
@@ -2071,25 +1881,25 @@ washimiya:
   thursday: 0
   friday: 0
   saturday: 0
-  lat: 36.097492
-  lng: 139.67457
+  lat: 36.09749200
+  lng: 139.67457000
   zoom: 14
   landmarks: 
-
-
-# 岐阜瑞穂店
-gifumizuho: 
+  seats_at_counter: 12
+  booths: 8
+  seq: 70
+gifumizuho:
+  area: gifu
   id: 1242
   old_code: 122042
   start_shows: 9
-  area: gifu
   name: 岐阜瑞穂店
   furigana: ギフミズホ
   gname: gifumizuho
   postal_code: 5010223
   address: 岐阜県瑞穂市穂積605-1
   phone: 058-326-2660
-  inauguration: 2006/05/17
+  inauguration: 2006-05-17
   close: 2099/12/31
   sunday: 0
   monday: 0
@@ -2098,25 +1908,25 @@ gifumizuho:
   thursday: 0
   friday: 0
   saturday: 0
-  lat: 35.388352
-  lng: 136.694748
+  lat: 35.38835200
+  lng: 136.69474800
   zoom: 14
   landmarks: ココスさん隣
-
-
-# 大垣店
-ogaki: 
+  seats_at_counter: 15
+  booths: 8
+  seq: 71
+ogaki:
+  area: gifu
   id: 1243
   old_code: 122043
   start_shows: 9
-  area: gifu
   name: 大垣店
   furigana: オオガキ
   gname: ogaki
   postal_code: 5030936
   address: 岐阜県大垣市内原2-183-2
   phone: 0584-89-1666
-  inauguration: 2006/06/23
+  inauguration: 2006-06-23
   close: 2099/12/31
   sunday: 0
   monday: 0
@@ -2125,25 +1935,25 @@ ogaki:
   thursday: 0
   friday: 0
   saturday: 0
-  lat: 35.317209
-  lng: 136.618516
+  lat: 35.31720900
+  lng: 136.61851600
   zoom: 14
   landmarks: 
-
-
-# 佐野店
-sano: 
+  seats_at_counter: 13
+  booths: 6
+  seq: 72
+sano:
+  area: tochigi
   id: 1244
   old_code: 122044
   start_shows: 9
-  area: tochigi
   name: 佐野店
   furigana: サノ
   gname: sano
   postal_code: 3270822
   address: 栃木県佐野市越名町2039-5
   phone: 0283-24-1552
-  inauguration: 2006/07/19
+  inauguration: 2006-07-19
   close: 2099/12/31
   sunday: 0
   monday: 0
@@ -2152,25 +1962,25 @@ sano:
   thursday: 0
   friday: 0
   saturday: 0
-  lat: 36.296089
-  lng: 139.601482
+  lat: 36.29608900
+  lng: 139.60148200
   zoom: 14
   landmarks: ＪＥＮＳＧＥＲＤＥＮさん隣
-
-
-# 野田店
-noda: 
+  seats_at_counter: 15
+  booths: 6
+  seq: 73
+noda:
+  area: tokatsu
   id: 1245
   old_code: 122045
   start_shows: 11
-  area: tokatsu
   name: 野田店
   furigana: ノダ
   gname: noda
   postal_code: 2780021
   address: 千葉県野田市堤根7-1
   phone: 04-7125-1109
-  inauguration: 2006/07/29
+  inauguration: 2006-07-29
   close: 2099/12/31
   sunday: 0
   monday: 0
@@ -2179,25 +1989,25 @@ noda:
   thursday: 0
   friday: 0
   saturday: 0
-  lat: 35.937266
-  lng: 139.890091
+  lat: 35.93726600
+  lng: 139.89009100
   zoom: 14
   landmarks: 養老の滝梅郷店さん隣
-
-
-# 笛吹店
-fuefuki: 
+  seats_at_counter: 13
+  booths: 6
+  seq: 74
+fuefuki:
+  area: yamanashi
   id: 1246
   old_code: 122046
   start_shows: 9
-  area: yamanashi
   name: 笛吹店
   furigana: フエフキ
   gname: fuefuki
   postal_code: 4060801
   address: 山梨県笛吹市御坂町成田1802-1
   phone: 055-262-7626
-  inauguration: 2006/08/10
+  inauguration: 2006-08-10
   close: 2099/12/31
   sunday: 0
   monday: 0
@@ -2206,25 +2016,25 @@ fuefuki:
   thursday: 0
   friday: 0
   saturday: 0
-  lat: 35.642859
-  lng: 138.645487
+  lat: 35.64285900
+  lng: 138.64548700
   zoom: 14
   landmarks: イエローハットさん隣
-
-
-# さいたま宮前店
-miyamae: 
+  seats_at_counter: 14
+  booths: 8
+  seq: 75
+miyamae:
+  area: saitama
   id: 1247
   old_code: 122047
   start_shows: 9
-  area: saitama
   name: さいたま宮前店
   furigana: サイタマミヤマエ
   gname: miyamae
   postal_code: 3310046
   address: 埼玉県さいたま市西区宮前町733-1
   phone: 048-622-8266
-  inauguration: 2006/09/21
+  inauguration: 2006-09-21
   close: 2099/12/31
   sunday: 0
   monday: 0
@@ -2233,25 +2043,25 @@ miyamae:
   thursday: 0
   friday: 0
   saturday: 0
-  lat: 35.924356
-  lng: 139.58399
+  lat: 35.92435600
+  lng: 139.58399000
   zoom: 14
   landmarks: 
-
-
-# 浜松有玉店
-aritama: 
+  seats_at_counter: 15
+  booths: 6
+  seq: 76
+aritama:
+  area: hamamatsu
   id: 1248
   old_code: 122048
   start_shows: 9
-  area: hamamatsu
   name: 浜松有玉店
   furigana: ハママツアリタマ
   gname: aritama
   postal_code: 4313121
   address: 静岡県浜松市東区有玉北町2281-1
   phone: 053-435-3711
-  inauguration: 2006/09/25
+  inauguration: 2006-09-25
   close: 2099/12/31
   sunday: 0
   monday: 0
@@ -2260,25 +2070,25 @@ aritama:
   thursday: 0
   friday: 0
   saturday: 0
-  lat: 34.759208
-  lng: 137.7527
+  lat: 34.75920800
+  lng: 137.75270000
   zoom: 14
   landmarks: 本場たい焼き研究所さん隣
-
-
-# 福島矢野目店
-yanome: 
+  seats_at_counter: 15
+  booths: 6
+  seq: 77
+yanome:
+  area: fukushima
   id: 1249
   old_code: 122049
   start_shows: 9
-  area: fukushima
   name: 福島矢野目店
   furigana: フクシマヤノメ
   gname: yanome
   postal_code: 9600112
   address: 福島県福島市南矢野目字鵯目51-5
   phone: 024-557-0577
-  inauguration: 2006/10/13
+  inauguration: 2006-10-13
   close: 2099/12/31
   sunday: 0
   monday: 0
@@ -2287,25 +2097,25 @@ yanome:
   thursday: 0
   friday: 0
   saturday: 0
-  lat: 37.789319
-  lng: 140.460109
+  lat: 37.78931900
+  lng: 140.46010900
   zoom: 14
   landmarks: 洋服の青山向かい
-
-
-# 浜松入野店
-irino: 
+  seats_at_counter: 13
+  booths: 6
+  seq: 78
+irino:
+  area: hamamatsu
   id: 1250
   old_code: 122050
   start_shows: 9
-  area: hamamatsu
   name: 浜松入野店
   furigana: ハママツイリノ
   gname: irino
   postal_code: 4328061
   address: 静岡県浜松市西区入野町9463-1
   phone: 053-440-6227
-  inauguration: 2006/11/11
+  inauguration: 2006-11-11
   close: 2099/12/31
   sunday: 0
   monday: 0
@@ -2314,25 +2124,25 @@ irino:
   thursday: 0
   friday: 0
   saturday: 0
-  lat: 34.697493
-  lng: 137.684497
+  lat: 34.69749300
+  lng: 137.68449700
   zoom: 14
   landmarks: ハローズガーデンスーパードーム浜松さん近く
-
-
-# 守谷店
-moriya: 
+  seats_at_counter: 18
+  booths: 6
+  seq: 79
+moriya:
+  area: kennan
   id: 1251
   old_code: 122051
   start_shows: 11
-  area: kennan
   name: 守谷店
   furigana: モリヤ
   gname: moriya
   postal_code: 3020118
   address: 茨城県守谷市立沢2062-1
   phone: 0297-48-6117
-  inauguration: 2006/12/10
+  inauguration: 2006-12-10
   close: 2099/12/31
   sunday: 0
   monday: 0
@@ -2342,24 +2152,24 @@ moriya:
   friday: 0
   saturday: 0
   lat: 35.95988736
-  lng: 139.986247
+  lng: 139.98624700
   zoom: 14
   landmarks: かっぱ寿司さん隣
-
-
-# 山形青田店
-aota: 
+  seats_at_counter: 15
+  booths: 6
+  seq: 80
+aota:
+  area: yamagata
   id: 1252
   old_code: 122052
   start_shows: 9
-  area: yamagata
   name: 山形青田店
   furigana: ヤマガタアオタ
   gname: aota
   postal_code: 9902435
   address: 山形県山形市青田5-15-50
   phone: 023-625-7811
-  inauguration: 2007/02/22
+  inauguration: 2007-02-22
   close: 2099/12/31
   sunday: 0
   monday: 0
@@ -2368,25 +2178,25 @@ aota:
   thursday: 0
   friday: 0
   saturday: 0
-  lat: 38.221139
-  lng: 140.331326
+  lat: 38.22113900
+  lng: 140.33132600
   zoom: 14
   landmarks: ネッツトヨタ山形向かい
-
-
-# 水戸内原店
-uchihara: 
+  seats_at_counter: 13
+  booths: 6
+  seq: 81
+uchihara:
+  area: mito
   id: 1253
   old_code: 122053
   start_shows: 11
-  area: mito
   name: 水戸内原店
   furigana: ミトウチハラ
   gname: uchihara
   postal_code: 3190305
   address: 茨城県水戸市中原町526-1
   phone: 029-259-6056
-  inauguration: 2007/03/12
+  inauguration: 2007-03-12
   close: 2099/12/31
   sunday: 0
   monday: 0
@@ -2395,25 +2205,25 @@ uchihara:
   thursday: 0
   friday: 0
   saturday: 0
-  lat: 36.377308
-  lng: 140.360805
+  lat: 36.37730800
+  lng: 140.36080500
   zoom: 14
   landmarks: イオン水戸内原ショッピングセンター向かい
-
-
-# 相模原店
-sagamihara: 
+  seats_at_counter: 15
+  booths: 6
+  seq: 82
+sagamihara:
+  area: kanagawa
   id: 1254
   old_code: 122054
   start_shows: 9
-  area: kanagawa
   name: 相模原店
   furigana: サガミハラ
   gname: sagamihara
   postal_code: 2520243
   address: 神奈川県相模原市中央区上溝4089-2
   phone: 042-762-7010
-  inauguration: 2007/03/22
+  inauguration: 2007-03-22
   close: 2099/12/31
   sunday: 0
   monday: 0
@@ -2422,25 +2232,25 @@ sagamihara:
   thursday: 0
   friday: 0
   saturday: 0
-  lat: 35.562957
-  lng: 139.346557
+  lat: 35.56295700
+  lng: 139.34655700
   zoom: 14
   landmarks: タイヤ館さん隣
-
-
-# 豊橋下地店
-shimoji: 
+  seats_at_counter: 13
+  booths: 6
+  seq: 83
+shimoji:
+  area: aichi
   id: 1255
   old_code: 122055
   start_shows: 9
-  area: aichi
   name: 豊橋下地店
   furigana: トヨハシシモジ
   gname: shimoji
   postal_code: 4400086
   address: 愛知県豊橋市下地町宮前20-1
   phone: 0532-56-2272
-  inauguration: 2007/06/21
+  inauguration: 2007-06-21
   close: 2099/12/31
   sunday: 0
   monday: 0
@@ -2450,24 +2260,24 @@ shimoji:
   friday: 0
   saturday: 0
   lat: 34.77823872
-  lng: 137.3852641
+  lng: 137.38526410
   zoom: 14
   landmarks: 瀬上交差点近く
-
-
-# 大口店
-oguchi: 
+  seats_at_counter: 15
+  booths: 6
+  seq: 84
+oguchi:
+  area: aichi
   id: 1256
   old_code: 122056
   start_shows: 9
-  area: aichi
   name: 大口店
   furigana: オオグチ
   gname: oguchi
   postal_code: 4800125
   address: 愛知県丹羽郡大口町外坪1-25
   phone: 0587-95-7078
-  inauguration: 2007/07/19
+  inauguration: 2007-07-19
   close: 2099/12/31
   sunday: 0
   monday: 0
@@ -2476,25 +2286,25 @@ oguchi:
   thursday: 0
   friday: 0
   saturday: 0
-  lat: 35.325492
-  lng: 136.917391
+  lat: 35.32549200
+  lng: 136.91739100
   zoom: 14
   landmarks: ファミリーマートさん隣
-
-
-# 桑名店
-kuwana: 
+  seats_at_counter: 15
+  booths: 6
+  seq: 85
+kuwana:
+  area: mie
   id: 1257
   old_code: 122057
   start_shows: 9
-  area: mie
   name: 桑名店
   furigana: クワナ
   gname: kuwana
   postal_code: 5110838
   address: 三重県桑名市和泉字ホノ割567
   phone: 0594-23-8610
-  inauguration: 2007/10/19
+  inauguration: 2007-10-19
   close: 2099/12/31
   sunday: 0
   monday: 0
@@ -2503,25 +2313,52 @@ kuwana:
   thursday: 0
   friday: 0
   saturday: 0
-  lat: 35.041357
-  lng: 136.691814
+  lat: 35.04135700
+  lng: 136.69181400
   zoom: 14
   landmarks: 三重日産さん隣
-
-
-# さいたま丸ヶ崎店
-marugasaki: 
+  seats_at_counter: 13
+  booths: 6
+  seq: 86
+ooyachi:
+  area: sapporo
+  id: 1138
+  old_code: 121038
+  start_shows: 11
+  name: 大谷地店
+  furigana: オオヤチ
+  gname: ooyachi
+  postal_code: 40041
+  address: 札幌市厚別区大谷地東2丁目1-1
+  phone: 011-895-3788
+  inauguration: 2007-12-19
+  close: 2099/12/31
+  sunday: 0
+  monday: 0
+  tuesday: 0
+  wednesday: 0
+  thursday: 0
+  friday: 0
+  saturday: 0
+  lat: 43.02808400
+  lng: 141.44848100
+  zoom: 15
+  landmarks: 
+  seats_at_counter: 29
+  booths: 10
+  seq: 87
+marugasaki:
+  area: saitama
   id: 1258
   old_code: 122058
   start_shows: 9
-  area: saitama
   name: さいたま丸ヶ崎店
   furigana: サイタママルガサキ
   gname: marugasaki
   postal_code: 3370001
   address: さいたま市見沼区丸ヶ崎1077-1
   phone: 048-685-2685
-  inauguration: 2007/12/25
+  inauguration: 2007-12-25
   close: 2099/12/31
   sunday: 0
   monday: 0
@@ -2530,25 +2367,25 @@ marugasaki:
   thursday: 0
   friday: 0
   saturday: 0
-  lat: 35.958397
-  lng: 139.656124
+  lat: 35.95839700
+  lng: 139.65612400
   zoom: 14
   landmarks: ファミリーマートさん近く
-
-
-# 鈴鹿店
-suzuka: 
+  seats_at_counter: 26
+  booths: 8
+  seq: 88
+suzuka:
+  area: mie
   id: 1259
   old_code: 122059
   start_shows: 9
-  area: mie
   name: 鈴鹿店
   furigana: スズカ
   gname: suzuka
   postal_code: 5130816
   address: 三重県鈴鹿市南玉垣町2318-1
   phone: 059-383-7767
-  inauguration: 2008/03/10
+  inauguration: 2008-03-10
   close: 2011/12/18
   sunday: 0
   monday: 0
@@ -2557,25 +2394,25 @@ suzuka:
   thursday: 0
   friday: 0
   saturday: 0
-  lat: 34.857735
-  lng: 136.588259
+  lat: 34.85773500
+  lng: 136.58825900
   zoom: 14
   landmarks: びっくりドンキーさんななめ向かい
-
-
-# 平塚店
-hiratsuka: 
+  seats_at_counter: 22
+  booths: 7
+  seq: 89
+hiratsuka:
+  area: kanagawa
   id: 1260
   old_code: 122060
   start_shows: 9
-  area: kanagawa
   name: 平塚店
   furigana: ヒラツカテン
   gname: hiratsuka
   postal_code: 2540018
   address: 神奈川県平塚市東真土2丁目8-5
   phone: 0463-53-2206
-  inauguration: 2008/06/16
+  inauguration: 2008-06-16
   close: 2099/12/31
   sunday: 0
   monday: 0
@@ -2584,25 +2421,25 @@ hiratsuka:
   thursday: 0
   friday: 0
   saturday: 0
-  lat: 35.356209
-  lng: 139.357184
+  lat: 35.35620900
+  lng: 139.35718400
   zoom: 14
   landmarks: リンガーハットさん隣
-
-
-# 八千代店
-yachiyo: 
+  seats_at_counter: 15
+  booths: 7
+  seq: 90
+yachiyo:
+  area: wangan
   id: 1261
   old_code: 122061
   start_shows: 9
-  area: wangan
   name: 八千代店
   furigana: ヤチヨテン
   gname: yachiyo
   postal_code: 2760008
   address: 千葉県八千代市神久保150-1
   phone: 047-488-0007
-  inauguration: 2008/07/07
+  inauguration: 2008-07-07
   close: 2099/12/31
   sunday: 0
   monday: 0
@@ -2611,25 +2448,25 @@ yachiyo:
   thursday: 0
   friday: 0
   saturday: 0
-  lat: 35.771384
-  lng: 140.095156
+  lat: 35.77138400
+  lng: 140.09515600
   zoom: 15
   landmarks: 国際レディースGC近く
-
-
-# 東千葉店
-higashichiba: 
+  seats_at_counter: 14
+  booths: 11
+  seq: 91
+higashichiba:
+  area: wangan
   id: 1262
   old_code: 122062
   start_shows: 9
-  area: wangan
   name: 東千葉店
   furigana: ヒガシチバテン
   gname: higashichiba
   postal_code: 2600041
   address: 千葉県千葉市中央区東千葉3丁目14-25
   phone: 043-206-0666
-  inauguration: 2008/07/07
+  inauguration: 2008-07-07
   close: 2099/12/31
   sunday: 0
   monday: 0
@@ -2638,25 +2475,25 @@ higashichiba:
   thursday: 0
   friday: 0
   saturday: 0
-  lat: 35.626939
-  lng: 140.126662
+  lat: 35.62693900
+  lng: 140.12666200
   zoom: 14
   landmarks: 
-
-
-# つくば中央店
-tsukubachuo: 
+  seats_at_counter: 27
+  booths: 8
+  seq: 92
+tsukubachuo:
+  area: kennan
   id: 1263
   old_code: 122063
   start_shows: 11
-  area: kennan
   name: つくば中央店
   furigana: ツクバチュウオウテン
   gname: tsukubachuo
   postal_code: 3050034
   address: 茨城県つくば市小野崎127番地1
   phone: 029-859-7335
-  inauguration: 2008/09/18
+  inauguration: 2008-09-18
   close: 2099/12/31
   sunday: 0
   monday: 0
@@ -2665,25 +2502,79 @@ tsukubachuo:
   thursday: 0
   friday: 0
   saturday: 0
-  lat: 36.076607
-  lng: 140.105899
+  lat: 36.07660700
+  lng: 140.10589900
   zoom: 15
   landmarks: ララガーデンさん並び
-
-
-# 浜松薬師店
-yakushi: 
+  seats_at_counter: 6
+  booths: 9
+  seq: 93
+obihirominami:
+  area: douto
+  id: 1139
+  old_code: 121039
+  start_shows: 8
+  name: 帯広南店
+  furigana: オビヒロミナミ
+  gname: obihirominami
+  postal_code: 800016
+  address: 北海道帯広市西六条南41丁目5-18
+  phone: 0155-47-6766
+  inauguration: 2008-10-30
+  close: 2099/12/31
+  sunday: 0
+  monday: 0
+  tuesday: 0
+  wednesday: 0
+  thursday: 0
+  friday: 0
+  saturday: 0
+  lat: 42.88232600
+  lng: 143.20069800
+  zoom: 15
+  landmarks: 
+  seats_at_counter: 11
+  booths: 8
+  seq: 94
+tanukikoji:
+  area: sapporo
+  id: 1140
+  old_code: 121040
+  start_shows: 11
+  name: 狸小路4丁目店
+  furigana: タヌキコウジ4チョウメテン
+  gname: tanukikoji
+  postal_code: 600063
+  address: 北海道札幌市中央区南三条西4丁目
+  phone: 011-233-1633
+  inauguration: 2008-12-22
+  close: 2099/12/31
+  sunday: 0
+  monday: 0
+  tuesday: 0
+  wednesday: 0
+  thursday: 0
+  friday: 0
+  saturday: 0
+  lat: 43.05702800
+  lng: 141.35169600
+  zoom: 16
+  landmarks: 中川ライター店さんとなり
+  seats_at_counter: 8
+  booths: 5
+  seq: 95
+yakushi:
+  area: hamamatsu
   id: 1264
   old_code: 122064
   start_shows: 9
-  area: hamamatsu
   name: 浜松薬師店
   furigana: ハママツヤクシテン
   gname: yakushi
   postal_code: 4350017
   address: 静岡県浜松市東区薬師町73-1
   phone: 053-422-7227
-  inauguration: 2009/03/24
+  inauguration: 2009-03-24
   close: 2099/12/31
   sunday: 0
   monday: 0
@@ -2692,25 +2583,25 @@ yakushi:
   thursday: 0
   friday: 0
   saturday: 0
-  lat: 34.725332
-  lng: 137.779249
+  lat: 34.72533200
+  lng: 137.77924900
   zoom: 15
   landmarks: ガリバーさん向い
-
-
-# 高田馬場店
-baba: 
+  seats_at_counter: 8
+  booths: 6
+  seq: 96
+baba:
+  area: tokyo
   id: 1265
   old_code: 122065
   start_shows: 9
-  area: tokyo
   name: 高田馬場店
   furigana: タカダノババテン
   gname: baba
   postal_code: 1690075
   address: 東京都新宿区高田馬場
   phone: 03-3200-2282
-  inauguration: 2009/04/10
+  inauguration: 2009-04-10
   close: 2011/04/30
   sunday: 0
   monday: 0
@@ -2719,25 +2610,25 @@ baba:
   thursday: 0
   friday: 0
   saturday: 0
-  lat: 35.711674
-  lng: 139.709744
+  lat: 35.71167400
+  lng: 139.70974400
   zoom: 16
   landmarks: サンクスさん/松屋さんとなり
-
-
-# 伊奈町店
-inamachi: 
+  seats_at_counter: 15
+  booths: 10
+  seq: 97
+inamachi:
+  area: saitama
   id: 1266
   old_code: 122066
   start_shows: 9
-  area: saitama
   name: 伊奈町店
   furigana: イナマチテン
   gname: inamachi
   postal_code: 3620805
   address: 埼玉県北足立郡伊奈町栄2丁目12
   phone: 048-723-6853
-  inauguration: 2009/05/27
+  inauguration: 2009-05-27
   close: 2011/04/11
   sunday: 0
   monday: 0
@@ -2746,25 +2637,25 @@ inamachi:
   thursday: 0
   friday: 0
   saturday: 0
-  lat: 35.976027
-  lng: 139.639025
+  lat: 35.97602700
+  lng: 139.63902500
   zoom: 14
   landmarks: カラオケマック伊奈店さんななめ向かい
-
-
-# 成田飯仲店
-iinaka: 
+  seats_at_counter: 24
+  booths: 14
+  seq: 98
+iinaka:
+  area: narita
   id: 1267
   old_code: 122067
   start_shows: 10
-  area: narita
   name: 成田飯仲店
   furigana: ナリタイイナカテン
   gname: iinaka
   postal_code: 2860046
   address: 千葉県成田市飯仲11
   phone: 0476-22-3137
-  inauguration: 2009/06/11
+  inauguration: 2009-06-11
   close: 2099/12/31
   sunday: 0
   monday: 0
@@ -2773,25 +2664,52 @@ iinaka:
   thursday: 0
   friday: 0
   saturday: 0
-  lat: 35.757466
-  lng: 140.302534
+  lat: 35.75746600
+  lng: 140.30253400
   zoom: 15
   landmarks: トイザらスさん向かい
-
-
-# 沼津柿田川店
-kakitagawa: 
+  seats_at_counter: 18
+  booths: 9
+  seq: 99
+asari:
+  area: douo
+  id: 1141
+  old_code: 121041
+  start_shows: 9
+  name: 朝里店
+  furigana: アサリテン
+  gname: asari
+  postal_code: 470152
+  address: 北海道小樽市新光2丁目2-5
+  phone: 0134-54-0718
+  inauguration: 2009-06-17
+  close: 2099/12/31
+  sunday: 0
+  monday: 0
+  tuesday: 0
+  wednesday: 0
+  thursday: 0
+  friday: 0
+  saturday: 0
+  lat: 43.17470000
+  lng: 141.06009700
+  zoom: 14
+  landmarks: 
+  seats_at_counter: 11
+  booths: 9
+  seq: 100
+kakitagawa:
+  area: shizuoka
   id: 1268
   old_code: 122068
   start_shows: 9
-  area: shizuoka
   name: 沼津柿田川店
   furigana: カキタガワテン
   gname: kakitagawa
   postal_code: 4110906
   address: 静岡県駿東郡清水町八幡174-2
   phone: 055-981-1182
-  inauguration: 2009/11/10
+  inauguration: 2009-11-10
   close: 2099/12/31
   sunday: 0
   monday: 0
@@ -2800,25 +2718,25 @@ kakitagawa:
   thursday: 0
   friday: 0
   saturday: 0
-  lat: 35.108818
-  lng: 138.896839
+  lat: 35.10881800
+  lng: 138.89683900
   zoom: 14
   landmarks: 
-
-
-# かすみがうら店
-kasumigaura: 
+  seats_at_counter: 
+  booths: 
+  seq: 101
+kasumigaura:
+  area: kennan
   id: 1269
   old_code: 122069
   start_shows: 11
-  area: kennan
   name: かすみがうら店
   furigana: カスミガウラテン
   gname: kasumigaura
   postal_code: 3150056
   address: 茨城県かすみがうら市 上稲吉1943-19
   phone: 0299-59-7750
-  inauguration: 2009/11/16
+  inauguration: 2009-11-16
   close: 2099/12/31
   sunday: 0
   monday: 0
@@ -2827,25 +2745,25 @@ kasumigaura:
   thursday: 0
   friday: 0
   saturday: 0
-  lat: 36.131272
-  lng: 140.225584
+  lat: 36.13127200
+  lng: 140.22558400
   zoom: 14
   landmarks: マクドナルドさんとなり
-
-
-# 音羽蒲郡店
-gamagori: 
+  seats_at_counter: 
+  booths: 
+  seq: 102
+gamagori:
+  area: aichi
   id: 1270
   old_code: 122070
   start_shows: 9
-  area: aichi
   name: 音羽蒲郡店
   furigana: オトワガマゴオリテン
   gname: gamagori
   postal_code: 4410202
   address: 愛知県豊川市赤坂町大日275
   phone: 0533-88-8668
-  inauguration: 2009/12/09
+  inauguration: 2009-12-09
   close: 2099/12/31
   sunday: 0
   monday: 0
@@ -2854,25 +2772,25 @@ gamagori:
   thursday: 0
   friday: 0
   saturday: 0
-  lat: 34.855325
-  lng: 137.312496
+  lat: 34.85532500
+  lng: 137.31249600
   zoom: 14
   landmarks: 赤坂町丁田交差点を岡崎方面へ200メートル
-
-
-# 水戸城南店
-jonan: 
+  seats_at_counter: 
+  booths: 
+  seq: 103
+jonan:
+  area: mito
   id: 1271
   old_code: 122071
   start_shows: 11
-  area: mito
   name: 水戸城南店
   furigana: ミトジョウナンテン
   gname: jonan
   postal_code: 3100803
   address: 茨城県水戸市城南3-8-11
   phone: 029-225-7222
-  inauguration: 2009/12/22
+  inauguration: 2009-12-22
   close: 2099/12/31
   sunday: 0
   monday: 0
@@ -2881,25 +2799,25 @@ jonan:
   thursday: 0
   friday: 0
   saturday: 0
-  lat: 36.366084
-  lng: 140.482966
+  lat: 36.36608400
+  lng: 140.48296600
   zoom: 14
   landmarks: おたる寿しさんとなり
-
-
-# 新宿歌舞伎町店
-kabukicho: 
+  seats_at_counter: 
+  booths: 
+  seq: 104
+kabukicho:
+  area: tokyo
   id: 1272
   old_code: 122072
   start_shows: 9
-  area: tokyo
   name: 新宿歌舞伎町店
   furigana: シンジュクカブキチョウテン
   gname: kabukicho
   postal_code: 1600021
   address: 東京都新宿区歌舞伎町1-15-8
   phone: 03-3202-5575
-  inauguration: 2009/12/25
+  inauguration: 2009-12-25
   close: 2011/05/10
   sunday: 0
   monday: 0
@@ -2908,25 +2826,25 @@ kabukicho:
   thursday: 0
   friday: 0
   saturday: 0
-  lat: 35.694281
-  lng: 139.702169
+  lat: 35.69428100
+  lng: 139.70216900
   zoom: 15
   landmarks: 靖国通ドンキホーテさん角を入って２本目を右
-
-
-# 池袋西口店
-ikebukuro: 
+  seats_at_counter: 
+  booths: 
+  seq: 105
+ikebukuro:
+  area: tokyo
   id: 1273
   old_code: 122073
   start_shows: 9
-  area: tokyo
   name: 池袋西口店
   furigana: イケブクロニシグチテン
   gname: ikebukuro
   postal_code: 1710021
   address: 東京都豊島区西池袋1-34
   phone: 03-6912-7667
-  inauguration: 2010/02/24
+  inauguration: 2010-02-24
   close: 2013/04/30
   sunday: 0
   monday: 0
@@ -2935,25 +2853,25 @@ ikebukuro:
   thursday: 0
   friday: 0
   saturday: 0
-  lat: 35.732614
-  lng: 139.710234
+  lat: 35.73261400
+  lng: 139.71023400
   zoom: 15
   landmarks: 
-
-
-# 日立滑川店
-namekawa: 
+  seats_at_counter: 
+  booths: 
+  seq: 106
+namekawa:
+  area: mito
   id: 1274
   old_code: 122074
   start_shows: 11
-  area: mito
   name: 日立滑川店
   furigana: ヒタチナメカワテン
   gname: namekawa
   postal_code: 3170052
   address: 茨城県日立市東滑川町5-5-25
   phone: 0294-43-2227
-  inauguration: 2010/03/08
+  inauguration: 2010-03-08
   close: 2013/05/06
   sunday: 0
   monday: 0
@@ -2962,25 +2880,25 @@ namekawa:
   thursday: 0
   friday: 0
   saturday: 0
-  lat: 36.620781
-  lng: 140.678553
+  lat: 36.62078100
+  lng: 140.67855300
   zoom: 13
   landmarks: 
-
-
-# 越谷レイクタウン店
-laketown: 
+  seats_at_counter: 
+  booths: 
+  seq: 107
+laketown:
+  area: saitama
   id: 1275
   old_code: 122075
   start_shows: 9
-  area: saitama
   name: 越谷レイクタウン店
   furigana: コシガヤレイクタウンテン
   gname: laketown
   postal_code: 3430825
   address: 埼玉県越谷市大成町3-233-1
   phone: 048-999-6636
-  inauguration: 2010/04/06
+  inauguration: 2010-04-06
   close: 2099/12/31
   sunday: 0
   monday: 0
@@ -2989,25 +2907,25 @@ laketown:
   thursday: 0
   friday: 0
   saturday: 0
-  lat: 35.884252
-  lng: 139.817204
+  lat: 35.88425200
+  lng: 139.81720400
   zoom: 13
   landmarks: 
-
-
-# 長野南長池店
-minaminagaike: 
+  seats_at_counter: 
+  booths: 
+  seq: 108
+minaminagaike:
+  area: nagano
   id: 1276
   old_code: 122076
   start_shows: 9
-  area: nagano
   name: 長野南長池店
   furigana: ナガノミナミナガイケテン
   gname: minaminagaike
   postal_code: 3810024
   address: 長野県長野市南長池292
   phone: 026-274-5011
-  inauguration: 2010/04/25
+  inauguration: 2010-04-25
   close: 2099/12/31
   sunday: 0
   monday: 0
@@ -3016,25 +2934,25 @@ minaminagaike:
   thursday: 0
   friday: 0
   saturday: 0
-  lat: 36.641922
-  lng: 138.237319
+  lat: 36.64192200
+  lng: 138.23731900
   zoom: 13
   landmarks: 
-
-
-# 東松山店
-higashimatsuyama: 
+  seats_at_counter: 
+  booths: 
+  seq: 109
+higashimatsuyama:
+  area: saitama
   id: 1277
   old_code: 122077
   start_shows: 9
-  area: saitama
   name: 東松山店
   furigana: ヒガシマツヤマテン
   gname: higashimatsuyama
   postal_code: 3550031
   address: 埼玉県東松山市五領町16-14
   phone: 0493-59-8583
-  inauguration: 2010/04/28
+  inauguration: 2010-04-28
   close: 2099/12/31
   sunday: 0
   monday: 0
@@ -3043,25 +2961,25 @@ higashimatsuyama:
   thursday: 0
   friday: 0
   saturday: 0
-  lat: 36.030668
-  lng: 139.419572
+  lat: 36.03066800
+  lng: 139.41957200
   zoom: 13
   landmarks: 
-
-
-# 山梨甲斐店
-kai: 
+  seats_at_counter: 
+  booths: 
+  seq: 110
+kai:
+  area: yamanashi
   id: 1278
   old_code: 122078
   start_shows: 9
-  area: yamanashi
   name: 山梨甲斐店
   furigana: ヤマナシカイテン
   gname: kai
   postal_code: 4000113
   address: 山梨県甲斐市富竹新田字伊勢河原1460-1
   phone: 055-288-1666
-  inauguration: 2010/05/24
+  inauguration: 2010-05-24
   close: 2099/12/31
   sunday: 0
   monday: 0
@@ -3070,25 +2988,25 @@ kai:
   thursday: 0
   friday: 0
   saturday: 0
-  lat: 35.660467
-  lng: 138.521767
+  lat: 35.66046700
+  lng: 138.52176700
   zoom: 13
   landmarks: ガストさん隣
-
-
-# 長野篠ノ井店
-shinonoi: 
+  seats_at_counter: 
+  booths: 
+  seq: 111
+shinonoi:
+  area: nagano
   id: 1279
   old_code: 122079
   start_shows: 9
-  area: nagano
   name: 長野篠ノ井店
   furigana: ナガノシノノイテン
   gname: shinonoi
   postal_code: 3888002
   address: 長野県長野市篠ノ井東福寺914-1
   phone: 026-214-6687
-  inauguration: 2010/07/06
+  inauguration: 2010-07-06
   close: 2013/05/06
   sunday: 0
   monday: 0
@@ -3097,25 +3015,25 @@ shinonoi:
   thursday: 0
   friday: 0
   saturday: 0
-  lat: 36.584724
-  lng: 138.165666
+  lat: 36.58472400
+  lng: 138.16566600
   zoom: 13
   landmarks: 
-
-
-# 東金店
-togane: 
+  seats_at_counter: 
+  booths: 
+  seq: 112
+togane:
+  area: narita
   id: 1280
   old_code: 122080
   start_shows: 10
-  area: narita
   name: 東金店
   furigana: トウガネテン
   gname: togane
   postal_code: 2830067
   address: 千葉県東金市東上宿字二丁目27-4
   phone: 0475-53-6652
-  inauguration: 2010/07/14
+  inauguration: 2010-07-14
   close: 2099/12/31
   sunday: 0
   monday: 0
@@ -3124,25 +3042,25 @@ togane:
   thursday: 0
   friday: 0
   saturday: 0
-  lat: 35.554273
-  lng: 140.365338
+  lat: 35.55427300
+  lng: 140.36533800
   zoom: 13
   landmarks: 
-
-
-# 日立東金沢店
-higashikanesawa: 
+  seats_at_counter: 
+  booths: 
+  seq: 113
+higashikanesawa:
+  area: mito
   id: 1281
   old_code: 122081
   start_shows: 11
-  area: mito
   name: 日立東金沢店
   furigana: ヒタチヒガシカネサワワテン
   gname: higashikanesawa
   postal_code: 3160014
   address: 茨城県日立市東金沢1-510
   phone: 0294-33-6626
-  inauguration: 2010/07/17
+  inauguration: 2010-07-17
   close: 2099/12/31
   sunday: 0
   monday: 0
@@ -3151,25 +3069,25 @@ higashikanesawa:
   thursday: 0
   friday: 0
   saturday: 0
-  lat: 36.538071
-  lng: 140.636504
+  lat: 36.53807100
+  lng: 140.63650400
   zoom: 13
   landmarks: 
-
-
-# 名古屋宝神店
-hojin: 
+  seats_at_counter: 
+  booths: 
+  seq: 114
+hojin:
+  area: aichi
   id: 1282
   old_code: 122082
   start_shows: 9
-  area: nagoya
   name: 名古屋宝神店
   furigana: ナゴヤホウジンテン
   gname: hojin
   postal_code: 4550833
   address: 愛知県名古屋市港区宝神1-183
   phone: 052-355-7855
-  inauguration: 2010/08/04
+  inauguration: 2010-08-04
   close: 2099/12/31
   sunday: 0
   monday: 0
@@ -3178,25 +3096,52 @@ hojin:
   thursday: 0
   friday: 0
   saturday: 0
-  lat: 35.094978
-  lng: 136.850445
+  lat: 35.09497800
+  lng: 136.85044500
   zoom: 15
   landmarks: 
-
-
-# 千葉若葉区店
-wakabaku: 
+  seats_at_counter: 
+  booths: 
+  seq: 115
+kaji:
+  area: dounan
+  id: 1142
+  old_code: 121042
+  start_shows: 8
+  name: 函館鍛冶店
+  furigana: ハコダテカジテン
+  gname: kaji
+  postal_code: 410852
+  address: 北海道函館市鍛冶2丁目36-9
+  phone: 0138-84-1751
+  inauguration: 2010-08-17
+  close: 2099/12/31
+  sunday: 0
+  monday: 0
+  tuesday: 0
+  wednesday: 0
+  thursday: 0
+  friday: 0
+  saturday: 0
+  lat: 41.81045400
+  lng: 140.76914700
+  zoom: 16
+  landmarks: パチンコゴリラさん向い
+  seats_at_counter: 
+  booths: 
+  seq: 116
+wakabaku:
+  area: wangan
   id: 1283
   old_code: 122083
   start_shows: 9
-  area: wangan
   name: 千葉若葉区店
   furigana: チバワカバクテン
   gname: wakabaku
   postal_code: 2640021
   address: 千葉市若葉区若松町2094-9
   phone: 043-497-2772
-  inauguration: 2010/09/07
+  inauguration: 2010-09-07
   close: 2099/12/31
   sunday: 0
   monday: 0
@@ -3205,25 +3150,25 @@ wakabaku:
   thursday: 0
   friday: 0
   saturday: 0
-  lat: 35.637067
-  lng: 140.166761
+  lat: 35.63706700
+  lng: 140.16676100
   zoom: 13
   landmarks: 洋麺屋五右衛門さんとなり
-
-
-# 千葉鎌ヶ谷店
-kamagaya: 
+  seats_at_counter: 
+  booths: 
+  seq: 117
+kamagaya:
+  area: wangan
   id: 1284
   old_code: 122084
   start_shows: 9
-  area: wangan
   name: 千葉鎌ヶ谷店
   furigana: チバカマガヤテン
   gname: kamagaya
   postal_code: 2730107
   address: 千葉県鎌ヶ谷市新鎌ヶ谷3丁目3-6
   phone: 047-407-2532
-  inauguration: 2010/10/07
+  inauguration: 2010-10-07
   close: 2099/12/31
   sunday: 0
   monday: 0
@@ -3232,25 +3177,25 @@ kamagaya:
   thursday: 0
   friday: 0
   saturday: 0
-  lat: 35.777592
-  lng: 140.002095
+  lat: 35.77759200
+  lng: 140.00209500
   zoom: 13
   landmarks: イオンさん向い
-
-
-# 千葉茂原店
-mobara: 
+  seats_at_counter: 
+  booths: 
+  seq: 118
+mobara:
+  area: narita
   id: 1285
   old_code: 122085
   start_shows: 10
-  area: narita
   name: 千葉茂原店
   furigana: チバモバラテン
   gname: mobara
   postal_code: 2970074
   address: 千葉県茂原市小林1619-2
   phone: 047-547-3658
-  inauguration: 2010/10/28
+  inauguration: 2010-10-28
   close: 2012/02/19
   sunday: 0
   monday: 0
@@ -3259,25 +3204,25 @@ mobara:
   thursday: 0
   friday: 0
   saturday: 0
-  lat: 35.438252
-  lng: 140.288651
+  lat: 35.43825200
+  lng: 140.28865100
   zoom: 13
   landmarks: マツモトキヨシさんとなり
-
-
-# 岩手盛岡店
-morioka: 
+  seats_at_counter: 
+  booths: 
+  seq: 119
+morioka:
+  area: iwate
   id: 1286
   old_code: 122086
   start_shows: 9
-  area: iwate
   name: 岩手盛岡店
   furigana: イワテモリオカテン
   gname: morioka
   postal_code: 200862
   address: 岩手県盛岡市東仙北1丁目12-10
   phone: 019-681-6682
-  inauguration: 2010/10/28
+  inauguration: 2010-10-28
   close: 2099/12/31
   sunday: 0
   monday: 0
@@ -3286,25 +3231,25 @@ morioka:
   thursday: 0
   friday: 0
   saturday: 0
-  lat: 39.680505
-  lng: 141.155552
+  lat: 39.68050500
+  lng: 141.15555200
   zoom: 13
   landmarks: 
-
-
-# 千葉佐倉店
-sakura: 
+  seats_at_counter: 
+  booths: 
+  seq: 120
+sakura:
+  area: narita
   id: 1287
   old_code: 122087
   start_shows: 10
-  area: narita
   name: 千葉佐倉店
   furigana: チバサクラテン
   gname: sakura
   postal_code: 
   address: 千葉県佐倉市寺崎特定土地区画整理地内12街区3-2
   phone: 043-488-5861
-  inauguration: 2010/11/03
+  inauguration: 2010-11-03
   close: 2099/12/31
   sunday: 0
   monday: 0
@@ -3313,25 +3258,25 @@ sakura:
   thursday: 0
   friday: 0
   saturday: 0
-  lat: 35.713634
-  lng: 140.219311
+  lat: 35.71363400
+  lng: 140.21931100
   zoom: 13
   landmarks: ベイシアさん向かい
-
-
-# 秋田仁井田店
-niida: 
+  seats_at_counter: 
+  booths: 
+  seq: 121
+niida:
+  area: akita
   id: 1288
   old_code: 122088
   start_shows: 9
-  area: akita
   name: 秋田仁井田店
   furigana: アキタニイダテン
   gname: niida
   postal_code: 101434
   address: 秋田県秋田市仁井田蕗見町6-18
   phone: 018-893-3535
-  inauguration: 2010/11/19
+  inauguration: 2010-11-19
   close: 2099/12/31
   sunday: 0
   monday: 0
@@ -3340,25 +3285,25 @@ niida:
   thursday: 0
   friday: 0
   saturday: 0
-  lat: 39.68673
-  lng: 140.124401
+  lat: 39.68673000
+  lng: 140.12440100
   zoom: 13
   landmarks: 
-
-
-# 松本店
-matsumoto: 
+  seats_at_counter: 
+  booths: 
+  seq: 122
+matsumoto:
+  area: matsumoto
   id: 1289
   old_code: 122089
   start_shows: 9
-  area: matsumoto
   name: 松本店
   furigana: マツモトテン
   gname: matsumoto
   postal_code: 3990032
   address: 長野県松本市大字芳川村井町700-1
   phone: 0263-31-5566
-  inauguration: 2010/11/25
+  inauguration: 2010-11-25
   close: 2099/12/31
   sunday: 0
   monday: 0
@@ -3367,25 +3312,52 @@ matsumoto:
   thursday: 0
   friday: 0
   saturday: 0
-  lat: 36.184544
-  lng: 137.963111
+  lat: 36.18454400
+  lng: 137.96311100
   zoom: 13
   landmarks: 
-
-
-# 愛知刈谷店
-kariya: 
+  seats_at_counter: 
+  booths: 
+  seq: 123
+kushirocho:
+  area: douto
+  id: 1143
+  old_code: 121043
+  start_shows: 8
+  name: 釧路町店
+  furigana: クシロチョウテン
+  gname: kushirocho
+  postal_code: 850061
+  address: 北海道釧路市芦野３丁目1-22
+  phone: 0154-64-1632
+  inauguration: 2010-12-08
+  close: 2099/12/31
+  sunday: 0
+  monday: 0
+  tuesday: 0
+  wednesday: 0
+  thursday: 0
+  friday: 0
+  saturday: 0
+  lat: 43.01342600
+  lng: 144.40373900
+  zoom: 13
+  landmarks: 
+  seats_at_counter: 
+  booths: 
+  seq: 124
+kariya:
+  area: aichi
   id: 1290
   old_code: 122090
   start_shows: 9
-  area: aichi
   name: 愛知刈谷店
   furigana: アイチカリヤテン
   gname: kariya
   postal_code: 4480045
   address: 愛知県刈谷市新富町３丁目４０２・４１２
   phone: 0566-91-8113
-  inauguration: 2011/03/03
+  inauguration: 2011-03-03
   close: 2099/12/31
   sunday: 0
   monday: 0
@@ -3394,25 +3366,25 @@ kariya:
   thursday: 0
   friday: 0
   saturday: 0
-  lat: 35.006077
-  lng: 137.003347
+  lat: 35.00607700
+  lng: 137.00334700
   zoom: 13
   landmarks: 
-
-
-# 宮城野店
-miyagino: 
+  seats_at_counter: 
+  booths: 
+  seq: 125
+miyagino:
+  area: miyagi
   id: 1291
   old_code: 122091
   start_shows: 9
-  area: miyagi
   name: 宮城野店
   furigana: ミヤギノテン
   gname: miyagino
   postal_code: 9830013
   address: 宮城県仙台市宮城野区中野字出花122-1
   phone: 022-781-8563
-  inauguration: 2011/03/11
+  inauguration: 2011-03-11
   close: 2099/12/31
   sunday: 0
   monday: 0
@@ -3421,25 +3393,25 @@ miyagino:
   thursday: 0
   friday: 0
   saturday: 0
-  lat: 38.276675
-  lng: 140.990328
+  lat: 38.27667500
+  lng: 140.99032800
   zoom: 13
   landmarks: 
-
-
-# フォレスト河口湖店
-forest: 
+  seats_at_counter: 
+  booths: 
+  seq: 126
+forest:
+  area: yamanashi
   id: 1292
   old_code: 122092
   start_shows: 9
-  area: yamanashi
   name: フォレスト河口湖店
   furigana: フォレストカワグチコテン
   gname: forest
   postal_code: 4010302
   address: 山梨県南都留郡富士河口湖町小立字白木4318番1他
   phone: 0555-72-8853
-  inauguration: 2011/03/24
+  inauguration: 2011-03-24
   close: 2099/12/31
   sunday: 0
   monday: 0
@@ -3448,25 +3420,25 @@ forest:
   thursday: 0
   friday: 0
   saturday: 0
-  lat: 35.490429
-  lng: 138.746552
+  lat: 35.49042900
+  lng: 138.74655200
   zoom: 13
   landmarks: フォレストモール富士河口湖内
-
-
-# 中荻野店
-nakaogino: 
+  seats_at_counter: 
+  booths: 
+  seq: 127
+nakaogino:
+  area: kanagawa
   id: 1293
   old_code: 122093
   start_shows: 9
-  area: kanagawa
   name: 中荻野店
   furigana: ナカオギノテン
   gname: nakaogino
   postal_code: 2430202
   address: 神奈川県厚木市中萩野字上中原348-1
   phone: 046-281-7707
-  inauguration: 2011/04/19
+  inauguration: 2011-04-19
   close: 2014/02/27
   sunday: 0
   monday: 0
@@ -3475,25 +3447,25 @@ nakaogino:
   thursday: 0
   friday: 0
   saturday: 0
-  lat: 35.488009
-  lng: 139.326183
+  lat: 35.48800900
+  lng: 139.32618300
   zoom: 13
   landmarks: 
-
-
-# 郡山店
-koriyama: 
+  seats_at_counter: 
+  booths: 
+  seq: 128
+koriyama:
+  area: fukushima
   id: 1294
   old_code: 122094
   start_shows: 9
-  area: fukushima
   name: 郡山店
   furigana: コオリヤマテン
   gname: koriyama
   postal_code: 9638041
   address: 福島県郡山市富田町字向作田11-1
   phone: 024-983-6637
-  inauguration: 2011/05/24
+  inauguration: 2011-05-24
   close: 2099/12/31
   sunday: 0
   monday: 0
@@ -3502,25 +3474,25 @@ koriyama:
   thursday: 0
   friday: 0
   saturday: 0
-  lat: 37.426509
-  lng: 140.343094
+  lat: 37.42650900
+  lng: 140.34309400
   zoom: 13
   landmarks: 
-
-
-# 富士宮店
-fujinomiya: 
+  seats_at_counter: 
+  booths: 
+  seq: 129
+fujinomiya:
+  area: shizuoka
   id: 1295
   old_code: 122095
   start_shows: 9
-  area: shizuoka
   name: 富士宮店
   furigana: フジノミヤテン
   gname: fujinomiya
   postal_code: 4180004
   address: 静岡県富士宮市三園平1400-1
   phone: 0544-29-7282
-  inauguration: 2011/06/14
+  inauguration: 2011-06-14
   close: 2099/12/31
   sunday: 0
   monday: 0
@@ -3529,25 +3501,25 @@ fujinomiya:
   thursday: 0
   friday: 0
   saturday: 0
-  lat: 35.243448
-  lng: 138.618375
+  lat: 35.24344800
+  lng: 138.61837500
   zoom: 13
   landmarks: 登山道入口交差点を山梨方面へ400メートル
-
-
-# 浜松南区店
-hamamatuminami: 
+  seats_at_counter: 
+  booths: 
+  seq: 130
+hamamatuminami:
+  area: hamamatsu
   id: 1296
   old_code: 122096
   start_shows: 9
-  area: hamamatsu
   name: 浜松南区店
   furigana: ハママツミナミクテン
   gname: hamamatuminami
   postal_code: 4328063
   address: 静岡県浜松市南区小沢渡町1983-1
   phone: 053-523-8626
-  inauguration: 2011/06/28
+  inauguration: 2011-06-28
   close: 2099/12/31
   sunday: 0
   monday: 0
@@ -3556,25 +3528,25 @@ hamamatuminami:
   thursday: 0
   friday: 0
   saturday: 0
-  lat: 34.677547
-  lng: 137.680723
+  lat: 34.67754700
+  lng: 137.68072300
   zoom: 14
   landmarks: 篠原東交差点を浜松市街方面へ300メートル
-
-
-# 弘前店
-hirosaki: 
+  seats_at_counter: 
+  booths: 
+  seq: 131
+hirosaki:
+  area: aomori
   id: 1297
   old_code: 122097
   start_shows: 9
-  area: aomori
   name: 弘前店
   furigana: ヒロサキテン
   gname: hirosaki
   postal_code: 368061
   address: 青森県弘前市神田3-2-4
   phone: 0172-88-8570
-  inauguration: 2011/08/06
+  inauguration: 2011-08-06
   close: 2099/12/31
   sunday: 0
   monday: 0
@@ -3583,25 +3555,25 @@ hirosaki:
   thursday: 0
   friday: 0
   saturday: 0
-  lat: 40.626162
-  lng: 140.487464
+  lat: 40.62616200
+  lng: 140.48746400
   zoom: 14
   landmarks: 
-
-
-# 高岡店
-takaoka: 
+  seats_at_counter: 
+  booths: 
+  seq: 132
+takaoka:
+  area: toyama
   id: 1298
   old_code: 122098
   start_shows: 9
-  area: toyama
   name: 高岡店
   furigana: タカオカテン
   gname: takaoka
   postal_code: 9330847
   address: 富山県高岡市千石町3-7
   phone: 0766-50-8556
-  inauguration: 2011/09/05
+  inauguration: 2011-09-05
   close: 2013/05/01
   sunday: 0
   monday: 0
@@ -3610,25 +3582,25 @@ takaoka:
   thursday: 0
   friday: 0
   saturday: 0
-  lat: 36.746233
-  lng: 136.994346
+  lat: 36.74623300
+  lng: 136.99434600
   zoom: 14
   landmarks: 
-
-
-# テクノポリスセンター店
-techno: 
+  seats_at_counter: 
+  booths: 
+  seq: 133
+techno:
+  area: tochigi
   id: 1299
   old_code: 122099
   start_shows: 9
-  area: tochigi
   name: テクノポリスセンター店
   furigana: テクノポリスセンターテン
   gname: techno
   postal_code: 3213222
   address: 宇都宮市ゆいの杜5丁目10-8
   phone: 028-680-6871
-  inauguration: 2011/10/05
+  inauguration: 2011-10-05
   close: 2099/12/31
   sunday: 0
   monday: 0
@@ -3637,25 +3609,25 @@ techno:
   thursday: 0
   friday: 0
   saturday: 0
-  lat: 36.567589
-  lng: 139.993833
+  lat: 36.56758900
+  lng: 139.99383300
   zoom: 13
   landmarks: 
-
-
-# 金沢森戸店
-morito: 
+  seats_at_counter: 
+  booths: 
+  seq: 134
+morito:
+  area: ishikawa
   id: 1300
   old_code: 122100
   start_shows: 9
-  area: ishikawa
   name: 金沢森戸店
   furigana: カナザワモリトテン
   gname: morito
   postal_code: 9218061
   address: 石川県金沢市森戸2-15-3
   phone: 076-272-8578
-  inauguration: 2011/10/07
+  inauguration: 2011-10-07
   close: 2099/12/31
   sunday: 0
   monday: 0
@@ -3664,25 +3636,25 @@ morito:
   thursday: 0
   friday: 0
   saturday: 0
-  lat: 36.559493
-  lng: 136.598795
+  lat: 36.55949300
+  lng: 136.59879500
   zoom: 13
   landmarks: 
-
-
-# 明石店
-akashi: 
+  seats_at_counter: 
+  booths: 
+  seq: 135
+akashi:
+  area: hyogo
   id: 1301
   old_code: 122101
   start_shows: 9
-  area: hyogo
   name: 明石店
   furigana: アカシテン
   gname: akashi
   postal_code: 6730028
   address: 兵庫県明石市硯町 3-9-33
   phone: 078-945-6122
-  inauguration: 2011/10/19
+  inauguration: 2011-10-19
   close: 2099/12/31
   sunday: 0
   monday: 0
@@ -3691,25 +3663,25 @@ akashi:
   thursday: 0
   friday: 0
   saturday: 0
-  lat: 34.653328
-  lng: 134.97586
+  lat: 34.65332800
+  lng: 134.97586000
   zoom: 13
   landmarks: 
-
-
-# 岸和田店
-kishiwada: 
+  seats_at_counter: 
+  booths: 
+  seq: 136
+kishiwada:
+  area: osaka
   id: 1302
   old_code: 122102
   start_shows: 9
-  area: osaka
   name: 岸和田店
   furigana: キシワダテン
   gname: kishiwada
   postal_code: 5960808
   address: 大阪府岸和田市三田町623-1
   phone: 072-493-2200
-  inauguration: 2011/11/03
+  inauguration: 2011-11-03
   close: 2099/12/31
   sunday: 0
   monday: 0
@@ -3718,25 +3690,25 @@ kishiwada:
   thursday: 0
   friday: 0
   saturday: 0
-  lat: 34.451732
-  lng: 135.434357
+  lat: 34.45173200
+  lng: 135.43435700
   zoom: 13
   landmarks: 
-
-
-# 京都八幡店
-yawata: 
+  seats_at_counter: 
+  booths: 
+  seq: 137
+yawata:
+  area: kyoto
   id: 1303
   old_code: 122103
   start_shows: 9
-  area: kyoto
   name: 京都八幡店
   furigana: キョウトヤワタテン
   gname: yawata
   postal_code: 6148053
   address: 京都府八幡市八幡水珀13-1
   phone: 075-925-8558
-  inauguration: 2011/12/01
+  inauguration: 2011-12-01
   close: 2014/06/22
   sunday: 0
   monday: 0
@@ -3745,25 +3717,25 @@ yawata:
   thursday: 0
   friday: 0
   saturday: 0
-  lat: 34.856474
-  lng: 135.709407
+  lat: 34.85647400
+  lng: 135.70940700
   zoom: 13
   landmarks: 
-
-
-# 北九州店
-kitakyushu: 
+  seats_at_counter: 
+  booths: 
+  seq: 138
+kitakyushu:
+  area: fukuoka
   id: 1304
   old_code: 122104
   start_shows: 9
-  area: fukuoka
   name: 北九州店
   furigana: キタキュウシュウテン
   gname: kitakyushu
   postal_code: 8080026
   address: 福岡県北九州市若松区桜町17番2号
   phone: 093-701-8980
-  inauguration: 2011/12/13
+  inauguration: 2011-12-13
   close: 2099/12/31
   sunday: 0
   monday: 0
@@ -3772,25 +3744,25 @@ kitakyushu:
   thursday: 0
   friday: 0
   saturday: 0
-  lat: 33.910894
-  lng: 130.806838
+  lat: 33.91089400
+  lng: 130.80683800
   zoom: 13
   landmarks: ポプラ若松桜町店さん
-
-
-# 熊本店
-kumamoto: 
+  seats_at_counter: 
+  booths: 
+  seq: 139
+kumamoto:
+  area: kumamoto
   id: 1305
   old_code: 122105
   start_shows: 9
-  area: kumamoto
   name: 熊本店
   furigana: クマモトテン
   gname: kumamoto
   postal_code: 8600826
   address: 熊本県熊本市南区平田1-1-11
   phone: 096-273-7267
-  inauguration: 2012/10/04
+  inauguration: 2012-10-04
   close: 2014/06/22
   sunday: 0
   monday: 0
@@ -3799,25 +3771,25 @@ kumamoto:
   thursday: 0
   friday: 0
   saturday: 0
-  lat: 32.774459
-  lng: 130.695162
+  lat: 32.77445900
+  lng: 130.69516200
   zoom: 13
   landmarks: 
-
-
-# 千葉花見川区店
-hanamigawa: 
-  id: 4224
-  old_code: 122024
-  start_shows: 9
-  area: wangan
-  name: 千葉花見川区店
-  furigana: チバハナミカワク
-  gname: hanamigawa
-  postal_code: 2620007
-  address: 千葉県千葉市花見川区大日町1379-2
-  phone: 043-286-2660
-  inauguration: 2004/12/01
+  seats_at_counter: 
+  booths: 
+  seq: 140
+abashiri:
+  area: douto
+  id: 1144
+  old_code: 121044
+  start_shows: 8
+  name: 網走店
+  furigana: アバシリテン
+  gname: abashiri
+  postal_code: 930035
+  address: 北海道網走市駒場南７丁目２番２号
+  phone: 0152-67-6037
+  inauguration: 2013-08-29
   close: 2099/12/31
   sunday: 0
   monday: 0
@@ -3826,9 +3798,37 @@ hanamigawa:
   thursday: 0
   friday: 0
   saturday: 0
-  lat: 35.684051
-  lng: 140.128222
-  zoom: 14
+  lat: 43.99981500
+  lng: 144.28424100
+  zoom: 13
+  landmarks: ABCマートさんとなり
+  seats_at_counter: 
+  booths: 
+  seq: 141
+wakkanai:
+  area: douhoku
+  id: 1145
+  old_code: 121045
+  start_shows: 8
+  name: 稚内店
+  furigana: ワッカナイテン
+  gname: wakkanai
+  postal_code: 970015
+  address: 北海道稚内市朝日1-3-10
+  phone: 0162-73-1716
+  inauguration: 2014-07-02
+  close: 2099/12/31
+  sunday: 0
+  monday: 0
+  tuesday: 0
+  wednesday: 0
+  thursday: 0
+  friday: 0
+  saturday: 0
+  lat: 45.38490470
+  lng: 141.70631130
+  zoom: 13
   landmarks: 
-
-
+  seats_at_counter: 
+  booths: 
+  seq: 142

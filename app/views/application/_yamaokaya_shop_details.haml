@@ -1,5 +1,5 @@
 .panel.panel-default
-	-if DateTime.new.between?(shop.inauguration,shop.close)
+	-if DateTime.now.between?(shop.inauguration,shop.close)
 		%table.table
 			%caption 店舗情報
 			%tr

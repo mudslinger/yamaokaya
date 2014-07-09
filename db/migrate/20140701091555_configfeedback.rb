@@ -5,6 +5,5 @@ class Configfeedback < ActiveRecord::Migration
   	rename_column :feedbacks, :s, :service
   	rename_column :feedbacks, :c, :cleanliness
   	rename_column :feedbacks, :a, :atomosphere
-  	
   end
 end

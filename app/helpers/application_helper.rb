@@ -69,7 +69,7 @@ module ApplicationHelper
 		# params[:width] = meta[:width] if meta[:width]
 		# params[:height] = meta[:height] if meta[:height]
 
-		image_tag url,params
+		image_tag meta[:assets_url],params
 
 	end
 

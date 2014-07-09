@@ -14,6 +14,7 @@ class Page
 	#パス収集メソッド
 	def collect_all_children(c)
 		c[@url] = self
+		c["#{@url}.html"] = self
 		@children.each do |p|
 			p.collect_all_children(c)
 		end unless @children.nil?
