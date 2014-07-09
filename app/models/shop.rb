@@ -127,7 +127,7 @@ class Shop < ActiveRecord::Base
 	end
 	def now_open?
 		return true if allnight?
-		today = DateTime.now
+		today = DateTime.now - 6.hours
 		dow =  
 		if today.sunday? then sunday
 		elsif today.monday? then monday

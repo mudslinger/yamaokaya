@@ -14,11 +14,21 @@
 			%tr
 				%th 営業時間
 				%td
+					-if shop.now_open?
+						[現在営業中!]
 					- shop.shop_hours_human.each do |h|
 						=h
 			%tr
 				%th 目印・その他
 				%td= shop.landmarks
+			-if (shop.seats_at_counter || 0) + (shop.booths || 0) != 0
+				%tr
+					%th 客席
+					%td
+						-if (shop.seats_at_counter || 0) != 0
+							%li カウンター席:#{shop.seats_at_counter}席
+						-if (shop.booths || 0) != 0
+							%li ボックス席:#{shop.booths}個
 	-else
 		.panel-body
 			#{shop.name}は#{l(shop.close)}を持ちまして閉店させていただきました。
