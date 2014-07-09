@@ -1,25 +1,81 @@
-.after-nav.container-full
-  .container
-    .row
-      -#.page-header
-      %h2
-        =tt :title
-        %small= tt :subtitle
 .container
   .row
-    %ul
-      %li
-        =link_to @site.url do
-          =@site.title
-        -unless @site.children.nil?
-          %ul
+    -unless @site.children.nil?
+      .col-xs-12
+        .panel.panel-default
+          .panel-heading
+            %h4.panel-title
+              -unless @site.url.nil?
+                =link_to @site.short_title,@site.url
+              -else
+                =@site.short_title
+          .panel-body
             -@site.children.each do |p|
-              %li
-                =link_to p.url do
-                  =p.title
-                  -unless p.children.nil?
-                    %ul
+              -unless p.children.nil?
+                .col-xs-12
+                  .panel.panel-default
+                    .panel-heading
+                      %h4.panel-title
+                        -unless p.url.nil?
+                          =link_to p.short_title,p.url
+                        -else
+                          =p.short_title
+                    .panel-body
                       -p.children.each do |p2|
-                        %li
-                          =link_to p2.url do
-                            =p2.title
+                        -unless p2.children.nil?
+                          .col-xs-12
+                            .panel.panel-default
+                              .panel-heading
+                                %h4.panel-title
+                                  -unless p2.url.nil?
+                                    =link_to p2.short_title,p2.url
+                                  -else
+                                    =p2.short_title
+                              .panel-body
+                                -p2.children.each do |p3|
+                                  -unless p3.children.nil?
+                                    .col-xs-12
+                                      .panel.panel-default
+                                        .panel-heading
+                                          %h4.panel-title
+                                            -unless p3.url.nil?
+                                              =link_to p3.short_title,p3.url
+                                            -else
+                                              =p3.short_title
+                                        .panel-body
+                                          -p3.children.each do |p4|
+                                            -unless p4.children.nil?
+                                              .col-xs-12
+                                                .panel.panel-default
+                                                  .panel-heading
+                                                    %h4.panel-title
+                                                      -unless p4.url.nil?
+                                                        =link_to p4.short_title,p4.url
+                                                      -else
+                                                        =p4.short_title
+                                                  .panel-body
+                                            -else
+                                              .col-xs-3
+                                                .panel.panel-default
+                                                  .panel-body
+                                                    =link_to p4.short_title,p4.url
+                                  -else
+                                    .col-xs-3
+                                      .panel.panel-default
+                                        .panel-body
+                                          =link_to p3.short_title,p3.url
+                        -else
+                          .col-xs-3
+                            .panel.panel-default
+                              .panel-body
+                                =link_to p2.short_title,p2.url
+              -else
+                .col-xs-3
+                  .panel.panel-default
+                    .panel-body
+                      =link_to p.short_title,p.url
+    -else
+      .col-xs-3
+        .panel.panel-default
+          .panel-body
+            =link_to @site.short_title,@site.url

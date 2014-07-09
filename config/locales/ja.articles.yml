@@ -1,6 +1,8 @@
 ja:
   articles:
     title:
+    sitemap:
+      title: サイトマップ
     sns_guideline:
       title: SNSガイドライン
       bodies:
@@ -56,12 +58,12 @@ ja:
         title: 動作環境
         lead: 当ウェブサイトは、下記の環境で閲覧いただくことを推奨いたします。
         env:
-          - os: Microsoft Windows(vista/7/8/8.1)
+          - os: Microsoft Windows (vista/7/8/8.1)
             browsers:
               - Internet Explorer 9.0以上
               - Firefox
               - Google Chrome
-          - os: Macintosh(OSX 10.3以上)
+          - os: Macintosh (OSX 10.3以上)
             browsers:
               - Safari
               - Firefox

@@ -158,3 +158,13 @@ $ ->
 		map = new google.maps.Map($('#detail-map').get(0), mapOptions)
 		m = new ShopDetailsMarker json,map
 		m.focus()
+
+	# if $('#map_area').get(0)
+	# 	nav = $('#map_area')
+	# 	offset = nav.offset()
+  
+	# 	$(window).scroll ->
+	# 		if($(window).scrollTop() > offset.top)
+	# 		    nav.addClass('fixed')
+	# 		else
+	# 		    nav.removeClass('fixed')

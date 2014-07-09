@@ -5,7 +5,7 @@
 			=t :title,scope: [ctrl,act]
 			.label.label-info=t :title,scope: [ctrl]
 	.panel-body
-		=ymage_tag image ,cls: 'img-rounded',:height => 100, :crop => :fill,align: :left,size: '120x120'
+		=ymage_tag image ,cls: 'img-rounded',:height => 100,align: :left,size: '120x120'
 		%p.truncate=t(:bodies,scope: [ctrl,act])[0]
 	.panel-footer.text-right
 		=link_to "続きを読む",{action: act,controller: ctrl},{:class => 'btn btn-primary'}

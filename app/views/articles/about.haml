@@ -1,13 +1,4 @@
-.after-nav.container-full
-  .container
-    .row
-      -#.page-header
-      %h2
-        =tt :title
-        %small= tt :subtitle
 .container
-  .row
-    =Page.sitemap(request.host).current_node(request.fullpath)
   .row
     - tt(:bodies).each_with_index do |v,i|
       %h3=v['lead']

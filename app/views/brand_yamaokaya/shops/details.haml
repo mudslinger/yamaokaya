@@ -1,22 +1,3 @@
-.after-nav.container-full
-	.container
-		.row
-			%h2.col-xs-12
-				%span.glyphicon.glyphicon-shop_window
-				=@shop.name
-.container
-	.row
-		%ol.breadcrumb.col-xs-8.pull-left
-			%li
-				=link_to :yamaokaya_top do
-					トップ
-			%li
-				=link_to :shop_root do
-					店舗情報
-			%li
-				=@shop.name
-		-#SNSボタンの読み込み
-		=render partial: 'yamaokaya_sns'
 .container#main
 	.row
 		.col-md-5

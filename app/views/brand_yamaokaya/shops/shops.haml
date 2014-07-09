@@ -1,27 +1,13 @@
-.after-nav.container-full
-	.container
-		.row
-			%h2.col-xs-12
-				%span.glyphicon.glyphicon-shop_window
-				店舗一覧
-.container
-	.row
-		%ol.breadcrumb.col-xs-8.pull-left
-			%li
-				=link_to :yamaokaya_top do
-					トップ
-			%li
-				店舗情報
-		-#SNSボタンの読み込み
-		=render partial: 'yamaokaya_sns'
-
 .container#main
-	.col-md-4
+	.col-md-4.pull-left.fixed#map_area
 		#index-map.well
 		%p ご覧になりたい地域をクリックしてください。
 	.col-md-8.col-sm-12.col-xs-12.pull-right
 		.jumbotron
-			%p.lead 山岡家の店舗は全国137店舗（平成26年1月現在）。<br>お近くの山岡家にぜひお越しください
+			%p.lead 
+				山岡家の店舗は全国#{Shop.active.size}店舗。
+				%br
+				お近くの山岡家にぜひお越しください。
 		-cache do
 			- @regions.each do |r|
 				%h3=r.name
@@ -39,5 +25,3 @@
 											-area.shops.each do |s|
 												=link_to shop_details_path(s.id),class: 'list-group-item' do
 													=s.name
-						
-	.col-md-4.pull-left.hidden-xs.hidden-sm.imagemap-wrap#map_area

@@ -570,7 +570,7 @@ $modal-title-padding:         15px !default;
 $modal-title-line-height:     $line-height-base !default;
 
 //** Background color of modal content area
-$modal-content-bg:                             lighten($body-bg,15%) !default;
+$modal-content-bg:                             white !default;
 //** Modal content border color
 $modal-content-border-color:                   rgba(0,0,0,.2) !default;
 //** Modal content border color **for IE8**
@@ -641,7 +641,7 @@ $progress-bar-info-bg:        $brand-info !default;
 //##
 
 //** Background color on `.list-group-item`
-$list-group-bg:                 #fff !default;
+$list-group-bg:                 $gray !default;
 //** `.list-group-item` border color
 $list-group-border:             #ddd !default;
 //** List group border radius
@@ -655,7 +655,7 @@ $list-group-active-color:       $component-active-color !default;
 $list-group-active-bg:          $component-active-bg !default;
 //** Border color of active list elements
 $list-group-active-border:      $list-group-active-bg !default;
-$list-group-active-text-color:  lighten($list-group-active-bg, 40%) !default;
+$list-group-active-text-color:  lighten($list-group-active-bg, 70%) !default;
 
 $list-group-link-color:         #555 !default;
 $list-group-link-heading-color: #333 !default;
@@ -671,7 +671,7 @@ $panel-border-radius:         $border-radius-base !default;
 $panel-inner-border:          $gray !default;
 $panel-footer-bg:             #f5f5f5 !default;
 
-$panel-default-text:          $almost-white !default;
+$panel-default-text:          white !default;
 $panel-default-border:        #ddd !default;
 $panel-default-heading-bg:    $gray-dark !default;
 

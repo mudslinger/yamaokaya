@@ -1,6 +1,13 @@
 .container
 	.row
-		%ol.breadcrumb
-			-@layers.each do |l|
-				%li
-					=link_to t(l,scope: :route_names),l
+		.col-sm-8.pull-left
+			%ol.breadcrumb
+				-page.tree_from_root.each do |p|
+					%li
+						-if p.url.nil? || p == page.tree_from_root.last
+							=p.short_title
+						-else
+							=link_to p.short_title,p.url
+		-#SNSボタンの読み込み
+		=render partial: 'yamaokaya_sns'
+

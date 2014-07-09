@@ -1,6 +1,10 @@
 .container
 	.row
 		%ol.breadcrumb
-			/ -@layers.each do |l|
-			/ 	%li
-			/ 		=link_to t(l,scope: :route_names),l
+			-page.tree_from_root.each do |p|
+				%li
+					-if p.url.nil? || p == page.tree_from_root.last
+						=p.short_title
+					-else
+						=link_to p.short_title,p.url
+

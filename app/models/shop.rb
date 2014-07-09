@@ -34,6 +34,10 @@ class Shop < ActiveRecord::Base
 	delegate :prefecture, to: :area, allow_nil: false
 	delegate :region, to: :prefecture, allow_nil: false
 
+	def long_name
+		"ラーメン山岡家 #{self[:name]}"
+	end
+
 	def marker_type
 		self.class.name
 	end

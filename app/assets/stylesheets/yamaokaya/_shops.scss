@@ -1,13 +1,10 @@
 body.yamaokaya.shops{
 	#index-map{
-		width:100%;
-		height:400px;
+		width:95%;
+		height:350px;
 	}
 	.jumbotron{
 		background: url('/i/origin/images/shops/bg03.jpg') no-repeat center;
-	}
-	.imagemap-wrap{
-		z-index: 200;
 	}
 	.shop-image{
 		width:100%;
@@ -17,10 +14,17 @@ body.yamaokaya.shops{
 	}
 	.fixed {
 		position: fixed;
-		top: 0;
+		// top: 0;
 		z-index: 200;
 	}
 	#map a{
 		color:blue;
+	}
+	a.list-group-item{
+			color: white;
+			background-color: darken(white,50%);
+		&:hover{
+			background-color: $brand-primary;
+		}
 	}
 }

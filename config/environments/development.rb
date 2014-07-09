@@ -34,8 +34,8 @@ Rails.application.configure do
 
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
-  config.cache_store =
-    :redis_store,
-    "redis://yamapp-redis.gneihq.0001.apne1.cache.amazonaws.com/yamaokaya/development/cache",
-    { expires_in: 158.minutes }
+  config.cache_store = :memory_store
+    # :redis_store,
+    # "redis://yamapp-redis.gneihq.0001.apne1.cache.amazonaws.com/yamaokaya/development/cache",
+    # { expires_in: 158.minutes }
 end

@@ -10,7 +10,7 @@
     %meta(name="description" content="")
     %meta(name="keywords" content="ラーメン,濃厚豚骨,餃子")
     %meta(name="author" content="")
-    %title=@page_title
+    %title=@current_page.title
     =csrf_meta_tags
     =stylesheet_link_tag "yamaokaya", media: "all"
     / Le HTML5 shim, for IE6-8 support of HTML elements
@@ -32,6 +32,15 @@
         =render partial: 'yamaokaya_header_top'
     -else
         =render partial: 'yamaokaya_header'
+    =render partial: 'sns_scripts'
+    -unless controller.controller_name == 'top'
+        .after-nav.container-full
+            .container
+                .row
+                    %h2.col-xs-12
+                        %span.glyphicon.glyphicon-shop_window
+                        =@current_page.title
+        =render partial: 'yamaokaya_breadcrumb',locals: {page: @current_page}
     =yield
     =render partial: 'yamaokaya_footer'
 != "</html>"

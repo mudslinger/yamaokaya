@@ -1,0 +1,78 @@
+ja:
+  titles:
+    # 各ドメイントップのタイトル
+    brand_top: 
+      main: ガツンと来て、くせになる。ラーメン山岡家
+      short: ラーメン山岡家
+    corp_top:
+      main: ラーメン山岡家を経営する丸千代山岡家
+      short: 株式会社丸千代山岡家
+    recruit_top:
+      main: 山岡家 採用スペシャルサイト
+
+    # コーポレートのタイトル
+    company:
+      main: 会社情報
+    overview:
+      main: 会社概要
+    greetings:
+      main: 代表ごあいさつ
+    history:
+      main: ヒストリー
+    business:
+      main: 事業概要
+    products:
+      main: 商品の強み
+      sub: 唯一無二の個性
+    hospitality:
+      main: 心地良いお店づくり
+      sub: お客様に感動と感激、満足を…
+    safety:
+      main: 食の安全
+      sub: 「安全・安心」が最優先
+    development:
+      main: 出店ポリシー
+      sub: 食べたいときにいつでも食べられるラーメン店へ。
+    property:
+      main: 物件募集
+      sub: 優良物件のご紹介、お待ちしています。
+    ir_top:
+      main: IR情報
+    market:
+      main: 株式情報
+    highlight:
+      main: 財務ハイライト
+    library:
+      main: IRライブラリー
+    calender:
+      main: IRカレンダー
+    disclaimer:
+      main: 免責事項
+    financial_info:
+      main: 財務情報
+    ict:
+      main: ICTの活用
+    # ブランドのタイトル
+    shops:
+      main: 店舗検索
+    menus:
+      main: メニューラインナップ
+    regular:
+      main: レギュラーメニュー
+    std:
+      main: サイドメニュー・トッピング・ドリンク
+    limited:
+      main: 期間・地域限定メニュー
+    set:
+      main: お得なセットメニュー
+    feedbacks:
+      main: お客様の声
+
+
+    #共通コンテンツのタイトル
+    about:
+      main: このサイトについて
+    sitemap:
+      main: サイトマップ
+    sns_guideline:
+      main: SNSガイドライン

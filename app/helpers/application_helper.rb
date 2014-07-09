@@ -22,7 +22,24 @@ module ApplicationHelper
 	end
 
 	#山岡家専用img_tag
-	def ymage_tag(path ,size: :origin,alt: '', title: '',cls: '',width:nil,height:nil,align: nil,crop: nil)
+	def ymage_tag(
+		path,
+		size: :origin,
+		alt: nil,
+		longdesc: nil,
+		name: nil,
+		ismap: false,
+		usemap: nil,
+		align: nil,
+		width: nil,
+		height: nil,
+		id: nil,
+		cls: nil,
+		title: nil,
+		style: nil,
+		dir: nil,
+		lang: nil
+	)
 
 		url = img_path(size: size.to_s,file: path)
 
@@ -31,22 +48,29 @@ module ApplicationHelper
 			assets_url: "//assets#{Digest::MD5.hexdigest(url).hex % 8}.yamaokaya.com#{url}"
 		} unless meta
 
-		params = {src: meta[:assets_url],alt: alt,title: title, class: cls}
-
+		#params = {src: meta[:assets_url],alt: alt,title: title, class: cls}
+		params = {
+			alt: alt,
+			longdesc: longdesc,
+			name: name,
+			ismap: false,
+			usemap: usemap,
+			align: align,
+			width: width,
+			height: height,
+			id: id,
+			class: cls,
+			title: title,
+			style: style,
+			dir: dir,
+			lang: lang
+		}
 		#画像のサイズがゲット出来ている場合
-		params[:width] = meta[:width] if meta[:width]
-		params[:height] = meta[:height] if meta[:height]
+		# params[:width] = meta[:width] if meta[:width]
+		# params[:height] = meta[:height] if meta[:height]
 
-		#指定されたサイズがある場合
-		params[:width] = width unless width.nil?
-		params[:height] = height unless height.nil?
-		
-		params[:align] = align unless align.nil?
-		params[:crop] = crop unless crop.nil?
-		
-		render type: :haml,locals: {:params => params},:inline => <<-HAML
-%img{params}
-		HAML
+		image_tag url,params
+
 	end
 
 	def ln(str)
