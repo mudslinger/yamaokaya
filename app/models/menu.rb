@@ -1,6 +1,6 @@
 class Menu < ActiveRecord::Base
 
-	default_scope -> {order(:category,:subcategory,:taste,:ingredients)}
+	default_scope -> {order(:id,:category,:subcategory,:taste,:ingredients)}
 	default_scope -> {where('(current_timestamp between start_sells and end_sells)')}
 	enum category: {regular:0, std:1, limited:2,set:3}
 	enum subcategory: {noodle:0,side:1,topping:2,drink:3,complex:4}

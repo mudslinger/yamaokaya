@@ -90,6 +90,10 @@ body.yamaokaya{
 			.dropdown-menu{
 				a{
 					background-color: white !important;
+					&:hover{
+						background-color: $brand-primary  !important;
+						color: $gray-lighter;
+					}
 				}
 			}
 		}

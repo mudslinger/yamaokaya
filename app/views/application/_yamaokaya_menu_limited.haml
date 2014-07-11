@@ -1,24 +1,24 @@
 .row
 	.col-xs-12
 		%h3=tt params[:category]
-	.col-md-7.col-xs-12.menu-intro
+	.col-md-12.col-xs-12.menu-intro
 		- tt("contents.intro.#{params[:category]}").each do |intro|
 			%p=intro
 .row
-	- @menus.subcategories.each do |t|
-		- menus = @menus.send(t[0])
-		- if menus.size > 0
-			.panel.panel-default.panel-menu
-				.panel-heading
-					%h4.panel-title
-						=t[0]
-						%small soy source
-				.panel-body
-					- menus.each do |m|
-						.col-md-2.col-sm-4.col-xs-12
-							.picture.well
-								.tags
-								.actions
-									=link_to m.name, menu_details_path(m.id), {class:"btn btn-link modal-link", title: m.name,remote: request.variant != :phone}
-								=link_to menu_details_path(m.id),{remote: request.variant != :phone} do
-									=ymage_tag "images/menus/photos/#{m.id}.png",size: '180x180'
+	- @menus.each do |m|
+		.row
+			.col-xs-12
+				.col-sm-4
+					.picture.well
+						=ymage_tag "images/menus/photos/#{m.id}.png",size: '400x400'
+				.col-sm-8.menu_details
+					%h4=m.name
+					%p.commets=m.comment
+					%p.price-area
+						%strong.text-danger.price=m.price
+						%span.yen 円
+						%span.zeikomi (税込み)
+						%span.zeinuki 税抜本体価格
+						%strong.text-danger.wotax=(m.price.to_i / 1.08).ceil
+						%span.yen 円
+		%hr

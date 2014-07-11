@@ -3,6 +3,67 @@ body.menus{
 		font-family:serif;
 		font-size:1.7em;
 	}
+	.menu-detail-picture{
+	    position: relative;
+	    overflow: hidden;
+	    margin-bottom: 8px;
+	    margin-top: 8px;
+	    padding:2px;
+	    background-color: white;
+	    .tags{
+			position: absolute;
+			left: 0px;
+			top: 0px;
+			background: rgba(255,255,255,0.3);
+			height: 80px;
+			color: black;
+			padding: 10px 10px 0 10px;
+			font-size: $font-size-large;
+	    	.label{
+				display: table;
+				margin-bottom: 2px;
+				text-align: left;
+				direction: ltr;
+	    	}
+	    }
+	    img.photo{
+	    	width:100%;
+			padding-bottom: 20px;
+	    }
+	    .actions{
+			width: 100%;
+			position: absolute;
+			background: rgba(255,255,255,0.3);
+			height: 80px;
+			left: 0;
+			bottom: 0px;
+			overflow: hidden;
+			*zoom: 1;
+			.price-area{
+				@extend .text-right;
+				vertical-align: text-bottom;
+				font-size: $font-size-large;
+				color: black;
+			}
+	    }
+	}
+
+	.menu_details{
+		h4{
+			font-family: sans-serif;
+			font-size: 3.5em;
+			font-weight: bold;
+		}
+		.commets{
+			font-size: $font-size-large;
+		}
+		.price-area{
+			@extend .text-right;
+			vertical-align: text-bottom;
+			font-size: $font-size-large;
+		}
+	}
+
 	.panel-menu{
 		border-color: $gray;
 		.panel-heading{
@@ -43,8 +104,7 @@ body.menus{
 	    }
 	    img{
 	    	width:100%;
-		padding-bottom: 20px;
-
+			padding-bottom: 20px;
 	    }
 	    
 	    .actions{

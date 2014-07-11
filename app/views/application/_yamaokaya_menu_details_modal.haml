@@ -2,19 +2,19 @@
 	.modal-dialog
 		.modal-content
 			.modal-header
-
 				%button.close{type: :button,data:{dismiss: :modal},aria:{hidden:true}} &times;
 				%h4.modal-title=@menu.name
 			.modal-body
-				.picture
+				.menu-detail-picture
 					.tags
+						%p.text-left=@menu.comment
+					=ymage_tag "images/menus/photos/#{@menu.id}.png",size: :origin,cls: :photo
 					.actions
-						%p.text-left= @menu.comment
-						%p.text-right
+						%p.price-area
 							%strong.text-danger#price=@menu.price
 							%span.yen 円
 							%span.zeikomi (税込み)
 							%span.zeinuki 税抜本体価格
 							%strong.text-danger#wotax=(@menu.price.to_i / 1.08).ceil
 							%span.yen 円
-					=ymage_tag "images/menus/photos/#{@menu.id}.png",size: :origin,cls: :photo
+

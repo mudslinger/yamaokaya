@@ -1,7 +1,7 @@
 .row
 	.col-xs-12
 		%h3=tt params[:category]
-	.col-md-7.col-xs-12.menu-intro
+	.col-md-12.col-xs-12.menu-intro
 		- tt("contents.intro.#{params[:category]}").each do |intro|
 			%p=intro
 .row
@@ -11,8 +11,8 @@
 			.panel.panel-default.panel-menu
 				.panel-heading
 					%h4.panel-title
-						=t[0]
-						%small soy source
+						=tt t[0]
+						%small=tt("contents.intro.#{t[0]}")
 				.panel-body
 					- menus.each do |m|
 						.col-md-2.col-sm-4.col-xs-12
