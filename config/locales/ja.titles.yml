@@ -68,6 +68,33 @@ ja:
     feedbacks:
       main: お客様の声
 
+    #リクルートのタイトル
+    graduates:
+      main: 新卒
+    career:
+      main: 中途採用
+    pa:
+      main: パート・アルバイト
+    entries:
+      main: エントリー
+    message_graduates:
+      main: 人材開発チームより
+    message_career:
+      main: 人材開発チームより
+    message_pa:
+      main: 人材開発チームより
+    interview_graduates:
+      main: 先輩インタビュー
+    interview_career:
+      main: 先輩インタビュー
+    interview_pa:
+      main: 先輩インタビュー
+    requirements_graduates:
+      main: 募集要項
+    requirements_career:
+      main: 募集要項
+    requirements_pa:
+      main: 募集要項
 
     #共通コンテンツのタイトル
     about:

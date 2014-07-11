@@ -3,32 +3,33 @@
 		%span.glyphicon.glyphicon-circle_ok
 		Contents
 	.row
+		-@site = Page.sitemap(request.host)
 		.col-md-6.col-xs-6
 			%ul
-				%li=link_to 'ホーム',corp_top_path
-				%li=link_to '代表ごあいさつ',greetings_path
-				%li 会社情報
-				%ul
-					%li=link_to '会社概要',overview_path
-					%li=link_to 'ヒストリー',history_path
-				%li 事業
-				%ul
-					%li 事業概要
-					%li=link_to '商品の強み',products_path
-					%li=link_to '心地良いお店づくり',hospitality_path
-					%li=link_to '食の安全・安心',safety_path
-					%li=link_to '出店ポリシー',development_path
-					%li=link_to 'ICTの活用',ict_path
+				%li=link_to @site.short_title,@site.url
+				-@site.children.slice(0..2).each do |s|
+					-unless s.url.nil?					
+						%li=link_to s.short_title,s.url
+					-else
+						%li=s.short_title if s.url.nil?
+					-unless s.children.nil?
+						%ul
+							-s.children.each do |s2|
+								-unless s2.url.nil?					
+									%li=link_to s2.short_title,s2.url
+								-else
+									%li=s2.short_title if s2.url.nil?
 		.col-md-6.col-xs-6
 			%ul
-				%li IR
-				%ul
-					%li=link_to '株主・投資家の皆様へ',ir_top_path
-					%li=link_to '財務ハイライト',highlight_path
-					%li=link_to 'IRカレンダー',calender_path
-					%li=link_to 'IRライブラリ',library_path
-					%li=link_to '株式情報',market_path
-					%li=link_to '免責事項',disclaimer_path
-				%li=link_to '採用スペシャルサイト',recruit_top_url
-				%li=link_to '物件募集',property_path
-				%li=link_to 'ラーメン山岡家のサイト',yamaokaya_top_url
+				-@site.children.slice(3..@site.children.size).each do |s|
+					-unless s.url.nil?					
+						%li=link_to s.short_title,s.url
+					-else
+						%li=s.short_title if s.url.nil?
+					-unless s.children.nil?
+						%ul
+							-s.children.each do |s2|
+								-unless s2.url.nil?					
+									%li=link_to s2.short_title,s2.url
+								-else
+									%li=s2.short_title if s2.url.nil?

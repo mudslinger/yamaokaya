@@ -112,7 +112,72 @@ class Page
 	def self.recruit
 		Page.new(
 			url:UrlHelpers.recruit_top_path,
-			title: :recruit_top
+			title: :recruit_top,
+			children:[
+				Page.new(
+					title: :graduates,
+					children:[
+						Page.new(
+							url: UrlHelpers.message_graduates_path,
+							title: :message_graduates
+						),
+						Page.new(
+							url: UrlHelpers.interview_graduates_path,
+							title: :interview_graduates
+						),
+						Page.new(
+							url: UrlHelpers.requirements_graduates_path,
+							title: :requirements_graduates
+						),
+						Page.new(
+							url: UrlHelpers.entries_path(:graduates2),
+							title: :entries
+						)
+					]
+				),
+				Page.new(
+					title: :career,
+					children:[
+						Page.new(
+							url: UrlHelpers.message_career_path,
+							title: :message_career
+						),
+						Page.new(
+							url: UrlHelpers.interview_career_path,
+							title: :interview_career
+						),
+						Page.new(
+							url: UrlHelpers.requirements_career_path,
+							title: :requirements_career
+						),
+						Page.new(
+							url: UrlHelpers.entries_path(:career),
+							title: :entries
+						)
+					]
+				),
+				Page.new(
+					title: :pa,
+					children:[
+						Page.new(
+							url: UrlHelpers.message_pa_path,
+							title: :message_pa
+						),
+						Page.new(
+							url: UrlHelpers.interview_pa_path,
+							title: :interview_pa
+						),
+						Page.new(
+							url: UrlHelpers.requirements_pa_path,
+							title: :requirements_pa
+						),
+						Page.new(
+							url: UrlHelpers.entries_path(:pa),
+							title: :entries
+						)
+					]
+				),
+			]
 		)
 	end
 	def self.corporate
@@ -181,10 +246,6 @@ class Page
 						Page.new(
 							url: UrlHelpers.disclaimer_path,
 							title: :disclaimer
-						),
-						Page.new(
-							url: UrlHelpers.financial_info_path,
-							title: :financial_info
 						),
 						Page.new(
 							url: UrlHelpers.market_path,

@@ -3,6 +3,33 @@
 		%span.glyphicon.glyphicon-circle_ok
 		Contents
 	.row
+		-@site = Page.sitemap(request.host)
 		.col-md-6.col-xs-6
 			%ul
-				%li=link_to 'ホーム',corp_top_path
+				%li=link_to @site.short_title,@site.url
+				-@site.children.slice(0..1).each do |s|
+					-unless s.url.nil?					
+						%li=link_to s.short_title,s.url
+					-else
+						%li=s.short_title if s.url.nil?
+					-unless s.children.nil?
+						%ul
+							-s.children.each do |s2|
+								-unless s2.url.nil?					
+									%li=link_to s2.short_title,s2.url
+								-else
+									%li=s2.short_title if s2.url.nil?
+		.col-md-6.col-xs-6
+			%ul
+				-@site.children.slice(2..@site.children.size).each do |s|
+					-unless s.url.nil?					
+						%li=link_to s.short_title,s.url
+					-else
+						%li=s.short_title if s.url.nil?
+					-unless s.children.nil?
+						%ul
+							-s.children.each do |s2|
+								-unless s2.url.nil?					
+									%li=link_to s2.short_title,s2.url
+								-else
+									%li=s2.short_title if s2.url.nil?

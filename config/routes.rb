@@ -120,6 +120,9 @@ Rails.application.routes.draw do
     scope module: :recruit do
       get '/' => 'top#index',as: :recruit_top
       get '/index(.:format)' => 'top#index',as: :recruit_top_variant
+        # get '/:type/message' => 'message#show',as: :message
+        # get '/:type/interview' => 'interview#show',as: :interview
+        # get '/:type/requirements' => 'requirements#show',as: :requirements
       #message
       get '/graduates/message' => 'message#graduates',as: :message_graduates
       get '/career/message' => 'message#career',as: :message_career
