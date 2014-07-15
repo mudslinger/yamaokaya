@@ -6,7 +6,7 @@ class ImagesController < ApplicationController
 	def show
 		size = params[:size] || 'origin'
 		file = params[:file] if params[:file].present?
-
+		notfound = false
 		s3 = AWS::S3.new
 		bucket = s3.buckets['assets.yamaokaya.com']
 		o = bucket.objects[file]
@@ -14,6 +14,7 @@ class ImagesController < ApplicationController
 			blob = o.read
 		rescue
 			#ファイルが見つからない場合の処理。noimageを表示
+			notfound = true
 			bg = bucket.objects['images/transparent.png']
 			noimg = bucket.objects['images/noimage.png']
 			bg_img = Image.read bg.read
@@ -39,10 +40,10 @@ class ImagesController < ApplicationController
 			{
 				assets_url: "//assets#{Digest::MD5.hexdigest(request.path_info).hex % 8}.yamaokaya.com#{request.path_info}",
 				width: image[:width],
-				height: image[:height]
+				height: image[:height],
+				notfound: notfound
 			}
 		end
-		puts meta
 		blob = image.to_blob
 
 		#TODO PNG以外に対応

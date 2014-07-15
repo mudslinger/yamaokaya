@@ -1,4 +1,12 @@
 module ApplicationHelper
+
+	def is_phone?
+		(request.variant || []).include?(:phone)
+	end
+
+	def is_tablet?
+		(request.variant || []).include?(:tablet)
+	end
 	#コンテキストに合わせたI18n.t
 	def tt(key,options: {})
 
@@ -20,8 +28,14 @@ module ApplicationHelper
 		}.merge(options)
 
 		query_string =  params.map{|k,v| "#{k}=#{v}"}.join("&")
-		image_tag "http://maps.googleapis.com/maps/api/staticmap?#{query_string}", alt: location.name,class: 'img-rounded',style:'width:95%'
+		image_tag(
+			"http://maps.googleapis.com/maps/api/staticmap?#{query_string}", 
+			alt: location.name,
+			class: 'shop-image img-rounded'
+		)
 	end
+
+
 
 	#山岡家専用img_tag
 	def ymage_tag(
@@ -43,30 +57,8 @@ module ApplicationHelper
 		lang: nil
 	)
 
-		url = img_path(size: size.to_s,file: path)
+		meta = find_img_meta(img_path(size: size.to_s,file: path))
 
-		meta = Rails.cache.read(image_url: url)
-		meta = {
-			assets_url: "//assets#{Digest::MD5.hexdigest(url).hex % 8}.yamaokaya.com#{url}"
-		} unless meta
-
-		#params = {src: meta[:assets_url],alt: alt,title: title, class: cls}
-		params = {
-			alt: alt,
-			longdesc: longdesc,
-			name: name,
-			ismap: false,
-			usemap: usemap,
-			align: align,
-			width: width,
-			height: height,
-			id: id,
-			class: cls,
-			title: title,
-			style: style,
-			dir: dir,
-			lang: lang
-		}
 		#画像のサイズがゲット出来ている場合
 		# params[:width] = meta[:width] if meta[:width]
 		# params[:height] = meta[:height] if meta[:height]
@@ -75,8 +67,51 @@ module ApplicationHelper
 
 	end
 
+	def ymage_tag_for_shop(
+		shop,
+		size: :origin,
+		alt: nil,
+		longdesc: nil,
+		name: nil,
+		ismap: false,
+		usemap: nil,
+		align: nil,
+		width: nil,
+		height: nil,
+		id: nil,
+		cls: nil,
+		title: nil,
+		style: nil,
+		dir: nil,
+		lang: nil
+	)
+		meta = find_img_meta(img_path(size: size.to_s,file: path))
+
+		#メタデータにファイル無しフラグが設定されている場合 staticmapを表示
+		if meta.notfound == false
+		    params = {
+		      :center => shop.center.join(","),
+		      :zoom => shop.zoom,
+		      :size => size || "200x300",
+		      :markers => shop.center.join(","),
+		      :sensor => true
+		    }.merge(options)
+		    query_string =  params.map{|k,v| "#{k}=#{v}"}.join("&")
+		    meta[:assets_url] = "http://maps.googleapis.com/maps/api/staticmap?#{query_string}"
+	 	end
+	    
+		image_tag meta[:assets_url],params
+	end
+
+	def find_img_meta(url)
+		meta = Rails.cache.read(image_url: url)
+		meta || {
+			assets_url: "//assets#{Digest::MD5.hexdigest(url).hex % 8}.yamaokaya.com#{url}",
+			notfound: false
+		}
+	end
 	def ln(str)
-		#TODO ARと連動・要キャッシュ・IDに変換
+
 		cache do
 			shops = Shop.active
 			shops.each do |s|
@@ -120,6 +155,10 @@ module ApplicationHelper
 	      }.merge(options)
 	 
 	    query_string =  params.map{|k,v| "#{k}=#{v}"}.join("&")
-	    image_tag "http://maps.googleapis.com/maps/api/staticmap?#{query_string}", :alt => shop.name,class: 'img-rounded'
+	    image_tag(
+	    	"http://maps.googleapis.com/maps/api/staticmap?#{query_string}",
+	    	:alt => shop.name,
+	    	class: %w(shop-image img-rounded)
+	    )
 	end
 end

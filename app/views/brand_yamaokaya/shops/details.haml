@@ -1,5 +1,7 @@
 .container#main
 	.row
+		.col-md-7
+			=render partial: 'yamaokaya_map',locals:{shop: @shop}
 		.col-md-5
 			#lat.hidden=@shop.lat
 			#lng.hidden=@shop.lng
@@ -9,21 +11,20 @@
 			=ymage_tag "images/shops/photos/#{@shop.id}.jpg",size: '300x300',cls: ['shop-image', 'img-rounded']
 			%hr
 			=render partial: 'yamaokaya_shop_details',locals: {shop: @shop}
-		.col-md-7
-			=render partial: 'yamaokaya_map',locals:{shop: @shop}
+
 	.row
-		%h3.col-xs-12 近くのお店
+		%h3 近くのお店
+		.clearfix
 		- @shop.nearby.each do |n|
 			.col-md-3
-				.thumbnail
-					.caption
+				.nerby-shops-picture.well
+					.tags
 						%h4=n.name
-					=ymage_tag "images/shops/photos/#{n.id}.jpg",size: '180x300',cls: ['shop-image', 'img-rounded']
-					.caption
-						%p
-							%span.glyphicon.glyphicon-road
-							=n.address
-						%p
-							%span.glyphicon.glyphicon-phone_alt
-							=n.phone
-						%p=link_to "店舗情報",shop_details_path(n.id), :class => "btn btn-primary"
+					=link_to shop_details_path(n.id),{} do
+						=ymage_tag "images/shops/photos/#{n.id}.jpg",size: '200x400',cls: ['shop-image', 'img-rounded']
+					.actions
+						=link_to '店舗情報', shop_details_path(n.id), {title: n.name,class: %w(btn btn-primary btn-sm pull-right),role: :button}
+
+
+
+

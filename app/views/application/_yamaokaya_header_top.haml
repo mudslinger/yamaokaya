@@ -1,2 +1,58 @@
-.navbar.navbar-inverse.navbar-fixed-top#header
-	=render partial: 'yamaokaya_header_top_inner'
+%div.navbar.navbar-inverse#header{class: is_phone? ? nil : 'navbar-fixed-top'}
+	.container
+		.navbar-header
+			%button.navbar-toggle{type: 'button',data:{toggle: :collapse,target:'.navbar-collapse'}}
+				%span.icon-bar
+				%span.icon-bar
+				%span.icon-bar
+			=link_to :yamaokaya_top do
+				=ymage_tag 'images/logo.png',alt:'ラーメン山岡家'
+		.navbar-collapse.collapse#nav
+			%ul.nav.navbar-nav.navbar-right
+				%li.active
+					%a{href:'#top'} 
+						%span.glyphicon.glyphicon-home
+						ホーム
+				%li
+					%a{href:'#shop'}
+						%span.glyphicon.glyphicon-shop_window
+						店舗
+				%li
+					%a{href:'#menu'} 
+						%span.glyphicon.glyphicon-pot
+						メニュー
+				%li
+					%a.dropdown-toggle{href:'#',data:{toggle: :dropdown}}
+						%span.glyphicon.glyphicon-info
+						about
+						%span.caret
+					%ul.dropdown-menu{role: :menu}
+						%li
+							=link_to :about do
+								このHPについて
+						%li
+							=link_to :sitemap do
+								サイトマップ
+						%li
+							=link_to :sns_guideline do
+								SNSガイドライン
+						%li.divider
+						%li
+							=link_to corp_top_url,target: '_blank' do
+								%span.glyphicon.glyphicon-home
+								㈱丸千代山岡家 コーポレートページ
+						%li
+							=link_to recruit_top_url,target: '_blank' do
+								%span.glyphicon.glyphicon-user
+								採用スペシャルサイト
+				%li
+					=link_to :feedbacks do
+						%span.glyphicon.glyphicon-send
+						ご意見・ご感想
+	.ticker
+		.container
+			.row
+				.col-sm-8.col-xs-12
+					%h1 ガツンときて、くせになる。濃厚豚骨ラーメンの山岡家です。
+				.col-sm-4.col-xs-12
+					#ticker.text-right

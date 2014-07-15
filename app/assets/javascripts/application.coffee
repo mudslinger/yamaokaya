@@ -35,7 +35,6 @@ $ ->
 	$('p.truncate').each (i,o)->
 		$(o).text($(o).text().substr(0,60) + '...')
 
-
 #ヒストリーのグラフ
 $ ->
 	if $('body.corporate.company').get(0)?
@@ -48,3 +47,9 @@ $ ->
 $ ->
 	if $('body.recruit.entries').get(0)?
 		$('.selectpicker').selectpicker()
+
+#モバイル用SELECT
+$ ->
+	if $('#mobile-pref-selector').get(0)?
+		$('#mobile-pref-selector').change ->
+			location.href = $(@).val()

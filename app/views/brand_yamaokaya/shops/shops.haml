@@ -3,12 +3,21 @@
 		#index-map.well
 		%p ご覧になりたい地域をクリックしてください。
 	.col-md-8.col-sm-12.col-xs-12
-		.jumbotron
-			%p.lead 
-				山岡家の店舗は全国#{Shop.active.size}店舗。
-				%br
-				お近くの山岡家にぜひお越しください。
+		-unless is_phone?
+			.jumbotron
+				%p.lead 
+					山岡家の店舗は全国#{Shop.active.size}店舗。
+					%br
+					お近くの山岡家にぜひお越しください。
 		-cache do
+			-if is_phone?
+				%select.form-control#mobile-pref-selector
+					- @regions.each do |r|
+						%optgroup{label: r.name}
+							- r.prefectures.each do |p|
+								%option{value: "##{p.id}"}
+									=p.name
+
 			- @regions.each do |r|
 				%h3=r.name
 				.clearfix
@@ -18,7 +27,7 @@
 								.col-md-3.col-xs-12
 									.panel.panel-default
 										.panel-heading
-											%h4
+											%h4{id: area.prefecture.id}
 												=area.prefecture.name
 												=area.name unless area.whole_prefecture
 										.list-group

@@ -4,6 +4,7 @@ class ApplicationController < ActionController::Base
 	protect_from_forgery with: :exception
 	before_action :detect_device_format
 	before_filter :auth,:set_title
+
 	private
 	def detect_device_format
 		case request.user_agent
@@ -18,6 +19,7 @@ class ApplicationController < ActionController::Base
 		when /Windows Phone/i
 			request.variant = :phone
 		end
+		@variant = request.variant
 	end
 
 	def domain_layout
