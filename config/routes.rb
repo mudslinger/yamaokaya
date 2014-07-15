@@ -1,63 +1,10 @@
 Rails.application.routes.draw do
-  # The priority is based upon order of creation: first created -> highest priority.
-  # See how all your routes lay out with "rake routes".
-
-  # You can have the root of your site routed with "root"
-  # root 'welcome#index'
-
-  # Example of regular route:
-  #   get 'products/:id' => 'catalog#view'
-
-  # Example of named route that can be invoked with purchase_url(id: product.id)
-  #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
-
-  # Example resource route (maps HTTP verbs to controller actions automatically):
-  #   resources :products
-
-  # Example resource route with options:
-  #   resources :products do
-  #     member do
-  #       get 'short'
-  #       post 'toggle'
-  #     end
-  #
-  #     collection do
-  #       get 'sold'
-  #     end
-  #   end
-
-  # Example resource route with sub-resources:
-  #   resources :products do
-  #     resources :comments, :sales
-  #     resource :seller
-  #   end
-
-  # Example resource route with more complex sub-resources:
-  #   resources :products do
-  #     resources :comments
-  #     resources :sales do
-  #       get 'recent', on: :collection
-  #     end
-  #   end
-
-  # Example resource route with concerns:
-  #   concern :toggleable do
-  #     post 'toggle'
-  #   end
-  #   resources :posts, concerns: :toggleable
-  #   resources :photos, concerns: :toggleable
-
-  # Example resource route within a namespace:
-  #   namespace :admin do
-  #     # Directs /admin/products/* to Admin::ProductsController
-  #     # (app/controllers/admin/products_controller.rb)
-  #     resources :products
-  #   end
 
   #common
   get '/about' => 'articles#about',as: :about
   get '/sns_guideline' => 'articles#sns_guideline',as: :sns_guideline
   get '/sitemap' => 'articles#sitemap',as: :sitemap
+  get '/google_map/:address' => redirect("https://maps.google.co.jp/maps?q=%{address}"),as: :google_map
 
   #地図用json
   get '/markers' => 'brand_yamaokaya/shops#markers', as: :markers
@@ -73,7 +20,6 @@ Rails.application.routes.draw do
   post '/feedbacks' => 'feedbacks#create',as: :feedbacks_post
   constraints host: DOMAINS[:corporate] do
     scope module: :corporate do
-
       get '/' => 'top#index',as: :corp_top
       get '/index(.:format)' => 'top#index',as: :corp_top_variant
       get '/greetings' => 'top#greetings',as: :greetings
@@ -95,8 +41,6 @@ Rails.application.routes.draw do
       get '/ir/disclaimer' => 'ir#disclaimer',as: :disclaimer
       get '/ir/financial_infomation' => 'ir#financial_info',as: :financial_info
       get '/property' => 'property#development',as: :property
-
-      get '/google_map/:address' => redirect("https://maps.google.co.jp/maps?q=%{address}"),as: :google_map
     end
   end
 
@@ -104,7 +48,6 @@ Rails.application.routes.draw do
     scope module: :brand_yamaokaya do
       get '/' => 'top#index',as: :yamaokaya_top
       get '/index(.:format)' => 'top#index',as: :yamaokaya_top_variant
-      
       get '/shops/:key' => 'shops#details', as: :shop_details
       get 'shops' => 'shops#shops', as: :shop_root
       get 'big_map' => 'shops#big_map'
@@ -120,9 +63,7 @@ Rails.application.routes.draw do
     scope module: :recruit do
       get '/' => 'top#index',as: :recruit_top
       get '/index(.:format)' => 'top#index',as: :recruit_top_variant
-        # get '/:type/message' => 'message#show',as: :message
-        # get '/:type/interview' => 'interview#show',as: :interview
-        # get '/:type/requirements' => 'requirements#show',as: :requirements
+
       #message
       get '/graduates/message' => 'message#graduates',as: :message_graduates
       get '/career/message' => 'message#career',as: :message_career
