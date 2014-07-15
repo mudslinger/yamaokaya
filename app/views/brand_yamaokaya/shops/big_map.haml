@@ -1,0 +1,18 @@
+!!! 5
+%html.modearn
+  %head
+    %meta(charset="utf-8")
+    %meta(http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1")
+    %meta(content="width=device-width, initial-scale=1.0" name="viewport")
+    %meta(name="description" content="")
+    %meta(name="keywords" content="ラーメン,濃厚豚骨,餃子")
+    %meta(name="author" content="")
+    %title=@current_page.title
+    =csrf_meta_tags
+    =stylesheet_link_tag "yamaokaya", media: "all"
+    = javascript_include_tag "//www.google.com/jsapi"
+    = javascript_include_tag "//maps.google.com/maps/api/js?sensor=true"
+    = javascript_include_tag "application"
+  %body{class: [controller.controller_name,:yamaokaya]}
+    .container
+      #index-map.well{style:'min-height:800px;'}

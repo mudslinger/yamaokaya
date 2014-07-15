@@ -107,7 +107,7 @@ Rails.application.routes.draw do
       
       get '/shops/:key' => 'shops#details', as: :shop_details
       get 'shops' => 'shops#shops', as: :shop_root
-
+      get 'big_map' => 'shops#big_map'
       constraints id: /[0-9]+/ do
         get 'menus/:id' => 'menus#details',as: :menu_details
       end

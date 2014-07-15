@@ -16,6 +16,12 @@ class BrandYamaokaya::ShopsController < BrandYamaokaya::BaseController
 		end
 	end
 
+	def big_map
+		respond_to do |format|
+			format.html{render template: 'brand_yamaokaya/shops/big_map.haml',layout:false}
+		end
+	end
+
 	def markers
 		zoom = params[:zoom] if params[:zoom].present?
 		zoom = zoom || 0
