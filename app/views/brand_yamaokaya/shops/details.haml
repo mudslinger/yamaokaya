@@ -21,7 +21,7 @@
 					.tags
 						%h4=n.name
 					=link_to shop_details_path(n.id),{} do
-						=ymage_tag "images/shops/photos/#{n.id}.jpg",size: '200x400',cls: ['shop-image', 'img-rounded']
+						=ymage_tag_for_shop "images/shops/photos/#{n.id}.jpg",size: '200x300',cls: ['shop-image', 'img-rounded']
 					.actions
 						=link_to '店舗情報', shop_details_path(n.id), {title: n.name,class: %w(btn btn-primary btn-sm pull-right),role: :button}
 
