@@ -2,6 +2,10 @@
 	.row
 		.col-md-7
 			=render partial: 'yamaokaya_map',locals:{shop: @shop}
+			=link_to google_map_path(address: URI.encode(@shop.address)),class: %w(btn btn-primary btn-sm) do
+				#{@shop.name}周辺の地図をで表示
+			%button.btn.btn-primary.btm-sm#find_route{role: :button} 
+				現在地から#{@shop.name}までの道順を表示
 		.col-md-5
 			#lat.hidden=@shop.lat
 			#lng.hidden=@shop.lng
@@ -9,6 +13,7 @@
 			#sprite_y.hidden=@shop.sprite_y
 			#zoom.hidden=@shop.zoom
 			=ymage_tag "images/shops/photos/#{@shop.id}.jpg",size: '300x300',cls: ['shop-image', 'img-rounded']
+
 			%hr
 			=render partial: 'yamaokaya_shop_details',locals: {shop: @shop}
 

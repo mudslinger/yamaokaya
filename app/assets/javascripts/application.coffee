@@ -30,6 +30,9 @@
 #コーポレート　チャート系
 #=require chart
 
+#道案内表示
+#=require route_finder
+
 #コーポレートトップの短縮
 $ ->
 	$('p.truncate').each (i,o)->
@@ -53,3 +56,4 @@ $ ->
 	if $('#mobile-pref-selector').get(0)?
 		$('#mobile-pref-selector').change ->
 			location.href = $(@).val()
+
