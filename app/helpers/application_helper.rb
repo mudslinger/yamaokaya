@@ -85,21 +85,22 @@ module ApplicationHelper
 		dir: nil,
 		lang: nil
 	)
-		meta = find_img_meta(img_path(size: size.to_s,file: path))
+
+		meta = find_img_meta(img_path(size: size.to_s,file: "images/shops/photos/#{shop.id}.jpg"))
 
 		#メタデータにファイル無しフラグが設定されている場合 staticmapを表示
-		if meta.notfound == false
-		    params = {
+		if meta[:notfound] == true
+		    mapparams = {
 		      :center => shop.center.join(","),
 		      :zoom => shop.zoom,
 		      :size => size || "200x300",
 		      :markers => shop.center.join(","),
 		      :sensor => true
-		    }.merge(options)
-		    query_string =  params.map{|k,v| "#{k}=#{v}"}.join("&")
+		    }
+		    query_string = mapparams.map{|k,v| "#{k}=#{v}"}.join("&")
 		    meta[:assets_url] = "http://maps.googleapis.com/maps/api/staticmap?#{query_string}"
 	 	end
-	    
+	    puts meta
 		image_tag meta[:assets_url],params
 	end
 
