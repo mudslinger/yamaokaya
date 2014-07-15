@@ -1,0 +1,10 @@
+%table.table
+	- @headlines.news.each do |r|
+		%tr
+			%td
+				%span.label.label-danger.pull-left
+					=r.target_date.strftime("%m/%d")
+			%td
+				%a.original-news{href:r.url}
+					%span.glyphicon.glyphicon-bullhorn
+					=r.title
