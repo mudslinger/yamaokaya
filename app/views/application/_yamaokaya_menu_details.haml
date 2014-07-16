@@ -3,10 +3,8 @@
 		%h4.panel-title
 			=@menu.name
 	.panel-body
-		%p.menu_details= @menu.comment
 		.menu-detail-picture.well
-			.tags
-				test test test test
+			.tags=@menu.comment
 			=ymage_tag "images/menus/photos/#{@menu.id}.png",size: '500x500',cls: :photo
 			.actions
 				%p.price-area

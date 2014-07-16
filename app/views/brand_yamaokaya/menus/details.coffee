@@ -20,5 +20,5 @@ repdigit = (element)->
 		for i in pchars
 			$(@).append $("<img class='digit' src='#{imgs[i]}' alt='#{i}' />")
 
-repdigit $('#price') if $('#price').get(0)?
-repdigit $('#wotax') if $('#wotax').get(0)?
+repdigit $('.price') if $('.price').get(0)?
+repdigit $('.wotax') if $('.wotax').get(0)?

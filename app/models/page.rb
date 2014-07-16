@@ -283,18 +283,22 @@ class Page
 					title: :shops,
 					children: Region.has_shops.map do |r|
 						Page.new(
+							url:  UrlHelpers.shop_root_path(anchor: r.id),
 							title: r.name,
 							children: r.prefectures.has_shops.map do |p|
-								Page.new(
-									title: p.name,
-									children: p.shops.map do |s|
-										Page.new(
-											url: UrlHelpers.shop_details_path(s.id),
-											title: s.long_name
-										)
-									end
-								)
-							end 
+								p.areas.map do |area|
+									Page.new(
+										url:  UrlHelpers.shop_root_path(anchor: area.id),
+										title: p.name + area.name,
+										children: area.shops.map do |s|
+											Page.new(
+												url: UrlHelpers.shop_details_path(s.id),
+												title: s.long_name
+											)
+										end
+									)
+								end
+							end.flatten
 						)
 					end
 				),

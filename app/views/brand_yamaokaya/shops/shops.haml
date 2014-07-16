@@ -20,12 +20,12 @@
 									=p.name
 
 			- @regions.each do |r|
-				%h3=r.name
+				%h3{id: r.id}=r.name
 				.clearfix
 					- r.prefectures.each do |p|
 						- p.areas.each do |area|
 							-unless area.shops.empty?
-								.col-md-4.col-xs-12
+								.col-md-3.col-xs-12
 									.panel.panel-default
 										.panel-heading
 											%h4{id: area.prefecture.id}
