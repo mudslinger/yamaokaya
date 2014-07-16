@@ -58,7 +58,22 @@ module ApplicationHelper
 	)
 
 		meta = find_img_meta(img_path(size: size.to_s,file: path))
-
+		params = {
+			alt: alt,
+			longdesc: longdesc,
+			name: name,
+			ismap: false,
+			usemap: usemap,
+			align: align,
+			width: width,
+			height: height,
+			id: id,
+			class: cls,
+			title: title,
+			style: style,
+			dir: dir,
+			lang: lang
+		}
 		#画像のサイズがゲット出来ている場合
 		# params[:width] = meta[:width] if meta[:width]
 		# params[:height] = meta[:height] if meta[:height]
@@ -67,6 +82,7 @@ module ApplicationHelper
 
 	end
 
+	#山岡家店舗用image_tag
 	def ymage_tag_for_shop(
 		shop,
 		size: :origin,
@@ -83,13 +99,29 @@ module ApplicationHelper
 		title: nil,
 		style: nil,
 		dir: nil,
-		lang: nil
+		lang: nil,
+		showmap: true
 	)
 
 		meta = find_img_meta(img_path(size: size.to_s,file: "images/shops/photos/#{shop.id}.jpg"))
-
+		params = {
+			alt: alt,
+			longdesc: longdesc,
+			name: name,
+			ismap: false,
+			usemap: usemap,
+			align: align,
+			width: width,
+			height: height,
+			id: id,
+			class: cls,
+			title: title,
+			style: style,
+			dir: dir,
+			lang: lang
+		}
 		#メタデータにファイル無しフラグが設定されている場合 staticmapを表示
-		if meta[:notfound] == true
+		if meta[:notfound] == true && showmap == true
 		    mapparams = {
 		      :center => shop.center.join(","),
 		      :zoom => shop.zoom,
@@ -100,8 +132,11 @@ module ApplicationHelper
 		    query_string = mapparams.map{|k,v| "#{k}=#{v}"}.join("&")
 		    meta[:assets_url] = "http://maps.googleapis.com/maps/api/staticmap?#{query_string}"
 	 	end
-	    puts meta
-		image_tag meta[:assets_url],params
+	    if meta[:notfound] == true && showmap == false
+	    	''
+	    else
+			image_tag meta[:assets_url],params
+		end
 	end
 
 	def find_img_meta(url)
