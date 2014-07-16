@@ -1,2 +1,8 @@
-.well#detail-map{style:'width:97%;height:500px;margin-left:3%'}
-.invisible#marker-data=raw shop.to_json methods: [:sprite_x,:sprite_y]
+.well#detail-map{style:'width:100%;height:450px'}
+.btn-group
+	=#link_to google_map_path(address: URI.encode(@shop.address)),class: %w(btn btn-primary btn-sm) do
+	%button.btn.btn-primary.btm-sm#show_shop{role: :button,type: :button}
+		周辺の地図を表示
+	%button.btn.btn-primary.btm-sm#find_route{role: :button,type: :button} 
+		現在地からの道順を表示
+.hidden.invisible#marker-data=raw shop.to_json methods: [:sprite_x,:sprite_y]

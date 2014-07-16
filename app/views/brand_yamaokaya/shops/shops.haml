@@ -1,8 +1,9 @@
 .container#main
-	.col-md-4.col-sm-12.col-xs-12#map_area
-		#index-map.well
+	.col-md-12.col-sm-12.col-xs-12#map_area
+		#index-map.well{style: 'min-height:450px;'}
+		#user-latlng.invisible.hidden
 		%p ご覧になりたい地域をクリックしてください。
-	.col-md-8.col-sm-12.col-xs-12
+	.col-md-12.col-sm-12.col-xs-12
 		-unless is_phone?
 			.jumbotron
 				%p.lead 
@@ -24,7 +25,7 @@
 					- r.prefectures.each do |p|
 						- p.areas.each do |area|
 							-unless area.shops.empty?
-								.col-md-3.col-xs-12
+								.col-md-4.col-xs-12
 									.panel.panel-default
 										.panel-heading
 											%h4{id: area.prefecture.id}

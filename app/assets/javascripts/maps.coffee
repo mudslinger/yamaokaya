@@ -2,6 +2,7 @@
 $ ->
 	markers = {}
 	loaded = {}
+	currentmarker = null
 	class AbstractMarker extends google.maps.Marker
 		getPosition: ->
 			@position = new google.maps.LatLng(@lat,@lng) unless @position?
@@ -98,6 +99,14 @@ $ ->
 		changeVisible: (zoom)->
 			@setVisible true
 
+	#店舗検索トップ用現在地付近表示コントロール
+	class ZoomcpsControl
+		constructor: (@div,@map)->
+			google.maps.event.addDomListener @div, 'click', ->
+				navigator.geolocation.getCurrentPosition (pos)=> 
+					zoomToPos(pos.coords,map)
+
+
 	createMarker = (json,map)->
 		#console.log json
 		unless markers[json.id]?
@@ -119,6 +128,18 @@ $ ->
 				for obj in json
 					createMarker obj,map
 
+	zoomToPos = (obj,mymap)->
+		currentpos = new google.maps.LatLng(obj.latitude,obj.longitude)
+		mymap.setCenter currentpos
+		unless currentmarker?
+			currentmarker = new google.maps.Marker
+				position: currentpos
+				map: mymap
+				title: '現在地'
+		else
+			currentmarker.position = currentpos
+		
+		mymap.setZoom(if mymap.getZoom() < 12 then 12 else mymap.getZoom()+1)
 
 	if $('#index-map').get(0)
 		map = new google.maps.Map(
@@ -127,10 +148,18 @@ $ ->
 				zoom:5
 				center: new google.maps.LatLng(38.7868944,137.7877029)
 				mapTypeId: google.maps.MapTypeId.ROADMAP,
+				disableDefaultUI: true,
+				zoomControl: true,
+				scaleControl: true,
 				noClear : true
 			}
 		)
-
+		#現在位置機能が使える場合、現在地付近を表示するカスタムコントロールを表示
+		if $('#user-latlng').get(0) && (navigator.geolocation)
+			zcpsdiv = $('<button class="btn btn-primary btm-sm">現在地付近を表示</button>').get(0)
+			zcpsctrl = new ZoomcpsControl zcpsdiv,map
+			zcpsdiv.index = 1
+			map.controls[google.maps.ControlPosition.TOP_RIGHT].push(zcpsdiv)
 		loadMarkers map
 		google.maps.event.addListener map,'zoom_changed',->
 			map.setZoom(4) if map.getZoom() < 4
@@ -138,12 +167,16 @@ $ ->
 			for k,v of markers
 				v.changeVisible(map.getZoom())
 
-	#現在位置に合わせて地図の表示を変更
-	if $('#user-latlng').get(0)
+		#トップページ用ズーム機能
 		$('#user-latlng').bind 'DOMSubtreeModified', ->
 			latlng = $('#user-latlng').text().split(',')
-			map.setCenter new google.maps.LatLng(latlng[0],latlng[1])
-			map.setZoom(11	)
+			zoomToPos(
+				{
+					latitude: latlng[0]
+					longitude: latlng[1]
+				},
+				map
+			)
 	#個別店舗ページ
 	if $('#detail-map').get(0) && $('#marker-data').get(0)
 		json = $.parseJSON($('#marker-data').text())
