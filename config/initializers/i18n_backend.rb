@@ -4,7 +4,7 @@
 # )
 # TRANSLATION_STORE = ActiveSupport::Cache::MemCacheStore.new("localhost", "yamaokaya-db.c5uthvjn4chs.ap-northeast-1.rds.amazonaws.com:11211")
 # TRANSLATION_STORE = Redis.new(
-# 	url:'redis://yamapp-redis.gneihq.0001.apne1.cache.amazonaws.com/yamaokaya/development/cache'
+# 	url:'redis://yam-redis.gneihq.0001.apne1.cache.amazonaws.com/yamaokaya/development/cache'
 # )
 
 # I18n.backend = 
