@@ -69,6 +69,23 @@ end
 end
 %>
 
+プレミアム塩とんこつ:
+  id: 51
+  name: プレミアム塩とんこつ
+  category: 0
+  subcategory: 0
+  taste: 4
+  ingredients: 0
+  has_large_sizes: true
+  start_sells: 1970/1/1
+  end_sells: 2099/12/31
+  is_hot: false
+  price: 810
+  comment: |
+    伝説の期間限定メニューがついにレギュラー化。
+    山岡家限定メニュー人気No.1「プレミアム塩とんこつ」が、
+    多くのお客様のご要望にお応えして、ついにレギュラー化。
+    旨味を凝縮した濃厚な豚骨スープに、背脂でまろやかさをプラスした、自信を持っておすすめできる一品です！
 サービスセットA:
   id: 101
   name: サービスセットA

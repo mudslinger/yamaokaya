@@ -2,19 +2,29 @@
 	%hr
 	.row
 		.col-xs-12
-			Quick Navi
-		.col-xs-6.text-center
-			=link_to :shop_root,class: %w(btn btn-primary),role: :button do
-				店舗検索	
-		.col-xs-6.text-center
-			=link_to menu_categorized_path(:regular),class: %w(btn btn-primary),role: :button do
-				メニュー
-		.col-xs-6.text-center
-			=link_to :feedbacks,class: %w(btn btn-primary),role: :button do
-				ご意見・ご感想
-		.col-xs-6.text-center
-			=link_to recruit_top_url,class: %w(btn btn-primary),role: :button do
-				採用スペシャルサイトへ
+			.panel.panel-default
+				.panel-heading.original-news
+					%h4.panel-title 
+						%span.glyphicon.glyphicon-shop
+						Quick Navi
+				%table.table
+					%col{width: '50%'}
+					%col{width: '50%'}
+					%tr
+						%td
+							=link_to :shop_root,class: %w(btn btn-primary),role: :button,style: 'width:100%' do
+								店舗検索	
+						%td
+							=link_to menu_categorized_path(:regular),class: %w(btn btn-primary),role: :button,style: 'width:100%' do
+								メニュー
+					%tr
+						%td
+							=link_to :feedbacks,class: %w(btn btn-primary),role: :button,style: 'width:100%' do
+								ご意見・ご感想
+						%td
+							=link_to recruit_top_url,class: %w(btn btn-primary),role: :button,style: 'width:100%' do
+								採用スペシャルサイトへ
+
 	%hr
 	.row
 		.col-xs-12
@@ -23,7 +33,7 @@
 					%h4.panel-title 
 						%span.glyphicon.glyphicon-shop
 						Topics
-				.panel-body.noty-message
+				.panel-body
 					%table.table
 						- @headlines.news.each do |r|
 							%tr

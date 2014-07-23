@@ -11,19 +11,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140709113316) do
-
-  # These are extensions that must be enabled in order to support this database
-  enable_extension "plpgsql"
+ActiveRecord::Schema.define(version: 20140718010539) do
 
   create_table "areas", force: true do |t|
-    t.boolean  "whole_prefecture",            default: false
     t.integer  "prefecture_id"
-    t.string   "name",             limit: 62,                 null: false
+    t.string   "name",          limit: 62, null: false
     t.integer  "start_shows"
     t.integer  "end_shows"
-    t.float    "lat"
-    t.float    "lng"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "seq"
@@ -97,13 +91,10 @@ ActiveRecord::Schema.define(version: 20140709113316) do
   end
 
   create_table "prefectures", force: true do |t|
-    t.boolean  "whole_region"
     t.integer  "region_id"
-    t.string   "name",         limit: 62, null: false
+    t.string   "name",        limit: 62, null: false
     t.integer  "start_shows"
     t.integer  "end_shows"
-    t.float    "lat"
-    t.float    "lng"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "seq"
@@ -113,8 +104,6 @@ ActiveRecord::Schema.define(version: 20140709113316) do
     t.string   "name",        limit: 62, null: false
     t.integer  "start_shows"
     t.integer  "end_shows"
-    t.float    "lat"
-    t.float    "lng"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "seq"
@@ -162,6 +151,8 @@ ActiveRecord::Schema.define(version: 20140709113316) do
     t.integer  "seats_at_counter"
     t.integer  "booths"
     t.integer  "seq"
+    t.integer  "park_caps"
+    t.integer  "truck_park_caps"
   end
 
   create_table "wished_shops", force: true do |t|

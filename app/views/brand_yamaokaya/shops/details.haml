@@ -8,10 +8,11 @@
 			#sprite_x.hidden=@shop.sprite_x
 			#sprite_y.hidden=@shop.sprite_y
 			#zoom.hidden=@shop.zoom
+			=render partial: 'yamaokaya_shop_details',locals: {shop: @shop}
+			%hr
 			=ymage_tag "images/shops/photos/#{@shop.id}.jpg",size: '300x300',cls: ['shop-image', 'img-rounded']
 
-			%hr
-			=render partial: 'yamaokaya_shop_details',locals: {shop: @shop}
+
 
 	.row
 		%h3 近くのお店

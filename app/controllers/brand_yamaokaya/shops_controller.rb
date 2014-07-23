@@ -34,7 +34,7 @@ class BrandYamaokaya::ShopsController < BrandYamaokaya::BaseController
 			ret.start_shows = v.start_shows unless v == ret
 			ret
 		end  + @shops)
-		additional_attr = [:marker_type,:sprite_x,:sprite_y,:bounds,:start_shows,:end_shows]
+		additional_attr = [:marker_type,:sprite_x,:sprite_y,:bounds,:start_shows,:end_shows,:lat,:lng]
 		respond_to do |format|
 			format.json{
 				render(

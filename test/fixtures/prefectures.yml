@@ -4,7 +4,7 @@ hokkaido:
   start_shows: 0
   end_shows: 0
   region: hokkaido
-  whole_region: true
+
 aomori: 
   seq: 2
   name: 青森県

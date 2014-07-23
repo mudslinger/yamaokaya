@@ -25,13 +25,21 @@
 					- r.prefectures.each do |p|
 						- p.areas.each do |area|
 							-unless area.shops.empty?
-								.col-md-3.col-xs-12
+								.col-md-4.col-xs-12
 									.panel.panel-default
 										.panel-heading
 											%h4{id: area.prefecture.id}
 												=area.prefecture.name
-												=area.name unless area.whole_prefecture
+												=area.name
 										.list-group
 											-area.shops.each do |s|
 												=link_to shop_details_path(s.id),class: 'list-group-item' do
 													=s.name
+													- ss = s.shop_status
+													%span.label.label-info.pull-right 
+														P
+														%span.glyphicon.glyphicon-truck
+													-if s.allnight?
+														%span.label.label-primary.pull-right 24H
+													%span.label.pull-right{class: "label-#{ss[:status]}"}
+														=ss[:text]

@@ -7,17 +7,23 @@
 				%td
 					="〒#{shop.postal_code}"
 					%br
-					= shop.address
+					=shop.address
+					%br
+					%button.btn.btn-primary.btm-sm#show_shop{role: :button,type: :button}
+						周辺の地図を表示
+					%button.btn.btn-primary.btm-sm#find_route{role: :button,type: :button} 
+						現在地からの道順を表示
 			%tr
 				%th 電話番号
 				%td= shop.phone
 			%tr
 				%th 営業時間
 				%td
-					-if shop.now_open?
-						[現在営業中!]
 					- shop.shop_hours_human.each do |h|
 						=h
+						- ss = shop.shop_status
+						%span.label.pull-right{class: "label-#{ss[:status]}"}
+							=ss[:text]
 			%tr
 				%th 目印・その他
 				%td= shop.landmarks

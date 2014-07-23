@@ -6,7 +6,6 @@ class Area < ActiveRecord::Base
 	scope :by_zoom, ->(zoom) {
 		where("#{zoom} between areas.start_shows and areas.end_shows")
 	}
-	scope :not_whole, -> {where(whole_prefecture: false)}
 	scope :has_shops, -> {includes(:shops).where.not(shops: {id: nil})}
 	scope :by_prefecture, ->(id) {where(prefecture_id: id)}
 	scope :with_higher, ->{

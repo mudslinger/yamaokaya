@@ -34,42 +34,42 @@ aomori:
   start_shows: 9
   end_shows: 12
   name: 全域
-  whole_prefecture: true
+
 akita:
   seq: 7
   prefecture: akita
   start_shows: 9
   end_shows: 12
   name: 全域
-  whole_prefecture: true
+
 iwate:
   seq: 8
   prefecture: iwate
   start_shows: 9
   end_shows: 12
   name: 全域
-  whole_prefecture: true
+
 miyagi:
   seq: 9
   prefecture: miyagi
   start_shows: 9
   end_shows: 12
   name: 全域
-  whole_prefecture: true
+
 yamagata:
   seq: 10
   prefecture: yamagata
   start_shows: 9
   end_shows: 12
   name: 全域
-  whole_prefecture: true
+
 fukushima:
   seq: 11
   prefecture: fukushima
   start_shows: 9
   end_shows: 12
   name: 全域
-  whole_prefecture: true
+
 kennan:
   seq: 12
   prefecture: ibaraki
@@ -88,179 +88,179 @@ tochigi:
   start_shows: 9
   end_shows: 12
   name: 全域
-  whole_prefecture: true
+
 gunma:
   seq: 15
   prefecture: gunma
   start_shows: 9
   end_shows: 12
   name: 全域
-  whole_prefecture: true
+
 saitama:
   seq: 16
   prefecture: saitama
   start_shows: 9
   end_shows: 12
   name: 全域
-  whole_prefecture: true
+
 tokatsu:
   seq: 17
   prefecture: chiba
   start_shows: 8
   end_shows: 10
   name: 柏・野田エリア
-  whole_prefecture: false
+
 wangan:
   seq: 18
   prefecture: chiba
   start_shows: 8
   end_shows: 8
   name: 湾岸エリア
-  whole_prefecture: false
+
 narita:
   seq: 19
   prefecture: chiba
   start_shows: 8
   end_shows: 9
   name: 成田・外房エリア
-  whole_prefecture: false
+
 tokyo:
   seq: 20
   prefecture: tokyo
   start_shows: 9
   end_shows: 12
   name: 23区
-  whole_prefecture: false
+
 tama:
   seq: 21
   prefecture: tokyo
   start_shows: 9
   end_shows: 12
   name: 多摩エリア
-  whole_prefecture: false
+
 kanagawa:
   seq: 22
   prefecture: kanagawa
   start_shows: 9
   end_shows: 12
   name: 全域
-  whole_prefecture: true
+
 niigata:
   seq: 23
   prefecture: niigata
   start_shows: 9
   end_shows: 12
   name: 全域
-  whole_prefecture: true
+
 toyama:
   seq: 24
   prefecture: toyama
   start_shows: 9
   end_shows: 12
   name: 全域
-  whole_prefecture: true
+
 ishikawa:
   seq: 25
   prefecture: ishikawa
   start_shows: 9
   end_shows: 12
   name: 全域
-  whole_prefecture: true
+
 fukui:
   seq: 26
   prefecture: fukui
   start_shows: 9
   end_shows: 12
   name: 全域
-  whole_prefecture: true
+
 yamanashi:
   seq: 27
   prefecture: yamanashi
   start_shows: 9
   end_shows: 12
   name: 全域
-  whole_prefecture: true
+
 nagano:
   seq: 28
   prefecture: nagano
   start_shows: 9
   end_shows: 12
   name: 長野市近辺
-  whole_prefecture: false
+
 matsumoto:
   seq: 29
   prefecture: nagano
   start_shows: 9
   end_shows: 12
   name: 松本市近辺
-  whole_prefecture: false
+
 shizuoka:
   seq: 30
   prefecture: shizuoka
   start_shows: 9
   end_shows: 12
   name: 東部エリア
-  whole_prefecture: false
+
 hamamatsu:
   seq: 31
   prefecture: shizuoka
   start_shows: 9
   end_shows: 12
   name: 西部エリア
-  whole_prefecture: false
+
 aichi:
   seq: 32
   prefecture: aichi
   start_shows: 9
   end_shows: 12
   name: 全域
-  whole_prefecture: true
+
 gifu:
   seq: 33
   prefecture: gifu
   start_shows: 9
   end_shows: 12
   name: 全域
-  whole_prefecture: true
+
 mie:
   seq: 34
   prefecture: mie
   start_shows: 9
   end_shows: 12
   name: 全域
-  whole_prefecture: true
+
 osaka:
   seq: 35
   prefecture: osaka
   start_shows: 9
   end_shows: 12
   name: 全域
-  whole_prefecture: true
+
 kyoto:
   seq: 36
   prefecture: kyoto
   start_shows: 9
   end_shows: 12
   name: 全域
-  whole_prefecture: true
+
 hyogo:
   seq: 37
   prefecture: hyogo
   start_shows: 9
   end_shows: 12
   name: 全域
-  whole_prefecture: true
+
 fukuoka:
   seq: 38
   prefecture: fukuoka
   start_shows: 9
   end_shows: 12
   name: 全域
-  whole_prefecture: true
+
 kumamoto:
   seq: 39
   prefecture: kumamoto
   start_shows: 9
   end_shows: 12
   name: 全域
-  whole_prefecture: true
+

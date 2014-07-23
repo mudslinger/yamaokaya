@@ -160,6 +160,7 @@ $ ->
 			zcpsctrl = new ZoomcpsControl zcpsdiv,map
 			zcpsdiv.index = 1
 			map.controls[google.maps.ControlPosition.TOP_RIGHT].push(zcpsdiv)
+
 		loadMarkers map
 		google.maps.event.addListener map,'zoom_changed',->
 			map.setZoom(4) if map.getZoom() < 4
@@ -186,9 +187,14 @@ $ ->
 			zoom:5
 			center: new google.maps.LatLng(39.7868944,137.7877029)
 			mapTypeId: google.maps.MapTypeId.ROADMAP,
+			disableDefaultUI: true,
+			zoomControl: true,
+			scaleControl: true,
 			noClear : true
 		}
 		map = new google.maps.Map($('#detail-map').get(0), mapOptions)
+
+
 		m = new ShopDetailsMarker json,map
 		m.focus()
 
