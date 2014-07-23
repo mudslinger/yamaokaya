@@ -3,10 +3,11 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.1'
 gem 'mysql2'
+gem 'activerecord-mysql2-adapter'
 # gem 'tiny_tds'
 # gem 'activerecord-sqlserver-adapter'
 #gem 'pg'
-gem 'activerecord-postgresql-adapter'
+#gem 'activerecord-postgresql-adapter'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
