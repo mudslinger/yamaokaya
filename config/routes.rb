@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   get '/about' => 'articles#about',as: :about
   get '/sns_guideline' => 'articles#sns_guideline',as: :sns_guideline
   get '/sitemap' => 'articles#sitemap',as: :sitemap
+  get '/mag_faq' => 'articles#mag_faq', as: :mag_faq
   get '/google_map/:address' => redirect("https://maps.google.co.jp/maps?q=%{address}"),as: :google_map
 
   #地図用json

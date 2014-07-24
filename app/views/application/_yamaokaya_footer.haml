@@ -65,7 +65,8 @@
 									%span.input-group-btn
 										%input.btn.btn-default{type: :submit,name: 'regist', value: '登録'}
 							%p
-								%a.btn.btn-danger{href: '#'} メールが届かない場合はこちら
+								=link_to :mag_faq ,class: %w(btn btn-primary) do
+									メルマガが届かない場合はこちら
 .bottom-nav
 	.container
 		.row

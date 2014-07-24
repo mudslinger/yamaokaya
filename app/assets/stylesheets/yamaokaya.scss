@@ -7,6 +7,15 @@
 @import "yamaokaya/menus";
 @import "yamaokaya/feedbacks";
 body.yamaokaya{
+	.mob-domain{
+		&:before{
+			content: '['
+		}
+		&:after{
+			content: ']'
+		}
+		color: $gray-light;
+	}
 	.nerby{
 		h2{
 			background-color: $brand-primary;

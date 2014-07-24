@@ -1,6 +1,94 @@
 .container
   .row
-    - tt(:bodies).each_with_index do |v,i|
-      %h3=v['lead']
-      -v['bodies'].each do |b|
-        %p=b
+    .col-md-12
+      .panel.panel-default
+        .panel-body
+          - tt(:lead).each_with_index do |v,i|
+            %p=v
+    .col-md-12
+      .panel.panel-default
+        .panel-heading
+          %h4.panel-title=tt('domain_specify.title')
+        .panel-body
+          %p
+            お使いの端末の宛先/ドメイン指定受信設定に、
+            %strong mag@yamaokaya.com
+            をご指定ください。
+            メールアドレスを指定する「宛先指定受信」を行っていただくのがおすすめです。
+          .col-md-4
+            .panel.panel-default
+              .panel-heading
+                %h5.panel-title Docomo
+              .panel-body
+                [宛先指定受信]または[受信設定]に
+                %strong mag@yamaokaya.com
+                をご登録ください。
+                %a.btn.btn-primary{href:'https://www.nttdocomo.co.jp/info/spam_mail/measure/domain/about/',target: '_blank'}
+                  受信／拒否設定とは
+                %small.mob-domain nttdocomo.ne.jp
+          .col-md-4
+            .panel.panel-default
+              .panel-heading
+                %h5.panel-title AU
+              .panel-body
+                指定受信リスト設定
+                [指定受信リスト設定]に
+                %strong mag@yamaokaya.com
+                をご登録ください。
+                %br
+                %a.btn.btn-primary{href:'http://www.au.kddi.com/support/mobile/trouble/forestalling/mail/anti-spam/fillter/function-03/',target: '_blank'}
+                  なりすまし規制回避リスト
+                %small.mob-domain au.kddi.com
+                %small ※おすすめ
+                %a.btn.btn-primary{href:'http://www.au.kddi.com/support/mobile/trouble/forestalling/mail/anti-spam/fillter/function-11/',target: '_blank'}
+                  受信リスト設定
+                %small.mob-domain au.kddi.com
+          .col-md-4
+            .panel.panel-default
+              .panel-heading
+                %h5.panel-title Softbank
+              .panel-body
+                [受信許可リスト設定]に
+                %strong mag@yamaokaya.com
+                をご登録ください。
+                %br
+                %a.btn.btn-primary{href: 'http://www.softbank.jp/mobile/support/antispam/settings/indivisual/whiteblack/',target: '_blank'}
+                  迷惑メールの個別設定をする
+                %small.mob-domain softbank.jp
+
+    .col-md-12
+      .panel.panel-default
+        .panel-heading
+          %h4.panel-title URL付きメールの拒否設定の解除
+        .panel-body
+          %p
+            お送りしているメールには、クーポンを表示するためのURLや、 配信の解除を行っていただくためのURLがメール本文内に含まれております。
+            したがって、お客様の端末で、URLが含まれたメールを拒否する設定になっている場合、
+            弊社からのメールを受信いただくことができません。
+            お使いの端末の設定をご確認いただき、拒否する設定になっている場合は、設定の変更をお願い致します。
+            キャリア毎に設定方法が異なります。以下リンクより、お使いのキャリアの設定方法をご確認いただけます。
+          .col-md-4
+            .panel.panel-default
+              .panel-heading
+                %h5.panel-title docomo
+              .panel-body
+                %a.btn.btn-primary{href:'https://www.nttdocomo.co.jp/info/spam_mail/measure/url/',target: '_blank'}
+                  URL付きメール拒否設定
+                %small.mob-domain nttdocomo.co.jp
+          .col-md-4
+            .panel.panel-default
+              .panel-heading
+                %h5.panel-title AU
+              .panel-body
+                %a.btn.btn-primary{href:'http://www.au.kddi.com/support/mobile/trouble/forestalling/mail/anti-spam/fillter/function-05/',target: '_blank'}
+                  URLリンク/HTMLメール規制x
+                %small.mob-domain au.kddi.com
+          .col-md-4
+            .panel.panel-default
+              .panel-heading
+                %h5.panel-title softbank
+              .panel-body
+                %a.btn.btn-primary{href:'http://www.softbank.jp/mobile/support/antispam/settings/indivisual/antiurl/',target: '_blank'}
+                  迷惑メール設定をする（URLを含むメールの拒否）
+                %small.mob-domain softbank.jp
+

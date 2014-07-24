@@ -35,6 +35,33 @@ ja:
             - マーケティング担当者Hおよび、公式WEBサイトの管理者Tが担当します。
             - 投稿いただいたメッセージにコメントさせていただくことがあります。
             - 気になった人・企業・投稿・ページに「いいね！」・シェアさせていただくことがあります。
+    mag_faq:
+      title: 山岡家メルマガが届かない場合の対処方法
+      lead:
+        - 2013年9月に、弊社から会員の皆様にお送りしているメルマガの送信元アドレスを変更させていただきました。
+        - お使いの端末の迷惑メール対策設定が有効になっていると、弊社からお送りしたメールが届かなくなっている可能性があり、再び弊社からのメールをご受信いただくためには、お客様の迷惑メール対策の設定変更を行っていただく必要があります。
+        - これらの条件に当てはまるお客様は大変御手数ではございますが、以下に手順を掲載いたしますので、ご参照の上、設定を変更していただけると幸いに存じます。
+        - 今後とも本メルマガおよび、ラーメン山岡家をご愛顧のほど、よろしくお願い申し上げます。
+      domain_specify:
+        title: 宛先/ドメイン指定受信の設定
+        lead: お使いの端末の宛先/ドメイン指定受信設定に、mag@yamaokaya.comをご指定ください。
+        choices:
+          - mag@yamaokaya.com
+          - yamaokaya.com
+        remarks: メールアドレスを指定する「宛先指定受信」を行っていただくのがおすすめです。
+      remarks:
+        lead: キャリア毎に設定方法が異なります。以下リンクより、お使いのキャリアの設定方法をご確認いただけます。
+        docomo:
+          - addr: 'https://www.nttdocomo.co.jp/info/spam_mail/measure/domain/about/'
+            title: 受信／拒否設定とは
+        au:
+          - addr: 'http://www.au.kddi.com/support/mobile/trouble/forestalling/mail/anti-spam/fillter/function-03/'
+            title: 指定受信リスト設定 (なりすまし・転送メール許可)
+          - addr: 'http://www.au.kddi.com/support/mobile/trouble/forestalling/mail/anti-spam/fillter/function-11/'
+            title: 指定受信リスト設定
+        softbank:
+          - addr: 'http://www.softbank.jp/mobile/support/antispam/settings/indivisual/whiteblack/'
+            title: 迷惑メールの個別設定をする
     about:
       title: このHPについて
       bodies: 

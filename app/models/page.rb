@@ -362,6 +362,10 @@ class Page
 				Page.new(
 					url: UrlHelpers.sns_guideline_path,
 					title: :sns_guideline
+				),
+				Page.new(
+					url: UrlHelpers.mag_faq_path,
+					title: :mag_faq
 				)
 			]
 		)
