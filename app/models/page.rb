@@ -82,22 +82,22 @@ class Page
 	def self.sitemap(host)
 		case host
 		when DOMAINS[:corporate]
-			Rails.cache.fetch(domain: host) do
+			return Rails.cache.fetch(domain: host) do
 				ret = self.corporate
 				to_kindred ret
-				return ret
+				ret
 			end
 		when DOMAINS[:yamaokaya]
-			Rails.cache.fetch(domain: host) do
+			return Rails.cache.fetch(domain: host) do
 				ret = self.yamaokaya
 				to_kindred ret
-				return ret
+				ret
 			end
 		when DOMAINS[:recruit]
-			Rails.cache.fetch(domain: host) do
+			return Rails.cache.fetch(domain: host) do
 				ret = self.recruit
 				to_kindred ret
-				return ret
+				ret
 			end
 		end
 	end

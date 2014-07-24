@@ -25,15 +25,18 @@ class BrandYamaokaya::ShopsController < BrandYamaokaya::BaseController
 	def markers
 		zoom = params[:zoom] if params[:zoom].present?
 		zoom = zoom || 0
-		@regions = Region.has_shops.by_zoom(zoom)
-		@prefectures = Prefecture.has_shops.by_zoom(zoom)
-		@areas = Area.has_shops.by_zoom(zoom)
-		@shops = Shop.active.by_zoom(zoom)
-		@ret = ((@regions + @prefectures + @areas).map do |v|
-			ret = !v.kind_of?(Region) && v.shops.size == 1 ? v.shops.first : v
-			ret.start_shows = v.start_shows unless v == ret
-			ret
-		end  + @shops)
+		@ret = Rails.cache.fetch(markers: {zoom: zoom}) do
+			regions = Region.has_shops.by_zoom(zoom)
+			prefectures = Prefecture.has_shops.by_zoom(zoom)
+			areas = Area.has_shops.by_zoom(zoom)
+			shops = Shop.active.by_zoom(zoom)
+			((regions + prefectures + areas).map do |v|
+				ret = !v.kind_of?(Region) && v.shops.size == 1 ? v.shops.first : v
+				ret.start_shows = v.start_shows unless v == ret
+				ret
+			end  + shops)
+		end
+
 		additional_attr = [:marker_type,:sprite_x,:sprite_y,:bounds,:start_shows,:end_shows,:lat,:lng]
 		respond_to do |format|
 			format.json{
