@@ -1,7 +1,6 @@
 .container
 	.row
-		.col-md-4.col-xs-12
-			=render partial: 'ir_block'
+
 		.col-md-8.col-xs-12
 			.row
 				.col-md-6.col-xs-12
@@ -16,5 +15,7 @@
 					=render partial: 'block',locals:{ctrl: :business,act: :hospitality,image: 'images/corporate/business/hospitality.png'}
 				.col-md-6.col-xs-12
 					=render partial: 'yam_block'
+		.col-md-4.col-xs-12
+			=render partial: 'ir_block'
 
 

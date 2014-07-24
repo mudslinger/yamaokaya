@@ -1,8 +1,7 @@
 require 'fileutils'
 class ImagesController < ApplicationController
 	include MiniMagick
-
-
+	skip_before_filter :set_title
 	def show
 		size = params[:size] || 'origin'
 		file = params[:file] if params[:file].present?
