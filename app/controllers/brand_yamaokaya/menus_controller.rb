@@ -3,7 +3,9 @@ class BrandYamaokaya::MenusController < BrandYamaokaya::BaseController
 		category = params[:category] if  params[:category].present?
 		category = category.to_sym || :regular
 		if Menu.respond_to?(category)
-			@menus = Menu.send(category)
+			@menus = Rails.cache.fetch(menu: {category: category})do 
+				Menu.send(category)
+			end
 		end
 	end
 

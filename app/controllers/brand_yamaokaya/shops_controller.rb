@@ -8,7 +8,9 @@ class BrandYamaokaya::ShopsController < BrandYamaokaya::BaseController
 
 	def shops
 		Shop.cache do
-			@regions = Region.has_shops
+			@regions = Rails.cache.fetch(:regions_has_shops) do
+				Region.has_shops
+			end
 			respond_to do |format|
 				format.html{render template: 'brand_yamaokaya/shops/shops.haml'}
 				format.js{render layout: false}
