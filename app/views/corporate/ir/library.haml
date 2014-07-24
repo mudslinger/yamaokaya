@@ -20,6 +20,8 @@
 									%a{href:"#press_#{key}",tabindex:-1,data:{toggle: :tab}} #{key}年
 					%li 
 						%a{href:'#yuho',data:{toggle: :tab}} 有価証券報告書
+					%li
+						%a{href:'#material',data:{toggle: :tab}} 会社説明会資料
 
 
 
@@ -61,6 +63,19 @@
 						.panel-body
 							%p 有価証券報告書の財務諸表に記載されている主要な帳票を、CSVデータ（Excel等で閲覧可能）にてご提供いたします。
 							%a.btn.btn-primary{href: 'http://navigator.eir-parts.net/EIRNavi/DocumentNavigator/EDownload.aspx?code=3399&dl_view=2',target:'_blank'} 財務データのダウンロード
+					.tab-pane.panel.panel-default#material
+						.panel-heading
+							%h4.panel-title 会社説明会資料
+						%table.table
+							%col{width:'15%'}
+							%col{width:'*'}
+							%tbody
+								-Release.ir.each do |r|
+									%tr
+										%th=l r.target_date.to_date
+										%td
+											%a{href:r.url,target: '_blank'}=r.title
+											%i.fa.fa-file-pdf-o
 					-@list.press.each do |key,topics|
 						%div.tab-pane.panel.panel-default{id: "press_#{key}"}
 							.panel-heading

@@ -968,3 +968,122 @@
       %p あれこれあれこれ
       %p あれこれあれこれ
   url: images/top/carousel04.jpg
+701:
+  release_type: 2
+  start_shows: 1970-01-01
+  end_shows: 2099-12-31
+  target_date: 2014-03-14
+  title: 平成26年１月期決算説明会資料
+  url: http://assets.yamaokaya.com/release/psn20140314.pdf
+702:
+  release_type: 2
+  start_shows: 1970-01-01
+  end_shows: 2099-12-31
+  target_date: 2013-09-13
+  title: 平成26年１月期第２四半期決算説明会資料
+  url: http://assets.yamaokaya.com/release/psn20130913.pdf
+703:
+  release_type: 2
+  start_shows: 1970-01-01
+  end_shows: 2099-12-31
+  target_date: 2013-04-12
+  title: 第20回招集通知修正開示
+  url: http://assets.yamaokaya.com/release/psn20130412.pdf
+704:
+  release_type: 2
+  start_shows: 1970-01-01
+  end_shows: 2099-12-31
+  target_date: 2013-03-15
+  title: 平成25年１月期決算説明会資料
+  url: http://assets.yamaokaya.com/release/psn20130315.pdf
+705:
+  release_type: 2
+  start_shows: 1970-01-01
+  end_shows: 2099-12-31
+  target_date: 2012-09-14
+  title: 平成25年１月期第２四半期決算説明会資料
+  url: http://assets.yamaokaya.com/release/psn20120914.pdf
+706:
+  release_type: 2
+  start_shows: 1970-01-01
+  end_shows: 2099-12-31
+  target_date: 2012-03-16
+  title: 平成24年1月期決算説明会資料
+  url: http://assets.yamaokaya.com/release/psn20120316.pdf
+707:
+  release_type: 2
+  start_shows: 1970-01-01
+  end_shows: 2099-12-31
+  target_date: 2011-09-09
+  title: 平成24年1月期第2四半期決算説明会資料
+  url: http://assets.yamaokaya.com/release/psn20110909.pdf
+708:
+  release_type: 2
+  start_shows: 1970-01-01
+  end_shows: 2099-12-31
+  target_date: 2010-09-17
+  title: 平成23年1月期第2四半期決算説明会資料
+  url: http://assets.yamaokaya.com/release/psn20100917.pdf
+709:
+  release_type: 2
+  start_shows: 1970-01-01
+  end_shows: 2099-12-31
+  target_date: 2010-03-19
+  title: 平成22年1月期決算説明会資料
+  url: http://assets.yamaokaya.com/release/psn20100319.pdf
+710:
+  release_type: 2
+  start_shows: 1970-01-01
+  end_shows: 2099-12-31
+  target_date: 2009-09-18
+  title: 平成22年1月期第2四半期決算説明会資料
+  url: http://assets.yamaokaya.com/release/psn20090918.pdf
+711:
+  release_type: 2
+  start_shows: 1970-01-01
+  end_shows: 2099-12-31
+  target_date: 2009-03-23
+  title: 平成21年1月期決算説明会資料
+  url: http://assets.yamaokaya.com/release/psn20090323.pdf
+712:
+  release_type: 2
+  start_shows: 1970-01-01
+  end_shows: 2099-12-31
+  target_date: 2008-09-22
+  title: 平成21年1月期中間決算説明会資料
+  url: http://assets.yamaokaya.com/release/psn20090922.pdf
+713:
+  release_type: 2
+  start_shows: 1970-01-01
+  end_shows: 2099-12-31
+  target_date: 2008-03-21
+  title: 平成20年1月期決算説明会資料
+  url: http://assets.yamaokaya.com/release/psn20080321.pdf
+714:
+  release_type: 2
+  start_shows: 1970-01-01
+  end_shows: 2099-12-31
+  target_date: 2007-09-21
+  title: 平成20年度中間決算説明資料
+  url: http://assets.yamaokaya.com/release/psn20070921.pdf
+715:
+  release_type: 2
+  start_shows: 1970-01-01
+  end_shows: 2099-12-31
+  target_date: 2007-03-22
+  title: 平成19年1月期決算説明会資料
+  url: http://assets.yamaokaya.com/release/psn20070322.pdf
+716:
+  release_type: 2
+  start_shows: 1970-01-01
+  end_shows: 2099-12-31
+  target_date: 2006-09-20
+  title: 中間決算説明会資料
+  url: http://assets.yamaokaya.com/release/psn20060920.pdf
+717:
+  release_type: 2
+  start_shows: 1970-01-01
+  end_shows: 2099-12-31
+  target_date: 2006-06-14
+  title: 個人投資家向け会社説明会資料
+  url: http://assets.yamaokaya.com/release/psn20060614.pdf
