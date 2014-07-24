@@ -3,6 +3,8 @@
 
 #= require bootstrap
 #= require bootstrap-select
+#= require analytics
+#= require sns
 #= require flot/excanvas
 #= require flot/jquery.flot
 #= require flot/jquery.flot.resize
