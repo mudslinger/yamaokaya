@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-
   #common
   get '/about' => 'articles#about',as: :about
   get '/sns_guideline' => 'articles#sns_guideline',as: :sns_guideline
@@ -80,8 +79,6 @@ Rails.application.routes.draw do
       get '/:type/entry' => 'entries#new',as: :entries
       post '/:type/entry' => 'entries#create',as: :post_entries
       get '/rikunabi' => redirect('http://job.rikunabi.com/2016/company/top/r373520049/'),as: :rikunavi
-      # resources :entries
-
     end 
   end
 end

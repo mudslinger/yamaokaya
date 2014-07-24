@@ -7,7 +7,7 @@ Rails.application.configure do
   config.cache_classes = false
 
   # Do not eager load code on boot.
-  config.eager_load = true
+  config.eager_load = false
 
   # Show full error reports and disable caching.
   config.consider_all_requests_local       = true
@@ -33,9 +33,6 @@ Rails.application.configure do
   config.assets.raise_runtime_errors = true
 
   # Raises error for missing translations
-  # config.action_view.raise_on_missing_translations = true
+  config.action_view.raise_on_missing_translations = true
   config.cache_store = :memory_store
-    # :redis_store,
-    # "redis://yam-redis.gneihq.0001.apne1.cache.amazonaws.com/yamaokaya/development/cache",
-    # { expires_in: 158.minutes }
 end

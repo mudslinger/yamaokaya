@@ -10,8 +10,6 @@
 				%ul.nav.nav-tabs
 					%li.active 
 						%a{href:'#tanshin',data:{toggle: :tab}} 決算短信
-					%li 
-						%a{href:'#yuho',data:{toggle: :tab}} 有価証券報告書
 					%li.dropdown
 						%a.dropdown-toggle#presstab{href:'#',data:{toggle: :dropdown}} 
 							適時開示書類
@@ -20,6 +18,9 @@
 							-@list.press.each do |key,topics|
 								%li
 									%a{href:"#press_#{key}",tabindex:-1,data:{toggle: :tab}} #{key}年
+					%li 
+						%a{href:'#yuho',data:{toggle: :tab}} 有価証券報告書
+
 
 
 				.tab-content
