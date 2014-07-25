@@ -8,10 +8,10 @@
 			=ymage_tag "images/menus/photos/#{@menu.id}.png",size: '500x500',cls: :photo
 			.actions
 				%p.price-area
-					%strong.text-danger.price=@menu.price
+					%strong.text-danger.price{class: is_phone? ? '' : :repdigit}=@menu.price
 					%span.yen 円
 					%span.zeikomi (税込み)
 					%span.zeinuki 税抜本体価格
-					%strong.text-danger.wotax=(@menu.price.to_i / 1.08).ceil
+					%strong.text-danger.wotax{class: is_phone? ? '' : :repdigit}=(@menu.price.to_i / 1.08).ceil
 					%span.yen 円
 
