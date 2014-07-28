@@ -1,6 +1,6 @@
 .container
   .row
     - tt(:bodies).each_with_index do |v,i|
-      %h3=v['lead']
-      -v['bodies'].each do |b|
+      %h3=v[:lead]
+      -v[:bodies].each do |b|
         %p=b

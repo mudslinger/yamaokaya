@@ -35,7 +35,7 @@ Rails.application.routes.draw do
       get '/business/yamaokaya/hospitality' => 'business#hospitality',as: :hospitality
       get '/business/yamaokaya/safety' => 'business#safety',as: :safety
       get '/business/yamaokaya/development' => 'business#development',as: :development
-      get '/business/yamaokaya/ict' => 'business#ict',as: :ict
+      # get '/business/yamaokaya/ict' => 'business#ict',as: :ict
 
       get '/ir' => 'ir#index',as: :ir_top
       get '/ir/market' => 'ir#market',as: :market

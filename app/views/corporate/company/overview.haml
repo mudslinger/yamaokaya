@@ -28,27 +28,27 @@
 									%th{rowspan: tt('offices.v').length*3}
 										=tt 'offices.t'
 								%th{rowspan:3}
-									=v['title']
+									=v[:title]
 								%td
 									〒
-									=v['zip']
+									=v[:zip]
 									%br
-									=v['address']
+									=v[:address]
 									%br
 									%small
 										(
-										=link_to google_map_path(address: v['address']),target: '_blank' do
+										=link_to google_map_path(address: v[:address]),target: '_blank' do
 											%span.glyphicon.glyphicon-google_maps
 											MAP
 										)
 							%tr
 								%td
 									%span.glyphicon.glyphicon-phone_alt 
-									=v['phone']
+									=v[:phone]
 							%tr
 								%td
 									%span.glyphicon.glyphicon-fax 
-									=v['fax']
+									=v[:fax]
 						%tr
 							%th=tt 'capital.t'
 							%td{colspan:2}=tt 'capital.v'
@@ -61,9 +61,9 @@
 									%th{rowspan: tt('officers.v').length}
 										=tt 'officers.t'
 								%td
-									=v['title']
+									=v[:title]
 								%td
-									=v['name']
+									=v[:name]
 						- tt('bank.v').each_with_index do |v,idx|
 							%tr
 								-if idx == 0

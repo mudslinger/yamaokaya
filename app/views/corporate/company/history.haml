@@ -6,14 +6,14 @@
     .col-md-8.col-sm-8.col-xs-12
       - tt(:histories).each_with_index do |h,i|
         .time.row
-          .tidate=h['year']
+          .tidate=h[:year]
           .timatter
-            %h4=h['title']
-            %p=ln h['body'] if h['body']
-            - if h['events']
-              - h['events'].each do |e|
-                %dt=e['month']
-                - e['body'].each do |b|
+            %h4=h[:title]
+            %p=ln h[:body] if h[:body]
+            - if h[:events]
+              - h[:events].each do |e|
+                %dt=e[:month]
+                - e[:body].each do |b|
                   %dd=ln b
     .col-md-4.col-sm-4.col-xs-12
       .panel.panel-default.shop-chart
@@ -26,11 +26,11 @@
           %tbody
             - tt(:changes).each do |c|
               %tr
-                %th=c['year']
+                %th=c[:year]
                 %td
                   .progress
-                    .progress-bar.progress-bar-primary{role:'progressbar',aria:{valuenow: c['yamaokaya'],valuemin: 0, valuemax: 140}}
-                      ="計#{c['maruchiyo'] + c['yamaokaya']}店"
-                    - if c['maruchiyo'] > 0
-                      .progress-bar.progress-bar-success{role:'progressbar',aria:{valuenow: c['maruchiyo'],valuemin: 0, valuemax: 140}}
-                      %small.pull-right ※丸千代商事#{c['maruchiyo']}店舗
+                    .progress-bar.progress-bar-primary{role:'progressbar',aria:{valuenow: c[:yamaokaya],valuemin: 0, valuemax: 140}}
+                      ="計#{c[:maruchiyo] + c[:yamaokaya]}店"
+                    - if c[:maruchiyo] > 0
+                      .progress-bar.progress-bar-success{role:'progressbar',aria:{valuenow: c[:maruchiyo],valuemin: 0, valuemax: 140}}
+                      %small.pull-right ※丸千代商事#{c[:maruchiyo]}店舗

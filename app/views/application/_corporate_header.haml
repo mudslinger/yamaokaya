@@ -68,9 +68,6 @@
 						%li
 							=link_to :development do
 								出店ポリシー
-						%li
-							=link_to :ict do
-								ICTの活用
 				%li
 					%a.dropdown-toggle{href:'#',data:{toggle: :dropdown}}
 						%span.glyphicon.glyphicon-info
@@ -99,5 +96,21 @@
 					=link_to :property do
 						物件募集
 				%li
+					%a.dropdown-toggle{href:'#',data:{toggle: :dropdown}}
+						%span.glyphicon.glyphicon-info
+						about
+						%b.caret
+					%ul.dropdown-menu
+						%li
+							=link_to :about do
+								このサイトについて
+						%li
+							=link_to :sitemap do
+								サイトマップ
+						%li
+							=link_to :sns_guideline do 
+								SNSガイドライン
+				%li
 					=link_to recruit_top_url(),target: '_blank' do
 						採用スペシャルサイト
+

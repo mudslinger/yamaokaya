@@ -5,7 +5,7 @@ class Release < ActiveRecord::Base
 	default_scope -> {where("(current_timestamp between start_shows and end_shows)")}
 	default_scope -> {order('target_date desc')}
 
-	scope :has_own_page , -> {where.not(body: nil)}
+	scope :has_own_page , -> {where.not(body: nil).where(shop_id: nil)}
 	scope :yearly, ->(year){where("extract(year from target_date) = #{year}")}
 	scope :years, -> {except(:order).select("extract(year from target_date) as year").group("extract(year from target_date)").order("extract(year from target_date) desc")}
 	enum release_type: {news: 0,carousel:1,ir: 2}

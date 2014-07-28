@@ -1,8 +1,8 @@
 .container
   .row
     - tt(:bodies).each_with_index do |v,i|
-      %h3=v['lead']
-      -v['bodies'].each do |b|
+      %h3=v[:lead]
+      -v[:bodies].each do |b|
         %p=b
   .row
     %h3
@@ -13,10 +13,10 @@
       .col-xs-6.col-sm-6.col-md-4
         .panel.panel-default
           .panel-heading
-            %h4.panel-title=e['os']
-          - unless e['browsers'].nil?
+            %h4.panel-title=e[:os]
+          - unless e[:browsers].nil?
             %ul.list-group
-              - e['browsers'].each do |b|
+              - e[:browsers].each do |b|
                 %li.list-group-item=b
   .row
     -tt('environment.remarks').each do |e|
