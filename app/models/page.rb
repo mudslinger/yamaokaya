@@ -220,10 +220,6 @@ class Page
 						Page.new(
 							url: UrlHelpers.development_path,
 							title: :development
-						),
-						Page.new(
-							url: UrlHelpers.ict_path,
-							title: :ict
 						)
 					]
 				),
