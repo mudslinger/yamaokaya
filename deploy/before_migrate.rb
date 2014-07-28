@@ -8,6 +8,6 @@ execute "rake assets:precompile" do
   environment "RAILS_ENV" => env
 end
 execute "change timezone to jst" do
-	sudo "mv /etc/localtime /etc/localtime.#{Time.now}"	
+	sudo "mv /etc/localtime /etc/localtime.#{Time.now.to_i}"	
 	sudo "ln -s /usr/share/zoneinfo/Asia/Tokyo /etc/localtime"
 end
