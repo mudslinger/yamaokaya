@@ -1,0 +1,22 @@
+.container
+  .row
+    %ul.nav.nav-tabs
+      - @releases.years.each_with_index do |y,i|
+        %li{class: i==0 ? :active : nil}
+          %a{href:"##{y.year.to_i}",data:{toggle: :tab}}#{y.year.to_i}年
+    .tab-content
+      - @releases.years.each_with_index do |y,i|
+        .tab-pane.panel.panel-default{class: i==0 ? :active : nil,id: y.year.to_i}
+          .panel-heading
+            %h4.panel-title #{y.year.to_i}年
+          %table.table
+            %col{width: '80px'}
+            %col{width: '*'}
+            - @releases.yearly(y.year.to_i).each do |r|
+              %tr
+                %th
+                  =l r.target_date.to_date
+                %td
+                  =link_to r.path do
+                    %span.glyphicon.glyphicon-bullhorn
+                    =r.title

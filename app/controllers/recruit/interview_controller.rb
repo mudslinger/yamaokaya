@@ -8,4 +8,8 @@ class Recruit::InterviewController < Recruit::BaseController
 		end
 	end
 
+	def details
+		@id = params[:id] if params[:id].present?
+	end
+
 end

@@ -6,6 +6,11 @@ Rails.application.routes.draw do
   get '/mag_faq' => 'articles#mag_faq', as: :mag_faq
   get '/google_map/:address' => redirect("https://maps.google.co.jp/maps?q=%{address}"),as: :google_map
 
+  #リリース一覧表示用
+  get '/releases' => 'releases#releases',as: :releases
+  #リリース単発表示用
+  get '/releases/:id' => 'releases#release',as: :release
+
   #地図用json
   get '/markers' => 'brand_yamaokaya/shops#markers', as: :markers
 
@@ -72,6 +77,7 @@ Rails.application.routes.draw do
       get '/graduates/interview' => 'interview#graduates',as: :interview_graduates
       get '/career/interview' => 'interview#career',as: :interview_career
       get '/pa/interview' => 'interview#pa',as: :interview_pa
+      get '/interview/:personid' => 'interview#details', as: :interview_details
       #requirements
       get '/graduates/requirements' => 'requirements#graduates',as: :requirements_graduates
       get '/career/requirements' => 'requirements#career',as: :requirements_career

@@ -1,7 +1,13 @@
 .panel.panel-default
-	-if DateTime.now.between?(shop.inauguration,shop.close)
+	-shop.releases.each do |r|
+		.panel-heading
+			%h4.panel-title=r.title
+		.panel-body
+			=release_body r.body
+	-unless shop.closed?
+		.panel-heading
+			%h4.panel-title 店舗情報
 		%table.table
-			%caption 店舗情報
 			%tr
 				%th 住所
 				%td
@@ -36,7 +42,9 @@
 						-if (shop.booths || 0) != 0
 							%li ボックス席:#{shop.booths}個
 	-else
+		.panel-heading
+			%h4.panel-title #{shop.name} は営業を終了いたしました。
 		.panel-body
 			#{shop.name}は#{l(shop.close)}を持ちまして閉店させていただきました。
-			長年に渡りご愛顧いただきまして、まことにありがとうございました。
+			これまでご愛顧いただきまして、まことにありがとうございました。
 			よろしければ、近隣の店舗をご利用くださいませ。

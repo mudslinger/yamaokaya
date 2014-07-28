@@ -142,6 +142,13 @@ body.recruit{
 		@media (max-width: 767px) {
 			padding:1em 0.8em !important;
 		}
+		.lead{
+			color: yellow;
+			&:before{
+				content: '▼';
+			}
+			border-bottom:solid 1px #FFFF00;
+		}
 	}
 	h4.message-title{
 		color:#FF4;

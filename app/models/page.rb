@@ -300,7 +300,18 @@ class Page
 								end
 							end.flatten
 						)
-					end
+					end << (
+						#閉店店舗を追加
+						Page.new(
+							title: '閉店済み',
+							children: Shop.inactive.map do |s|
+								Page.new(
+									url: UrlHelpers.shop_details_path(s.id),
+									title: s.long_name
+								)
+							end
+						)
+					)
 				),
 				Page.new(
 					title: :menus,
@@ -346,6 +357,16 @@ class Page
 							end
 						)
 					]
+				),
+				Page.new(
+					url: UrlHelpers.releases_path,
+					title: :releases,
+					children: Release.news.map do |m|
+						Page.new(
+							url: m.path,
+							title: m.title
+						)
+					end
 				),
 				Page.new(
 					url: UrlHelpers.feedbacks_path,

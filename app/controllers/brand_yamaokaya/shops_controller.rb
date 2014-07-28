@@ -53,7 +53,7 @@ class BrandYamaokaya::ShopsController < BrandYamaokaya::BaseController
 	def nerby_shops
 		lat = params[:lat] if params[:lat].present?
 		lng = params[:lng] if params[:lng].present?
-		@shops = lat && lng ? Shop.nearby(lat,lng)	 : []
+		@shops = lat && lng ? Shop.nearby(lat,lng) : []
 		additional_attr = [:marker_type,:sprite_x,:sprite_y,:bounds,:start_shows,:end_shows]
 		respond_to do |format|
 			format.json{

@@ -2,20 +2,21 @@
 	.row
 		.col-md-6.col-sm-6
 			.picture
-				=ymage_tag a["image"].to_s
+				=ymage_tag a[:image].to_s
 				.actions
 					%h4
-						=a["name"]
-						%small=a["furigana"]
-					%p=a['status']
+						=a[:name]
+						%small=a[:furigana]
+					%p=a[:status]
 		.col-md-6.col-sm-6
 			%h4.message-title
 				%span.glyphicon.glyphicon-comments
-				=a["lead"]
-			%p
-				-a["text"].each do |t|
-					%p=t
+				=a[:lead]
+			-a[:summary].each do |t|
+				%p=t
 			.text-center
-				%a.btn.btn-primary{href: '#'} 続きを見る
+				=link_to '続きを見る',interview_details_path(a[:personid]),{class: %w(btn btn-primary)}
+					
 	-if i < tt(:persons).length-1
 		%hr
+#modal

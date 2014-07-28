@@ -1,0 +1,15 @@
+.container
+  .row
+    .col-md-8.col-md-offset-2
+      .panel.panel-default
+        .panel-heading
+          %h4.panel-title
+            =@release.title
+            %small=l @release.target_date.to_date
+        .panel-body
+          =release_body @release.body
+      =link_to '新着情報一覧へ',:releases,class: %w(btn btn-primary pull-right)
+      %br
+      %br
+      %br
+

@@ -14,7 +14,13 @@ class Region < ActiveRecord::Base
 				:areas => :shops
 			}
 		).where.not(shops: {id: nil})}
-
+		
+	# scope :has_active_shops, -> {
+	# 	includes(
+	# 		:prefectures => {
+	# 			:areas => :active_shops
+	# 		}
+	# 	).where.not(shops: {id: nil})}
 	def areas
 		prefectures.map do |a|
 			a

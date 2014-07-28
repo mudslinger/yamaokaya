@@ -1,0 +1,30 @@
+:ruby
+	persons = I18n.t('interview.graduates.persons')
+	persons.each do |p|
+		@person = p if p[:personid] == params[:personid]
+	end
+=render partial: 'recruit_title',locals: {title: tt(:title),subtitle: tt(:subtitle)}
+.container
+	.row
+		.article-box.col-sm-10.col-sm-offset-1.col-xs-12.well-lg
+			.col-md-12
+				%h3.message-title
+					%span.glyphicon.glyphicon-comments
+					=@person[:lead]
+			.col-sm-12
+				-@person[:body].each_with_index do |b,i|
+					%h4.lead=b[:lead]
+					- if i == 0
+						.col-sm-6.picture{style:'float: right;margin:0.5em;'}
+							=ymage_tag @person[:image].to_s
+							.actions
+								%h4
+									=@person[:name]
+									%small=@person[:furigana]
+								%p=@person[:status]
+					- b[:text].each do |t|
+						%p=t
+					- if i == 0
+						.clearfix
+
+

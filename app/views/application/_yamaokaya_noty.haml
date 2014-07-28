@@ -21,12 +21,12 @@
 										%span.label.label-danger.pull-left
 											=r.target_date.strftime("%m/%d")
 									%td
-										%a.original-news{href:r.url}
+										%a.original-news{href:r.path}
 											%span.glyphicon.glyphicon-bullhorn
 											=r.title
 					.panel-footer
 						-#TODO 有効にする
-						-#%a.btn.btn-primary.btn-xs.pull-right{href:'/news/index.html'} -#一覧を見る
+						=link_to '一覧を見る',:releases,class: %w(btn btn-primary btn-xs pull-right)
 						.clearfix
 			.panel.panel-default
 				.panel-heading.facebook

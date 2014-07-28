@@ -14,6 +14,9 @@ module ApplicationHelper
 		I18n.t key,options 
 	end
 
+	def release_body(txt)
+		carousel_body txt
+	end
 	def carousel_body(txt)
 		raw render type: :haml,inline: txt
 	end

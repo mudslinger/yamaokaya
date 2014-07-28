@@ -1,12 +1,15 @@
 class Area < ActiveRecord::Base
 	include ShopArea
-	has_many :shops,->(record) {where("(current_timestamp between inauguration and close)").order(:id)},inverse_of: :area
+	has_many :shops,->(record) {where('(current_timestamp between inauguration and close)').order(:id)},inverse_of: :area,class_name: Shop
+
+	#has_many :active_shops,->(record) {order(:id).where('current_timestamp between inauguration and close')}
 	belongs_to :prefecture
 	default_scope ->{order(:seq)}
 	scope :by_zoom, ->(zoom) {
 		where("#{zoom} between areas.start_shows and areas.end_shows")
 	}
 	scope :has_shops, -> {includes(:shops).where.not(shops: {id: nil})}
+	#scope :has_active_shops,-> {includes(:active_shops).where.not(shops: {id: nil})}
 	scope :by_prefecture, ->(id) {where(prefecture_id: id)}
 	scope :with_higher, ->{
 		includes(:prefecture => :region)

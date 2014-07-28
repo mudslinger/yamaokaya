@@ -5,6 +5,6 @@
 			- tt(:articles).each do |a|
 				%h3.message-title
 					%span.glyphicon.glyphicon-comments
-					=a["lead"]
-				-a["text"].each do |t|
+					=a[:lead]
+				-a[:text].each do |t|
 					%p=t

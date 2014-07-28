@@ -7,6 +7,9 @@ class Shop < ActiveRecord::Base
 	scope :active, -> {
 		where("(current_timestamp between inauguration and close)")
 	}
+	scope :inactive, -> {
+		where.not("(current_timestamp between inauguration and close)")
+	}
 
 	scope :by_zoom, ->(zoom) {
 		where("#{zoom} >= shops.start_shows")
@@ -24,14 +27,20 @@ class Shop < ActiveRecord::Base
 
 
 	belongs_to :area
-	belongs_to :release
+	has_many :releases,->{where('current_timestamp between start_shows and end_shows')},inverse_of: :shop
 	delegate :prefecture, to: :area, allow_nil: false
 	delegate :region, to: :prefecture, allow_nil: false
 
 	def long_name
-		"ラーメン山岡家 #{self[:name]}"
+		ret = closed? ? '[閉店]' : ''
+		ret += "ラーメン山岡家 #{self[:name]}"
+		ret
 	end
 
+
+	def closed?
+		not DateTime.now.between?(inauguration,close)
+	end
 	def marker_type
 		self.class.name
 	end
