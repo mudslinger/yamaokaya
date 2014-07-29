@@ -8,6 +8,15 @@ do(i = window,s = document,o = 'script',g = '//www.google-analytics.com/analytic
 	a.async=1
 	a.src=g
 	m.parentNode.insertBefore(a,m)
+codes = 
+	'www.yamaokaya.com': 'UA-3359034-1'
+	'maruchiyo.yamaokaya.com': 'UA-3359034-2'
+	'recruit.yamaokaya.com': 'UA-3359034-3'
+	'www2014.yamaokaya.com': 'UA-3359034-1'
+	'maruchiyo2014.yamaokaya.com': 'UA-3359034-2'
+	'recruit2014.yamaokaya.com': 'UA-3359034-3'
+code = codes[location.hostname]
 
-ga('create', 'UA-3359034-1', 'auto')
-ga('send', 'pageview')
+if code?
+	ga('create', code, 'auto')
+	ga('send', 'pageview');
