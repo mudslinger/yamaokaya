@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+
+
   #common
   get '/about' => 'articles#about',as: :about
   get '/sns_guideline' => 'articles#sns_guideline',as: :sns_guideline
@@ -88,4 +90,56 @@ Rails.application.routes.draw do
       get '/rikunabi' => redirect('http://job.rikunabi.com/2016/company/top/r373520049/'),as: :rikunavi
     end 
   end
+
+  #ランディング用エイリアス
+  constraints host: DOMAINS[:yamaokaya] do
+    scope module: :brand_yamaokaya do
+      get '/menu/index(.:format)' => redirect(UrlHelpers.menu_categorized_path(:regular))
+
+      #メニューページのリダイレクト
+      constraints category: /[0-9]{1}/ do
+        get '/menu/:category(.:format)' => redirect{|params|
+          case params[:category].to_i
+          when 0
+            UrlHelpers.menu_categorized_path(:regular)
+          when 1
+            UrlHelpers.menu_categorized_path(:std)
+          when 2
+            UrlHelpers.menu_categorized_path(:limited)
+          else
+            UrlHelpers.menu_categorized_path(:regular)
+          end
+        }
+        get '/menu/:category/:old_menu_code(.:format)' => redirect{|params|
+          case params[:category].to_i
+          when 0
+            UrlHelpers.menu_categorized_path(:regular)
+          when 1
+            UrlHelpers.menu_categorized_path(:std)
+          when 2
+            UrlHelpers.menu_categorized_path(:limited)
+          else
+            UrlHelpers.menu_categorized_path(:regular)
+          end
+        }
+      end
+      #店舗ページのリダイレクト
+      get '/shop(.:format)' => redirect(UrlHelpers.shop_root_path)
+      constraints old_code: /[0-9]{6}/ do
+        get '/shop/:old_code(.:format)' => redirect {|params|
+          if params[:old_code].present?
+            s = Shop.find_by(old_code: params[:old_code])
+            UrlHelpers.shop_details_path(s.id)
+          else
+            UrlHelpers.shop_root_path
+          end
+        }
+      end
+      get '/ir/library(.:format)' => redirect(UrlHelpers.library_url)
+    end
+  end
+
+  #404
+  get '*path', controller: 'application', action: 'render_404'
+  post '*path', controller: 'application', action: 'render_404'
 end

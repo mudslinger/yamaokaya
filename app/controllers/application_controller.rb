@@ -5,6 +5,16 @@ class ApplicationController < ActionController::Base
 	before_action :detect_device_format
 	before_filter :auth,:set_title
 
+	rescue_from ActionController::RoutingError, ActiveRecord::RecordNotFound, with: :render_404
+
+	def render_404
+		render(
+			template: "application/404",
+			layout: domain_layout,
+			status: 404
+		)
+	end
+
 	private
 	def detect_device_format
 		case request.user_agent
@@ -45,5 +55,6 @@ class ApplicationController < ActionController::Base
 			end
 		end
 	end
+
 
 end
