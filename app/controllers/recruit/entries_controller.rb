@@ -1,20 +1,6 @@
 class Recruit::EntriesController < Recruit::BaseController
   before_action :set_entry, only: [:show, :edit, :update, :destroy]
-  #TODO 有効化
-  #force_ssl only: [:entry,:entry_post]
 
-  # # GET /recruit/entries
-  # # GET /recruit/entries.json
-  # def index
-  #   @recruit_entries = Recruit::Entry.all
-  # end
-
-  # # GET /recruit/entries/1
-  # # GET /recruit/entries/1.json
-  # def show
-  # end
-
-  # GET /recruit/entries/new
   def new
     @entry = Entry.new(
       work_type: params[:type].to_sym,
@@ -25,12 +11,6 @@ class Recruit::EntriesController < Recruit::BaseController
     )
   end
 
-  # # GET /recruit/entries/1/edit
-  # def edit
-  # end
-
-  # POST /recruit/entries
-  # POST /recruit/entries.json
   def create
     @entry = Entry.new(entry_params)
     respond_to do |format|
@@ -44,29 +24,6 @@ class Recruit::EntriesController < Recruit::BaseController
     end
   end
 
-  # # PATCH/PUT /recruit/entries/1
-  # # PATCH/PUT /recruit/entries/1.json
-  # def update
-  #   respond_to do |format|
-  #     if @recruit_entry.update(recruit_entry_params)
-  #       format.html { redirect_to @recruit_entry, notice: 'Entry was successfully updated.' }
-  #       format.json { render :show, status: :ok, location: @recruit_entry }
-  #     else
-  #       format.html { render :edit }
-  #       format.json { render json: @recruit_entry.errors, status: :unprocessable_entity }
-  #     end
-  #   end
-  # end
-
-  # # DELETE /recruit/entries/1
-  # # DELETE /recruit/entries/1.json
-  # def destroy
-  #   @recruit_entry.destroy
-  #   respond_to do |format|
-  #     format.html { redirect_to recruit_entries_url, notice: 'Entry was successfully destroyed.' }
-  #     format.json { head :no_content }
-  #   end
-  # end
 
   private
     # Use callbacks to share common setup or constraints between actions.
