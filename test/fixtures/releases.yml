@@ -40,244 +40,244 @@
   target_date: 2008-09-21
   title: つくば中央店オープン！
   shop_id: 1263
-29:
-  release_type: 0
-  start_shows: 2008-09-22
-  end_shows: 2099/12/31
-  target_date: 2008-09-22
-  title: 関東事務所 移転のお知らせ
-  url: /news/20080922.html
+# 29:
+#   release_type: 0
+#   start_shows: 2008-09-22
+#   end_shows: 2099/12/31
+#   target_date: 2008-09-22
+#   title: 関東事務所 移転のお知らせ
+#   url: /news/20080922.html
 33:
   release_type: 0
   start_shows: 2008-11-01 19:34:59
   end_shows: 2099/12/31
   target_date: 2008-11-01 19:34:59
   title: 帯広南店 オープン！
-  url: http://www.yamaokaya.com/shop/121039.html
+  shop_id: 1139
 37:
   release_type: 0
   start_shows: 2008-12-22
   end_shows: 2099/12/31
   target_date: 2008-12-22
   title: 狸小路4丁目店オープン！
-  url: /shop/121040.html
-44:
-  release_type: 0
-  start_shows: 2009-02-17
-  end_shows: 2099/12/31
-  target_date: 2009-02-17
-  title: 期間限定！プレミアム醤油とんこつ販売開始！
-  url: /menu/2/603.html
+  shop_id: 1140
+# 44:
+#   release_type: 0
+#   start_shows: 2009-02-17
+#   end_shows: 2099/12/31
+#   target_date: 2009-02-17
+#   title: 期間限定！プレミアム醤油とんこつ販売開始！
+#   url: /menu/2/603.html
 47:
   release_type: 0
   start_shows: 2009-03-06
   end_shows: 2099/12/31
   target_date: 2009-03-06
   title: 浜松薬師店 3/24オープン！
-  url: /shop/122064.html
-48:
-  release_type: 0
-  start_shows: 2009-03-06
-  end_shows: 2099/12/31
-  target_date: 2009-03-06
-  title: プレミアム醤油とんこつ 第2弾
-  url: /menu/2/603.html
-55:
-  release_type: 0
-  start_shows: 2009-04-02
-  end_shows: 2099/12/31
-  target_date: 2009-04-02
-  title: 高田馬場店 4/10オープン！
-  url: /shop/122065.html
-57:
-  release_type: 0
-  start_shows: 2009-04-20
-  end_shows: 2099/12/31
-  target_date: 2009-04-20
-  title: 春だ！とんこつ野菜ラーメン発売！
-  url: http://www.yamaokaya.com/menu/2/604.html
-60:
-  release_type: 0
-  start_shows: 2009-05-15
-  end_shows: 2099/12/31
-  target_date: 2009-05-15
-  title: 伊奈町店・成田飯仲店オープン日決定！
-  url: /shop/index.html
-63:
-  release_type: 0
-  start_shows: 2009-05-27
-  end_shows: 2099/12/31
-  target_date: 2009-05-27
-  title: 伊奈町店 オープン！
-  url: /shop/122066.html
-64:
-  release_type: 0
-  start_shows: 2009-06-02
-  end_shows: 2099/12/31
-  target_date: 2009-06-02
-  title: つけ麺祭り開催中！
-  url: /menu/2/index.html
+  shop_id: 1264
+# 48:
+#   release_type: 0
+#   start_shows: 2009-03-06
+#   end_shows: 2099/12/31
+#   target_date: 2009-03-06
+#   title: プレミアム醤油とんこつ 第2弾
+#   url: /menu/2/603.html
+# 55:
+#   release_type: 0
+#   start_shows: 2009-04-02
+#   end_shows: 2099/12/31
+#   target_date: 2009-04-02
+#   title: 高田馬場店 4/10オープン！
+#   url: /shop/122065.html
+# 57:
+#   release_type: 0
+#   start_shows: 2009-04-20
+#   end_shows: 2099/12/31
+#   target_date: 2009-04-20
+#   title: 春だ！とんこつ野菜ラーメン発売！
+#   url: http://www.yamaokaya.com/menu/2/604.html
+# 60:
+#   release_type: 0
+#   start_shows: 2009-05-15
+#   end_shows: 2099/12/31
+#   target_date: 2009-05-15
+#   title: 伊奈町店・成田飯仲店オープン日決定！
+#   url: /shop/index.html
+# 63:
+#   release_type: 0
+#   start_shows: 2009-05-27
+#   end_shows: 2099/12/31
+#   target_date: 2009-05-27
+#   title: 伊奈町店 オープン！
+#   shop_id: 1266
+# 64:
+#   release_type: 0
+#   start_shows: 2009-06-02
+#   end_shows: 2099/12/31
+#   target_date: 2009-06-02
+#   title: つけ麺祭り開催中！
+#   url: /menu/2/index.html
 67:
   release_type: 0
   start_shows: 2009-06-11 09:00:00
   end_shows: 2099/12/31
   target_date: 2009-06-11 09:00:00
   title: 成田飯仲店 グランドオープン！
-  url: /shop/122067.html
+  shop_id: 1267
 70:
   release_type: 0
   start_shows: 2009-06-20
   end_shows: 2099/12/31
   target_date: 2009-06-20
   title: 朝里店 グランドオープン！
-  url: /shop/121041.html
-76:
-  release_type: 0
-  start_shows: 2009-08-24
-  end_shows: 2099/12/31
-  target_date: 2009-08-24
-  title: 期間限定「豚そば」 9月8日～！
-  url: /menu/2/622.html
+  shop_id: 1141
+# 76:
+#   release_type: 0
+#   start_shows: 2009-08-24
+#   end_shows: 2099/12/31
+#   target_date: 2009-08-24
+#   title: 期間限定「豚そば」 9月8日～！
+#   url: /menu/2/622.html
 79:
   release_type: 0
   start_shows: 2009-10-26
   end_shows: 2099/12/31
   target_date: 2009-10-26
   title: かすみがうら店 11/16OPEN!
-  url: /shop/122069.html
+  shop_id: 1269
 82:
   release_type: 0
   start_shows: 2009-10-26
   end_shows: 2099/12/31
   target_date: 2009-10-26
   title: 沼津柿田川店（静岡県清水町） 11/10OPEN!
-  url: /shop/122068.html
-88:
-  release_type: 0
-  start_shows: 2009-10-29
-  end_shows: 2099/12/31
-  target_date: 2009-10-29
-  title: 濃厚プレミアム塩とんこつ 10/27～販売開始
-  url: /menu/2/623.html
+  shop_id: 1268
+# 88:
+#   release_type: 0
+#   start_shows: 2009-10-29
+#   end_shows: 2099/12/31
+#   target_date: 2009-10-29
+#   title: 濃厚プレミアム塩とんこつ 10/27～販売開始
+#   url: /menu/2/623.html
 80:
   release_type: 0
   start_shows: 2009-11-27
   end_shows: 2099/12/31
   target_date: 2009-11-27
   title: 水戸城南店 12/22OPEN!
-  url: /shop/122071.html
+  shop_id: 1271
 81:
   release_type: 0
   start_shows: 2009-11-27
   end_shows: 2099/12/31
   target_date: 2009-11-27
   title: 音羽蒲郡店（愛知県豊川市） 12/9OPEN!
-  url: /shop/122070.html
-89:
-  release_type: 0
-  start_shows: 2009-11-27
-  end_shows: 2099/12/31
-  target_date: 2009-11-27
-  title: 新宿歌舞伎町店、12/25OPEN!
-  url: /shop/122072.html
-91:
-  release_type: 0
-  start_shows: 2009-12-04
-  end_shows: 2099/12/31
-  target_date: 2009-12-04
-  title: 期間・地域限定！新作モニターキャンペーン
-  url: /menu/2/999.html
-97:
-  release_type: 0
-  start_shows: 2010-01-12
-  end_shows: 2099/12/31
-  target_date: 2010-01-12
-  title: 池袋西口店 2/24OPEN!
-  url: /shop/122073.html
-98:
-  release_type: 0
-  start_shows: 2010-01-12
-  end_shows: 2099/12/31
-  target_date: 2010-01-12
-  title: 日立滑川店（茨城県） 3/8OPEN!
-  url: /shop/122074.html
+  shop_id: 1270
+# 89:
+#   release_type: 0
+#   start_shows: 2009-11-27
+#   end_shows: 2099/12/31
+#   target_date: 2009-11-27
+#   title: 新宿歌舞伎町店、12/25OPEN!
+#   url: /shop/122072.html
+# 91:
+#   release_type: 0
+#   start_shows: 2009-12-04
+#   end_shows: 2099/12/31
+#   target_date: 2009-12-04
+#   title: 期間・地域限定！新作モニターキャンペーン
+#   url: /menu/2/999.html
+# 97:
+#   release_type: 0
+#   start_shows: 2010-01-12
+#   end_shows: 2099/12/31
+#   target_date: 2010-01-12
+#   title: 池袋西口店 2/24OPEN!
+#   url: /shop/122073.html
+# 98:
+#   release_type: 0
+#   start_shows: 2010-01-12
+#   end_shows: 2099/12/31
+#   target_date: 2010-01-12
+#   title: 日立滑川店（茨城県） 3/8OPEN!
+#   url: /shop/122074.html
 100:
   release_type: 0
   start_shows: 2010-04-06
   end_shows: 2099/12/31
   target_date: 2010-04-06
   title: 越谷レイクタウン店（埼玉県）4/6OPEN!
-  url: /shop/122075.html
-110:
-  release_type: 0
-  start_shows: 2010-04-06
-  end_shows: 2099/12/31
-  target_date: 2010-04-06
-  title: 磯とんこつ 販売開始！
-  url: /menu/2/723.html
+  shop_id: 1275
+# 110:
+#   release_type: 0
+#   start_shows: 2010-04-06
+#   end_shows: 2099/12/31
+#   target_date: 2010-04-06
+#   title: 磯とんこつ 販売開始！
+#   url: /menu/2/723.html
 101:
   release_type: 0
   start_shows: 2010-04-09
   end_shows: 2099/12/31
   target_date: 2010-04-09
   title: 東松山店（埼玉県） 4/28OPEN!
-  url: /shop/122077.html
+  shop_id: 1277
 102:
   release_type: 0
   start_shows: 2010-04-09
   end_shows: 2099/12/31
   target_date: 2010-04-09
   title: 長野南長池店（長野県長野市） 4/25OPEN!
-  url: /shop/122076.html
+  shop_id: 1276
 112:
   release_type: 0
   start_shows: 2010-04-27
   end_shows: 2099/12/31
   target_date: 2010-04-27
   title: 山梨甲斐店（山梨県） 5/24OPEN!
-  url: /shop/122079.html
-118:
-  release_type: 0
-  start_shows: 2010-06-04
-  end_shows: 2099/12/31
-  target_date: 2010-06-04
-  title: 長野篠ノ井店 7/6 OPEN!
-  url: /shop/122081.html
+  shop_id: 1279
+# 118:
+#   release_type: 0
+#   start_shows: 2010-06-04
+#   end_shows: 2099/12/31
+#   target_date: 2010-06-04
+#   title: 長野篠ノ井店 7/6 OPEN!
+#   url: /shop/122081.html
 119:
   release_type: 0
   start_shows: 2010-06-04
   end_shows: 2099/12/31
   target_date: 2010-06-04
   title: 東金店（千葉県） 7/14 OPEN!
-  url: /shop/122078.html
+  shop_id: 1278
 120:
   release_type: 0
   start_shows: 2010-06-04
   end_shows: 2099/12/31
   target_date: 2010-06-04
   title: 日立東金沢店（茨城県） 7/17 OPEN!
-  url: /shop/122080.html
-125:
-  release_type: 0
-  start_shows: 2010-07-01
-  end_shows: 2099/12/31
-  target_date: 2010-07-01
-  title: プレミアム辛味噌つけ麺 販売開始(7/1～)
-  url: /menu/2/725.html
-132:
-  release_type: 0
-  start_shows: 2010-07-20
-  end_shows: 2099/12/31
-  target_date: 2010-07-20
-  title: ラー油ご飯(\200)販売開始!
-  url: /menu/2/1654.html
+  shop_id: 1280
+# 125:
+#   release_type: 0
+#   start_shows: 2010-07-01
+#   end_shows: 2099/12/31
+#   target_date: 2010-07-01
+#   title: プレミアム辛味噌つけ麺 販売開始(7/1～)
+#   url: /menu/2/725.html
+# 132:
+#   release_type: 0
+#   start_shows: 2010-07-20
+#   end_shows: 2099/12/31
+#   target_date: 2010-07-20
+#   title: ラー油ご飯(\200)販売開始!
+#   url: /menu/2/1654.html
 127:
   release_type: 0
   start_shows: 2010-07-25
   end_shows: 2099/12/31
   target_date: 2010-07-25
   title: 第111号店 名古屋宝神店 8/4 OPEN!
-  url: /shop/122082.html
+  shop_id: 1282
 131:
   release_type: 0
   start_shows: 2010-07-25
@@ -285,97 +285,97 @@
   target_date: 2010-07-25
   title: 日祝限定! サンデーセット(\300)販売開始!
   url: /menu/1/2001.html
-133:
-  release_type: 0
-  start_shows: 2010-07-25
-  end_shows: 2099/12/31
-  target_date: 2010-07-25
-  title: スタミナバーベキューつけ麺 8/1～
-  url: /menu/2/726.html
+# 133:
+#   release_type: 0
+#   start_shows: 2010-07-25
+#   end_shows: 2099/12/31
+#   target_date: 2010-07-25
+#   title: スタミナバーベキューつけ麺 8/1～
+#   url: /menu/2/726.html
 128:
   release_type: 0
   start_shows: 2010-07-25 00:10:00
   end_shows: 2099/12/31
   target_date: 2010-07-25 00:10:00
   title: 第112号店 函館鍛冶店 8/17 OPEN!
-  url: /shop/121042.html
+  shop_id: 1142
 129:
   release_type: 0
   start_shows: 2010-07-25 00:20:00
   end_shows: 2099/12/31
   target_date: 2010-07-25 00:20:00
   title: 第113号店 千葉若葉区店 9/7 OPEN!
-  url: /shop/122083.html
-135:
-  release_type: 0
-  start_shows: 2010-08-10
-  end_shows: 2099/12/31
-  target_date: 2010-08-10
-  title: お盆期間中のセットメニュー変更のお知らせ
-  url: /news/20100811.html
+  shop_id: 1283
+# 135:
+#   release_type: 0
+#   start_shows: 2010-08-10
+#   end_shows: 2099/12/31
+#   target_date: 2010-08-10
+#   title: お盆期間中のセットメニュー変更のお知らせ
+#   url: /news/20100811.html
 136:
   release_type: 0
   start_shows: 2010-08-19
   end_shows: 2099/12/31
   target_date: 2010-08-19
   title: 第114号店 千葉新鎌ヶ谷店 10/7 OPEN!
-  url: /shop/122084.html
-140:
-  release_type: 0
-  start_shows: 2010-08-27
-  end_shows: 2099/12/31
-  target_date: 2010-08-27
-  title: 極濃和風魚介とんこつつけ麺 アンコール！
-  url: /menu/2/724.html
-144:
-  release_type: 0
-  start_shows: 2010-09-08
-  end_shows: 2099/12/31
-  target_date: 2010-09-08
-  title: 期間限定プレミアム塩とんこつ 9/14～販売スタート！
-  url: /menu/2/623.html
-145:
-  release_type: 0
-  start_shows: 2010-09-08
-  end_shows: 2099/12/31
-  target_date: 2010-09-08
-  title: 玉子かけご飯復活！(9/14)
-  url: /menu/2/1653.html
-137:
-  release_type: 0
-  start_shows: 2010-09-09 00:00:01
-  end_shows: 2099/12/31
-  target_date: 2010-09-09 00:00:01
-  title: 第115号店 千葉茂原店 10/28 OPEN!
-  url: /shop/122085.html
+  shop_id: 1284
+# 140:
+#   release_type: 0
+#   start_shows: 2010-08-27
+#   end_shows: 2099/12/31
+#   target_date: 2010-08-27
+#   title: 極濃和風魚介とんこつつけ麺 アンコール！
+#   url: /menu/2/724.html
+# 144:
+#   release_type: 0
+#   start_shows: 2010-09-08
+#   end_shows: 2099/12/31
+#   target_date: 2010-09-08
+#   title: 期間限定プレミアム塩とんこつ 9/14～販売スタート！
+#   url: /menu/2/623.html
+# 145:
+#   release_type: 0
+#   start_shows: 2010-09-08
+#   end_shows: 2099/12/31
+#   target_date: 2010-09-08
+#   title: 玉子かけご飯復活！(9/14)
+#   url: /menu/2/1653.html
+# 137:
+#   release_type: 0
+#   start_shows: 2010-09-09 00:00:01
+#   end_shows: 2099/12/31
+#   target_date: 2010-09-09 00:00:01
+#   title: 第115号店 千葉茂原店 10/28 OPEN!
+#   url: /shop/122085.html
 146:
   release_type: 0
   start_shows: 2010-09-09 00:00:02
   end_shows: 2099/12/31
   target_date: 2010-09-09 00:00:02
   title: 第116号店 岩手盛岡店 10/28 OPEN!
-  url: /shop/122086.html
+  shop_id: 1286
 138:
   release_type: 0
   start_shows: 2010-09-09 00:00:03
   end_shows: 2099/12/31
   target_date: 2010-09-09 00:00:03
   title: 第117号店 千葉佐倉店 11/3 OPEN!
-  url: /shop/122087.html
+  shop_id: 1287
 150:
   release_type: 0
   start_shows: 2010-10-08
   end_shows: 2099/12/31
   target_date: 2010-10-08
   title: 第118号店 秋田仁井田店 11/19 OPEN!
-  url: /shop/122089.html
-141:
-  release_type: 0
-  start_shows: 2010-10-27
-  end_shows: 2099/12/31
-  target_date: 2010-10-27
-  title: 朝ラーメン さらに販売店舗拡大！(10/30～)
-  url: /menu/2/2002.html
+  shop_id: 1289
+# 141:
+#   release_type: 0
+#   start_shows: 2010-10-27
+#   end_shows: 2099/12/31
+#   target_date: 2010-10-27
+#   title: 朝ラーメン さらに販売店舗拡大！(10/30～)
+#   url: /menu/2/2002.html
 
 154:
   release_type: 0
@@ -383,56 +383,56 @@
   end_shows: 2099/12/31
   target_date: 2010-11-19
   title: 第119号店 松本店 11/25 OPEN!
-  url: /shop/122088.html
+  shop_id: 1288
 155:
   release_type: 0
   start_shows: 2010-11-19 00:01:00
   end_shows: 2099/12/31
   target_date: 2010-11-19 00:01:00
   title: 第120号店 釧路町店 12/8 OPEN!
-  url: /shop/121043.html
-157:
-  release_type: 0
-  start_shows: 2010-12-04
-  end_shows: 2099/12/31
-  target_date: 2010-12-04
-  title: 朝ラーメン レギュラー化！
-  url: /menu/0/2002.html
+  shop_id: 1143
+# 157:
+#   release_type: 0
+#   start_shows: 2010-12-04
+#   end_shows: 2099/12/31
+#   target_date: 2010-12-04
+#   title: 朝ラーメン レギュラー化！
+#   url: /menu/0/2002.html
 165:
   release_type: 0
   start_shows: 2011-02-01
   end_shows: 2099/12/31
   target_date: 2011-02-01
   title: 第121号店 愛知刈谷店 3/3 OPEN!
-  url: /shop/122090.html
-167:
-  release_type: 0
-  start_shows: 2011-02-01
-  end_shows: 2099/12/31
-  target_date: 2011-02-01
-  title: やみつき！豚玉ラーメン 2/8～販売スタート！
-  url: /menu/2/753.html
-169:
-  release_type: 0
-  start_shows: 2011-02-28
-  end_shows: 2099/12/31
-  target_date: 2011-02-28
-  title: 大阪王将北９条店（札幌第一号店）3月下旬 OPEN!
-  url: http://www.yamaokaya.com/shop/161001.html
+  shop_id: 1290
+# 167:
+#   release_type: 0
+#   start_shows: 2011-02-01
+#   end_shows: 2099/12/31
+#   target_date: 2011-02-01
+#   title: やみつき！豚玉ラーメン 2/8～販売スタート！
+#   url: /menu/2/753.html
+# 169:
+#   release_type: 0
+#   start_shows: 2011-02-28
+#   end_shows: 2099/12/31
+#   target_date: 2011-02-28
+#   title: 大阪王将北９条店（札幌第一号店）3月下旬 OPEN!
+#   url: http://www.yamaokaya.com/shop/161001.html
 174:
   release_type: 0
   start_shows: 2011-03-12
   end_shows: 2099/12/31
   target_date: 2011-03-12
   title: 第123号店 フォレスト河口湖店 3/24 OPEN!!
-  url: /shop/122092.html
+  shop_id: 1292
 175:
   release_type: 0
   start_shows: 2011-03-12 00:00:01
   end_shows: 2099/12/31
   target_date: 2011-03-12 00:00:01
   title: 第124号店 中荻野店（神奈川県） 4/19 OPEN!
-  url: /shop/122093.html
+  shop_id: 1293
 
 183:
   release_type: 0
@@ -440,42 +440,42 @@
   end_shows: 2099/12/31
   target_date: 2011-05-10
   title: 第125号店 郡山店（福島県） 5/24 OPEN!!
-  url: /shop/122094.html
+  shop_id: 1294
 186:
   release_type: 0
   start_shows: 2011-05-31
   end_shows: 2099/12/31
   target_date: 2011-05-31
   title: 第126号店 富士宮店（静岡県） 6/14 OPEN!!
-  url: /shop/122095.html
+  shop_id: 1295
 191:
   release_type: 0
   start_shows: 2011-06-03
   end_shows: 2099/12/31
   target_date: 2011-06-03
   title: 第122号店 宮城野店（仙台市） 6/8 再オープン
-  url: /shop/122091.html
+  shop_id: 1291
 193:
   release_type: 0
   start_shows: 2011-06-13 11:11:45
   end_shows: 2099/12/31
   target_date: 2011-06-13 11:11:45
   title: 第127号店 浜松南区店（静岡県） 6/28 OPEN!!
-  url: /shop/122096.html
-196:
-  release_type: 0
-  start_shows: 2011-06-20
-  end_shows: 2099/12/31
-  target_date: 2011-06-20
-  title: 夏の定番、冷やし中華はじめました！
-  url: http://www.yamaokaya.com/menu/2/765.html
-197:
-  release_type: 0
-  start_shows: 2011-06-27
-  end_shows: 2099/12/31
-  target_date: 2011-06-27
-  title: ラー油香るピリ辛つけそば 販売中！
-  url: /menu/2/759.html
+  shop_id: 1296
+# 196:
+#   release_type: 0
+#   start_shows: 2011-06-20
+#   end_shows: 2099/12/31
+#   target_date: 2011-06-20
+#   title: 夏の定番、冷やし中華はじめました！
+#   url: http://www.yamaokaya.com/menu/2/765.html
+# 197:
+#   release_type: 0
+#   start_shows: 2011-06-27
+#   end_shows: 2099/12/31
+#   target_date: 2011-06-27
+#   title: ラー油香るピリ辛つけそば 販売中！
+#   url: /menu/2/759.html
 198:
   release_type: 0
   start_shows: 2011-06-27
@@ -490,91 +490,91 @@
   target_date: 2011-07-15
   title: ネギマヨチャーシュー丼 全店販売開始！
   url: /menu/1/205.html
-201:
-  release_type: 0
-  start_shows: 2011-07-20
-  end_shows: 2099/12/31
-  target_date: 2011-07-20
-  title: がんばれ日本！期間限定餃子大幅値下げ
-  url: /menu/1/211.html
+# 201:
+#   release_type: 0
+#   start_shows: 2011-07-20
+#   end_shows: 2099/12/31
+#   target_date: 2011-07-20
+#   title: がんばれ日本！期間限定餃子大幅値下げ
+#   url: /menu/1/211.html
 204:
   release_type: 0
   start_shows: 2011-08-01
   end_shows: 2099/12/31
   target_date: 2011-08-01
   title: 第128号店 弘前店（青森県）8/6 OPEN!
-  url: /shop/122097.html
+  shop_id: 1297
 205:
   release_type: 0
   start_shows: 2011-08-04
   end_shows: 2099/12/31
   target_date: 2011-08-04
   title: 第129号店 高岡店（富山県）9/4 OPEN!
-  url: /shop/122098.html
+  shop_id: 1298
 210:
   release_type: 0
   start_shows: 2011-09-04 00:00:01
   end_shows: 2099/12/31
   target_date: 2011-09-04 00:00:01
   title: 第130号店 テクノポリスセンター店（宇都宮市） 10/5 OPEN!
-  url: /shop/122099.html
+  shop_id: 1299
 211:
   release_type: 0
   start_shows: 2011-09-04 00:00:02
   end_shows: 2099/12/31
   target_date: 2011-09-04 00:00:02
   title: 第131号店 金沢森戸店（石川県） 10/7 OPEN!
-  url: /shop/122100.html
+  shop_id: 1300
 212:
   release_type: 0
   start_shows: 2011-09-04 00:00:03
   end_shows: 2099/12/31
   target_date: 2011-09-04 00:00:03
   title: 第132号店 明石店（兵庫県） 10/19 OPEN!
-  url: /shop/122101.html
+  shop_id: 1301
 213:
   release_type: 0
   start_shows: 2011-09-04 00:00:04
   end_shows: 2099/12/31
   target_date: 2011-09-04 00:00:04
   title: 第133号店 岸和田店（大阪府） 11/3 OPEN!
-  url: /shop/122102.html
+  shop_id: 1302
 
-236:
-  release_type: 0
-  start_shows: 2011-10-29
-  end_shows: 2099/12/31
-  target_date: 2011-10-29
-  title: プレミアム塩とんこつ 11/3～販売開始！
-  url: /menu/2/2100.html
+# 236:
+#   release_type: 0
+#   start_shows: 2011-10-29
+#   end_shows: 2099/12/31
+#   target_date: 2011-10-29
+#   title: プレミアム塩とんこつ 11/3～販売開始！
+#   url: /menu/2/2100.html
 239:
   release_type: 0
   start_shows: 2011-11-24
   end_shows: 2099/12/31
   target_date: 2011-11-24
   title: 第135号店 北九州店（福岡県） 12/13 OPEN!
-  url: /shop/122104.html
-240:
-  release_type: 0
-  start_shows: 2011-11-24
-  end_shows: 2099/12/31
-  target_date: 2011-11-24
-  title: 大阪王将南郷通店 12/6 OPEN!
-  url: http://map.osaka-ohsho.com/shop317
-238:
-  release_type: 0
-  start_shows: 2011-11-24
-  end_shows: 2099/12/31
-  target_date: 2011-11-24
-  title: 第134号店 京都八幡店（京都府） 12/1 OPEN!
-  url: /shop/122103.html
+  shop_id: 1304
+# 240:
+#   release_type: 0
+#   start_shows: 2011-11-24
+#   end_shows: 2099/12/31
+#   target_date: 2011-11-24
+#   title: 大阪王将南郷通店 12/6 OPEN!
+#   url: http://map.osaka-ohsho.com/shop317
+# 238:
+#   release_type: 0
+#   start_shows: 2011-11-24
+#   end_shows: 2099/12/31
+#   target_date: 2011-11-24
+#   title: 第134号店 京都八幡店（京都府） 12/1 OPEN!
+#   url: /shop/122103.html
 242:
   release_type: 0
   start_shows: 2011-12-01
   end_shows: 2099/12/31
   target_date: 2011-12-01
   title: 鈴鹿店 閉店(12/18)のお知らせ
-  url: http://assets.yamaokaya.com/release/suzuka-close.pdf
+  shop_id: 1259
 202:
   release_type: 0
   start_shows: 2011-12-19
@@ -582,20 +582,20 @@
   target_date: 2011-12-19
   title: 一部店舗 営業時間変更のお知らせ
   url: http://assets.yamaokaya.com/release/1112change_biz_hours.pdf
-247:
-  release_type: 0
-  start_shows: 2012-01-06
-  end_shows: 2099/12/31
-  target_date: 2012-01-06
-  title: 辛味噌フェア 開催!(1/10～)
-  url: /menu/2/686.html
-248:
-  release_type: 0
-  start_shows: 2012-01-06 00:00:01
-  end_shows: 2099/12/31
-  target_date: 2012-01-06 00:00:01
-  title: プレミアム塩とんこつ、一部店舗で延長販売中！
-  url: /menu/2/2100.html
+# 247:
+#   release_type: 0
+#   start_shows: 2012-01-06
+#   end_shows: 2099/12/31
+#   target_date: 2012-01-06
+#   title: 辛味噌フェア 開催!(1/10～)
+#   url: /menu/2/686.html
+# 248:
+#   release_type: 0
+#   start_shows: 2012-01-06 00:00:01
+#   end_shows: 2099/12/31
+#   target_date: 2012-01-06 00:00:01
+#   title: プレミアム塩とんこつ、一部店舗で延長販売中！
+#   url: /menu/2/2100.html
 251:
   release_type: 0
   start_shows: 2012-02-08
@@ -609,14 +609,14 @@
   end_shows: 2099/12/31
   target_date: 2012-02-08
   title: 千葉茂原店 閉店のお知らせ
-  url: http://assets.yamaokaya.com/release/mobara_close.pdf
-254:
-  release_type: 0
-  start_shows: 2012-03-05
-  end_shows: 2099/12/31
-  target_date: 2012-03-05
-  title: にぼとん醤油ラーメン 3/12～
-  url: /menu/2/795.html
+  shop_id: 1285
+# 254:
+#   release_type: 0
+#   start_shows: 2012-03-05
+#   end_shows: 2099/12/31
+#   target_date: 2012-03-05
+#   title: にぼとん醤油ラーメン 3/12～
+#   url: /menu/2/795.html
 260:
   release_type: 0
   start_shows: 2012-04-02
@@ -624,13 +624,13 @@
   target_date: 2012-04-02
   title: 一部店舗 営業時間変更のお知らせ
   url: http://assets.yamaokaya.com/release/1203change_biz_hours.pdf
-262:
-  release_type: 0
-  start_shows: 2012-04-23
-  end_shows: 2099/12/31
-  target_date: 2012-04-23
-  title: たんたんタンメン 4/24～
-  url: /menu/2/797.html
+# 262:
+#   release_type: 0
+#   start_shows: 2012-04-23
+#   end_shows: 2099/12/31
+#   target_date: 2012-04-23
+#   title: たんたんタンメン 4/24～
+#   url: /menu/2/797.html
 265:
   release_type: 0
   start_shows: 2012-05-23
@@ -638,35 +638,34 @@
   target_date: 2012-05-23
   title: 一部店舗 営業時間変更のお知らせ
   url: http://assets.yamaokaya.com/release/1205change_biz_hours.pdf
-267:
-  release_type: 0
-  start_shows: 2012-06-06
-  end_shows: 2099/12/31
-  target_date: 2012-06-06
-  title: 第一弾とんこつ海老節つけ麺 6/11～
-  url: /menu/2/798.html
-
-275:
-  release_type: 0
-  start_shows: 2012-08-13
-  end_shows: 2099/12/31
-  target_date: 2012-08-13
-  title: 第三弾生姜香る肉つけ麺 8/13～
-  url: /menu/2/800.html
-281:
-  release_type: 0
-  start_shows: 2012-09-18
-  end_shows: 2099/12/31
-  target_date: 2012-09-18
-  title: 特製もやし味噌ラーメン 09/25～！
-  url: /menu/2/801.html
-282:
-  release_type: 0
-  start_shows: 2012-09-18 00:00:01
-  end_shows: 2099/12/31
-  target_date: 2012-09-18 00:00:01
-  title: 第136号店 熊本店（熊本市） 10/04 OPEN!
-  url: /shop/122105.html
+# 267:
+#   release_type: 0
+#   start_shows: 2012-06-06
+#   end_shows: 2099/12/31
+#   target_date: 2012-06-06
+#   title: 第一弾とんこつ海老節つけ麺 6/11～
+#   url: /menu/2/798.html
+# 275:
+#   release_type: 0
+#   start_shows: 2012-08-13
+#   end_shows: 2099/12/31
+#   target_date: 2012-08-13
+#   title: 第三弾生姜香る肉つけ麺 8/13～
+#   url: /menu/2/800.html
+# 281:
+#   release_type: 0
+#   start_shows: 2012-09-18
+#   end_shows: 2099/12/31
+#   target_date: 2012-09-18
+#   title: 特製もやし味噌ラーメン 09/25～！
+#   url: /menu/2/801.html
+# 282:
+#   release_type: 0
+#   start_shows: 2012-09-18 00:00:01
+#   end_shows: 2099/12/31
+#   target_date: 2012-09-18 00:00:01
+#   title: 第136号店 熊本店（熊本市） 10/04 OPEN!
+#   url: /shop/122105.html
 284:
   release_type: 0
   start_shows: 2012-10-29
@@ -674,34 +673,34 @@
   target_date: 2012-10-29
   title: 一部店舗 営業時間変更のお知らせ
   url: http://assets.yamaokaya.com/release/1211change_biz_hours.pdf
-287:
-  release_type: 0
-  start_shows: 2012-11-21
-  end_shows: 2099/12/31
-  target_date: 2012-11-21
-  title: 帰ってきたとんこつ兄弟！11/26～
-  url: /menu/2/802.html
-294:
-  release_type: 0
-  start_shows: 2013-02-07
-  end_shows: 2099/12/31
-  target_date: 2013-02-07
-  title: もやし1.5倍！特製もやし味噌ラーメン復活！
-  url: /menu/2/801.html
-299:
-  release_type: 0
-  start_shows: 2013-03-25
-  end_shows: 2099/12/31
-  target_date: 2013-03-25
-  title: 山岡家のカップラーメンが発売！
-  url: /menu/2/9001.html
-305:
-  release_type: 0
-  start_shows: 2013-04-16
-  end_shows: 2099/12/31
-  target_date: 2013-04-16
-  title: 塩麹２番勝負、全国展開中！
-  url: /menu/2/839.html
+# 287:
+#   release_type: 0
+#   start_shows: 2012-11-21
+#   end_shows: 2099/12/31
+#   target_date: 2012-11-21
+#   title: 帰ってきたとんこつ兄弟！11/26～
+#   url: /menu/2/802.html
+# 294:
+#   release_type: 0
+#   start_shows: 2013-02-07
+#   end_shows: 2099/12/31
+#   target_date: 2013-02-07
+#   title: もやし1.5倍！特製もやし味噌ラーメン復活！
+#   url: /menu/2/801.html
+# 299:
+#   release_type: 0
+#   start_shows: 2013-03-25
+#   end_shows: 2099/12/31
+#   target_date: 2013-03-25
+#   title: 山岡家のカップラーメンが発売！
+#   url: /menu/2/9001.html
+# 305:
+#   release_type: 0
+#   start_shows: 2013-04-16
+#   end_shows: 2099/12/31
+#   target_date: 2013-04-16
+#   title: 塩麹２番勝負、全国展開中！
+#   url: /menu/2/839.html
 304:
   release_type: 0
   start_shows: 2013-05-01
@@ -709,27 +708,27 @@
   target_date: 2013-05-01
   title: 池袋西口店 他3店舗閉店のお知らせ
   url: http://assets.yamaokaya.com/release/close_4_shops.pdf
-312:
-  release_type: 0
-  start_shows: 2013-06-25
-  end_shows: 2099/12/31
-  target_date: 2013-06-25
-  title: 麻辣2番勝負、全国展開！
-  url: /menu/2/840.html
-313:
-  release_type: 0
-  start_shows: 2013-06-25
-  end_shows: 2099/12/31
-  target_date: 2013-06-25
-  title: 夏の定番、冷やし中華はじめました。
-  url: /menu/2/842.html
+# 312:
+#   release_type: 0
+#   start_shows: 2013-06-25
+#   end_shows: 2099/12/31
+#   target_date: 2013-06-25
+#   title: 麻辣2番勝負、全国展開！
+#   url: /menu/2/840.html
+# 313:
+#   release_type: 0
+#   start_shows: 2013-06-25
+#   end_shows: 2099/12/31
+#   target_date: 2013-06-25
+#   title: 夏の定番、冷やし中華はじめました。
+#   url: /menu/2/842.html
 317:
   release_type: 0
   start_shows: 2013-08-01
   end_shows: 2099/12/31
   target_date: 2013-08-01
   title: 網走店オープン!(8/29)
-  url: /shop/121044.html
+  shop_id: 1144
 318:
   release_type: 0
   start_shows: 2013-08-01
@@ -779,27 +778,28 @@
   target_date: 2013-10-21
   title: 価格改訂のお知らせ（サイドメニュー等）
   url: http://assets.yamaokaya.com/release/release_20131101.pdf
-331:
-  release_type: 0
-  start_shows: 2013-11-07
-  end_shows: 2099/12/31
-  target_date: 2013-11-07
-  title: 肉肉すきトンラーメン 11/12～
-  url: /menu/2/844.html
-335:
-  release_type: 0
-  start_shows: 2013-12-09
-  end_shows: 2099/12/31
-  target_date: 2013-12-09
-  title: 東北地方で地域限定メニュー発売！
-  url: /menu/2/803.html
-336:
-  release_type: 0
-  start_shows: 2013-12-13
-  end_shows: 2099/12/31
-  target_date: 2013-12-13
-  title: 関西地方で地域限定メニュー発売！
-  url: /menu/2/802.html
+
+# 331:
+#   release_type: 0
+#   start_shows: 2013-11-07
+#   end_shows: 2099/12/31
+#   target_date: 2013-11-07
+#   title: 肉肉すきトンラーメン 11/12～
+#   url: /menu/2/844.html
+# 335:
+#   release_type: 0
+#   start_shows: 2013-12-09
+#   end_shows: 2099/12/31
+#   target_date: 2013-12-09
+#   title: 東北地方で地域限定メニュー発売！
+#   url: /menu/2/803.html
+# 336:
+#   release_type: 0
+#   start_shows: 2013-12-13
+#   end_shows: 2099/12/31
+#   target_date: 2013-12-13
+#   title: 関西地方で地域限定メニュー発売！
+#   url: /menu/2/802.html
 337:
   release_type: 0
   start_shows: 2013-12-13
@@ -834,20 +834,40 @@
           %td 2013年12月18日(土)
           %td 2014年01月05日(日)
     %p 今後ともラーメン山岡家を、よろしくお願い申し上げます。
+339:
+  release_type: 0
+  start_shows: 2014-06-01
+  end_shows: 2014/08/31
+  target_date: 2014-07-02
+  title: 稚内店オープン!
+  shop_id: 1145
+  body: |
+    %p 2014年7月2日、最北の町、稚内に「山岡家稚内店」をオープンします。
+    %p お近くにお住まいの皆様、また稚内にお越し際は、是非ご利用のほど、よろしくお願いいたします。
 340:
   release_type: 0
-  start_shows: 2014-01-09
-  end_shows: 2099/12/31
-  target_date: 2014-01-09
-  title: 1/10～プレミアム塩とんこつ。今回は炙り！
-  url: http://www.yamaokaya.com/menu/2/845.html
-342:
-  release_type: 0
-  start_shows: 2014-01-27
-  end_shows: 2099/12/31
-  target_date: 2014-01-27
-  title: 山岡家 カップラーメン第２弾!
-  url: /menu/2/9002.html
+  start_shows: 2014-06-01
+  end_shows: 2014/07/27
+  target_date: 2014-07-02
+  title: 稚内店ラーメン全品100円キャッシュバック中
+  shop_id: 1145
+  body: |
+    %p 稚内店オープンを記念して、ラーメン全品100円キャッシュバック中！
+    %p この機会に是非お越しください！
+# 340:
+#   release_type: 0
+#   start_shows: 2014-01-09
+#   end_shows: 2099/12/31
+#   target_date: 2014-01-09
+#   title: 1/10～プレミアム塩とんこつ。今回は炙り！
+#   url: http://www.yamaokaya.com/menu/2/845.html
+# 342:
+#   release_type: 0
+#   start_shows: 2014-01-27
+#   end_shows: 2099/12/31
+#   target_date: 2014-01-27
+#   title: 山岡家 カップラーメン第２弾!
+#   url: /menu/2/9002.html
 344:
   release_type: 0
   start_shows: 2014-02-12
@@ -861,13 +881,13 @@
     %p これまで中荻野店をご愛顧いただきましたお客様に、心よりお詫び申し上げます。どうかご理解を賜りますよう、よろしくお願い申し上げます。
     %p また、営業終了日までの短い期間ではございますが、誠心誠意、美味しいラーメン、真心のこもったサービスの提供に努めてまいります。
     %p 今後ともラーメン山岡家を、よろしくお願い申し上げます。
-345:
-  release_type: 0
-  start_shows: 2014-03-01
-  end_shows: 2099/12/31
-  target_date: 2014-03-01
-  title: 味噌フェアスタート！第一弾は特製味噌！
-  url: /menu/0/131.html
+# 345:
+#   release_type: 0
+#   start_shows: 2014-03-01
+#   end_shows: 2099/12/31
+#   target_date: 2014-03-01
+#   title: 味噌フェアスタート！第一弾は特製味噌！
+#   url: /menu/0/131.html
 349:
   release_type: 0
   start_shows: 2014-03-17
@@ -875,27 +895,27 @@
   target_date: 2014-03-17
   title: 消費税増税に伴う価格改定のお知らせ
   url: http://assets.yamaokaya.com/release/release_20140317.pdf
-350:
-  release_type: 0
-  start_shows: 2014-03-17
-  end_shows: 2099/12/31
-  target_date: 2014-03-17
-  title: 味噌フェア第二弾は、辛味噌！
-  url: /menu/0/141.html
+# 350:
+#   release_type: 0
+#   start_shows: 2014-03-17
+#   end_shows: 2099/12/31
+#   target_date: 2014-03-17
+#   title: 味噌フェア第二弾は、辛味噌！
+#   url: /menu/0/141.html
 351:
   release_type: 0
   start_shows: 2014-03-27
   end_shows: 2099/12/31
   target_date: 2014-03-27
   title: あのメニューがついにレギュラー化！
-  url: /menu/0/802.html
-354:
-  release_type: 0
-  start_shows: 2014-04-16
-  end_shows: 2099/12/31
-  target_date: 2014-04-16
-  title: トンコツ＋トマト＝？
-  url: /menu/2/846.html
+  url: /menus/51.html
+# 354:
+#   release_type: 0
+#   start_shows: 2014-04-16
+#   end_shows: 2099/12/31
+#   target_date: 2014-04-16
+#   title: トンコツ＋トマト＝？
+#   url: /menu/2/846.html
 355:
   release_type: 0
   start_shows: 2014-04-25
@@ -940,20 +960,20 @@
   target_date: 2014-05-21
   title: 千葉若葉区店 営業時間変更のお知らせ
   url: http://assets.yamaokaya.com/release/release_20140601.pdf
-358:
-  release_type: 0
-  start_shows: 2014-05-22
-  end_shows: 2099/12/31
-  target_date: 2014-05-22
-  title: トマト推し第２弾！次はつけ麺！
-  url: /menu/2/848.html
-361:
-  release_type: 0
-  start_shows: 2014-06-23
-  end_shows: 2099/12/31
-  target_date: 2014-06-23
-  title: 今年も冷やし中華、始めました。
-  url: /menu/2/842.html
+# 358:
+#   release_type: 0
+#   start_shows: 2014-05-22
+#   end_shows: 2099/12/31
+#   target_date: 2014-05-22
+#   title: トマト推し第２弾！次はつけ麺！
+#   url: /menu/2/848.html
+# 361:
+#   release_type: 0
+#   start_shows: 2014-06-23
+#   end_shows: 2099/12/31
+#   target_date: 2014-06-23
+#   title: 今年も冷やし中華、始めました。
+#   url: /menu/2/842.html
 362:
   release_type: 0
   start_shows: 2014-07-28
