@@ -357,7 +357,7 @@ class Page
 				Page.new(
 					url: UrlHelpers.releases_path,
 					title: :releases,
-					children: Release.news.map do |m|
+					children: Release.has_own_page.news.map do |m|
 						Page.new(
 							url: m.path,
 							title: m.title

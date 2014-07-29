@@ -1,45 +1,45 @@
-14:
-  release_type: 0
-  start_shows: 2008-02-01
-  end_shows: 2099/12/31
-  target_date: 2008-02-01
-  title: 弊社「パリパリ餃子」の安全性について
-  url: http://www.yamaokaya.com/news/20080201-2.pdf
-16:
-  release_type: 0
-  start_shows: 2008-03-17
-  end_shows: 2099/12/31
-  target_date: 2008-03-17
-  title: 鈴鹿店オープン!
-  url: http://www.yamaokaya.com/shop/122059.html
+# 14:
+#   release_type: 0
+#   start_shows: 2008-02-01
+#   end_shows: 2099/12/31
+#   target_date: 2008-02-01
+#   title: 弊社「パリパリ餃子」の安全性について
+#   url: http://www.yamaokaya.com/news/20080201-2.pdf
+# 16:
+#   release_type: 0
+#   start_shows: 2008-03-17
+#   end_shows: 2099/12/31
+#   target_date: 2008-03-17
+#   title: 鈴鹿店オープン!
+#   url: http://www.yamaokaya.com/shop/122059.html
 23:
   release_type: 0
   start_shows: 2008-06-22
   end_shows: 2099/12/31
   target_date: 2008-06-22
   title: 平塚店オープン！
-  url: http://www.yamaokaya.com/shop/122060.html
+  shop_id: 1260
 24:
   release_type: 0
   start_shows: 2008-08-07
   end_shows: 2099/12/31
   target_date: 2008-08-07
   title: 八千代店オープン！
-  url: http://www.yamaokaya.com/shop/122061.html
+  shop_id: 1261
 25:
   release_type: 0
   start_shows: 2008-08-07
   end_shows: 2099/12/31
   target_date: 2008-08-07
   title: 東千葉店オープン！
-  url: http://www.yamaokaya.com/shop/122062.html
+  shop_id: 1262
 26:
   release_type: 0
   start_shows: 2008-09-21
   end_shows: 2099/12/31
   target_date: 2008-09-21
   title: つくば中央店オープン！
-  url: http://www.yamaokaya.com/shop/122063.html
+  shop_id: 1263
 29:
   release_type: 0
   start_shows: 2008-09-22
