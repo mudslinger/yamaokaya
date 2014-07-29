@@ -94,9 +94,15 @@ Rails.application.routes.draw do
   #ランディング用エイリアス
   constraints host: DOMAINS[:yamaokaya] do
     scope module: :brand_yamaokaya do
-      get '/menu/index(.:format)' => redirect(UrlHelpers.menu_categorized_path(:regular))
 
+      #コーポレートへ
+      get 'company/index(.:format)' => redirect(UrlHelpers.overview_url)
+      get 'company/greetings(.:format)' => redirect(UrlHelpers.greetings_url)
+      get 'company/history(.:format)' => redirect(UrlHelpers.history_url)
+      get 'company/aniv_25(.:format)' => redirect(UrlHelpers.corp_top_url)
+      
       #メニューページのリダイレクト
+      get '/menu/index(.:format)' => redirect(UrlHelpers.menu_categorized_path(:regular))
       constraints category: /[0-9]{1}/ do
         get '/menu/:category(.:format)' => redirect{|params|
           case params[:category].to_i
