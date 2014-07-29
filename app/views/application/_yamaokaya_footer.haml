@@ -48,20 +48,19 @@
 					%p
 						美味しいものをお客様に味わっていただくために、敢えて手間をかけています。
 			.col-md-2.col-xs-12
-				.row
-					%form{method: :post,action:'http://coupon.yamaokaya.com/bm/p/f/tf.php?id=join',target: '_blank'}
-						%fieldset{name: 'mm'}
-							%legend メルマガ登録でクーポン・最新情報をGET!
-							%p 山岡家のメルマガに登録して、お得なクーポンや最新情報をGETしよう！
-							%p 今なら、なんと特製パリパリ餃子 無料クーポンを進呈！
-							%p
-								.input-group
-									%input.form-control{type: :mail,name: 'form[mail]',placeholder: 'メールアドレスを入力'}
-									%span.input-group-btn
-										%input.btn.btn-default{type: :submit,name: 'regist', value: '登録'}
-							%p
-								=link_to :mag_faq ,class: %w(btn btn-primary) do
-									メルマガが届かない場合はこちら
+				%form{method: :post,action:'http://coupon.yamaokaya.com/bm/p/f/tf.php?id=join',target: '_blank'}
+					%fieldset{name: 'mm'}
+						%legend メルマガ登録でクーポン・最新情報をGET!
+						%p 山岡家のメルマガに登録して、お得なクーポンや最新情報をGETしよう！
+						%p 今なら、なんと特製パリパリ餃子 無料クーポンを進呈！
+						%p
+							.input-group
+								%input.form-control{type: :mail,name: 'form[mail]',placeholder: 'メールアドレスを入力'}
+								%span.input-group-btn
+									%input.btn.btn-default{type: :submit,name: 'regist', value: '登録'}
+						%p
+							=link_to :mag_faq ,class: %w(btn btn-primary) do
+								メルマガが届かない場合はこちら
 .bottom-nav
 	.container
 		.row

@@ -2,7 +2,7 @@ class Release < ActiveRecord::Base
 	belongs_to :shop
 
 	#has_many :menu_group
-	default_scope -> {where("(current_timestamp between start_shows and end_shows)")}
+	# default_scope -> {where("(current_timestamp between start_shows and end_shows)")}
 	default_scope -> {order('target_date desc')}
 
 	scope :has_own_page , -> {where.not(body: nil).where(shop_id: nil)}
@@ -16,7 +16,7 @@ class Release < ActiveRecord::Base
 
 	def path
 		if body
-			if shop_id
+			if shop_id && active?
 				UrlHelpers.shop_details_path(shop_id)
 			else
 				UrlHelpers.release_path(id)
@@ -24,5 +24,9 @@ class Release < ActiveRecord::Base
 		else
 			url
 		end
+	end
+
+	def active?
+		DateTime.now.between?(start_shows,end_shows)
 	end
 end
