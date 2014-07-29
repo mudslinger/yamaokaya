@@ -18,7 +18,11 @@ module ApplicationHelper
 		carousel_body txt
 	end
 	def carousel_body(txt)
-		raw render type: :haml,inline: txt
+		begin
+			raw render type: :haml,inline: txt
+		rescue
+			''
+		end
 	end
 
 	def static_map_for(location, options = {})
