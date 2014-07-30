@@ -1,5 +1,10 @@
 Rails.application.routes.draw do
 
+  #yamaokaya.comドメインだった場合
+  constraints host: 'yamaokaya.com' do
+    root :to => redirect('https://www.yamaokaya.com/'),via: [:get,:post]
+  end
+  
   #common
   get '/about' => 'articles#about',as: :about
   get '/sns_guideline' => 'articles#sns_guideline',as: :sns_guideline
@@ -24,6 +29,9 @@ Rails.application.routes.draw do
 
   get '/feedbacks' => 'feedbacks#new',as: :feedbacks
   post '/feedbacks' => 'feedbacks#create',as: :feedbacks_post
+
+
+
   constraints host: DOMAINS[:corporate] do
     scope module: :corporate do
       get '/' => 'top#index',as: :corp_top
@@ -61,7 +69,6 @@ Rails.application.routes.draw do
         get 'menus/:id' => 'menus#details',as: :menu_details
       end
       get 'menus/:category' => 'menus#categorized', as: :menu_categorized 
-
     end 
   end
 
