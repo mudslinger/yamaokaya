@@ -30,7 +30,7 @@ class ImagesController < ApplicationController
 		#originじゃ無いときはリサイズ
 		image.resize size unless size == 'origin'
 		#クオリティ調整
-		image.quality 80
+		image.quality 75
 		#メタデータ削除
 		image.strip
 
@@ -46,6 +46,7 @@ class ImagesController < ApplicationController
 		blob = image.to_blob
 
 		#TODO PNG以外に対応
+		response.headers["Expires"] = 10.days.from_now.httpdate
 		send_data blob, :disposition => "inline", :type => image.mime_type
 		#吐き出してからファイルに書きたい
 		File.open(path,'wb') do |f|
