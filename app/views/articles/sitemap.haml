@@ -55,27 +55,12 @@
                                                         =p4.short_title
                                                   .panel-body
                                             -else
-                                              .col-xs-3
-                                                .panel.panel-default
-                                                  .panel-body
-                                                    =link_to p4.short_title,p4.url
+                                              =link_to p4.short_title,p4.url,class: %w(btn btn-default)
                                   -else
-                                    .col-xs-3
-                                      .panel.panel-default
-                                        .panel-body
-                                          =link_to p3.short_title,p3.url
+                                    =link_to p3.short_title,p3.url,class: %w(btn btn-default)
                         -else
-                          .col-xs-3
-                            .panel.panel-default
-                              .panel-body
-                                =link_to p2.short_title,p2.url
+                          =link_to p2.short_title,p2.url,class: %w(btn btn-default)
               -else
-                .col-xs-3
-                  .panel.panel-default
-                    .panel-body
-                      =link_to p.short_title,p.url
+                =link_to p.short_title,p.url,class: %w(btn btn-default)
     -else
-      .col-xs-3
-        .panel.panel-default
-          .panel-body
-            =link_to @site.short_title,@site.url
+      =link_to @site.short_title,@site.url,class: %w(btn btn-default)
