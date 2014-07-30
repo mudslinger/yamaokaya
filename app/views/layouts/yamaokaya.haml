@@ -21,11 +21,14 @@
     = javascript_include_tag "//www.google.com/jsapi"
     = javascript_include_tag "//maps.google.com/maps/api/js?sensor=true"
     = javascript_include_tag "application"
-    =favicon_link_tag 'apple-touch-icon-144x144-precomposed.png', :rel => 'apple-touch-icon-precomposed', :type => 'image/png', :sizes => '144x144'
-    =favicon_link_tag 'apple-touch-icon-114x114-precomposed.png', :rel => 'apple-touch-icon-precomposed', :type => 'image/png', :sizes => '114x114'
-    =favicon_link_tag 'apple-touch-icon-72x72-precomposed.png', :rel => 'apple-touch-icon-precomposed', :type => 'image/png', :sizes => '72x72'
-    =favicon_link_tag 'apple-touch-icon-precomposed.png', :rel => 'apple-touch-icon-precomposed', :type => 'image/png'
-    =favicon_link_tag 'favicon.ico', :rel => 'shortcut icon'
+    =favicon_link_tag '/i/144x144/images/favicon.png', :rel => 'apple-touch-icon-precomposed', :type => 'image/png', :sizes => '144x144'
+    =favicon_link_tag '/i/114x114/images/favicon.png', :rel => 'apple-touch-icon-precomposed', :type => 'image/png', :sizes => '114x114'
+    =favicon_link_tag '/i/72x72/images/favicon.png', :rel => 'apple-touch-icon-precomposed', :type => 'image/png', :sizes => '72x72'
+    =favicon_link_tag '/i/512x512/images/favicon.png', :rel => 'apple-touch-icon-precomposed', :type => 'image/png'
+    %link{rel:"shortcut icon", href: "/i/32x32/images/favicon.png",type: 'image/png'}
+
+<link href="http:/XXXXXXXXXX/favicon.png" 
+rel="shortcut icon" type="image/png"/> 
 -# TODO @dataのところ改善
 %body{class: [controller.controller_name,:yamaokaya],data: controller_name == 'top' ? {spy: :scroll,target: '.navbar',offset: 80}: {}}
     #fb-root
