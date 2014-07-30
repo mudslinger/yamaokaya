@@ -12,7 +12,7 @@
 			%tr
 				%th 住所
 				%td
-					="〒#{shop.postal_code}"
+					="〒%03d-%04d" % [shop.postal_code.to_i.div(10000),shop.postal_code.to_i % 10000]
 					%br
 					=shop.address
 					%br

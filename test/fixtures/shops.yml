@@ -2722,8 +2722,8 @@ kakitagawa:
   lng: 138.89683900
   zoom: 14
   landmarks: 
-  seats_at_counter: 
-  booths: 
+  seats_at_counter: 12
+  booths: 9
   seq: 101
 kasumigaura:
   area: kennan
@@ -2749,8 +2749,8 @@ kasumigaura:
   lng: 140.22558400
   zoom: 14
   landmarks: マクドナルドさんとなり
-  seats_at_counter: 
-  booths: 
+  seats_at_counter: 9
+  booths: 9
   seq: 102
 gamagori:
   area: aichi
@@ -2776,8 +2776,8 @@ gamagori:
   lng: 137.31249600
   zoom: 14
   landmarks: 赤坂町丁田交差点を岡崎方面へ200メートル
-  seats_at_counter: 
-  booths: 
+  seats_at_counter: 9
+  booths: 11
   seq: 103
 jonan:
   area: mito
@@ -2803,8 +2803,8 @@ jonan:
   lng: 140.48296600
   zoom: 14
   landmarks: おたる寿しさんとなり
-  seats_at_counter: 
-  booths: 
+  seats_at_counter: 7
+  booths: 10
   seq: 104
 kabukicho:
   area: tokyo
@@ -2911,8 +2911,8 @@ laketown:
   lng: 139.81720400
   zoom: 13
   landmarks: 
-  seats_at_counter: 
-  booths: 
+  seats_at_counter: 9
+  booths: 11
   seq: 108
 minaminagaike:
   area: nagano
@@ -2938,8 +2938,8 @@ minaminagaike:
   lng: 138.23731900
   zoom: 13
   landmarks: 
-  seats_at_counter: 
-  booths: 
+  seats_at_counter: 13
+  booths: 11
   seq: 109
 higashimatsuyama:
   area: saitama
@@ -2965,8 +2965,8 @@ higashimatsuyama:
   lng: 139.41957200
   zoom: 13
   landmarks: 
-  seats_at_counter: 
-  booths: 
+  seats_at_counter: 7
+  booths: 10
   seq: 110
 kai:
   area: yamanashi
@@ -2992,8 +2992,8 @@ kai:
   lng: 138.52176700
   zoom: 13
   landmarks: ガストさん隣
-  seats_at_counter: 
-  booths: 
+  seats_at_counter: 9
+  booths: 11
   seq: 111
 shinonoi:
   area: nagano
@@ -3045,8 +3045,8 @@ togane:
   lat: 35.55427300
   lng: 140.36533800
   zoom: 13
-  landmarks: 
-  seats_at_counter: 
+  landmarks: 9
+  seats_at_counter: 10
   booths: 
   seq: 113
 higashikanesawa:
@@ -3073,8 +3073,8 @@ higashikanesawa:
   lng: 140.63650400
   zoom: 13
   landmarks: 
-  seats_at_counter: 
-  booths: 
+  seats_at_counter: 7
+  booths: 10
   seq: 114
 hojin:
   area: aichi
@@ -3100,8 +3100,8 @@ hojin:
   lng: 136.85044500
   zoom: 15
   landmarks: 
-  seats_at_counter: 
-  booths: 
+  seats_at_counter: 8
+  booths: 13
   seq: 115
 kaji:
   area: dounan
@@ -3127,8 +3127,8 @@ kaji:
   lng: 140.76914700
   zoom: 16
   landmarks: パチンコゴリラさん向い
-  seats_at_counter: 
-  booths: 
+  seats_at_counter: 7
+  booths: 9
   seq: 116
 wakabaku:
   area: wangan
@@ -3154,8 +3154,8 @@ wakabaku:
   lng: 140.16676100
   zoom: 13
   landmarks: 洋麺屋五右衛門さんとなり
-  seats_at_counter: 
-  booths: 
+  seats_at_counter: 9
+  booths: 12
   seq: 117
 kamagaya:
   area: wangan
@@ -3181,8 +3181,8 @@ kamagaya:
   lng: 140.00209500
   zoom: 13
   landmarks: イオンさん向い
-  seats_at_counter: 
-  booths: 
+  seats_at_counter: 9
+  booths: 9
   seq: 118
 mobara:
   area: narita
@@ -3235,8 +3235,8 @@ morioka:
   lng: 141.15555200
   zoom: 13
   landmarks: 
-  seats_at_counter: 
-  booths: 
+  seats_at_counter: 7
+  booths: 10
   seq: 120
 sakura:
   area: narita
@@ -3262,8 +3262,8 @@ sakura:
   lng: 140.21931100
   zoom: 13
   landmarks: ベイシアさん向かい
-  seats_at_counter: 
-  booths: 
+  seats_at_counter: 7
+  booths: 10
   seq: 121
 niida:
   area: akita
@@ -3288,8 +3288,8 @@ niida:
   lat: 39.68673000
   lng: 140.12440100
   zoom: 13
-  landmarks: 
-  seats_at_counter: 
+  landmarks: 7
+  seats_at_counter: 10
   booths: 
   seq: 122
 matsumoto:
@@ -3315,8 +3315,8 @@ matsumoto:
   lat: 36.18454400
   lng: 137.96311100
   zoom: 13
-  landmarks: 
-  seats_at_counter: 
+  landmarks: 7
+  seats_at_counter: 10
   booths: 
   seq: 123
 kushirocho:
@@ -3342,8 +3342,8 @@ kushirocho:
   lat: 43.01342600
   lng: 144.40373900
   zoom: 13
-  landmarks: 
-  seats_at_counter: 
+  landmarks: 7
+  seats_at_counter: 10
   booths: 
   seq: 124
 kariya:
@@ -3370,8 +3370,8 @@ kariya:
   lng: 137.00334700
   zoom: 13
   landmarks: 
-  seats_at_counter: 
-  booths: 
+  seats_at_counter: 10
+  booths: 11
   seq: 125
 miyagino:
   area: miyagi
@@ -3396,8 +3396,8 @@ miyagino:
   lat: 38.27667500
   lng: 140.99032800
   zoom: 13
-  landmarks: 
-  seats_at_counter: 
+  landmarks: 9
+  seats_at_counter: 10
   booths: 
   seq: 126
 forest:
@@ -3424,8 +3424,8 @@ forest:
   lng: 138.74655200
   zoom: 13
   landmarks: フォレストモール富士河口湖内
-  seats_at_counter: 
-  booths: 
+  seats_at_counter: 0
+  booths: 17
   seq: 127
 nakaogino:
   area: kanagawa
@@ -3478,8 +3478,8 @@ koriyama:
   lng: 140.34309400
   zoom: 13
   landmarks: 
-  seats_at_counter: 
-  booths: 
+  seats_at_counter: 11
+  booths: 13
   seq: 129
 fujinomiya:
   area: shizuoka
@@ -3505,8 +3505,8 @@ fujinomiya:
   lng: 138.61837500
   zoom: 13
   landmarks: 登山道入口交差点を山梨方面へ400メートル
-  seats_at_counter: 
-  booths: 
+  seats_at_counter: 10
+  booths: 12
   seq: 130
 hamamatuminami:
   area: hamamatsu
@@ -3532,8 +3532,8 @@ hamamatuminami:
   lng: 137.68072300
   zoom: 14
   landmarks: 篠原東交差点を浜松市街方面へ300メートル
-  seats_at_counter: 
-  booths: 
+  seats_at_counter: 9
+  booths: 17
   seq: 131
 hirosaki:
   area: aomori
@@ -3559,8 +3559,8 @@ hirosaki:
   lng: 140.48746400
   zoom: 14
   landmarks: 
-  seats_at_counter: 
-  booths: 
+  seats_at_counter: 9
+  booths: 12
   seq: 132
 takaoka:
   area: toyama
@@ -3613,8 +3613,8 @@ techno:
   lng: 139.99383300
   zoom: 13
   landmarks: 
-  seats_at_counter: 
-  booths: 
+  seats_at_counter: 11
+  booths: 10
   seq: 134
 morito:
   area: ishikawa
@@ -3640,8 +3640,8 @@ morito:
   lng: 136.59879500
   zoom: 13
   landmarks: 
-  seats_at_counter: 
-  booths: 
+  seats_at_counter: 11
+  booths: 9
   seq: 135
 akashi:
   area: hyogo
@@ -3667,8 +3667,8 @@ akashi:
   lng: 134.97586000
   zoom: 13
   landmarks: 
-  seats_at_counter: 
-  booths: 
+  seats_at_counter: 9
+  booths: 6
   seq: 136
 kishiwada:
   area: osaka
@@ -3694,8 +3694,8 @@ kishiwada:
   lng: 135.43435700
   zoom: 13
   landmarks: 
-  seats_at_counter: 
-  booths: 
+  seats_at_counter: 8
+  booths: 11
   seq: 137
 yawata:
   area: kyoto
@@ -3748,8 +3748,8 @@ kitakyushu:
   lng: 130.80683800
   zoom: 13
   landmarks: ポプラ若松桜町店さん
-  seats_at_counter: 
-  booths: 
+  seats_at_counter: 10
+  booths: 12
   seq: 139
 kumamoto:
   area: kumamoto
@@ -3802,8 +3802,8 @@ abashiri:
   lng: 144.28424100
   zoom: 13
   landmarks: ABCマートさんとなり
-  seats_at_counter: 
-  booths: 
+  seats_at_counter: 14
+  booths: 6
   seq: 141
 wakkanai:
   area: douhoku
@@ -3829,6 +3829,6 @@ wakkanai:
   lng: 141.70631130
   zoom: 13
   landmarks: 
-  seats_at_counter: 
-  booths: 
+  seats_at_counter: 14
+  booths: 6
   seq: 142

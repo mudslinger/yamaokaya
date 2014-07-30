@@ -6,25 +6,40 @@
 				.panel-heading.original-news
 					%h4.panel-title 
 						%span.glyphicon.glyphicon-shop
-						Quick Navi
+						Navi
 				%table.table
 					%col{width: '50%'}
-					%col{width: '50%'}
-					%tr
-						%td
-							=link_to :shop_root,class: %w(btn btn-primary),role: :button,style: 'width:95%' do
-								店舗検索	
-						%td
-							=link_to menu_categorized_path(:regular),class: %w(btn btn-primary),role: :button,style: 'width:95%' do
-								メニュー
-					%tr
-						%td
-							=link_to :feedbacks,class: %w(btn btn-primary),role: :button,style: 'width:95%' do
-								ご意見・ご感想
-						%td
-							=link_to recruit_top_url,class: %w(btn btn-primary),role: :button,style: 'width:95%' do
-								採用スペシャルサイトへ
-
+					%col{width: '*'}
+					%thead
+					%tfoot
+					%tbody
+						%tr
+							%td
+								=link_to :shop_root,class: %w(btn btn-primary),role: :button,style: 'width:95%' do
+									店舗検索	
+							%td
+								=link_to menu_categorized_path(:regular),class: %w(btn btn-primary),role: :button,style: 'width:95%' do
+									メニューラインナップ
+						%tr
+							%td
+								=link_to :feedbacks,class: %w(btn btn-primary),role: :button,style: 'width:95%' do
+									ご意見・ご感想
+							%td
+								=link_to recruit_top_url,class: %w(btn btn-primary),role: :button,style: 'width:95%' do
+									採用スペシャルサイトへ
+						%tr
+							%td
+								=link_to :feedbacks,class: %w(btn btn-primary),role: :button,style: 'width:95%' do
+									ご意見・ご感想
+							%td
+								=link_to recruit_top_url,class: %w(btn btn-primary),role: :button,style: 'width:95%' do
+									採用スペシャルサイトへ
+						%tr
+							%td
+								.fb-like{data: {layout: :button, action: :like,show: {faces: true}, share: true}}
+							%td
+								%a{href: "https://twitter.com/share",class: "twitter-share-button", data:{lang: :en,hashtags: "ramenyamaokaya"}}
+									Tweet
 	%hr
 	.row
 		.col-xs-12
