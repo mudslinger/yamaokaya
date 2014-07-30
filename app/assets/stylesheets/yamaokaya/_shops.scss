@@ -72,11 +72,4 @@ body.yamaokaya.shops{
 	#map a{
 		color:blue;
 	}
-	a.list-group-item{
-			color: white;
-			background-color: darken(white,50%);
-		&:hover{
-			background-color: $brand-primary;
-		}
-	}
 }

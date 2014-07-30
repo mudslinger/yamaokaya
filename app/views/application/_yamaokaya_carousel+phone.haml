@@ -1,61 +1,43 @@
 .container
+	.row
+		.col-xs-12
+			%div
+				.fb-like{style:'margin-bottom:10px',data: {layout: :button, action: :like,show: {faces: true}, share: true}}
+				%a{href: "https://twitter.com/share",class: "twitter-share-button", data:{lang: :en,hashtags: "ramenyamaokaya",count: :none}}
+					Tweet
+			.panel.panel-default
+				.panel-heading.original-news
+					%h4.panel-title 
+						%span.glyphicon.glyphicon-folder_open
+						Main Navigation
+				%ul.list-group
+					=link_to :shop_root,class: 'list-group-item' do
+						%span.glyphicon.glyphicon-shop
+						お店を探す
+					=link_to menu_categorized_path(:regular),class: 'list-group-item' do
+						%span.glyphicon.glyphicon-pot
+						メニューラインナップ
+					=link_to :feedbacks,class: 'list-group-item' do
+						%span.glyphicon.glyphicon-message_out
+						ご意見・ご感想
+					=link_to recruit_top_url,class: 'list-group-item' do
+						%span.glyphicon.glyphicon-user_add
+						採用スペシャルサイト
 	%hr
 	.row
 		.col-xs-12
 			.panel.panel-default
 				.panel-heading.original-news
 					%h4.panel-title 
-						%span.glyphicon.glyphicon-shop
-						Navi
-				%table.table
-					%col{width: '50%'}
-					%col{width: '*'}
-					%thead
-					%tfoot
-					%tbody
-						%tr
-							%td
-								=link_to :shop_root,class: %w(btn btn-primary),role: :button,style: 'width:95%' do
-									店舗検索	
-							%td
-								=link_to menu_categorized_path(:regular),class: %w(btn btn-primary),role: :button,style: 'width:95%' do
-									メニューラインナップ
-						%tr
-							%td
-								=link_to :feedbacks,class: %w(btn btn-primary),role: :button,style: 'width:95%' do
-									ご意見・ご感想
-							%td
-								=link_to recruit_top_url,class: %w(btn btn-primary),role: :button,style: 'width:95%' do
-									採用スペシャルサイトへ
-						%tr
-							%td
-								=link_to :feedbacks,class: %w(btn btn-primary),role: :button,style: 'width:95%' do
-									ご意見・ご感想
-							%td
-								=link_to recruit_top_url,class: %w(btn btn-primary),role: :button,style: 'width:95%' do
-									採用スペシャルサイトへ
-						%tr
-							%td
-								.fb-like{data: {layout: :button, action: :like,show: {faces: true}, share: true}}
-							%td
-								%a{href: "https://twitter.com/share",class: "twitter-share-button", data:{lang: :en,hashtags: "ramenyamaokaya"}}
-									Tweet
-	%hr
-	.row
-		.col-xs-12
-			.panel.panel-default
-				.panel-heading.original-news
-					%h4.panel-title 
-						%span.glyphicon.glyphicon-shop
+						%span.glyphicon.glyphicon-global
 						Topics
-				.panel-body
-					%table.table
-						- @headlines.news.each do |r|
-							%tr
-								%td
-									%span.label.label-danger.pull-left
-										=r.target_date.strftime("%m/%d")
-								%td
-									%a.original-news{href:r.url}
-										%span.glyphicon.glyphicon-bullhorn
-										=r.title
+				%table.table
+					- @headlines.news.each do |r|
+						%tr
+							%td
+								%span.label.label-danger.pull-left
+									=r.target_date.strftime("%m/%d")
+							%td
+								%a.original-news{href:r.url}
+									%span.glyphicon.glyphicon-bullhorn
+									=r.title
