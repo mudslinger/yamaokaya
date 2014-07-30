@@ -35,9 +35,9 @@
 												=link_to shop_details_path(s.id),class: 'list-group-item' do
 													=s.name
 													- ss = s.shop_status
-													%span.label.label-info.pull-right 
-														P
-														%span.glyphicon.glyphicon-truck
+													-#%span.label.label-info.pull-right 
+														-#P
+														-#%span.glyphicon.glyphicon-truck
 													-if s.allnight?
 														%span.label.label-primary.pull-right 24H
 													%span.label.pull-right{class: "label-#{ss[:status]}"}

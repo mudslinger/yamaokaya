@@ -508,6 +508,24 @@ end
   is_hot: false
   price: 820
 
+冷やし中華:
+  id: 849
+  name: 冷やし中華
+  category: 2
+  subcategory: 0
+  taste: 6
+  ingredients: 6
+  has_large_sizes: true
+  start_sells: 2014-07-22
+  end_sells: 2014-08-18
+  is_hot: false
+  price: 800
+  comment: |
+    今年も冷やし中華、はじめました。
+    冷やし中華の季節が、今年もやってまいりました。
+    今年はタレと麺と具材を別のお皿でご提供します。
+    お好みのペース配分でお召し上がりください。
+
 えび醤油ラーメン:
   id: 850
   name: えび醤油ラーメン
@@ -515,7 +533,7 @@ end
   subcategory: 0
   taste: 6
   ingredients: 6
-  has_large_sizes: false
+  has_large_sizes: true
   start_sells: 2014-07-22
   end_sells: 2014-08-31
   is_hot: false
@@ -539,7 +557,7 @@ end
   subcategory: 0
   taste: 6
   ingredients: 6
-  has_large_sizes: false
+  has_large_sizes: true
   start_sells: 2014-07-22
   end_sells: 2014-08-31
   is_hot: false
