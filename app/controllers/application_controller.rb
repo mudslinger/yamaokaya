@@ -3,7 +3,7 @@ class ApplicationController < ActionController::Base
 	# For APIs, you may want to use :null_session instead.
 	protect_from_forgery with: :exception
 	before_action :detect_device_format
-	before_filter :auth,:set_title
+	before_filter :set_title
 
 	rescue_from ActionController::RoutingError, ActiveRecord::RecordNotFound, with: :render_404
 
@@ -48,13 +48,13 @@ class ApplicationController < ActionController::Base
 		end
 	end
 
-	def auth
-		if request.host == 'www2014.yamaokaya.com' || request.host == 'maruchiyo2014.yamaokaya.com' || request.host == 'recruit2014.yamaokaya.com'
-			authenticate_or_request_with_http_basic do |user,pass|
-				user == 'men' && pass == 'katame'
-			end
-		end
-	end
+	# def auth
+	# 	if request.host == 'www2014.yamaokaya.com' || request.host == 'maruchiyo2014.yamaokaya.com' || request.host == 'recruit2014.yamaokaya.com'
+	# 		authenticate_or_request_with_http_basic do |user,pass|
+	# 			user == 'men' && pass == 'katame'
+	# 		end
+	# 	end
+	# end
 
 
 end

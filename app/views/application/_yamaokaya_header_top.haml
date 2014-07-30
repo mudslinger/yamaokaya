@@ -7,13 +7,13 @@
 				%span.icon-bar
 			=link_to :yamaokaya_top do
 				=ymage_tag 'images/logo.png',alt:'ラーメン山岡家'
-		-unless is_phone?
-			.navbar-header
-				.sns{style: 'margin-top:4px;'}
-					.fb-like{style: 'float:left',data: {layout: :button, action: :like,show: {faces: true}, share: true}}
-					%a{style: 'float:left',href: "https://twitter.com/share",class: "twitter-share-button", data:{lang: :en,hashtags: "ramenyamaokaya"}}
-						Tweet
-					.clearfix
+-#		-unless is_phone?
+-#			.navbar-header
+-#				.sns{style: 'margin-top:4px;'}
+-#					.fb-like{style: 'float:left',data: {layout: :button, action: :like,show: {faces: true}, share: true}}
+-#					%a{style: 'float:left',href: "https://twitter.com/share",class: "twitter-share-button", data:{lang: :en,hashtags: "ramenyamaokaya"}}
+-#						Tweet
+-#					.clearfix
 		.navbar-collapse.collapse#nav
 			%ul.nav.navbar-nav.navbar-right
 				%li.active
