@@ -27,7 +27,7 @@ module ShopArea
 		ret = g.reduce do |sum,n|
 			[sum[0]+n[0],sum[1]+n[1]]
 		end
-		return [ret[0] / g.size,ret[1] / g.size] unless ret.nil?
+		return [(ret[0] / g.size).round(5),(ret[1] / g.size).round(5)] unless ret.nil?
 		[nil,nil]
 	end
 
@@ -46,7 +46,12 @@ module ShopArea
 		e_end = g.max do |a,b|
 			a[1] <=> b[1]
 		end[1]
-		{s: s_end-0.5,w: w_end+0.5,n: n_end+0.5,e:e_end+0.5}
+		{
+			s: (s_end-0.5).round(5),
+			w: (w_end+0.5).round(5),
+			n: (n_end+0.5).round(5),
+			e: (e_end+0.5).round(5)
+		}
 	end
 
 	def has_shops?

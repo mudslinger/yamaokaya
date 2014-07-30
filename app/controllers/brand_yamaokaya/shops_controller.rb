@@ -40,11 +40,16 @@ class BrandYamaokaya::ShopsController < BrandYamaokaya::BaseController
 		end
 
 		additional_attr = [:marker_type,:sprite_x,:sprite_y,:bounds,:start_shows,:end_shows,:lat,:lng]
+		except_attr = [:created_at,:updated_at,:address,:phone,:furigana,:gname,:postal_code,:landmarks,:inauguration,:close,
+			:sunday,:monday,:tuesday,:wednesday,:thursday,:friday,:saturday,
+			:seats_at_counter,:booths,:park_caps,:truck_park_caps			
+		]
 		respond_to do |format|
 			format.json{
 				render(
 					json: @ret,
-					methods: additional_attr
+					methods: additional_attr,
+					except: except_attr
 				)
 			}
 		end
