@@ -1,0 +1,165 @@
+%body
+  :scss
+    ul{
+      li{
+        color:#E33;
+        font-size:13px;
+      }
+
+    }
+    .layout{
+      width:100%;
+      border:solid 1px #CCC;
+      empty-cells:show;
+      border-collapse:collapse;
+      table-layout:fixed;
+      font-size:13px;
+      th,td{
+        border: solid 1px #CCC;
+        img{
+          width:100%;
+        }
+      }
+      th{
+        background-color:#CCA;
+      }
+    }
+    .yamaokaya{
+      color:red;
+    }
+    .employee{
+      color:blue;
+    }
+    .work_times{
+      width:100%;
+      text-align:center;
+      border:solid 1px #CCC;
+      empty-cells:show;
+      border-collapse:collapse;
+      table-layout:fixed;
+      th,td{
+        border: solid 1px #CCC;
+      }
+      td{
+        &.ok{
+          background-color:green;
+        }
+        &.ng{
+          background-color:white;
+        }
+      }
+    }
+  %p
+    お疲れ様です。
+  %p
+    #{body.name}様より、入社希望のエントリーがありました。
+  - if body.pa?
+    %p
+      -if body.wished_shops.count > 1
+        勤務勤務店舗に複数候補を挙げられています。最初に候補店舗間で調整してください。
+      店長・SV協議の上、どちらが担当するか決定の上で、
+      -if body.phone?
+        #{body.name}様のお電話番号(#{body.phone})宛にコンタクトを取ってください。
+      -if body.email?
+        =mail_to body.mail_addr,"#{body.name}様"
+        に、電子メールでコンタクトを取ってください。(リンククリックでメールを送れます)
+    %ul
+      %li
+        応募者は、お客様でもあります。失礼な対応をするとお客様を失うことになりかねません。
+        丁寧な対応を心がけてください。
+      %li
+        自店で採用予定がない場合でも、近隣に採用したい店舗がある可能性があります。
+        店長独自で判断せず、必ずSVと合議を行ってください。
+      %li
+        面接を行う・行わないにかかわらず、必ず一度は連絡をとるようにしてください。
+      %li
+        当社からの最初の連絡のスピード感が、採用の可否に大きな影響を与えます。可能な限り早くファーストコンタクトを行ってください。
+      %li
+        一度連絡して連絡がつかなかった場合でも、何度か連絡を試みるようにしてください。
+      %li
+        このメールはシステムより自動送信されています。応募者への連絡をメールで行う場合、
+        このメールに返信しても応募者に届きません。
+        必ず、下表内のメールアドレスを指定して送信するようにお願いします。
+  - else
+    %p
+      社員・契約社員での入社希望ですので、人財開発課にて対応します。
+      店舗/SVからの連絡は必要ありません。
+  %table.layout
+    %col{width: '50px'}
+    %col{width: '*'}
+    %thead
+    %tfoot
+    %tbody
+      %tr
+        %th 氏名
+        %td= body.name
+      %tr
+        %th 年齢
+        %td #{body.age}歳
+      %tr
+        %th 応募形態
+        %td= Entry.human_attribute_name(body.work_type)
+      -if body.career?
+        %tr
+          %th ご希望の勤務地域
+          %td= Entry.human_attribute_name(body.area_restriction)
+      -unless body.graduates2?
+        %tr
+          %th 勤務希望店舗
+          %td
+            - body.wished_shops.each do |s|
+              [
+              =link_to s.shop.name,shop_details_url(s.shop.id)
+              ]
+        %tr
+          %th 勤務開始可能な時期
+          %td= Entry.human_attribute_name(body.work_commencing_time)
+      %tr
+        %th 住所
+        %td #{body.postal_code} #{body.address}
+      %tr
+        %th 電話番号
+        %td #{body.phone}
+      %tr
+        %th メールアドレス
+        %td= body.mail_addr
+      %tr
+        %th 当社からの連絡方法
+        %td= Entry.human_attribute_name(body.contact_means)
+      -if body.pa?
+        %tr
+          %th 勤務希望時間帯
+          %td
+            %table.work_times
+              %col{width: '20px'}
+              %colgroup{span:7}
+                %col{width: '*'}
+              %thead
+                %tr
+                  %th
+                  - (I18n.t 'date.abbr_day_names').each do |t|
+                    %th= t
+                  %th 祝
+              %tfoot
+              %tbody
+                %tr
+                  %th 午前中
+                  - (0..7).each do |i|
+                    %td{class: (body.work_times & (1 << i)).zero? ? 'ng' : 'ok'}
+                %tr
+                  %th 午後
+                  - (8..8+7).each do |i|
+                    %td{class: (body.work_times & (1 << i)).zero? ? 'ng' : 'ok'}
+                %tr
+                  %th 夜間
+                  - (16..16+7).each do |i|
+                    %td{class: (body.work_times & (1 << i)).zero? ? 'ng' : 'ok'}
+                %tr
+                  %th 深夜
+                  - (24..31).each do |i|
+                    %td{class: (body.work_times & (1 << i)).zero? ? 'ng' : 'ok'}
+            %p
+              ※あくまで目安としてお使いください。
+      %tr
+        %th その他
+        %td= body.message

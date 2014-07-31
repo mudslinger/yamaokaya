@@ -7,7 +7,8 @@ class Recruit::EntriesController < Recruit::BaseController
       sex: :male,
       contact_means: :email,
       work_commencing_time: :asap,
-      area_restriction: :unlimited
+      area_restriction: :unlimited,
+      mail_sent: false
     )
   end
 
@@ -15,6 +16,9 @@ class Recruit::EntriesController < Recruit::BaseController
     @entry = Entry.new(entry_params)
     respond_to do |format|
       if @entry.save
+        Entry.not_sent.each do |e|
+          e.report
+        end
         format.html { redirect_to :entries, notice: @entry.id }
         format.json { render :show, status: :created, location: @entry }
       else
@@ -53,6 +57,7 @@ class Recruit::EntriesController < Recruit::BaseController
         :name,
         :message,
         :contact_means,
+        :mail_sent,
         :work_commencing_time,
         :work_times_0,:work_times_1,:work_times_2,:work_times_3,:work_times_4,:work_times_5,:work_times_6,
         :work_times_7,:work_times_8,:work_times_9,:work_times_10,:work_times_11,:work_times_12,:work_times_13,

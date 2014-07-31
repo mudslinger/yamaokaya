@@ -264,6 +264,17 @@ ja:
         message: 弊社へのご連絡事項
         wished_shops: 勤務をご希望される店舗(複数選択可)
         area_restriction: ご希望の勤務地域
+        pa: パートナー
+        career: 中途採用
+        graduates2: 第２新卒
+        graduates: 新卒
+        email: Eメール
+        asap: すぐにでも
+        within_a_month: 1ヶ月以内
+        other: その他
+        unlimited: 転勤可
+        pref_only: お住まいの都道府県内と近隣の地域のみ
+        city_only: お住まいの市町村または近隣の地域のみ
       wished_shop:
       feedback:
         mail_addr: 'メールアドレス'

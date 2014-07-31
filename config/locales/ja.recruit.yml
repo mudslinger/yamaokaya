@@ -7,7 +7,7 @@ ja:
       entry: エントリー
       entry_r: エントリー(リクナビ) 
   requirements:
-    defaults: &defaults
+    defaults: &defaults 
       title: 募集要項
       t:
         jobs: 職種
@@ -366,5 +366,7 @@ ja:
     pa: 
       subtitle: パート・アルバイト
     new:
+      title: エントリーフォーム
+    create:
       title: エントリーフォーム
 

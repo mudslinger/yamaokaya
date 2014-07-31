@@ -1,4 +1,8 @@
 class Entry < ActiveRecord::Base
+	include EntryReportable
+
+	scope :not_sent, -> { where.not(mail_sent: true)}
+
 	enum sex: {male: 0, female: 1}
 	enum work_type: {graduates2:0, career:1, pa:2}
 	enum contact_means: {phone:0, email:1}
@@ -18,13 +22,17 @@ class Entry < ActiveRecord::Base
 		}
 	validates :mail_addr_confirmation,presence:true
 
-	def postal_code
-		Integer(self[:postal_code].gsub(/[^0-9]/,'')).to_s.rjust(7,'0').gsub(/^(\d{3})(\d{4})$/){ $1 + '-' + $2 }
-	end
 
-	def postal_code=(value)
-		self[:postal_code] = Integer(value.gsub(/[^0-9]/,'')).to_s.rjust(7,'0').gsub(/^(\d{3})(\d{4})$/){ $1 + '-' + $2 }
+	def age
+		DateTime.now.year - (self[:birthday]).year
 	end
+	# def postal_code
+	# 	Integer((self[:postal_code]|| 0).gsub(/[^0-9]/,'')).to_s.rjust(7,'0').gsub(/^(\d{3})(\d{4})$/){ $1 + '-' + $2 }
+	# end
+
+	# def postal_code=(value)
+	# 	self[:postal_code] = Integer(value.gsub(/[^0-9]/,'')).to_s.rjust(7,'0').gsub(/^(\d{3})(\d{4})$/){ $1 + '-' + $2 }
+	# end
 
 	#動的メソッドの追加
 	(0..31).each do |i|

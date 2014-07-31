@@ -26,9 +26,6 @@
     =favicon_link_tag '/i/72x72/images/favicon.png', :rel => 'apple-touch-icon-precomposed', :type => 'image/png', :sizes => '72x72'
     =favicon_link_tag '/i/512x512/images/favicon.png', :rel => 'apple-touch-icon-precomposed', :type => 'image/png'
     %link{rel:"shortcut icon", href: "/i/32x32/images/favicon.png",type: 'image/png'}
-
-<link href="http:/XXXXXXXXXX/favicon.png" 
-rel="shortcut icon" type="image/png"/> 
 -# TODO @dataのところ改善
 %body{class: [controller.controller_name,:yamaokaya],data: controller_name == 'top' ? {spy: :scroll,target: '.navbar',offset: 80}: {}}
     #fb-root

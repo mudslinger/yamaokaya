@@ -1,13 +1,14 @@
-module FeedbackReportable extend ActiveSupport::Concern
+module EntryReportable extend ActiveSupport::Concern
+
   def reported?
     self.mail_sent
   end
 
   def report_title
-    sub = "お客様よりメール #{shop.name}(No.#{id})" if self.shop
-    sub = "お客様よりメール (No.#{id})" unless self.shop
-    sub += '【要返信】' if self.reply
-    sub
+    shops = wished_shops.map do |w|
+      w.shop.name
+    end
+    "求人応募メール(No.#{id})" + shops.join(',')
   end
 
   def render_mail(var)
@@ -21,37 +22,36 @@ module FeedbackReportable extend ActiveSupport::Concern
     end
     action_view.render var
   end
+
   def report
     ses_id = AWS_CREDENTIALS['access_key_id']
     ses_secret = AWS_CREDENTIALS['secret_access_key']
     ses = AWS::SES::Base.new(access_key_id: ses_id,secret_access_key: ses_secret)
 
+    to = %w(saiyo@yamaokaya.com tanaka@yamaokaya.com sales-man@yamaokaya.com) 
+    #PA応募の場合は店長SVを追加
+    if pa?
+      wished_shops.each do |w|
+        to << w.shop.mail_addrs[:group]
+        to << w.shop.mail_addrs[:sv]
+      end
+    end
     ses.send_email(
-      to: 'info@yamaokaya.com',
-      #to: 'tanaka@yamaokaya.com',
-      source: 'kokyaku@yamaokaya.com',
+      to: to.uniq,
+      source: 'recruit@yamaokaya.com',
       subject: report_title,
-      html_body: render_mail(template: 'feedbacks/mail',type: :haml, locals: {body: self},layout: false)
+      html_body: render_mail(
+        template: 'recruit/entries/mail',
+        type: :haml,
+        locals: {body: self},
+        layout: false
+      )
     )
 
-    ses.send_email(
-      to: 'customer_message@yamaokaya.co.jp',
-      #to: 'hisato.tanaka@gmail.com',
-      source: 'kokyaku@yamaokaya.com',
-      subject: report_title + '(個人情報削除済み)',
-      html_body: render_mail({template: 'feedbacks/masked_mail',type: :haml, locals: {body: self},layout: false}),
-      text_body: render_mail({template: 'feedbacks/masked_mail_txt',type: :erb, locals: {body: self},formats: :text, layout: false})
-    )
     self.mail_sent = true
     self.save(validate: false)
   end
 
-  def message_i
-    tagger = Igo::Tagger.new(Rails.root.join('lib','dic').to_s)
-    tagger.parse(self.message).map{|m|
-      m.feature.include?('固有') ? '●●●' : m.surface
-    }.join if self.message.present?
-  end
 
   def static_map
     # markers = []

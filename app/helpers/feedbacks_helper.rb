@@ -18,7 +18,8 @@ module FeedbacksHelper
   def categorized_menu_opts
     c = Struct.new('Category',:id,:name,:menus)
     Menu.categories.map do |e|
-      c.new(e[1],e[0],Menu.send(e[0]))
+      name = I18n.t(e[0],scope: 'menus.categorized')
+      c.new(e[1],name,Menu.send(e[0]))
     end
   end
 end

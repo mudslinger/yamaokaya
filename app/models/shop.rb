@@ -146,6 +146,14 @@ class Shop < ActiveRecord::Base
 			Time.now.between?(h.begin,h.end)
 		end
 	end
+
+  def mail_addrs
+    {
+      group: "s#{self.id}@yamaokaya.com",
+      manager: "s#{self.id}-man@yamaokaya.com",
+      sv: "s#{self.id}-sv@yamaokaya.com"
+    }
+  end
 	private
 	def shop_time(d)
 		dow = if d.sunday? then sunday
@@ -197,6 +205,7 @@ class Shop < ActiveRecord::Base
 	# 		o[:range]
 	# 	end
 	# end
+
 
 
 end
