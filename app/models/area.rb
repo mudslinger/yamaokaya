@@ -26,4 +26,8 @@ class Area < ActiveRecord::Base
 	def sprite_y
 		(seq-1).div(10) * 80
 	end
+
+	def long_name
+		"#{prefecture.name} #{name}"
+	end
 end

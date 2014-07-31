@@ -39,7 +39,7 @@
       .col-md-6
         .form-group.form-inline
           =f.label :shop_id,class: 'control-label'
-          =f.select :shop_id,option_groups_from_collection_for_select(Area.all,:shops, :name, :id, :name,selected_key = @feedback.shop_id),{include_blank: '----'},{class: 'form-control'}
+          =f.select :shop_id,option_groups_from_collection_for_select(Area.has_shops,:shops, :long_name, :id, :name,selected_key = @feedback.shop_id),{include_blank: '----'},{class: 'form-control'}
           -#%button#search_shop{'style' => 'display:none', 'data-return-id' => 'feedback_shop_id','data-href' => url_for(action: :search),:type => 'button',title:'位置情報を利用してお近くの店舗を検索します。'} お近くの店舗を検索
       .col-md-6
         .form-group.form-inline
