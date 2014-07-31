@@ -37,6 +37,6 @@ RECRUIT_DOMAINZ = DOMAINZ.select do |k,v|
 	v == :recruit
 end
 
-CORP_DEF = (%x[whoami]).chomp == 'root' ? 'yam.jp' : 'maruchiyo2014.yamaokaya.com'
-YAM_DEF = (%x[whoami]).chomp == 'root' ? 'yam.com' : 'www2014.yamaokaya.com'
-REC_DEF = (%x[whoami]).chomp == 'root' ? 'recruit.yam.com' : 'recruit2014.yamaokaya.com'
+CORP_DEF = (%x[whoami]).chomp == 'root' ? 'yam.jp' : 'maruchiyo.yamaokaya.com'
+YAM_DEF = (%x[whoami]).chomp == 'root' ? 'yam.com' : 'www.yamaokaya.com'
+REC_DEF = (%x[whoami]).chomp == 'root' ? 'recruit.yam.com' : 'recruit.yamaokaya.com'
