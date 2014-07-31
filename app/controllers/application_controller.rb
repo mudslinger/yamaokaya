@@ -33,9 +33,10 @@ class ApplicationController < ActionController::Base
 	end
 
 	def domain_layout
-		DOMAINS.select do |k,v|
-			v == request.host
-		end.keys.first.to_s
+		DOMAINZ[request.host].to_s
+		# DOMAINS.select do |k,v|
+		# 	v == request.host
+		# end.keys.first.to_s
 	end
 
 	def set_title
