@@ -9,36 +9,35 @@
 		-#			山岡家の店舗は全国#{Shop.active.size}店舗。
 		-#			%br
 		-#			お近くの山岡家にぜひお越しください。
-		-cache do
-			-if is_phone?
-				%select.form-control#mobile-pref-selector
-					- @regions.each do |r|
-						%optgroup{label: r.name}
-							- r.prefectures.each do |p|
-								%option{value: "##{p.id}"}
-									=p.name
+		-if is_phone?
+			%select.form-control#mobile-pref-selector
+				- @regions.each do |r|
+					%optgroup{label: r.name}
+						- r.prefectures.each do |p|
+							%option{value: "##{p.id}"}
+								=p.name
 
-			- @regions.each do |r|
-				%h3{id: r.id}=r.name
-				.clearfix
-					- r.prefectures.each do |p|
-						- p.areas.each do |area|
-							-unless area.shops.empty?
-								.col-md-4.col-xs-12
-									.panel.panel-default
-										.panel-heading
-											%h4{id: area.prefecture.id}
-												=area.prefecture.name
-												=area.name
-										.list-group
-											-area.shops.each do |s|
-												=link_to shop_details_path(s.id),class: 'list-group-item' do
-													=s.name
-													- ss = s.shop_status
-													-#%span.label.label-info.pull-right 
-														-#P
-														-#%span.glyphicon.glyphicon-truck
-													-if s.allnight?
-														%span.label.label-primary.pull-right 24H
-													%span.label.pull-right{class: "label-#{ss[:status]}"}
-														=ss[:text]
+		- @regions.each do |r|
+			%h3{id: r.id}=r.name
+			.clearfix
+				- r.prefectures.each do |p|
+					- p.areas.each do |area|
+						-unless area.shops.empty?
+							.col-md-4.col-xs-12
+								.panel.panel-default
+									.panel-heading
+										%h4{id: area.prefecture.id}
+											=area.prefecture.name
+											=area.name
+									.list-group
+										-area.shops.each do |s|
+											=link_to shop_details_path(s.id),class: 'list-group-item' do
+												=s.name
+												- ss = s.shop_status
+												-#%span.label.label-info.pull-right 
+													-#P
+													-#%span.glyphicon.glyphicon-truck
+												-if s.allnight?
+													%span.label.label-primary.pull-right 24H
+												%span.label.pull-right{class: "label-#{ss[:status]}"}
+													=ss[:text]

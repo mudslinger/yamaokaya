@@ -92,9 +92,13 @@ class Shop < ActiveRecord::Base
 	end
 
 	def shop_status
+		puts name
 		st = shop_time(Time.now - 6.hours)
+		puts st
 		if now_open?
 			{status: 'success',text: '営業中'}
+		elsif st == 281474976710655
+			{status: 'danger',text: '休止中'}
 		else
 			{status: 'warning',text: I18n.l(encode_shop_hour(st)[0].begin,format: :short_time) + '開店'}
 		end
@@ -147,13 +151,74 @@ class Shop < ActiveRecord::Base
 		end
 	end
 
-  def mail_addrs
-    {
-      group: "s#{self.id}@yamaokaya.com",
-      manager: "s#{self.id}-man@yamaokaya.com",
-      sv: "s#{self.id}-sv@yamaokaya.com"
-    }
-  end
+	def mail_addrs
+		{
+		  group: "s#{self.id}@yamaokaya.com",
+		  manager: "s#{self.id}-man@yamaokaya.com",
+		  sv: "s#{self.id}-sv@yamaokaya.com"
+		}
+	end
+
+	def addrs
+		#まずは都道府県を削除
+		wo_pref = address.gsub(prefecture.name,'')
+		city = wo_pref.scan(/^[^市町]+[市|町]/)[0]
+		addr1 = wo_pref.gsub(city,'').strip
+		{
+			pref: prefecture.name,
+			city: city,
+			addr1: addr1
+		}
+	end
+
+	def self.to_business_location
+		CSV.generate do |csv|
+			csv << %w(店舗コード 名前 住所 1 住所 2 市/区 地区 都道府県 国 郵便番号 電話番号 1 ホームページ カテゴリ 営業時間 緯度 経度 画像 説明 メール 電話番号 2 携帯電話番号 FAX 支払い方法)
+			with_higher.active.each do |shop|
+				csv << [
+					shop.id,
+					"ラーメン山岡家 #{shop.name}",
+					shop.addrs[:pref],
+					shop.addrs[:city],
+					shop.addrs[:addr1],
+					'JP',
+					shop.postal_code,
+					shop.phone,
+					UrlHelpers.shop_details_url(shop.id),
+					'ラーメン屋',
+					shop.shop_time_for_google,
+					shop.lat,
+					shop.lng,
+					'', #画像
+					'', #説明
+					'', #メール
+					'', #電話番号2
+					'', #携帯電話番号
+					shop.phone, #fax
+					'cash', #支払い方法	
+				]
+			end
+		end
+	end
+
+	def shop_time_for_google
+		ret = ''
+		[
+			sunday,
+			monday,
+			tuesday,
+			wednesday,
+			thursday,
+			friday,
+			saturday
+		].each_with_index do |d,i|
+			sh = encode_shop_hour(d)[0]
+			ret+= "#{i+1}:#{sh.begin.strftime('%H:%M')}:#{sh.end.strftime('%H:%M')}"
+			ret+= ',' if i < 6
+		end
+		ret
+	end
+
 	private
 	def shop_time(d)
 		dow = if d.sunday? then sunday
@@ -178,9 +243,6 @@ class Shop < ActiveRecord::Base
 				if ret.last.max >= t + (v[0]*30).minutes 
 					ret[ret.length-1] = (ret.last.min..(t + (v[0]*30+30).minutes))
 				else
-					puts 'yaru'
-					puts ret.last.max
-					puts (t + (v[0]*30).minutes..t + (v[0]*30+30).minutes)
 					ret << (t + (v[0]*30).minutes..t + (v[0]*30+30).minutes)
 				end
 			end
@@ -188,24 +250,5 @@ class Shop < ActiveRecord::Base
 		end
 
 	end
-	# def encode_shop_hour(hour)
-	# 	t = (DateTime.now- 6.hours).change hour:6
-	# 	return [(t..t+1.days)] if hour == 0
-	# 	h = hour | 1<<48
-	# 	48.times.map do |n|
-	# 		[n,h & 1 << n ==0, h & 1 << n+1 == 0]
-	# 	end.select do |i|
-	# 		i[1] != i[2] || i[0] == 0
-	# 	end.each_cons(2).map do | i,j|
-	# 		puts "#{i} -- #{j}"
-	# 		{range: t + (i[0]*30 + (i[0] == 0 ? 0 : 30)).minutes..t + (j[0]*30+30).minutes,on: i[2]}
-	# 	end.select do |o|
-	# 		o[:on]
-	# 	end.map do |o|
-	# 		o[:range]
-	# 	end
-	# end
-
-
 
 end

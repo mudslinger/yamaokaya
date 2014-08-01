@@ -62,6 +62,8 @@ Rails.application.routes.draw do
       get '/shops/:key' => 'shops#details', as: :shop_details,host: YAM_DEF
       get 'shops' => 'shops#shops', as: :shop_root,host: YAM_DEF
       get 'big_map' => 'shops#big_map',host: YAM_DEF
+
+      get '/my_business_locations(.:format)' => 'shops#my_business_locations',host: YAM_DEF
       constraints id: /[0-9]+/ do
         get 'menus/:id' => 'menus#details',as: :menu_details,host: YAM_DEF
       end

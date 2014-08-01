@@ -6,6 +6,12 @@ class BrandYamaokaya::ShopsController < BrandYamaokaya::BaseController
 		@shop = Shop.find(params[:key]) if params[:key].present?
 	end
 
+	def my_business_locations
+		respond_to do |format|
+			format.csv{send_data Shop.to_business_location}
+		end
+	end
+
 	def shops
 		Shop.cache do
 			@regions = Rails.cache.fetch(:regions_has_shops) do
