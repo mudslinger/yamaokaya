@@ -173,16 +173,18 @@ class Shop < ActiveRecord::Base
 
 	def self.to_business_location
 		CSV.generate do |csv|
-			csv << %w(店舗コード 名前 住所 1 住所 2 市/区 地区 都道府県 国 郵便番号 電話番号 1 ホームページ カテゴリ 営業時間 緯度 経度 画像 説明 メール 電話番号 2 携帯電話番号 FAX 支払い方法)
+			csv << %w(店舗コード 名前 住所1 住所2 市/区 地区 都道府県 国 郵便番号 電話番号1 ホームページ カテゴリ 営業時間 緯度 経度 画像 説明 メール 電話番号2 携帯電話番号 FAX 支払い方法)
 			with_higher.active.each do |shop|
 				csv << [
 					shop.id,
 					"ラーメン山岡家 #{shop.name}",
-					shop.addrs[:pref],
-					shop.addrs[:city],
 					shop.addrs[:addr1],
+					'',
+					shop.addrs[:city],
+					'',
+					shop.addrs[:pref],
 					'JP',
-					shop.postal_code,
+					"%03d-%04d" % [shop.postal_code.to_i.div(10000),shop.postal_code.to_i % 10000],
 					shop.phone,
 					UrlHelpers.shop_details_url(shop.id),
 					'ラーメン屋',
