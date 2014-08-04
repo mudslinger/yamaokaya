@@ -6,9 +6,11 @@ Rails.application.routes.draw do
   end
   
   #社内用トップメッセージ
-  # constraints host: 'wbmessagex.yamaokaya.com' do
-  #   get ':type/:key(.:format)' => 'top_messages#show',as: :top_messages
-  # end
+  constraints host: 'wbmessagex.yamaokaya.com' do
+    get ':type/:key(.:format)' => 'top_messages#show',as: :top_messages
+    #get '/authentication(.:format)' => 'top_messages#authentication',as: :auth_test
+  end
+
 
   #common
   get '/about' => 'articles#about',as: :about
