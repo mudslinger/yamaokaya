@@ -14,7 +14,7 @@ class FeedbacksController < ApplicationController
   def api
     @feedback = set_feedback
 
-    additional_attr = [:shop,:menu]
+    additional_attr = [:shop,:menu,:message_i,:q_point,:s_point,:c_point,:a_point,:age_number,:repetition_number,:visit_time_number]
     except_attr = []
     response.headers["Access-Control-Allow-Origin"] = "*"
     response.headers["Access-Control-Allow-Headers"] = "Content-Type"

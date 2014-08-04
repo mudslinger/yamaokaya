@@ -18,6 +18,20 @@ class Feedback < ActiveRecord::Base
   enum service: {s_excellent: 2,s_good: 1,s_moderate: 0,s_bad: -1,s_terrible: -2}
   enum cleanliness: {c_excellent: 2,c_good: 1,c_moderate: 0,c_bad: -1,c_terrible: -2}
   enum atomosphere: {a_excellent: 2,a_good: 1,a_moderate: 0,a_bad: -1,a_terrible: -2}
+
+  def q_point
+    Feedback.qualities[quality]
+  end
+  def s_point
+    Feedback.services[service]
+  end  
+  def c_point
+    Feedback.cleanlinesses[cleanliness]
+  end  
+  def a_point
+    Feedback.atomospheres[atomosphere]
+  end
+
   enum age: {
     ageunder12: 12,
     age13to15: 13,
@@ -34,6 +48,11 @@ class Feedback < ActiveRecord::Base
     age65to69: 65,
     age70over: 70
   }
+
+  def age_number
+    Feedback.ages[age]
+  end
+
   enum visit_time: {
     time9to10:9,
     time10to11:10,
@@ -60,7 +79,9 @@ class Feedback < ActiveRecord::Base
     time7to8:7,
     time8to9:8
   }
-
+  def visit_time_number
+    Feedback.visit_times[visit_time]
+  end
   enum repetition:{
     first_time: 0,
     once_par_year: 1,
@@ -72,5 +93,7 @@ class Feedback < ActiveRecord::Base
     twice_par_week: 96,
     holic: 180
   }
-
+  def repetition_number
+    Feedback.repetitions[repetition]
+  end
 end
