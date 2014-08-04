@@ -5,6 +5,11 @@ Rails.application.routes.draw do
     root :to => redirect('https://www.yamaokaya.com/'),via: [:get,:post]
   end
   
+  #社内用トップメッセージ
+  # constraints host: 'wbmessagex.yamaokaya.com' do
+  #   get ':type/:key(.:format)' => 'top_messages#show',as: :top_messages
+  # end
+
   #common
   get '/about' => 'articles#about',as: :about
   get '/sns_guideline' => 'articles#sns_guideline',as: :sns_guideline
@@ -29,6 +34,7 @@ Rails.application.routes.draw do
 
   get '/feedbacks' => 'feedbacks#new',as: :feedbacks
   post '/feedbacks' => 'feedbacks#create',as: :feedbacks_post
+  get '/feedbacks/:id(.:format)' => 'feedbacks#api',as: :feedbacks_api
 
   constraints lambda {|request| CORPORATE_DOMAINZ.include? request.host} do
     scope module: :corporate do

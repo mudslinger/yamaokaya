@@ -1,5 +1,6 @@
 class FeedbacksController < ApplicationController
   layout :domain_layout
+  skip_before_filter :set_title,only: :api
   def new
     @feedback = Feedback.new(
       quality: :q_moderate,
@@ -8,6 +9,25 @@ class FeedbacksController < ApplicationController
       atomosphere: :a_moderate,
       reply: :true
     )
+  end
+
+  def api
+    @feedback = set_feedback
+
+    additional_attr = [:shop,:menu]
+    except_attr = []
+    response.headers["Access-Control-Allow-Origin"] = "*"
+    response.headers["Access-Control-Allow-Headers"] = "Content-Type"
+    response.headers["Access-Control-Allow-Methods"] = "PUT,DELETE,POST,GET,OPTIONS"
+    respond_to{ |format|
+      format.json{
+        render(
+          json: @feedback,
+          methods: additional_attr,
+          except: except_attr
+        )
+      }
+    }
   end
 
   def create
