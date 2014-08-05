@@ -35,6 +35,10 @@ class TopMessage
     end
   end
 
+  def src_uri
+    "https://yamaokaya1.sharepoint.com/Lists/#{self.src_type}/DispForm.aspx?ID=#{self.local_id}"
+  end
+
   def self.articles(type)
     Rails.cache.fetch(topmessage_type: type,expires_in: 17.minutes) do
       TopMessage.load(TYPES[type][:uri])
