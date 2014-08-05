@@ -4,7 +4,8 @@ class TopMessagesController < ApplicationController
   layout false
 
   def show
-    response.headers["X-Frame-Options"] = 'Allow-From http://ec9.winboard.jp/ https://ec9.winboard.jp/'
+    response.headers.except! 'X-Frame-Options'
+    response.headers["X-Frame-Options"] = 'ALLOW-FROM http://ec9.winboard.jp/'
     response.headers["Access-Control-Allow-Origin"] = "*"
     response.headers["Access-Control-Allow-Headers"] = "Content-Type"
     response.headers["Access-Control-Allow-Methods"] = "GET"
