@@ -25,7 +25,7 @@ class TopMessage
   }.freeze
 
   def self.articles(type)
-    Rails.cache.fetch(topmessage_type: type,expires_in: 10.minutes) do
+    Rails.cache.fetch(topmessage_type: type,expires_in: 17.minutes) do
       TopMessage.load(TYPES[type][:uri])
     end
   end
