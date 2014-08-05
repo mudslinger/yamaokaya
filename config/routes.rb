@@ -6,9 +6,8 @@ Rails.application.routes.draw do
   end
 
   #社内用トップメッセージ
-  constraints host: 'wbmessagexx.yamaokaya.com' do
+  constraints host: 'winbordmessages.yamaokaya.com' do
     get '/wb/:type/:key(.:format)' => 'top_messages#show',as: :top_messages
-    #get '/authentication(.:format)' => 'top_messages#authentication',as: :auth_test
   end
 
   #common
