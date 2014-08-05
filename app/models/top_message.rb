@@ -24,6 +24,17 @@ class TopMessage
     }
   }.freeze
 
+  def icon
+    case self.entry_type
+      when "Microsoft.SharePoint.DataService.社長メッセージItem"
+        "images/wb/ymticon.png"
+      when "Microsoft.SharePoint.DataService.専務メッセージItem"
+        "images/wb/144icon.png"
+      when "Microsoft.SharePoint.DataService.連絡通達Item"
+        "images/wb/hqicon.png"
+    end
+  end
+
   def self.articles(type)
     Rails.cache.fetch(topmessage_type: type,expires_in: 17.minutes) do
       TopMessage.load(TYPES[type][:uri])
