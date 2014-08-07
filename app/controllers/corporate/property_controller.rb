@@ -1,4 +1,5 @@
 class Corporate::PropertyController < Corporate::BaseController
+	ssl_required :all
 	private
 	def layers
 		base = [:corp_top,:property]

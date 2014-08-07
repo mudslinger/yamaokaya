@@ -1,5 +1,5 @@
 class Recruit::InterviewController < Recruit::BaseController
-
+	ssl_required :all
 	def show
 		type =params[:type] if params[:type].present?
 		respond_to do |format|

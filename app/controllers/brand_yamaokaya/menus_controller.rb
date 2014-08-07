@@ -1,4 +1,5 @@
 class BrandYamaokaya::MenusController < BrandYamaokaya::BaseController
+	ssl_required :all
 	def categorized
 		category = params[:category] if  params[:category].present?
 		category = category.to_sym || :regular
