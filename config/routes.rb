@@ -11,10 +11,10 @@ Rails.application.routes.draw do
   end
 
   #クーポン配信
-  constraints host: 'deliver.coupon.yamaokaya.com' do
+  constraints host: 'delivercoupon.yamaokaya.com' do
     get 'cb/use/:coupon_code/:no' => 'coupons#use'
   end
-  constraints host: 'deliver2.coupon.yamaokaya.com' do
+  constraints host: 'delivercoupon2.yamaokaya.com' do
     get 'cb/use/:coupon_code/:no' => 'coupons#use'
   end
 

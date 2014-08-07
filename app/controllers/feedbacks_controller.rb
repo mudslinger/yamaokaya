@@ -1,7 +1,7 @@
 class FeedbacksController < ApplicationController
   layout :domain_layout
   skip_before_filter :set_title,only: :api
-  ssl_required :all
+
 
   def new
     @feedback = Feedback.new(

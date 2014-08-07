@@ -1,5 +1,5 @@
 class BrandYamaokaya::ShopsController < BrandYamaokaya::BaseController
-	ssl_required :all
+
 	protect_from_forgery except: :shops
 
 	def details

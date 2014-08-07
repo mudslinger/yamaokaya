@@ -1,6 +1,6 @@
 class Recruit::EntriesController < Recruit::BaseController
   before_action :set_entry, only: [:show, :edit, :update, :destroy]
-  ssl_required :all
+
   def new
     @entry = Entry.new(
       work_type: params[:type].to_sym,
