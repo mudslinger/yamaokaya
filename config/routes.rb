@@ -10,6 +10,14 @@ Rails.application.routes.draw do
     get '/wb/:type/:key(.:format)' => 'top_messages#show',as: :top_messages
   end
 
+  #クーポン配信
+  constraints host: 'deliver.coupon.yamaokaya.com' do
+    get 'cb/use/:coupon_code/:no' => 'coupons#use'
+  end
+  constraints host: 'deliver2.coupon.yamaokaya.com' do
+    get 'cb/use/:coupon_code/:no' => 'coupons#use'
+  end
+
   #common
   get '/about' => 'articles#about',as: :about
   get '/sns_guideline' => 'articles#sns_guideline',as: :sns_guideline

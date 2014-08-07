@@ -1,0 +1,12 @@
+!!! XML
+!!! Mobile
+%html(xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja")
+  %head
+    %meta(http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8")
+    %title
+      Yamaokaya Coupon
+  %body(style="width:100%;padding:0px;margin:0px;")
+    - if !@expired
+      %img{src: "http://assets.coupon.yamaokaya.com/#{@coupon_code}.gif", width: "100%"}
+    - else
+      %img{src: "http://assets.coupon.yamaokaya.com/expired.gif", width: "100%", style: "width:100%;"}

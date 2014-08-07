@@ -17,5 +17,8 @@
 
 #/config/secrets.yml
 
-.ruby-gemset
-.ruby-version
+/public/i/*
+
+/.ruby-gemset
+/.ruby-version
+/.sass-cache
