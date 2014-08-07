@@ -2,7 +2,7 @@ class TopMessagesController < ApplicationController
   include TopMessagesHelper
   skip_before_filter :set_title
   layout false
-
+  ssl_allowed :all
   def show
     response.headers.except! 'X-Frame-Options'
     response.headers["X-Frame-Options"] = 'ALLOW-FROM http://ec9.winboard.jp/'

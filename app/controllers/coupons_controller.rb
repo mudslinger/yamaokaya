@@ -1,6 +1,6 @@
 class CouponsController < ApplicationController
   FAR_FEATURE = Time.mktime(2099, 12, 31).freeze
-
+  ssl_allowed :all
   def use
     user_number = params[:no]
     @coupon_code = params[:coupon_code]
