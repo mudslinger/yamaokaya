@@ -36,8 +36,11 @@ class FeedbacksController < ApplicationController
     @feedback = Feedback.new(feedback_params)
     respond_to do |format|
       if @feedback.save
-        Feedback.not_sent.each do |f|
-          f.report
+        begin
+          Feedback.not_sent.each do |f|
+            f.report
+          end
+        rescue
         end
         format.html { redirect_to :feedbacks, notice: @feedback.id }
         format.json { render :show, status: :created, location: @feedback }
