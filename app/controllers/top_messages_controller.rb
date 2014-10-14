@@ -1,5 +1,5 @@
 class TopMessagesController < ApplicationController
-  include TopMessagesHelper
+  #include TopMessagesHelper
   skip_before_filter :set_title
   layout false
 
