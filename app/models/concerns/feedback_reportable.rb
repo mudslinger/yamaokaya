@@ -25,25 +25,37 @@ module FeedbackReportable extend ActiveSupport::Concern
     ses_id = AWS_CREDENTIALS['access_key_id']
     ses_secret = AWS_CREDENTIALS['secret_access_key']
     ses = AWS::SES::Base.new(access_key_id: ses_id,secret_access_key: ses_secret)
-
-    ses.send_email(
-      to: 'info@yamaokaya.com',
-      #to: 'tanaka@yamaokaya.com',
-      source: 'kokyaku@yamaokaya.com',
-      subject: report_title,
-      html_body: render_mail(template: 'feedbacks/mail',type: :haml, locals: {body: self},layout: false)
-    )
-
-    ses.send_email(
-      to: 'customer_message@yamaokaya.co.jp',
-      #to: 'hisato.tanaka@gmail.com',
-      source: 'kokyaku@yamaokaya.com',
-      subject: report_title + '(個人情報削除済み)',
-      html_body: render_mail({template: 'feedbacks/masked_mail',type: :haml, locals: {body: self},layout: false}),
-      text_body: render_mail({template: 'feedbacks/masked_mail_txt',type: :erb, locals: {body: self},formats: :text, layout: false})
-    )
-    self.mail_sent = true
-    self.save(validate: false)
+    begin
+      #生メール
+      ses.send_email(
+        to: 'info@yamaokaya.com',
+        #to: 'tanaka@yamaokaya.com',
+        source: 'kokyaku@yamaokaya.com',
+        subject: report_title,
+        html_body: render_mail(template: 'feedbacks/mail',type: :haml, locals: {body: self},layout: false)
+      )
+      #生メール（送信者個人情報無し）
+      ses.send_email(
+        to: 'customer_message@yamaokaya.co.jp',
+        #to: 'hisato.tanaka@gmail.com',
+        source: 'kokyaku@yamaokaya.com',
+        subject: report_title + '(送信者個人情報削除済み)',
+        html_body: render_mail({template: 'feedbacks/limited_mail',type: :haml, locals: {body: self},layout: false})
+      )
+      #マスクメール
+      ses.send_email(
+        to: 'sv@yamaokaya.com',
+        #to: 'hisato.tanaka@gmail.com',
+        source: 'kokyaku@yamaokaya.com',
+        subject: report_title + '(個人情報削除済み)',
+        html_body: render_mail({template: 'feedbacks/masked_mail',type: :haml, locals: {body: self},layout: false}),
+        text_body: render_mail({template: 'feedbacks/masked_mail_txt',type: :erb, locals: {body: self},formats: :text, layout: false})
+      )
+    rescue
+    ensure
+      self.mail_sent = true
+      self.save(validate: false)
+    end
   end
 
   def message_i
