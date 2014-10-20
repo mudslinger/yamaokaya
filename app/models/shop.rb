@@ -33,13 +33,19 @@ class Shop < ActiveRecord::Base
 
 	def long_name
 		ret = closed? ? '[閉店]' : ''
+		#ret += before_opened? ? '[開店前]' : ''
 		ret += "ラーメン山岡家 #{self[:name]}"
 		ret
 	end
 
 
 	def closed?
-		not DateTime.now.between?(inauguration,close)
+		#not DateTime.now.between?(inauguration,close)
+		close < DateTime.now
+	end
+
+	def before_opened?
+		inauguration > DateTime.now
 	end
 	def marker_type
 		self.class.name

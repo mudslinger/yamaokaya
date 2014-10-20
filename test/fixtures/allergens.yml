@@ -1,0 +1,81 @@
+egg:
+  name: 玉子
+  division: 0
+milk:
+  name: 乳
+  division: 0
+wheat:
+  name: 小麦
+  division: 0
+prawn:
+  name: えび
+  division: 0
+crab:
+  name: かに
+  division: 0
+buckwheat:
+  name: そば
+  division: 0
+peanut:
+  name: 落花生
+  division: 0
+abalone:
+  name: あわび
+  division: 1
+squid:
+  name: いか
+  division: 1
+salmon_roe:
+  name: いくら
+  division: 1
+orange:
+  name: オレンジ
+  division: 1
+cashew_nut:
+  name: カシューナッツ
+  division: 1
+kiwi_fruit:
+  name: キウイフルーツ
+  division: 1
+beef:
+  name: 牛肉
+  division: 1
+walnut:
+  name: くるみ
+  division: 1
+sesame:
+  name: ごま
+  division: 1
+sake:
+  name: さけ
+  division: 1
+mackerel:
+  name: さば
+  division: 1
+soybean:
+  name: 大豆
+  division: 1
+chicken:
+  name: 鶏肉
+  division: 1
+banana:
+  name: バナナ
+  division: 1
+pork:
+  name: 豚肉
+  division: 1
+matsutake:
+  name: まつたけ
+  division: 1
+peach:
+  name: もも
+  division: 1
+yam:
+  name: やまいも
+  division: 1
+apple:
+  name: りんご
+  division: 1
+gelatin:
+  name: ゼラチン
+  division: 1
