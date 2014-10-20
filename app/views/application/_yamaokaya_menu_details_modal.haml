@@ -4,16 +4,11 @@
 			.modal-header
 				%button.close{type: :button,data:{dismiss: :modal},aria:{hidden:true}} &times;
 				%h4.modal-title=@menu.name
-			.modal-body
-				.menu-detail-picture
+			.modafenu-detail-picture
 					.tags
 						%p.text-left=@menu.comment
 					=ymage_tag "images/menus/photos/#{@menu.id}.png",size: :origin,cls: :photo
 					.actions
-						%p
-							- @menu.allergen_labellings.each do |a|
-								●
-								=a.allergen.name
 						%p.price-area
 							%strong.text-danger.price{class: is_phone? ? '' : :repdigit}=@menu.price
 							%span.yen 円
