@@ -16,6 +16,7 @@ Rails.application.routes.draw do
   get '/sns_guideline' => 'articles#sns_guideline',as: :sns_guideline
   get '/sitemap' => 'articles#sitemap',as: :sitemap
   get '/mag_faq' => 'articles#mag_faq', as: :mag_faq
+  get '/service_tickets' => 'articles#service_tickets', as: :service_tickets
   get '/google_map/:address' => redirect("https://maps.google.co.jp/maps?q=%{address}"),as: :google_map
 
   #リリース一覧表示用
