@@ -76,7 +76,7 @@ Rails.application.routes.draw do
         get 'menus/:id' => 'menus#details',as: :menu_details,host: YAM_DEF
       end
       get 'menus/:category' => 'menus#categorized', as: :menu_categorized ,host: YAM_DEF
-    end 
+    end
   end
 
   constraints lambda {|request| RECRUIT_DOMAINZ.include? request.host} do
@@ -100,8 +100,8 @@ Rails.application.routes.draw do
       #entry
       get '/:type/entry' => 'entries#new',as: :entries,host: REC_DEF
       post '/:type/entry' => 'entries#create',as: :post_entries,host: REC_DEF
-      get '/rikunabi' => redirect('http://job.rikunabi.com/2016/company/top/r373520049/'),as: :rikunavi
-    end 
+      get '/mynavi' => redirect('https://job.mynavi.jp/16/pc/search/corp76637/outline.html'),as: :rikunavi
+    end
   end
 
   #ランディング対策
@@ -112,7 +112,7 @@ Rails.application.routes.draw do
       get 'company/greetings(.:format)' => redirect(UrlHelpers.greetings_url)
       get 'company/history(.:format)' => redirect(UrlHelpers.history_url)
       get 'company/aniv_25(.:format)' => redirect(UrlHelpers.corp_top_url)
-      
+
       #メニューページのリダイレクト
       get '/menu/index(.:format)' => redirect(UrlHelpers.menu_categorized_path(:regular))
       constraints category: /[0-9]{1}/ do
@@ -154,7 +154,7 @@ Rails.application.routes.draw do
         }
       end
       get '/ir/library(.:format)' => redirect(UrlHelpers.library_url)
-    end 
+    end
   end
 
   #404

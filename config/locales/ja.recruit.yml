@@ -5,9 +5,9 @@ ja:
       interview: インタビュー
       requirements: 募集要項
       entry: エントリー
-      entry_r: エントリー(リクナビ) 
+      entry_r: エントリー(マイナビ)
   requirements:
-    defaults: &defaults 
+    defaults: &defaults
       title: 募集要項
       t:
         jobs: 職種
@@ -18,17 +18,17 @@ ja:
         welfares: 福利厚生など
         places: 勤務地
         treatments: 待遇
-    pa: 
+    pa:
       << : *defaults
       subtitle: パート・アルバイト
       v:
         jobs:
           - 接客
           - 調理・調理補助
-        requirements: 
+        requirements:
           - 学歴等不問
           - 55歳くらいまで
-        payments: 
+        payments:
           - 勤務店舗により異なります
         working_hours:
           - 1日 3～6時間
@@ -37,7 +37,7 @@ ja:
         holidays:
           - 週2日以上
           - 応相談
-        welfares: 
+        welfares:
           - 交通費支給（会社負担）
           - 深夜割増手当
           - 休日出勤手当
@@ -50,16 +50,16 @@ ja:
         places:
           - 新規開店店舗
           - 他全店
-    career: 
+    career:
       << : *defaults
       subtitle: 中途採用
       v:
         jobs:
           - 店舗運営
           - 調理・接客
-        requirements: 
+        requirements:
           - 学歴等不問
-        payments: 
+        payments:
           - 一般社員 200000円以上
           - 店長 350000円以上
           - SV 550000円以上
@@ -70,7 +70,7 @@ ja:
           - 誕生日休暇
           - シーズン休暇(5日)
           - 慶弔休暇
-        welfares: 
+        welfares:
           - 勤務地から遠方にお住まいの場合、異動費用弊社負担
           - 家賃補助あり
           - 交通費支給（会社負担）
@@ -87,16 +87,16 @@ ja:
           - 山分け制度…社内FC
         places:
           - 各店舗にて勤務していただきます（北海道から九州まで店舗あり）
-    graduates: 
+    graduates:
       << : *defaults
       subtitle: 新卒・第二新卒
       v:
         jobs:
           - 店舗運営・マネージメント
           - 調理・接客
-        requirements: 
+        requirements:
           - 四年制大学・短期大学・専門学校卒業見込み
-        payments: 
+        payments:
           - 一般社員 200000円以上
           - 店長 350000円以上
           - SV 550000円以上
@@ -107,7 +107,7 @@ ja:
           - 誕生日休暇
           - シーズン休暇(5日)
           - 慶弔休暇
-        welfares: 
+        welfares:
           - 勤務地から遠方にお住まいの場合、異動費用弊社負担
           - 家賃補助あり
           - 交通費支給（会社負担）
@@ -359,11 +359,11 @@ ja:
             - お客様と、仲間と、会社と。
             - 人間関係豊かな風土の中で、「自分が求められてる」「大事にされてる」って実感しながら働けるのって、実はすごく、幸せなことなんです。
   entries:
-    graduates2: 
+    graduates2:
       subtitle: 第二新卒
-    career: 
+    career:
       subtitle: 中途採用
-    pa: 
+    pa:
       subtitle: パート・アルバイト
     new:
       title: エントリーフォーム
