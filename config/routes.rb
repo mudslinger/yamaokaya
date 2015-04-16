@@ -100,7 +100,9 @@ Rails.application.routes.draw do
       #entry
       get '/:type/entry' => 'entries#new',as: :entries,host: REC_DEF
       post '/:type/entry' => 'entries#create',as: :post_entries,host: REC_DEF
-      get '/mynavi' => redirect('https://job.mynavi.jp/16/pc/search/corp76637/outline.html'),as: :rikunavi
+      get '/mynavi' => redirect('https://job.mynavi.jp/16/pc/search/corp76637/outline.html'),as: :mynavi
+      get '/rikunavi' => redirect('http://job.rikunabi.com/2016/company/top/r373520049/'),as: :rikunavi
+
     end
   end
 

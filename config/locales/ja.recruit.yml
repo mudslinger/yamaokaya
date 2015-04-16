@@ -4,8 +4,9 @@ ja:
       message: 人材開発チームからのメッセージ
       interview: インタビュー
       requirements: 募集要項
-      entry: エントリー
-      entry_r: エントリー(マイナビ)
+      entry: エントリー(第二新卒)
+      entry_r: エントリー(リクナビ)
+      entry_m: エントリー(マイナビ)
   requirements:
     defaults: &defaults
       title: 募集要項
@@ -60,9 +61,9 @@ ja:
         requirements:
           - 学歴等不問
         payments:
-          - 一般社員 200000円以上
-          - 店長 350000円以上
-          - SV 550000円以上
+          - 一般社員 200,000円以上
+          - 店長 410,000円以上
+          - SV 550,000円以上
         working_hours:
           - シフト制（実働8時間）
         holidays:
@@ -95,11 +96,11 @@ ja:
           - 店舗運営・マネージメント
           - 調理・接客
         requirements:
-          - 四年制大学・短期大学・専門学校卒業見込み
+          - 大学院・四年制大学・短期大学・専門学校卒業見込み
         payments:
-          - 一般社員 200000円以上
-          - 店長 350000円以上
-          - SV 550000円以上
+          - 一般社員 200,000円以上
+          - 店長 410,000円以上
+          - SV 550,000円以上
         working_hours:
           - シフト制（実働8時間）
         holidays:

@@ -6,7 +6,7 @@
 				%span.icon-bar
 				%span.icon-bar
 			=link_to yamaokaya_top_url,class: :logo do
-				=ymage_tag 'images/assets/logo.png',alt:'ラーメン山岡家'
+				=ymage_tag 'images/assets/logo.png',alt:'ラーメン山岡家YEAH!'
 		.navbar-collapse.collapse
 			%ul.nav.navbar-nav.navbar-right
 				%li
@@ -29,12 +29,15 @@
 							=link_to :requirements_graduates do
 								募集要項
 						%li
+							=link_to :mynavi,target: '_blank' do
+								エントリー(マイナビ2016)
+						%li
 							=link_to :rikunavi,target: '_blank' do
 								エントリー(リクナビ2016)
 						%li
 							=link_to entries_path(type: :graduates2) do
 								エントリー(第二新卒)
-								
+
 				%li
 					%a.dropdown-toggle{href:'#',data:{toggle: :dropdown}}
 						%span.glyphicon.glyphicon-info

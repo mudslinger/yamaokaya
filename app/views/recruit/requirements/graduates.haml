@@ -1,9 +1,10 @@
 =render partial: 'recruit_title',locals: {title: tt(:title),subtitle: tt(:subtitle)}
 .container
-	.row
-		.article-box.col-sm-10.col-sm-offset-1.col-xs-12.well-lg
-			=render partial: 'requirements'
-	.row
-		.text-center
-			=link_to '応募する(リクナビ)',:rikunavi,{class: %w(btn btn-primary)}
-			=link_to '応募する(第2新卒)',entries_path(:graduates2),{class: %w(btn btn-primary)}
+  .row
+    .article-box.col-sm-10.col-sm-offset-1.col-xs-12.well-lg
+      =render partial: 'requirements'
+  .row
+    .text-center
+      =link_to '応募する(マイナビ)',:mynavi,{class: %w(btn btn-primary)}
+      =link_to '応募する(リクナビ)',:rikunavi,{class: %w(btn btn-primary)}
+      =link_to '応募する(第2新卒)',entries_path(:graduates2),{class: %w(btn btn-primary)}
