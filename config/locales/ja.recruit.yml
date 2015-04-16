@@ -4,7 +4,8 @@ ja:
       message: 人材開発チームからのメッセージ
       interview: インタビュー
       requirements: 募集要項
-      entry: エントリー(第二新卒)
+      entry: エントリー
+      entry_2: エントリー(第二新卒)
       entry_r: エントリー(リクナビ)
       entry_m: エントリー(マイナビ)
   requirements:
