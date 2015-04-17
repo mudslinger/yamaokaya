@@ -14,7 +14,7 @@ class Shop < ActiveRecord::Base
 	scope :by_zoom, ->(zoom) {
 		where("#{zoom} >= shops.start_shows")
 	}
-	
+
 	scope :with_higher, ->{
 		includes(:area => {:prefecture => :region})
 	}
@@ -76,7 +76,7 @@ class Shop < ActiveRecord::Base
 			encode_shop_hour(0)
 		elsif alldayssame?
 			encode_shop_hour(sunday)
-		else 
+		else
 			Hash[
 				{
 					'日' => sunday,
@@ -98,13 +98,11 @@ class Shop < ActiveRecord::Base
 	end
 
 	def shop_status
-		puts name
 		st = shop_time(Time.now - 6.hours)
-		puts st
 		if now_open?
 			{status: 'success',text: '営業中'}
 		elsif st == 281474976710655
-			{status: 'danger',text: '休止中'}
+			{status: 'danger',text: '準備中'}
 		else
 			{status: 'warning',text: I18n.l(encode_shop_hour(st)[0].begin,format: :short_time) + '開店'}
 		end
@@ -125,7 +123,7 @@ class Shop < ActiveRecord::Base
 			sh.sort do |a,b|
 				b[0].size <=> a[0].size
 			end.map do |k,v|
-				if k.size > 4 
+				if k.size > 4
 					""
 				else
 					"#{k.join(',')}:"
@@ -203,7 +201,7 @@ class Shop < ActiveRecord::Base
 					'', #電話番号2
 					'', #携帯電話番号
 					shop.phone, #fax
-					'cash', #支払い方法	
+					'cash', #支払い方法
 				]
 			end
 		end
@@ -235,7 +233,7 @@ class Shop < ActiveRecord::Base
 		elsif d.wednesday? then wednesday
 		elsif d.thursday? then thursday
 		elsif d.friday? then friday
-		elsif d.saturday? then saturday			
+		elsif d.saturday? then saturday
 		end
 		dow
 	end
@@ -248,7 +246,7 @@ class Shop < ActiveRecord::Base
 		end.inject([]) do |ret,v|
 			ret << (t + (v[0]*30).minutes..t + (v[0]*30+30).minutes) if ret.empty? && v[1]
 			if v[1] && !ret.empty?
-				if ret.last.max >= t + (v[0]*30).minutes 
+				if ret.last.max >= t + (v[0]*30).minutes
 					ret[ret.length-1] = (ret.last.min..(t + (v[0]*30+30).minutes))
 				else
 					ret << (t + (v[0]*30).minutes..t + (v[0]*30+30).minutes)
