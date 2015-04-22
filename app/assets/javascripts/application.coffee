@@ -9,6 +9,9 @@
 #= require flot/jquery.flot
 #= require flot/jquery.flot.resize
 
+#bxslider
+#= require bxslider/jquery.bxslider
+
 #価格の書き換え
 #= require digits
 #google maps 読み込み
@@ -59,3 +62,8 @@ $ ->
 		$('#mobile-pref-selector').change ->
 			location.href = $(@).val()
 
+#店舗ページ用bxslider
+$ ->
+	if $('body.shops').get(0)?
+		$('.bxslider').bxSlider
+			pagerCustom: '#bx-pager'

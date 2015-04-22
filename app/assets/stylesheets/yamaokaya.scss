@@ -6,6 +6,8 @@
 @import "yamaokaya/shops";
 @import "yamaokaya/menus";
 @import "yamaokaya/feedbacks";
+@import "bxslider/jquery.bxslider";
+
 body.yamaokaya{
 	.mob-domain{
 		&:before{
@@ -57,8 +59,8 @@ body.yamaokaya{
 		}
 		img.img-thumbnail{
 			float: left;
-			max-width: 40%; 
-			margin:5px; 
+			max-width: 40%;
+			margin:5px;
 		}
 	}
 	.bottom-nav{

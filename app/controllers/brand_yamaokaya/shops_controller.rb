@@ -48,7 +48,7 @@ class BrandYamaokaya::ShopsController < BrandYamaokaya::BaseController
 		additional_attr = [:marker_type,:sprite_x,:sprite_y,:bounds,:start_shows,:end_shows,:lat,:lng]
 		except_attr = [:created_at,:updated_at,:address,:phone,:furigana,:gname,:postal_code,:landmarks,:inauguration,:close,
 			:sunday,:monday,:tuesday,:wednesday,:thursday,:friday,:saturday,
-			:seats_at_counter,:booths,:park_caps,:truck_park_caps			
+			:seats_at_counter,:booths,:park_caps,:truck_park_caps
 		]
 		respond_to do |format|
 			format.json{
@@ -105,7 +105,7 @@ class BrandYamaokaya::ShopsController < BrandYamaokaya::BaseController
 					end
 				end
 				# @children = Area.has_shops.sorted.by_prefecture(current_key)
-			when :area	
+			when :area
 				@children = Area.has_shops.find(current_key).shops
 			when :japan
 				@children = Region.has_shops.map do |r|

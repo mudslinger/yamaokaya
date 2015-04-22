@@ -1,0 +1,8 @@
+%ul.bxslider
+  - @shop.images.each do |i|
+    %li
+      =ymage_tag i,size: '600x450'
+#bx-pager
+  - @shop.images.each_with_index do |i,idx|
+    %a{href: '',data:{slide: {index: idx}}}
+      =ymage_tag i,size: '120x90'

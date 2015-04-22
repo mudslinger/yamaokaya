@@ -38,6 +38,14 @@ class Shop < ActiveRecord::Base
 		ret
 	end
 
+	#画像一覧を取得する
+	def images
+		s3 = AWS::S3.new
+		bucket = s3.buckets['assets.yamaokaya.com']
+		return Rails.cache.fetch( shopimages: self[:id]) do
+			bucket.objects.with_prefix("images/shops/photos/#{self[:id]}/").collect(&:key).select{ |key| key =~ /\.(?:jpe?g|png)$/i}.sort
+		end
+	end
 
 	def closed?
 		#not DateTime.now.between?(inauguration,close)
