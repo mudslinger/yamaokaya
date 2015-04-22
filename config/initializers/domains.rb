@@ -1,6 +1,7 @@
 DOMAINZ = {
 	'maruchiyo2014.yamaokaya.com' => :corporate,
 	'www2014.yamaokaya.com' => :yamaokaya,
+	'yamapps4wide-1355007300.ap-northeast-1.elb.amazonaws.com' => :yamaokaya,
 	'recruit2014.yamaokaya.com' => :recruit,
 	'maruchiyo.yamaokaya.com' => :corporate,
 	'www.yamaokaya.com' => :yamaokaya,
