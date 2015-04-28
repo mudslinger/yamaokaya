@@ -1,12 +1,12 @@
 $ ->
 	DEFAULT_XTICKS = [
-		[2011,'第17期<br/>(H22/1期)']
 		[2012,'第18期<br/>(H23/1期)']
 		[2013,'第19期<br/>(H24/1期)']
 		[2014,'第20期<br/>(H25/1期)']
 		[2015,'第21期<br/>(H26/1期)']
+		[2016,'第22期<br/>(H27/1期)']
 	]
-	DEFAULT_XAXIS = 
+	DEFAULT_XAXIS =
 		ticks: DEFAULT_XTICKS
 		tickLength: 0
 		autoscaleMargin: .10
@@ -34,10 +34,10 @@ $ ->
 			show: true
 		bars:
 			show: true
-	BAR_SETTING = 
+	BAR_SETTING =
 		align: 'center'
 		barWidth: 0.3
-	opts = 
+	opts =
 		sales: {
 			yaxis: DEFAULT_YAXIS
 			xaxis: DEFAULT_XAXIS
@@ -72,7 +72,7 @@ $ ->
 			xaxis: DEFAULT_XAXIS
 			series: LINE_ONLY
 		}
-	data = 
+	data =
 		sales: {}
 		op: {}
 		ni: {}
@@ -82,15 +82,15 @@ $ ->
 
 	#会社概要用
 	if $('body.corporate.company').get(0)?
-		data = 
+		data =
 			sales: {}
 			op: {}
 		$.getJSON '/ir/financial_infomation.json',(finfo)->
-			data.sales = 
+			data.sales =
 				label: '売上高(単位:千円)'
 				color: 1
 				data:([f.year,f.sales] for f in finfo)
-			data.op = 
+			data.op =
 				label: '経常利益(単位:千円)'
 				color: 2
 				data:([f.year,f.op] for f in finfo)
@@ -104,7 +104,7 @@ $ ->
 
 	#IRハイライト用
 	if $('body.corporate.ir').get(0)?
-		data = 
+		data =
 			sales: {}
 			op: {}
 			ni: {}
@@ -112,38 +112,38 @@ $ ->
 			bps: {}
 			eps: {}
 		$.getJSON '/ir/financial_infomation.json',(finfo)->
-			data.sales = 
+			data.sales =
 				label: '売上高(単位:千円)'
 				color: 1
 				data:([f.year,f.sales] for f in finfo)
-			data.op = 
+			data.op =
 				label: '経常利益(単位:千円)'
 				color: 2
 				data:([f.year,f.op] for f in finfo)
-			data.ni = 
+			data.ni =
 				label: '当期純利益(単位:千円)'
 				color: 3
 				data:([f.year,f.ni] for f in finfo)
-			data.na_ta[0] = 
+			data.na_ta[0] =
 				label: '総資産額(単位:千円)'
 				color: 4
 				data:([f.year-0.15,f.ta] for f in finfo)
 				bars:
 					order: 1
-			data.na_ta[1] = 
+			data.na_ta[1] =
 				label: '純資産額(単位:千円)'
 				color: 3
 				data:([f.year+0.15,f.na] for f in finfo)
 				bars:
 					order: 2
-			data.bps = 
+			data.bps =
 				label: '一株あたり純資産額(単位:千円)'
 				color: 5
-				data:([f.year,f.bps] for f in finfo)
-			data.eps = 
+				data:([f.year,f.bps] for f in finfo when f.year > 2012)
+			data.eps =
 				label: '一株あたり当期純利益額(単位:千円)'
 				color: 6
-				data:([f.year,f.eps] for f in finfo)
+				data:([f.year,f.eps] for f in finfo  when f.year > 2012)
 
 			for k,v of data
 				if $("##{k}-chart").get(0)?

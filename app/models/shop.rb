@@ -43,7 +43,7 @@ class Shop < ActiveRecord::Base
 		s3 = AWS::S3.new
 		bucket = s3.buckets['assets.yamaokaya.com']
 		return Rails.cache.fetch( shopimages: self[:id]) do
-			bucket.objects.with_prefix("images/shops/photos/#{self[:id]}/").collect(&:key).select{ |key| key =~ /\.(?:jpe?g|png)$/i}.sort
+			bucket.objects.with_prefix("images/shops/photos/#{self[:id]}/").select{ |o| o.key =~ /\.(?:jpe?g|png)$/i}.sort{|a,b| a.key <=> b.key}.map{ |o| {key: o.key,type: o.metadata['type'].present? ? o.metadata['type'] : 'shops.images.undefined' }}
 		end
 	end
 

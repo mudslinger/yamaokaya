@@ -3,10 +3,10 @@
     =static_map_for_shop shop,{size: '600x450'}
   - @shop.images.each do |i|
     %li
-      =ymage_tag i,size: '600x450'
+      =ymage_tag i[:key],size: '600x450',title: t(i[:type],p: 10,b: @shop.booths, c: @shop.seats_at_counter, k: 4,t: 20)
 #bx-pager
   %a{href: '',data:{slide: {index: 0}}}
     =static_map_for_shop shop,{size: '120x90'}
   - @shop.images.each_with_index do |i,idx|
     %a{href: '',data:{slide: {index: idx+1}}}
-      =ymage_tag i,size: '120x90'
+      =ymage_tag i[:key],size: '120x90'

@@ -1,6 +1,6 @@
 class FinancialInfomation
 	include ActiveModel::Model
-	attr_accessor( 
+	attr_accessor(
 		:year,					#年度
 		:sales,					#売上
 		:op,					#経常利益
@@ -294,7 +294,31 @@ class FinancialInfomation
             employees:225,
             parttime:845,
         )
-
+        ret.push FinancialInfomation.new(
+            year:2016,
+            sales:9007487,
+            op:235662, #!#
+            ni:114718,
+            cap:291647,
+            ais:823000,
+            na:1226633,
+            ta:4519887,
+            bps:1511.94,
+            dps:20,
+            idps:nil,
+            eps:141.40,
+            deps:nil,
+            car:27.1,
+            roe:nil,
+            per:nil,
+            dpr:nil,
+            opeCF:880558,
+            invCF:-209541,
+            finCF:-314924,
+            cce:674299,
+            employees:244,
+            parttime:851,
+        )
 
         ret
 	end

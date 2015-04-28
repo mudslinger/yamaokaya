@@ -67,3 +67,4 @@ $ ->
 	if $('body.shops').get(0)?
 		$('.bxslider').bxSlider
 			pagerCustom: '#bx-pager'
+			captions: true
