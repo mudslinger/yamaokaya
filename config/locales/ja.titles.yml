@@ -1,7 +1,7 @@
 ja:
   titles:
     # 各ドメイントップのタイトル
-    brand_top: 
+    brand_top:
       main: ガツンと来て、くせになる。ラーメン山岡家
       short: ラーメン山岡家
     corp_top:
@@ -103,6 +103,8 @@ ja:
       main: サイトマップ
     sns_guideline:
       main: SNSガイドライン
+    privacy_policy:
+      main: プライバシーポリシー
     mag_faq:
       main: 山岡家メルマガが届かない場合の対処方法
       short: メルマガが届かない場合

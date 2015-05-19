@@ -17,6 +17,7 @@ Rails.application.routes.draw do
   get '/sitemap' => 'articles#sitemap',as: :sitemap
   get '/mag_faq' => 'articles#mag_faq', as: :mag_faq
   get '/service_tickets' => 'articles#service_tickets', as: :service_tickets
+  get '/privacy_policy' => 'articles#privacy_policy', as: :privacy_policy
   get '/google_map/:address' => redirect("https://maps.google.co.jp/maps?q=%{address}"),as: :google_map
 
   #リリース一覧表示用

@@ -1,0 +1,8 @@
+.container
+  .row
+    .lead=tt(:lead)
+  .row
+    - tt(:bodies).each_with_index do |v,i|
+      %h4.lead=v[:lead]
+      -v[:bodies].each do |b|
+        %p=b

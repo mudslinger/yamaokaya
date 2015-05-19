@@ -297,7 +297,7 @@ class FinancialInfomation
         ret.push FinancialInfomation.new(
             year:2016,
             sales:9007487,
-            op:235662, #!#
+            op:304800, #!#
             ni:114718,
             cap:291647,
             ais:823000,
