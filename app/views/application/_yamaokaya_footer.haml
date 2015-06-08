@@ -55,8 +55,15 @@
 					=link_to 'http://my.gnavi.co.jp/brand/top.php?cType=rsmyo01' ,class: %w(btn btn-primary) ,target: '_blank' do
 						会員登録はこちら
 				%p
-					=link_to :mag_faq ,class: %w(btn btn-primary) do
-						メルマガが届かない場合
+					うまく登録できない場合は…
+				%p
+					%ul
+						%li yamaokaya.com
+						%li gnavi.co.jp
+					のドメイン指定解除をお願い致します。
+					詳しくは
+					=link_to :mag_faq  do
+						こちら
 .bottom-nav
 	.container
 		.row
