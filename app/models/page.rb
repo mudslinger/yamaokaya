@@ -42,7 +42,7 @@ class Page
 			I18n.t :main,scope: [:titles,@title]
 		when String
 			@title
-		end		
+		end
 	end
 
 	def subtitle
@@ -51,7 +51,7 @@ class Page
 			I18n.t :sub,scope: [:titles,@title]
 		when String
 			nil
-		end	
+		end
 	end
 
 	def short_title
@@ -65,7 +65,7 @@ class Page
 				I18n.t :main,scope: [:titles,@title]
 			end
 
-		end	
+		end
 	end
 
 	def tree_from_root
@@ -299,7 +299,7 @@ class Page
 					end << (
 						#閉店店舗を追加
 						Page.new(
-							title: '閉店済み',
+							title: 'オープン前/閉店店舗',
 							children: Shop.inactive.map do |s|
 								Page.new(
 									url: UrlHelpers.shop_details_path(s.id),
