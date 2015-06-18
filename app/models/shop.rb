@@ -31,6 +31,16 @@ class Shop < ActiveRecord::Base
 	delegate :prefecture, to: :area, allow_nil: false
 	delegate :region, to: :prefecture, allow_nil: false
 
+	IMAGE_PRIORITIES = {
+		exterior: "shops.images.p0_exterior",
+		interior: "shops.images.p1_interior",
+		counter: "shops.images.p2_counter",
+		table: "shops.images.p3_table",
+		booth: "shops.images.p4_booth",
+		parlor: "shops.images.p5_parlor",
+		parking: "shops.images.p6_parking",
+		undefined: "shops.images.p99_undefined"
+	}.freeze
 	def long_name
 		ret = closed? ? '[閉店]' : ''
 		#ret += before_opened? ? '[開店前]' : ''
@@ -40,10 +50,20 @@ class Shop < ActiveRecord::Base
 
 	#画像一覧を取得する
 	def images
+		proc = lambda{ :undefined}
 		s3 = AWS::S3.new
 		bucket = s3.buckets['assets.yamaokaya.com']
 		return Rails.cache.fetch( shopimages: self[:id]) do
-			bucket.objects.with_prefix("images/shops/photos/#{self[:id]}/").select{ |o| o.key =~ /\.(?:jpe?g|png)$/i}.sort{|a,b| a.key <=> b.key}.map{ |o| {key: o.key,type: o.metadata['type'].present? ? o.metadata['type'] : 'shops.images.undefined' }}
+			bucket.objects.with_prefix("images/shops/photos/#{self[:id]}/").select{ |o|
+				o.key =~ /\.(?:jpe?g|png)$/i
+			}.map{ |o|
+				{
+					key: o.key,
+					type: IMAGE_PRIORITIES[IMAGE_PRIORITIES.keys.find(ifnone = proc){ |k| o.key.include?(k.to_s)}]
+				}
+			}.sort{ |a,b|
+				a[:type] <=> b[:type]
+			}
 		end
 	end
 

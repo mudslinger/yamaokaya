@@ -1,39 +1,39 @@
-.container#main
-  .row
-    .col-md-7
-      =render partial: 'yamaokaya_map',locals:{shop: @shop}
-    .col-md-5
-      #lat.hidden=@shop.lat
-      #lng.hidden=@shop.lng
-      #sprite_x.hidden=@shop.sprite_x
-      #sprite_y.hidden=@shop.sprite_y
-      #zoom.hidden=@shop.zoom
-      =render partial: 'yamaokaya_shop_details',locals: {shop: @shop}
-      %hr
-      =ymage_tag "images/shops/photos/#{@shop.id}.jpg",size: '300x300',cls: ['shop-image', 'img-rounded']
-  .row
-    %h3 近くのお店
-    .clearfix
-    - @shop.nearby.each do |n|
-      .col-md-3
-        .nerby-shops-picture.well
-          .tags
-            %h4=n.name
-          =link_to shop_details_path(n.id),{} do
-            =ymage_tag_for_shop n,size: '200x300',cls: ['shop-image', 'img-rounded']
-          .actions
-            =link_to '店舗情報', shop_details_path(n.id), {title: n.name,class: %w(btn btn-primary btn-sm pull-right),role: :button}
-
--####multi pict version####
 -#.container#main
 -#  .row
 -#    .col-md-7
--#      = render partial: 'yamaokaya_shop_images',locals:{shop: @shop}
+-#      =render partial: 'yamaokaya_map',locals:{shop: @shop}
 -#    .col-md-5
 -#      #lat.hidden=@shop.lat
 -#      #lng.hidden=@shop.lng
 -#      #sprite_x.hidden=@shop.sprite_x
 -#      #sprite_y.hidden=@shop.sprite_y
 -#      #zoom.hidden=@shop.zoom
--#      =render partial: 'yamaokaya_map',locals:{shop: @shop}
 -#      =render partial: 'yamaokaya_shop_details',locals: {shop: @shop}
+-#      %hr
+-#      =ymage_tag "images/shops/photos/#{@shop.id}.jpg",size: '300x300',cls: ['shop-image', 'img-rounded']
+-#  .row
+-#    %h3 近くのお店
+-#    .clearfix
+-#    - @shop.nearby.each do |n|
+-#      .col-md-3
+-#        .nerby-shops-picture.well
+-#          .tags
+-#            %h4=n.name
+-#          =link_to shop_details_path(n.id),{} do
+-#            =ymage_tag_for_shop n,size: '200x300',cls: ['shop-image', 'img-rounded']
+-#          .actions
+-#            =link_to '店舗情報', shop_details_path(n.id), {title: n.name,class: %w(btn btn-primary btn-sm pull-right),role: :button}
+
+-#-####multi pict version####
+.container#main
+  .row
+    .col-md-7
+      = render partial: 'yamaokaya_shop_images',locals:{shop: @shop}
+    .col-md-5
+      #lat.hidden=@shop.lat
+      #lng.hidden=@shop.lng
+      #sprite_x.hidden=@shop.sprite_x
+      #sprite_y.hidden=@shop.sprite_y
+      #zoom.hidden=@shop.zoom
+      =render partial: 'yamaokaya_map',locals:{shop: @shop}
+      =render partial: 'yamaokaya_shop_details',locals: {shop: @shop}

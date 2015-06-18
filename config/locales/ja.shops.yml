@@ -1,11 +1,11 @@
 ja:
   shops:
     images:
-      undefined: ''
-      exterior: 店舗外観
-      interior: 店舗内観
-      parking: 駐車場(全 %{p} 台)
-      counter: カウンター席(全 %{c} 席)
-      booth: ボックス席(全 %{b} 席)
-      parlor: 小上がり席(全 %{k} 席)
-      table: テーブル席(全 %{t} 席)
+      p0_exterior: 店舗外観
+      p1_interior: 店舗内観 %{c} %{b} %{b} %{k} %{t}
+      p6_parking: 駐車場(全 %{p} 台)
+      p2_counter: カウンター席(全 %{c} 席)
+      p4_booth: ボックス席(全 %{b} 席)
+      p5_parlor: 小上がり席(全 %{k} 席)
+      p3_table: テーブル席(全 %{t} 席)
+      p99_undefined: "その他"

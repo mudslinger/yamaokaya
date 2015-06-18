@@ -95,6 +95,7 @@
 									%th 深夜
 									- (24..31).each do |i|
 										%td=f.check_box "work_times_#{i}".to_sym,{},1,0
+						%p 勤務時間帯につきましては、店舗で面接時にご相談させていただきますので、今分かる範囲でご入力ください。
 				.form-group.form-horizontal
 					=f.label :message,class: 'control-label'
 					=f.text_area :message,class: 'form-control',size: "56x8"
@@ -106,7 +107,7 @@
 			.modal-content
 				.modal-header
 					%button.close{:type => "button",aria:{hidden: true},data:{dismiss: 'modal'}} &times;
-					%h4.modal-title 
+					%h4.modal-title
 						%span.glyphicon.glyphicon-warning_sign
 						#{@entry.errors.count}件のエラーが発生しています。
 				.modal-body
@@ -125,7 +126,7 @@
 			.modal-content
 				.modal-header
 					%button.close{:type => "button",aria:{hidden: true},data:{dismiss: 'modal'}} &times;
-					%h4.modal-title 
+					%h4.modal-title
 						%span.glyphicon.glyphicon-message_out
 						ありがとうございます。
 				.modal-body
