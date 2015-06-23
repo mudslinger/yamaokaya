@@ -18,7 +18,7 @@
 					%br
 					%button.btn.btn-primary.btm-sm#show_shop{role: :button,type: :button}
 						周辺の地図を表示
-					%button.btn.btn-primary.btm-sm#find_route{role: :button,type: :button} 
+					%button.btn.btn-primary.btm-sm#find_route{role: :button,type: :button}
 						現在地からの道順を表示
 			%tr
 				%th 電話番号
@@ -34,14 +34,24 @@
 			%tr
 				%th 目印・その他
 				%td= shop.landmarks
-			-if (shop.seats_at_counter || 0) + (shop.booths || 0) != 0
-				%tr
-					%th 客席
-					%td
-						-if (shop.seats_at_counter || 0) != 0
-							%li カウンター席:#{shop.seats_at_counter}席
-						-if (shop.booths || 0) != 0
-							%li ボックス席:#{shop.booths}個
+			%tr
+				%th 駐車場
+				%td
+					-if (shop.park_caps || 0) != 0
+						%li 普通車:最大#{shop.park_caps}台駐車可能
+					-if (shop.truck_park_caps || 0) != 0
+						%li トラック等大型車:最大#{shop.truck_park_caps}台駐車可能
+			%tr
+				%th 客席
+				%td
+					-if (shop.seats_at_counter || 0) != 0
+						%li カウンター席:#{shop.seats_at_counter}席
+					-if (shop.seats_at_booth || 0) != 0
+						%li ボックス席:#{shop.seats_at_booth}席
+					-if (shop.seats_at_table || 0) != 0
+						%li テーブル席:#{shop.seats_at_table}席
+					-if (shop.seats_at_parlor || 0) != 0
+						%li 小上がり席:#{shop.seats_at_parlor}席
 	-else
 		.panel-heading
 			%h4.panel-title #{shop.name} は営業を終了いたしました。

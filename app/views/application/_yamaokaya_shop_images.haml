@@ -1,7 +1,7 @@
 %ul.bxslider
   - @shop.images.each do |i|
     %li
-      =ymage_tag i[:key],size: '600x450',title: t(i[:type],p: 10,b: @shop.booths, c: @shop.seats_at_counter, k: 4,t: 20)
+      =ymage_tag i[:key],size: '600x450',title: t(i[:type],park: @shop.park_caps,truck: @shop.truck_park_caps,booth: @shop.seats_at_booth, counter: @shop.seats_at_counter, parlor: @shop.seats_at_parlor,table: @shop.seats_at_table)
 #bx-pager
   - @shop.images.each_with_index do |i,idx|
     %a{href: '',data:{slide: {index: idx}}}
