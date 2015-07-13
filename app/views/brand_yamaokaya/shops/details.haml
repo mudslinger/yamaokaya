@@ -37,6 +37,7 @@
       #zoom.hidden=@shop.zoom
       =render partial: 'yamaokaya_map',locals:{shop: @shop}
       =render partial: 'yamaokaya_shop_details',locals: {shop: @shop}
+  .row
     .col-md-6.text-left
       -if @shop.previous_shop
         =link_to shop_details_path(@shop.previous_shop.id) do
@@ -47,3 +48,15 @@
         =link_to shop_details_path(@shop.next_shop.id) do
           =@shop.next_shop.name + l(@shop.next_shop.inauguration,format: :opened)
           %span.glyphicon.glyphicon-chevron-right
+  .row
+    %h3 近くのお店
+    .clearfix
+    - @shop.nearby.each do |n|
+      .col-md-3
+        .nerby-shops-picture.well
+          .tags
+            %h4=n.name
+          =link_to shop_details_path(n.id),{} do
+            =ymage_tag n.images.first[:key],size: '300x200',cls: ['shop-image', 'img-rounded']
+          .actions
+            =link_to '店舗情報', shop_details_path(n.id), {title: n.name,class: %w(btn btn-primary btn-sm pull-right),role: :button}
