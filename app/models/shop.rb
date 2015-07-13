@@ -3,7 +3,6 @@ class Shop < ActiveRecord::Base
 	default_scope -> {
 		order(:id)
 	}
-
 	scope :active, -> {
 		where("(current_timestamp between inauguration and close)")
 	}
@@ -46,6 +45,18 @@ class Shop < ActiveRecord::Base
 		#ret += before_opened? ? '[開店前]' : ''
 		ret += "ラーメン山岡家 #{self[:name]}"
 		ret
+	end
+
+	def next_shop
+		Rails.cache.fetch(next: id) do
+			Shop.unscoped.active.where('seq > ?',seq).order(:seq).first
+		end
+	end
+
+	def previous_shop
+		Rails.cache.fetch(previous: id) do
+			Shop.unscoped.active.where('seq < ?',seq).order(:seq).last
+		end
 	end
 
 	#画像一覧を取得する

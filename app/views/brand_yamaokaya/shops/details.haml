@@ -37,3 +37,13 @@
       #zoom.hidden=@shop.zoom
       =render partial: 'yamaokaya_map',locals:{shop: @shop}
       =render partial: 'yamaokaya_shop_details',locals: {shop: @shop}
+    .col-md-6.text-left
+      -if @shop.previous_shop
+        =link_to shop_details_path(@shop.previous_shop.id) do
+          %span.glyphicon.glyphicon-chevron-left
+          = @shop.previous_shop.name + l(@shop.previous_shop.inauguration,format: :opened)
+    .col-md-6.text-right
+      -if @shop.next_shop
+        =link_to shop_details_path(@shop.next_shop.id) do
+          =@shop.next_shop.name + l(@shop.next_shop.inauguration,format: :opened)
+          %span.glyphicon.glyphicon-chevron-right
