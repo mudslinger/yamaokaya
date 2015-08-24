@@ -60,6 +60,7 @@ Rails.application.routes.draw do
       get '/ir/calender' => 'ir#calender',as: :calender,host: CORP_DEF
       get '/ir/disclaimer' => 'ir#disclaimer',as: :disclaimer,host: CORP_DEF
       get '/ir/financial_infomation' => 'ir#financial_info',as: :financial_info,host: CORP_DEF
+      get '/ir/incentives' => 'ir#incentives',as: :incentives,host: CORP_DEF
       get '/property' => 'property#development',as: :property,host: CORP_DEF
     end
   end
