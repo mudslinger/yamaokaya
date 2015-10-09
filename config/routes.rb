@@ -10,6 +10,7 @@ Rails.application.routes.draw do
     get '/wb/:type/:key(.:format)' => 'top_messages#show',as: :top_messages
   end
 
+  get '/ir/announce/index(.:format)' => redirect("https://maruchiyo.yamaokaya.com/ir/market"),as: :announce_redirect
 
   #common
   get '/about' => 'articles#about',as: :about
