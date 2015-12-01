@@ -1,5 +1,5 @@
 :ruby
-	persons = I18n.t('interview.graduates.persons')
+	persons = I18n.t('interview.graduates.persons') + I18n.t('interview.career.persons')
 	persons.each do |p|
 		@person = p if p[:personid] == params[:personid]
 	end
