@@ -1,8 +1,14 @@
 :ruby
-	persons = I18n.t('interview.graduates.persons') + I18n.t('interview.career.persons')
-	persons.each do |p|
-		@person = p if p[:personid] == params[:personid]
+	{
+		interview_graduates: I18n.t('interview.graduates.persons'),
+		interview_career: I18n.t('interview.career.persons')
+	}.each do |k,v|
+		v.each do |p|
+			@person = p if p[:personid] == params[:personid]
+			@category = k
+		end
 	end
+
 =render partial: 'recruit_title',locals: {title: tt(:title),subtitle: tt(:subtitle)}
 .container
 	.row
@@ -28,6 +34,6 @@
 						.clearfix
 	.row
 		.text-center
-			=link_to '一覧へ',:interview_graduates,{class: %w(btn btn-primary)}
+			=link_to '一覧へ',@category,{class: %w(btn btn-primary)}
 
 
