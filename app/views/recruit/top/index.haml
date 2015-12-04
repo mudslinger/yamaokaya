@@ -17,7 +17,7 @@
 					キャリア採用
 					%small キャリア採用での入社を検討中の皆様はこちら
 			-#render partial: 'card_box',locals:{picture: 'recruit/top_06.jpg',text: tt(:message),path: :message_career}
-			-#render partial: 'card_box',locals:{picture: 'recruit/top_07.jpg',text: tt(:interview),path: :interview_career}
+			=render partial: 'card_box',locals:{picture: 'recruit/top_07.jpg',text: tt(:interview),path: :interview_career}
 			=render partial: 'card_box',locals:{picture: 'recruit/top_08.jpg',text: tt(:requirements),path: :requirements_career}
 			=render partial: 'card_box',locals:{picture: 'recruit/top_09.jpg',text: tt(:entry),path: entries_path(:career)}
 			.col-xs-12.visible-xs.clearfix
