@@ -5,7 +5,7 @@
 	}.each do |k,v|
 		v.each do |p|
 			@person = p if p[:personid] == params[:personid]
-			@category = k
+			@category = k if p[:personid] == params[:personid]
 		end
 	end
 

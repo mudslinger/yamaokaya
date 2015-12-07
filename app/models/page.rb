@@ -142,10 +142,10 @@ class Page
 						# 	url: UrlHelpers.message_career_path,
 						# 	title: :message_career
 						# ),
-						# Page.new(
-						# 	url: UrlHelpers.interview_career_path,
-						# 	title: :interview_career
-						# ),
+						Page.new(
+							url: UrlHelpers.interview_career_path,
+							title: :interview_career
+						),
 						Page.new(
 							url: UrlHelpers.requirements_career_path,
 							title: :requirements_career
