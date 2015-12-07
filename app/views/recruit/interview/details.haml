@@ -4,8 +4,10 @@
 		interview_career: I18n.t('interview.career.persons')
 	}.each do |k,v|
 		v.each do |p|
-			@person = p if p[:personid] == params[:personid]
-			@category = k if p[:personid] == params[:personid]
+			if p[:personid] == params[:personid]
+				@person = p 
+				@category = k
+			end
 		end
 	end
 
