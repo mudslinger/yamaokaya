@@ -9,7 +9,7 @@ class IrTopic
 		list = get_all
 		def list.press
 			self.select do |item|
-				item.type == 'press'
+				item.type == 'press' || item.type == 'pr'
 			end.group_by do |item|
 				item.released.year
 			end
