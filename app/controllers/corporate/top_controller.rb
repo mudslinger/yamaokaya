@@ -4,4 +4,6 @@ class Corporate::TopController < Corporate::BaseController
 		IrTopic.find_all
 	end
 	def greetings;end
+
+	def vision;end
 end
