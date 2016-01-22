@@ -45,14 +45,18 @@ Rails.application.routes.draw do
       get '/' => 'top#index',as: :corp_top,host: CORP_DEF
       get '/index(.:format)' => 'top#index',as: :corp_top_variant,host: CORP_DEF
       get '/greetings' => 'top#greetings',as: :greetings,host: CORP_DEF
+      get '/vision' => 'top#vison',as: :vision,host: CORP_DEF
+
       get '/company/history' => 'company#history',as: :history,host: CORP_DEF
       get '/company/overview' => 'company#overview',as: :overview,host: CORP_DEF
+
       get '/business/yamaokaya' => 'business#yamaokaya',as: :business,host: CORP_DEF
       get '/business/yamaokaya/products' => 'business#products',as: :products,host: CORP_DEF
       get '/business/yamaokaya/hospitality' => 'business#hospitality',as: :hospitality,host: CORP_DEF
       get '/business/yamaokaya/safety' => 'business#safety',as: :safety,host: CORP_DEF
       get '/business/yamaokaya/development' => 'business#development',as: :development,host: CORP_DEF
       # get '/business/yamaokaya/ict' => 'business#ict',as: :ict,host: CORP_DEF
+
       get '/ir' => 'ir#index',as: :ir_top,host: CORP_DEF
       get '/ir/market' => 'ir#market',as: :market,host: CORP_DEF
       get '/ir/highlight' => 'ir#highlight',as: :highlight,host: CORP_DEF
@@ -62,6 +66,7 @@ Rails.application.routes.draw do
       get '/ir/disclaimer' => 'ir#disclaimer',as: :disclaimer,host: CORP_DEF
       get '/ir/financial_infomation' => 'ir#financial_info',as: :financial_info,host: CORP_DEF
       get '/ir/incentives' => 'ir#incentives',as: :incentives,host: CORP_DEF
+      
       get '/property' => 'property#development',as: :property,host: CORP_DEF
     end
   end

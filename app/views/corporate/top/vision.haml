@@ -1,0 +1,12 @@
+.container
+  .row
+    .page-header
+      %h2
+        =tt :title
+  .row
+    .col-md-12
+      .row
+        %blockquote
+          - tt(:leads).each do |v|
+            %p.lead= v
+
