@@ -45,7 +45,7 @@ Rails.application.routes.draw do
       get '/' => 'top#index',as: :corp_top,host: CORP_DEF
       get '/index(.:format)' => 'top#index',as: :corp_top_variant,host: CORP_DEF
       get '/greetings' => 'top#greetings',as: :greetings,host: CORP_DEF
-      get '/vision' => 'top#vison',as: :vision,host: CORP_DEF
+      get '/vision' => 'top#vision',as: :vision,host: CORP_DEF
 
       get '/company/history' => 'company#history',as: :history,host: CORP_DEF
       get '/company/overview' => 'company#overview',as: :overview,host: CORP_DEF
@@ -66,7 +66,7 @@ Rails.application.routes.draw do
       get '/ir/disclaimer' => 'ir#disclaimer',as: :disclaimer,host: CORP_DEF
       get '/ir/financial_infomation' => 'ir#financial_info',as: :financial_info,host: CORP_DEF
       get '/ir/incentives' => 'ir#incentives',as: :incentives,host: CORP_DEF
-      
+
       get '/property' => 'property#development',as: :property,host: CORP_DEF
     end
   end
