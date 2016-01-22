@@ -1,12 +1,19 @@
 .container
   .row
+    .col-md-12
+      .row
+        %blockquote
+          - tt(:leads).each_with_index do |v,i|
+            -if i == 2 || i == 3
+              %p.lead= v
+            -else
+              %p= v
+  .row
     .page-header
       %h2
         =tt :title
   .row
-    .col-md-12
-      .row
-        %blockquote
-          - tt(:leads).each do |v|
-            %p.lead= v
+    .col-md-4
+    .col-md-4
+    .col-md-4
 
