@@ -190,6 +190,10 @@ class Page
 					title: :greetings
 				),
 				Page.new(
+					url: UrlHelpers.vision_path,
+					title: :vision
+				),
+				Page.new(
 					title: :company,
 					children:[
 						Page.new(
