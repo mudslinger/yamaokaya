@@ -44,9 +44,9 @@ gem 'unicorn'
 # gem 'debugger', group: [:development, :test]
 
 gem 'redcarpet'
-# gem 'aws-sdk-core'
+gem 'aws-sdk-core'
 gem 'aws-sdk-v1'
-# gem 'aws-ses'
+gem 'aws-ses'
 gem 'rest-client'
 gem 'nokogiri'
 gem 'compass-rails'
