@@ -255,6 +255,55 @@ class Shop < ActiveRecord::Base
 		end
 	end
 
+	#募集用フィールド
+	def ad_monday
+		ad_week() & 1 != 0
+	end
+
+	def ad_tuesday
+		ad_week() & 2 != 0
+	end
+
+	def ad_wednesday
+		ad_week() & 4 != 0
+	end
+
+	def ad_thursday
+		ad_week() & 8 != 0
+	end
+
+	def ad_friday
+		ad_week() & 16 != 0
+	end
+
+	def ad_saturday
+		ad_week() & 32 != 0
+	end
+
+	def ad_sunday
+		ad_week() & 64 != 0
+	end
+
+	def ad_holiday
+		ad_week() & 128 != 0
+	end
+
+	def ad_am
+		ad_time() & 1 != 0
+	end
+
+	def ad_pm
+		ad_time() & 2 != 0
+	end
+
+	def ad_night
+		ad_time() & 4 != 0
+	end
+
+	def ad_midnight
+		ad_time() & 8 != 0
+	end
+
 	def shop_time_for_google
 		ret = ''
 		[

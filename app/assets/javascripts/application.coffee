@@ -68,3 +68,31 @@ $ ->
 		$('.bxslider').bxSlider
 			pagerCustom: '#bx-pager'
 			captions: true
+
+#求人広告管理ページ用
+$ ->
+	if $('body.ad_management').get(0)?
+		$('form.ad-form').submit (event)->
+			event.preventDefault()
+			# ad_week = 0
+			# ad_time = 0
+			# for chkbox in $("input[name='ad_week[]']:checked",@)
+			# 	ad_week += parseInt $(chkbox).val()
+			# for chkbox in $("input[name='ad_time[]']:checked",@)
+			# 	ad_time += parseInt $(chkbox).val()
+			$.ajax(
+				type:$(@).attr 'method'
+				url: $(@).attr 'action'
+				data: $(@).serialize()
+			)
+			.done (data)=>
+				#更新された結果で表示の反映（一応）
+				$("input[name=wage]",@).val(data.wage)
+				$("input[name=ad_comment]",@).val(data.ad_comment)
+				for chkbox in $("input[name='ad_week[]']",@)
+					$(chkbox).prop 'checked', !!(parseInt($(chkbox).val()) & data.ad_week)
+				for chkbox in $("input[name='ad_time[]']",@)
+					$(chkbox).prop 'checked', !!(parseInt($(chkbox).val()) & data.ad_time)
+				alert "#{data.name}の求人広告設定が正常に更新されました。"
+			.fail (data)->
+				console.log data

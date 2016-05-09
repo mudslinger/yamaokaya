@@ -91,7 +91,9 @@ Rails.application.routes.draw do
     scope module: :recruit do
       get '/' => 'top#index',as: :recruit_top,host: REC_DEF
       get '/index(.:format)' => 'top#index',as: :recruit_top_variant,host: REC_DEF
-
+      #ad_management
+      get '/manage/ad' => 'ad_management#show',as: :ad_management_show,host: REC_DEF
+      post '/manage/ad' => 'ad_management#update',as: :ad_management_update,host: REC_DEF
       #message
       get '/graduates/message' => 'message#graduates',as: :message_graduates,host: REC_DEF
       get '/career/message' => 'message#career',as: :message_career,host: REC_DEF

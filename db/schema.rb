@@ -11,10 +11,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150623075059) do
+ActiveRecord::Schema.define(version: 20160421091140) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+  enable_extension "postgres_fdw"
 
   create_table "allergen_labellings", force: true do |t|
     t.integer   "menu_id"
@@ -175,6 +176,10 @@ ActiveRecord::Schema.define(version: 20150623075059) do
     t.integer   "seats_at_booth"
     t.integer   "seats_at_table"
     t.integer   "seats_at_parlor"
+    t.integer   "ad_week"
+    t.integer   "ad_time"
+    t.integer   "wage"
+    t.string    "ad_comment",       limit: 190
   end
 
   create_table "wished_shops", force: true do |t|

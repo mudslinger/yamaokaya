@@ -1,0 +1,62 @@
+.container
+  .row
+    .col-md-12
+      %ul.nav.nav-tabs
+        - Prefecture.has_shops.each_with_index do |r,i|
+          %li{class: i == 0 ? :active : nil}
+            %a{href: "#r#{r.id}",data:{toggle:'tab'}}=r.name
+      .tab-content
+        - Prefecture.has_shops.each_with_index do |r,i|
+          .tab-pane{id: "r#{r.id}",class: i == 0 ? :active : nil}
+            %h4=r.name
+            .row
+              - r.shops.each do |shop|
+                %form.col-md-6.ad-form{method: :post,action: '/manage/ad'}
+                  %input{name: :shop_id,type: :hidden,value: shop.id}
+                  .panel.panel-default
+                    .panel-heading
+                      %h4
+                      %span.glyphicon.glyphicon-shop_window
+                      =shop.name
+                    .panel-body
+                      %dl
+                        %dt 募集時給(10円単位)
+                        %dd
+                          .input-group
+                            %input.form-control.text-right{type: :number,name: 'wage',placeholder: '募集時給',value: shop.wage}
+                            %span.input-group-addon 円
+                        %dt 募集曜日
+                        %dd
+                        .btn-group{data:{toggle: 'buttons'}}
+                          %label.btn.btn-primary{class: shop.ad_monday ? :active : nil}
+                            %input{name:'ad_week[]',type: :checkbox,value:1,autocomplete: :off,checked: shop.ad_monday} 月
+                          %label.btn.btn-primary{class: shop.ad_tuesday ? :active : nil}
+                            %input{name:'ad_week[]',type: :checkbox,value:2,autocomplete: :off,checked: shop.ad_tuesday} 火
+                          %label.btn.btn-primary{class: shop.ad_wednesday ? :active : nil}
+                            %input{name:'ad_week[]',type: :checkbox,value:4,autocomplete: :off,checked: shop.ad_wednesday} 水
+                          %label.btn.btn-primary{class: shop.ad_thursday ? :active : nil}
+                            %input{name:'ad_week[]',type: :checkbox,value:8,autocomplete: :off,checked: shop.ad_thursday} 木
+                          %label.btn.btn-primary{class: shop.ad_friday ? :active : nil}
+                            %input{name:'ad_week[]',type: :checkbox,value:16,autocomplete: :off,checked: shop.ad_friday} 金
+                          %label.btn.btn-primary{class: shop.ad_saturday ? :active : nil}
+                            %input{name:'ad_week[]',type: :checkbox,value:32,autocomplete: :off,checked: shop.ad_saturday} 土
+                          %label.btn.btn-primary{class: shop.ad_sunday ? :active : nil}
+                            %input{name:'ad_week[]',type: :checkbox,value:64,autocomplete: :off,checked: shop.ad_sunday} 日
+                          %label.btn.btn-primary{class: shop.ad_holiday ? :active : nil}
+                            %input{name:'ad_week[]',type: :checkbox,value:128,autocomplete: :off,checked: shop.ad_holiday} 祝日
+                        %dt 募集時間帯
+                        %dd
+                        .btn-group{data:{toggle: 'buttons'}}
+                          %label.btn.btn-info{class: shop.ad_am ? :active : nil}
+                            %input{name:'ad_time[]',type: :checkbox,value:1,autocomplete: :off,checked: shop.ad_am} 午前
+                          %label.btn.btn-info{class: shop.ad_pm ? :active : nil}
+                            %input{name:'ad_time[]',type: :checkbox,value:2,autocomplete: :off,checked: shop.ad_pm} 午後
+                          %label.btn.btn-info{class: shop.ad_night ? :active : nil}
+                            %input{name:'ad_time[]',type: :checkbox,value:4,autocomplete: :off,checked: shop.ad_night} 夜間
+                          %label.btn.btn-info{class: shop.ad_midnight ? :active : nil}
+                            %input{name:'ad_time[]',type: :checkbox,value:8,autocomplete: :off,checked: shop.ad_midnight} 深夜
+                        %dt 一行コメント
+                        %dd
+                          .input-group
+                            %input.form-control{type: :text,name: 'ad_comment',placeholder: '募集コメントを入力してください。',value: shop.ad_comment}
+                      %input.btn.btn-primary.pull-right{type: :submit,value: '更新'}

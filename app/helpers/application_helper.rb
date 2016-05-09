@@ -168,11 +168,11 @@ module ApplicationHelper
 		
 	end
 
-	def mf(num)
+	def mf(num,pre=0)
 		if num.nil?
 			"--"
 		else
-			number_to_currency num,local: :ja
+			number_to_currency num,local: :ja,precision: pre
 		end
 	end
 

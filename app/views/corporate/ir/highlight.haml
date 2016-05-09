@@ -27,45 +27,45 @@
           %tr
             %th=FinancialInfomation.human_attribute_name :sales
             -@finfo.each do |v|
-              %td=mf v.sales
+              %td.text-right=mf v.sales
           %tr
             %th=FinancialInfomation.human_attribute_name :op
             -@finfo.each do |v|
-              %td=mf v.op
+              %td.text-right=mf v.op
           %tr
             %th=FinancialInfomation.human_attribute_name :ni
             -@finfo.each do |v|
-              %td=mf v.ni
+              %td.text-right=mf v.ni
           %tr
             %th=FinancialInfomation.human_attribute_name :ioa
             -@finfo.each do |v|
-              %td=mf v.ioa
+              %td.text-right=mf v.ioa
           %tr
             %th=FinancialInfomation.human_attribute_name :cap
             -@finfo.each do |v|
-              %td=mf v.cap
+              %td.text-right=mf v.cap
           %tr
             %th
               =FinancialInfomation.human_attribute_name :ais
               %small (株)
             -@finfo.each do |v|
-              %td=mf v.ais
+              %td.text-right=mf v.ais
           %tr
             %th
               =FinancialInfomation.human_attribute_name :na
             -@finfo.each do |v|
-              %td=mf v.na
+              %td.text-right=mf v.na
           %tr
             %th
               =FinancialInfomation.human_attribute_name :ta
             -@finfo.each do |v|
-              %td=mf v.ta
+              %td.text-right=mf v.ta
           %tr
             %th
               =FinancialInfomation.human_attribute_name :bps
               %small (円)
             -@finfo.each do |v|
-              %td=mf v.bps
+              %td.text-right=mf v.bps,2
           %tr
             %th
               =FinancialInfomation.human_attribute_name :dps
@@ -77,62 +77,62 @@
               )
               
             -@finfo.each do |v|
-              %td
-                =mf v.dps
+              %td.text-right
+                =mf v.dps,2
                 %br
-                %small (#{mf v.idps})
+                %small (#{mf v.idps,2})
           %tr
             %th
               =FinancialInfomation.human_attribute_name :eps
               %small (円)
             -@finfo.each do |v|
-              %td=mf v.eps
+              %td.text-right=mf v.eps,2
           %tr
             %th
               =FinancialInfomation.human_attribute_name :deps
               %small (円)
             -@finfo.each do |v|
-              %td=mf v.deps
+              %td.text-right=mf v.deps,2
           %tr
             %th
               =FinancialInfomation.human_attribute_name :car
               %small (%)
             -@finfo.each do |v|
-              %td=mf v.car
+              %td.text-right=mf v.car,2
           %tr
             %th
               =FinancialInfomation.human_attribute_name :roe
               %small (%)
             -@finfo.each do |v|
-              %td=mf v.roe
+              %td.text-right=mf v.roe,2
           %tr
             %th
               =FinancialInfomation.human_attribute_name :per
               %small (倍)
             -@finfo.each do |v|
-              %td=mf v.per
+              %td.text-right=mf v.per,2
           %tr
             %th
               =FinancialInfomation.human_attribute_name :dpr
               %small (%)
             -@finfo.each do |v|
-              %td=mf v.dpr
+              %td.text-right=mf v.dpr,2
           %tr
             %th=FinancialInfomation.human_attribute_name :opeCF
             -@finfo.each do |v|
-              %td=mf v.opeCF
+              %td.text-right=mf v.opeCF
           %tr
             %th=FinancialInfomation.human_attribute_name :invCF
             -@finfo.each do |v|
-              %td=mf v.invCF
+              %td.text-right=mf v.invCF
           %tr
             %th=FinancialInfomation.human_attribute_name :finCF
             -@finfo.each do |v|
-              %td=mf v.finCF
+              %td.text-right=mf v.finCF
           %tr
             %th=FinancialInfomation.human_attribute_name :cce
             -@finfo.each do |v|
-              %td=mf v.cce
+              %td.text-right=mf v.cce
           %tr
             %th
               =FinancialInfomation.human_attribute_name :employees
@@ -141,7 +141,7 @@
               =FinancialInfomation.human_attribute_name :parttime
               )
             -@finfo.each do |v|
-              %td
+              %td.text-right
                 =v.employees
                 %br
                 %small (#{mf v.parttime})
