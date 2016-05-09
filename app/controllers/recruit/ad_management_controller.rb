@@ -1,6 +1,13 @@
 class Recruit::AdManagementController < Recruit::BaseController
 	JSON_ATTR = [:id,:name,:wage,:ad_sunday,:ad_monday,:ad_tuesday,:ad_wednesday,:ad_thursday,:ad_friday,:ad_saturday,:ad_comment]
 	JSON_EXCEPT_ATTR = []
+	before_filter :basic_auth,only: [:show,:update]
+	def basic_auth
+    authenticate_or_request_with_http_basic do |user,pass|
+      user == 'yamaokaya' && pass == 'menkatame'
+    end
+  end
+
 	def show
 
 	end
