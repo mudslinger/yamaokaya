@@ -12,6 +12,9 @@ Rails.application.routes.draw do
 
   get '/ir/announce/index(.:format)' => redirect("https://maruchiyo.yamaokaya.com/ir/market"),as: :announce_redirect
 
+  #山岡家商店
+  get '/shoten' => redirect("http://shop.yamaokaya.jp/"),as: :shoten_redirect
+
   #common
   get '/about' => 'articles#about',as: :about
   get '/sns_guideline' => 'articles#sns_guideline',as: :sns_guideline
