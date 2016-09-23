@@ -6,6 +6,12 @@ body.yamaokaya.top{
 		margin-bottom:$jumbotron-padding;
 
 	}
+	.ec-bar{
+		background-color: $brand-info;
+		a{
+			color: $gray-darker;
+		}
+	}
 	.ticker{
 		background-color: $brand-primary;
 		border-top: solid 1px $almost-white;
