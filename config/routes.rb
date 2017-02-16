@@ -15,6 +15,12 @@ Rails.application.routes.draw do
   #山岡家商店
   get '/shoten' => redirect("http://shop.yamaokaya.jp/"),as: :shoten_redirect
 
+  #採用外部リンク先
+  get '/mynavi' => redirect('https://job.mynavi.jp/16/pc/search/corp76637/outline.html'),as: :mynavi
+  get '/rikunavi' => redirect('http://job.rikunabi.com/2016/company/top/r373520049/'),as: :rikunavi
+  get '/jobop' => redirect('https://yamaokaya-recruit.jp/'),as: :jobop
+
+
   #common
   get '/about' => 'articles#about',as: :about
   get '/sns_guideline' => 'articles#sns_guideline',as: :sns_guideline
@@ -79,6 +85,7 @@ Rails.application.routes.draw do
       get '/' => 'top#index',as: :yamaokaya_top,host: YAM_DEF
       get '/index(.:format)' => 'top#index',as: :yamaokaya_top_variant,host: YAM_DEF
       get '/shops/:key' => 'shops#details', as: :shop_details,host: YAM_DEF
+      get '/shops/jobop/:key/:banner' => 'shops#jobop', as: :shop_jobop_redirect,host: YAM_DEF
       get 'shops' => 'shops#shops', as: :shop_root,host: YAM_DEF
       get 'big_map' => 'shops#big_map',host: YAM_DEF
 
@@ -113,9 +120,6 @@ Rails.application.routes.draw do
       #entry
       get '/:type/entry' => 'entries#new',as: :entries,host: REC_DEF
       post '/:type/entry' => 'entries#create',as: :post_entries,host: REC_DEF
-      get '/mynavi' => redirect('https://job.mynavi.jp/16/pc/search/corp76637/outline.html'),as: :mynavi
-      get '/rikunavi' => redirect('http://job.rikunabi.com/2016/company/top/r373520049/'),as: :rikunavi
-
     end
   end
 

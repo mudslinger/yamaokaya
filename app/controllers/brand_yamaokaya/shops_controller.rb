@@ -12,6 +12,15 @@ class BrandYamaokaya::ShopsController < BrandYamaokaya::BaseController
 		end
 	end
 
+	def jobop
+		@shop = Shop.find(params[:key]) if params[:key].present?
+		@banner = params[:banner] if params[:key].present?
+		JobopLog.new(shop_id: @shop.id,banner_number: @banner,ip_addr: request.remote_ip()).save()
+		puts @shop.id,@banner
+		redirect_to(@shop.jobop_url,status: :see_other) if @shop.jobop_url
+	end
+
+
 	def shops
 		Shop.cache do
 			@regions = Rails.cache.fetch(:regions_has_shops) do

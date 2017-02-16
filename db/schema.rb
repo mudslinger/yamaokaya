@@ -11,11 +11,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160421091140) do
+ActiveRecord::Schema.define(version: 20170216093629) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
   enable_extension "postgres_fdw"
+
+  create_table "ac_test", id: false, force: true do |t|
+    t.string   "staff_id", limit: 6, null: false
+    t.datetime "clock_on",           null: false
+    t.string   "shop_id",  limit: 4, null: false
+    t.boolean  "intial"
+  end
 
   create_table "allergen_labellings", force: true do |t|
     t.integer   "menu_id"
@@ -91,6 +98,21 @@ ActiveRecord::Schema.define(version: 20160421091140) do
     t.string    "remote_ip",   limit: 15,                null: false
   end
 
+  create_table "jobop_logs", force: true do |t|
+    t.integer  "shop_id"
+    t.integer  "banner_number"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "ip_addr"
+  end
+
+  create_table "man_midnight_check", id: false, force: true do |t|
+    t.string   "staff_code", limit: 6, null: false
+    t.date     "target_day",           null: false
+    t.datetime "start_of",             null: false
+    t.datetime "end_of",               null: false
+  end
+
   create_table "menus", force: true do |t|
     t.string    "name",            limit: 126,               null: false
     t.integer   "category",                                  null: false
@@ -143,6 +165,21 @@ ActiveRecord::Schema.define(version: 20160421091140) do
     t.integer   "release_type"
   end
 
+  create_table "releases_backup", id: false, force: true do |t|
+    t.integer   "id"
+    t.timestamp "start_shows",               precision: 6
+    t.timestamp "end_shows",                 precision: 6
+    t.timestamp "target_date",               precision: 6
+    t.string    "title",         limit: 254
+    t.string    "url"
+    t.text      "body"
+    t.integer   "shop_id"
+    t.integer   "menu_group_id"
+    t.timestamp "created_at",                precision: 6
+    t.timestamp "updated_at",                precision: 6
+    t.integer   "release_type"
+  end
+
   create_table "shops", force: true do |t|
     t.integer   "old_code"
     t.string    "name",             limit: 62,                                       null: false
@@ -180,6 +217,8 @@ ActiveRecord::Schema.define(version: 20160421091140) do
     t.integer   "ad_time"
     t.integer   "wage"
     t.string    "ad_comment",       limit: 190
+    t.string    "jobop_url"
+    t.integer   "jobop_priority",                                        default: 0
   end
 
   create_table "wished_shops", force: true do |t|

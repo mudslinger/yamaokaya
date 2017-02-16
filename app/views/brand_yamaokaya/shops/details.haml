@@ -28,7 +28,9 @@
 .container#main
   .row
     .col-md-7
+      = render partial: 'yamaokaya_shop_recruit_banner' if @shop.jobop_priority == 2
       = render partial: 'yamaokaya_shop_images',locals:{shop: @shop}
+      = render partial: 'yamaokaya_shop_recruit_banner' if @shop.jobop_priority == 1
     .col-md-5
       #lat.hidden=@shop.lat
       #lng.hidden=@shop.lng
