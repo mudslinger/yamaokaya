@@ -7,6 +7,6 @@
 		.col-md-12
 			- @banner = rand(3)
 			=link_to shop_jobop_redirect_path(key: @shop.id,banner: @banner),target: "_new" do
-				=ymage_tag "images/shops/recruit-banner-#{@banner}.jpg",size: :origin,alt: "ラーメン山岡家#{@shop.name}で私達と一緒に働きませんか？" 
+				=ymage_tag "images/shops/recruit-banner-#{@banner}.jpg",size: :origin,alt: "ラーメン山岡家#{@shop.name}で私達と一緒に働きませんか？" ,width: '100%'
 	-if @shop.jobop_priority == 2
 		%hr
