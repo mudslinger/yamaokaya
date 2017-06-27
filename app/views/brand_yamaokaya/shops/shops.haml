@@ -23,7 +23,7 @@
 				- r.prefectures.each do |p|
 					- p.areas.each do |area|
 						-unless area.shops.empty?
-							.col-md-4.col-xs-12
+							.col-md-6.col-xs-12
 								.panel.panel-default
 									.panel-heading
 										%h4{id: area.prefecture.id}
@@ -37,7 +37,11 @@
 												-#%span.label.label-info.pull-right 
 													-#P
 													-#%span.glyphicon.glyphicon-truck
-												-if s.allnight?
-													%span.label.label-primary.pull-right 24H
-												%span.label.pull-right{class: "label-#{ss[:status]}"}
-													=ss[:text]
+												.pull-right
+													-if s.allnight?
+														%span.label.label-primary 24H
+													-unless s.allnight?
+														- s.shop_hours_human.each do |h|
+															%span.label.label-warning=h
+													%span.label{class: "label-#{ss[:status]}"}
+														=ss[:text]
