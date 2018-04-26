@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170216093629) do
+ActiveRecord::Schema.define(version: 20180426005945) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -219,6 +219,7 @@ ActiveRecord::Schema.define(version: 20170216093629) do
     t.string    "ad_comment",       limit: 190
     t.string    "jobop_url"
     t.integer   "jobop_priority",                                        default: 0
+    t.boolean   "smokeable"
   end
 
   create_table "wished_shops", force: true do |t|

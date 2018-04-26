@@ -43,5 +43,8 @@
 													-unless s.allnight?
 														- s.shop_hours_human.each do |h|
 															%span.label.label-warning=h
-													%span.label{class: "label-#{ss[:status]}"}
-														=ss[:text]
+													-unless s.smokeable?
+														%span.label.label-info 全面禁煙
+
+													/ %span.label{class: "label-#{ss[:status]}"}
+													/ 	=ss[:text]
