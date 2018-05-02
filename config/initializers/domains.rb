@@ -9,7 +9,7 @@ DOMAINZ = {
 	'recruit.yamaokaya.com' => :recruit,
 	'yam.jp' => :corporate,
 	'yam.com' => :yamaokaya,
-	'localhost' => :corporate,
+	'localhost' => :yamaokaya,
 	'recruit.yam.com' => :recruit
 }
 
