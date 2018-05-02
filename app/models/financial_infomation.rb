@@ -394,7 +394,31 @@ class FinancialInfomation
             employees:334,
             parttime:982,
         )
-
+        ret.push FinancialInfomation.new(
+            year:2019,
+            sales:12134238,
+            op:301515,
+            ni:-15887,
+            cap:291647,
+            ais:2469000,
+            na:1511472,
+            ta:5466550,
+            bps:621.04,
+            dps:14,
+            idps:nil,
+            eps:-6.53,
+            deps:nil,
+            car:27.6,
+            roe:nil,
+            per:nil,
+            dpr:nil,
+            opeCF:670901,
+            invCF:-680228,
+            finCF:156425,
+            cce:593736,
+            employees:398,
+            parttime:1038,
+        )
         ret
 	end
 end

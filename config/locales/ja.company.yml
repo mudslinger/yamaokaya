@@ -220,13 +220,13 @@ ja:
           yamaokaya: 129
           maruchiyo: 0
         - year: 2015
-          yamaokaya: 132
+          yamaokaya: 138
           maruchiyo: 0
         - year: 2016
-          yamaokaya: 141
+          yamaokaya: 149
           maruchiyo: 0
         - year: 2017
-          yamaokaya: 151
+          yamaokaya: 153
           maruchiyo: 0
     overview:
       title: 会社概要
@@ -243,7 +243,7 @@ ja:
         v: "2億9,164万7千円"
       employee_number:
         t: 従業員数
-        v: "2,383名(うち 正社員334名) （2017年1月31日現在）"
+        v: "2,610名(うち 正社員398名) （2018年1月31日現在）"
       officers:
         t: 役員
         v:
@@ -253,12 +253,12 @@ ja:
             name: 一由 聡
           - title: 取締役
             name: 荒谷 健一
-          - title: 監査役
-            name: 津田 憲澄
-          - title: 監査役
-            name: 斉藤 世司典
-          - title: 監査役
+          - title: 社外取締役(監査等委員)
             name: 坂本 尚幸
+          - title: 社外取締役(監査等委員)
+            name: 斉藤 世司典
+          - title: 社外取締役(監査等委員)
+            name: 渡辺 剛
       bank:
         t: 取引銀行
         v:
@@ -269,7 +269,7 @@ ja:
           - 三井住友銀行
       sale:
         t: 年商
-        v: "11,110百万円（平成29年1月期）"
+        v: "12,134百万円（平成30年1月期）"
       offices:
         t: 事業所
         v:
@@ -286,6 +286,9 @@ ja:
   graph:
     title: 売上・経常利益の推移
     records:
+      - title: 平成30年1月期
+        sales: 12134238
+        profit: 301515
       - title: 平成29年1月期
         sales: 11110958
         profit: 129532
