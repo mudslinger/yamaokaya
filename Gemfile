@@ -7,7 +7,7 @@ gem 'rails', '4.1.4'
 #gem 'activerecord-mysql2-adapter'
 # gem 'tiny_tds'
 # gem 'activerecord-sqlserver-adapter'
-gem 'pg'
+gem 'pg','= 0.18.4'
 gem 'activerecord-postgresql-adapter'
 
 # Use SCSS for stylesheets
