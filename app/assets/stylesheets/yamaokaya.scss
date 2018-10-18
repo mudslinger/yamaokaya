@@ -9,7 +9,6 @@
 @import "bxslider/jquery.bxslider";
 
 body.yamaokaya{
-
 	.mob-domain{
 		&:before{
 			content: '['
@@ -62,33 +61,6 @@ body.yamaokaya{
 			float: left;
 			max-width: 40%;
 			margin:5px;
-		}
-		.banner_area{
-			border: solid 2px #FFF;
-			color: rgba(#FFF, 0.2);
-			box-sizing: border-box;
-			h4{
-				&:before{content: none;}
-				margin: 0 0 15px;
-				line-height: 0;
-				padding: 0;
-				img{
-					 width: 100%;
-				}
-				ul{
-					display: flex;
-					justify-content: space-around;
-					padding: 0 15px;
-					li{
-						padding: 3px;
-						width: 40%;
-						background: #ffe100;
-						img{
-							width: 100%;
-						}
-					}
-				}
-			}
 		}
 	}
 	.bottom-nav{
