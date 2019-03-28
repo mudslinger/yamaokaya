@@ -18,7 +18,7 @@ Rails.application.routes.draw do
   #採用外部リンク先
   get '/mynavi' => redirect('https://job.mynavi.jp/16/pc/search/corp76637/outline.html'),as: :mynavi
   get '/rikunavi' => redirect('http://job.rikunabi.com/2016/company/top/r373520049/'),as: :rikunavi
-  get '/jobop' => redirect('https://yamaokaya-recruit.jp/'),as: :jobop
+  get '/jobop' => redirect('https://yamaokaya-job.net/jobfind-pc/'),as: :jobop
 
 
   #common
