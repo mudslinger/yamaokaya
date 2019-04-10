@@ -2,7 +2,22 @@ class IrTopic
 	include ActiveModel::Model
 	attr_accessor :released,:url,:title,:size,:type,:year,:file_type
 	def self.find(count)
-		find_all[0..count-1]
+		inject = Release.ir
+		.map{ |r| 
+			IrTopic.new(
+				released: r.target_date,
+				url: r.url,
+				title: r.title,
+				size: '-',
+				file_type: 'application/pdf',
+				year: r.target_date.year,
+				type: 'INFO'
+			)
+		}
+		inject.concat(find_all).sort_by{
+			|t| t.released
+		}.reverse[0..count-1]
+		# find_all[0..count-1]
 	end
 
 	def self.find_all

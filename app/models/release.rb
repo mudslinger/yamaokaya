@@ -8,6 +8,7 @@ class Release < ActiveRecord::Base
 	scope :has_own_page , -> {where.not(body: nil).where(shop_id: nil)}
 	scope :yearly, ->(year){where("extract(year from target_date) = #{year}")}
 	scope :years, -> {except(:order).select("extract(year from target_date) as year").group("extract(year from target_date)").order("extract(year from target_date) desc")}
+	scope :ir, -> {where(release_type: 2)}
 	enum release_type: {news: 0,carousel:1,ir: 2}
 
 	def self.headline
