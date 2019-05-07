@@ -9,6 +9,7 @@ gem 'rails', '4.1.4'
 # gem 'activerecord-sqlserver-adapter'
 gem 'pg'
 gem 'activerecord-postgresql-adapter'
+gem 'maxminddb'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', github: 'rails/sass-rails', branch: '4-0-stable'

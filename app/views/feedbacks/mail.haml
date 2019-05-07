@@ -58,6 +58,13 @@
       %tr
         %th 電話
         %td=body.phone
+      -if body.repo_geo.found?
+        %tr
+          %th 予想発信国
+          %td=body.repo_geo.country.name(:ja)
+        %tr
+          %th 予想発信都市
+          %td=body.repo_geo.city.name(:ja)
       %tr
         %th メール
         %td=body.mail_addr

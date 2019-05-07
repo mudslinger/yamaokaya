@@ -32,6 +32,10 @@ class Feedback < ActiveRecord::Base
     Feedback.atomospheres[atomosphere]
   end
 
+  def repo_geo
+    Maxminddb.lookup(remote_ip)
+  end
+
   enum age: {
     ageunder12: 12,
     age13to15: 13,

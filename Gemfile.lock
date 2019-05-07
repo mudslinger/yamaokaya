@@ -95,6 +95,7 @@ GEM
     mail (2.5.4)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
+    maxminddb (0.1.22)
     mime-types (1.25.1)
     mini_magick (4.6.0)
     mini_portile2 (2.1.0)
@@ -213,6 +214,7 @@ DEPENDENCIES
   igo-ruby
   jbuilder (~> 2.0)
   jquery-rails
+  maxminddb
   mini_magick
   newrelic_rpm
   nokogiri

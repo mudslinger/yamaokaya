@@ -1,9 +1,22 @@
 class FeedbacksController < ApplicationController
   layout :domain_layout
   skip_before_filter :set_title,only: :api
+  before_action :find_city
+  before_action :block_red,only: :create
 
+	def find_city
+    @geo = Maxminddb.lookup(request.remote_ip) if request.remote_ip.present?
+	end
+
+  def block_red
+    if @geo.found? and (@geo.country.iso_code == 'RU' or @geo.country.iso_code == 'CN')
+      render_404
+      return
+    end
+  end
 
   def new
+
     @feedback = Feedback.new(
       quality: :q_moderate,
       service: :s_moderate,

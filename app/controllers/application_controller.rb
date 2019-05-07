@@ -6,6 +6,7 @@ class ApplicationController < ActionController::Base
 	before_action :detect_device_format
 	before_filter :set_title
 
+
 	rescue_from ActionController::RoutingError, ActiveRecord::RecordNotFound, with: :render_404
 
 	def render_404
