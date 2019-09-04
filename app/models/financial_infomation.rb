@@ -419,6 +419,31 @@ class FinancialInfomation
             employees:398,
             parttime:1038,
         )
+        ret.push FinancialInfomation.new(
+            year:2020,
+            sales:12827002,
+            op:437640,
+            ni:32855,
+            cap:291647,
+            ais:2469000,
+            na:1492928,
+            ta:5582109,
+            bps:614.31,
+            dps:14,
+            idps:nil,
+            eps:13.51,
+            deps:13.45,
+            car:26.6,
+            roe:2.2,
+            per:108.0,
+            dpr:103.6,
+            opeCF:955930,
+            invCF:-542459,
+            finCF:231596,
+            cce:774027,
+            employees:354,
+            parttime:1108,
+        )
         ret
 	end
 end

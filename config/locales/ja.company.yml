@@ -164,6 +164,12 @@ ja:
             - month: 3月
               body:
                 - 極味噌本舗桜土浦インター店オープン
+        - year: 2019
+          title: 新潟県に初出店
+          events:
+            - month: 1月
+              body:
+                - 新潟県の第1号店舗として上越市に上越店開店
       changes:
         - year: 1997
           yamaokaya: 18
@@ -228,6 +234,9 @@ ja:
         - year: 2017
           yamaokaya: 153
           maruchiyo: 0
+        - year: 2018
+          yamaokaya: 157
+          maruchiyo: 0
     overview:
       title: 会社概要
       subtitle: 会社概要
@@ -243,7 +252,7 @@ ja:
         v: "2億9,164万7千円"
       employee_number:
         t: 従業員数
-        v: "2,610名(うち 正社員398名) （2018年1月31日現在）"
+        v: "2,660名(うち 正社員355名) （2019年1月31日現在）"
       officers:
         t: 役員
         v:
@@ -267,6 +276,7 @@ ja:
           - 常陽銀行
           - みずほ銀行
           - 三井住友銀行
+          - 他
       sale:
         t: 年商
         v: "12,134百万円（平成30年1月期）"
@@ -286,6 +296,9 @@ ja:
   graph:
     title: 売上・経常利益の推移
     records:
+      - title: 平成31年1月期
+        sales: 12827002
+        profit: 437640
       - title: 平成30年1月期
         sales: 12134238
         profit: 301515
