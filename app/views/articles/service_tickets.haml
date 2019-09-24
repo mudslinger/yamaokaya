@@ -1,95 +1,105 @@
 .container
-  .row
-    .col-md-12
-      %h3 よりお得に！山岡家のサービス券
-    .col-md-5
-      =ymage_tag 'images/articles/st01c.png',cls:"img-thumbnail",size: '300x300'
-    .col-md-7
-      %p
-        山岡家のサービス券がよりお得に使えるようになりました！
-      %p
-        たくさん集めて、山岡家の人気メニューを無料でGET！
-  .row
-    %h3 使い方
-    %p 5枚以上貯まったら、お店にお持ちいただき、スタッフにまとめてお渡しください。
-    %p ※使用期限（発行日から1年間）を過ぎたものはご利用いただけません。予めご了承ください。
-  .row
-    .col-md-3.col-md-offset-1
-      .h4
-        5枚集めて
-      =ymage_tag 'images/articles/st05c.png',size: '300x100'
-    .col-md-1.text-center
-      %strong
-        →
-    .col-md-5
-      .h4
-        特製ギョーザ一皿
-      =ymage_tag "images/menus/photos/211.png",size: '100x100',cls: :photo
-      .row
-        %p 
-          その場でお召し上がりいただけます。
-
-  .row
-    .col-md-3.col-md-offset-1
-      .h4
-        10枚集めて
-      =ymage_tag 'images/articles/st10c.png',size: '300x200'
-    .col-md-1.text-center
-      %strong
-        →
-    .col-md-5
-      .h4
-        ラーメン1杯
-      =ymage_tag "images/menus/photos/1.png",size: '100x100',cls: :photo
-      =ymage_tag "images/menus/photos/11.png",size: '100x100',cls: :photo
-      =ymage_tag "images/menus/photos/21.png",size: '100x100',cls: :photo
-      .row
-        %p 
-          その場でお召し上がりいただけます。
-        %p
-          醤油・味噌・塩のなかからいずれか一杯お選びください。+100円で特製味噌ラーメン・辛味噌ラーメンをお召し上がりいただくことも可能です。
-        %p 
-          もちろん、トッピングやサイドメニューを別途購入いただき、あわせてご注文いただいてもOKです。
-  .row
-    .col-md-3.col-md-offset-1
-      .h4
-        13枚集めて
-      =ymage_tag 'images/articles/st13c.png',size: '300x200'
-    .col-md-1.text-center
-      %strong
-        →
-    .col-md-5
-      .h4
-        プレミアム塩とんこつラーメン1杯か、つけ麺(醤油・味噌いずれか)一杯
-      =ymage_tag "images/menus/photos/51.png",size: '100x100',cls: :photo
-      =ymage_tag "images/menus/photos/6.png",size: '100x100',cls: :photo
-      =ymage_tag "images/menus/photos/16.png",size: '100x100',cls: :photo
-      .row
-        %p 
-          その場でお召し上がりいただけます。
-        %p
-          つけ麺は醤油・味噌いずれか一杯お選びください。+100円で辛味噌つけ麺をお召し上がりいただくことも可能です。
-        %p
-          もちろん、トッピングやサイドメニューを別途購入いただき、あわせてご注文いただいてもOKです。
-  .row
-    .col-md-3.col-md-offset-1
-      .h4
-        50枚(!)集めると…
-      =ymage_tag 'images/articles/st50c.png',size: '300x200'
-    .col-md-1.text-center
-      %strong
-        →
-    .col-md-5
-      .h4
-        山岡家オフィシャル オリジナルTシャツをプレゼント！
-      =ymage_tag "images/articles/t_shirt.png",size: '200x200',cls: :photo
-      .row
-        %p 
-          申込用紙(PDF)をダウンロードいただき、市販の封筒に50枚のサービス券同封のうえ、関東事務所まで郵送ください。
-        %p
-          詳しくは申し込み用紙の記載内容をご確認ください。
-        %p
-          %a.btn.btn-primary{href: "http://assets.yamaokaya.com.s3.amazonaws.com/articles/t_shirt_request.pdf",role: :button,target: '_blank'}
-            申込用紙はこちら
-        %p ※他商品との引き換え同様、使用期限（発行日から1年間）を過ぎたものはご利用いただけません。
-        %p ※Tシャツのデザインは予告なく変更されることがあります。予めご了承ください。
+    .row
+        .col-md-12.box1
+            %h3 よりお得に！山岡家のサービス券
+            .st_inner
+                %figure
+                    =ymage_tag 'images/articles/st_mv-pc.png',cls:"hidden-sm hidden-xs",alt:"サービス券の枚数によって選べる"
+                    =ymage_tag 'images/articles/st_mv-sp.png',cls:"hidden-md hidden-lg",alt:"サービス券の枚数によって選べる"
+                %figure
+                    =ymage_tag 'images/articles/st_50bn-pc.png',cls:"hidden-sm hidden-xs",alt:"50枚集めて必ずTシャツがもらえる"
+                    =ymage_tag 'images/articles/st_50bn-sp.png',cls:"hidden-md hidden-lg",alt:"50枚集めて必ずTシャツがもらえる"
+                .tshirtArea
+                    %dl.tshirt_box
+                        %dt いま貰えるTシャツ
+                        %dd
+                            %figure
+                                =ymage_tag 'images/articles/tshirts/T14-pc.png',cls:"hidden-sm hidden-xs",alt:"Tシャツ"
+                                =ymage_tag 'images/articles/tshirts/T14-sp.png',cls:"hidden-md hidden-lg",alt:"Tシャツ"
+                    .col-md-6.tshirt_txt
+                        %dl
+                        %dt 完食Tシャツ
+                        %dd 激辛ラーメンのイベントの第2弾バージョンです。
+                    .col-md-6.tshirt_form
+                        %a.btn.btn-primary{:href => "http://assets.yamaokaya.com.s3.amazonaws.com/articles/t_shirt_request.pdf", :role => "button", :target => "_blank"} 申込用紙はこちら
+                        %p.note 申込用紙（PDF）をダウンロードいただき、市販の封筒に50枚のサービス券を同封のうえ、関東事務所まで郵送下さい。
+                -# .next_tshirtArea
+                -#     %h4
+                -#         =ymage_tag 'images/articles/st_next.png',alt:"次回のTシャツ"
+                -#     .next_tshirt_data
+                -#         .col-md-6
+                -#         %h5 2019年1月より開始
+                -#         %p テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                -#         .col-md-6
+                -#         %figure
+                -#             =ymage_tag 'images/articles/st_next_tshirt.png',alt:"次回のTシャツ"
+                -#         %br{:clear => "all"}
+        .col-md-12.box2
+            %h3 お店で使う
+            %p 5枚以上貯まったら、お店にお持ちいただき、スタッフにまとめてお渡しください。
+            %p ※使用期限（発行日から1年間）を過ぎたものはご利用いただけません。予めご了承ください。
+            .st_inner
+                .st_list
+                    %ul
+                        %li
+                            %h5
+                                =ymage_tag 'images/articles/st_s5.jpg',alt:"5枚で貰える"
+                            %figure
+                                =ymage_tag 'images/articles/st_how_01.png',alt:"特製ギョーザ"
+                            %h4 特製ギョーザ 一皿
+                            %p その場でお召し上がりいただけます。
+                        %li
+                            %h5
+                                =ymage_tag 'images/articles/st_s10.jpg',alt:"10枚で貰える"
+                            %figure
+                                =ymage_tag 'images/articles/st_how_02.png',alt:"ラーメン"
+                            %h4 ラーメン1杯
+                            %p
+                                その場でお召し上がりいただけます。
+                                %br/
+                                醤油・味噌・塩のなかからいずれか一杯お選びください。+100円で特製味噌ラーメン・辛味噌ラーメンをお召し上がりいただくことも可能です。
+                                %br/
+                                もちろん、トッピングやサイドメニューを別途購入いただき、あわせてご注文いただいてもOKです。
+                        %li
+                            %h5
+                                =ymage_tag 'images/articles/st_s13.jpg',alt:"13枚で貰える"
+                            %figure
+                                =ymage_tag 'images/articles/st_how_03.png',alt:"プレミアム塩とんこつラーメン"
+                            %h4 プレミアム塩とんこつラーメン1杯
+                            %p
+                                その場でお召し上がりいただけます。
+                                %br/
+                                もちろん、トッピングやサイドメニューを別途購入いただき、あわせてご注文いただいてもOKです。
+                        %li
+                            %h5
+                                =ymage_tag 'images/articles/st_s13.jpg',alt:"13枚で貰える"
+                            %figure
+                                =ymage_tag 'images/articles/st_how_04.png',alt:"つけ麺"
+                            %h4 つけ麺一杯
+                            %p
+                                その場でお召し上がりいただけます。
+                                %br/
+                                醤油・味噌いずれか一杯お選びください。+100円で辛味噌つけ麺をお召し上がりいただくことも可能です。
+                                %br/
+                                もちろん、トッピングやサイドメニューを別途購入いただき、あわせてご注文いただいてもOKです。
+                        %li
+                            %h5
+                                =ymage_tag 'images/articles/st_s13.jpg',alt:"13枚で貰える"
+                            %figure
+                                =ymage_tag 'images/articles/st_how_05.png',alt:"期間限定ラーメン"
+                            %h4 期間限定ラーメン１杯
+                            %p
+                                その場でお召し上がりいただけます。
+                                %br/
+                                もちろん、トッピングやサイドメニューを別途購入いただき、あわせてご注文いただいてもOKです。
+                        %li
+                            %h5
+                                =ymage_tag 'images/articles/st_s50.jpg',alt:"50枚で貰える"
+                            %figure
+                                =ymage_tag 'images/articles/st_how_06.png',alt:"オリジナルTシャツ"
+                            %h4 山岡家オリジナルTシャツ1枚
+                            %p
+                                申込用紙(PDF)をダウンロードいただき、市販の封筒に50枚のサービス券同封のうえ、関東事務所まで郵送ください。
+                                %br/
+                            .form
+                                %a.btn.btn-primary{:href => "http://assets.yamaokaya.com.s3.amazonaws.com/articles/t_shirt_request.pdf", :role => "button", :target => "_blank"} 申込用紙はこちら
