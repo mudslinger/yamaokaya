@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rake', '10.3.2'
+gem 'rake', '13.0.1'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.4'
 #gem 'mysql2'
