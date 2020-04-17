@@ -26,11 +26,26 @@
 			%tr
 				%th 営業時間
 				%td
-					- shop.shop_hours_human.each do |h|
-						=h
-						- ss = shop.shop_status
-						%span.label.pull-right{class: "label-#{ss[:status]}"}
-							=ss[:text]
+					- if shop.covid19_fallback 
+						最新の営業時間については
+						=link_to "こちら","http://assets.yamaokaya.com/release/release_covid19_fallback.pdf",{target:'_blank'}
+						をご確認ください。
+					- else
+						- shop.shop_hours_human.each do |h|
+							=h
+							- ss = shop.shop_status
+							%span.label.pull-right{class: "label-#{ss[:status]}"}
+								=ss[:text]
+			-if shop.covid19_fallback
+				%tr
+					%th その他
+					%td 
+						%p 行政からの要請により、アルコール販売を自粛しています。
+						%p
+							詳しくは
+							=link_to "こちら","http://assets.yamaokaya.com/release/release_covid19_fallback.pdf",{target:'_blank'}
+							をご確認ください。
+
 			-# %tr
 			-# 	%th 目印・その他
 			-# 	%td= shop.landmarks
@@ -52,10 +67,10 @@
 						%li テーブル席:#{shop.seats_at_table}席
 					-if (shop.seats_at_parlor || 0) != 0
 						%li 小上がり席:#{shop.seats_at_parlor}席
-			-unless shop.smokeable?
-				%tr
-					%th その他
-					%td 当店は全面禁煙です。
+			-# -unless shop.smokeable?
+			-# 	%tr
+			-# 		%th その他
+			-# 		%td 当店は全面禁煙です。
 	-else
 		.panel-heading
 			%h4.panel-title #{shop.name} は営業を終了いたしました。

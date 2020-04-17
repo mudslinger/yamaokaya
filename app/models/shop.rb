@@ -124,6 +124,8 @@ class Shop < ActiveRecord::Base
 			encode_shop_hour(0)
 		elsif alldayssame?
 			encode_shop_hour(sunday)
+		elsif alldayssame? and sunday == "1"
+			"縮退運転中"
 		else
 			Hash[
 				{

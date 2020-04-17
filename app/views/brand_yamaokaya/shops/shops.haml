@@ -38,11 +38,14 @@
 													-#P
 													-#%span.glyphicon.glyphicon-truck
 												.pull-right
-													-if s.allnight?
-														%span.label.label-primary 24H
-													-unless s.allnight?
-														- s.shop_hours_human.each do |h|
-															%span.label.label-warning=h
+													-if s.covid19_fallback
+														%span.label.label-danger 短縮営業中
+													-else
+														-if s.allnight?
+															%span.label.label-primary 24H
+														-unless s.allnight?
+															- s.shop_hours_human.each do |h|
+																%span.label.label-warning=h
 													-unless s.smokeable?
 														%span.label.label-info 全面禁煙
 
