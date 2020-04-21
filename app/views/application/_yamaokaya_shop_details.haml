@@ -36,7 +36,7 @@
 							- ss = shop.shop_status
 							%span.label.pull-right{class: "label-#{ss[:status]}"}
 								=ss[:text]
-			-if shop.covid19_fallback
+			-if shop.covid19_fallback or shop.covid19_stop_alcohol
 				%tr
 					%th その他
 					%td 
